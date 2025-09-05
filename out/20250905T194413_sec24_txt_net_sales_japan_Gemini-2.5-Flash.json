@@ -1,0 +1,11 @@
+{
+  "id": "sec24_txt_net_sales_japan",
+  "query": "What is the net sales for Japan in 2023?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_SEC_filing_2024.txt"
+  ],
+  "expected_answer": "$24,257 million",
+  "output": "*Thinking...*\n\n> **Identifying Requested Data**\n> \n> I've begun by parsing the document to pinpoint the \"Segment Operating Performance\" table. My focus is now on efficiently extracting the \"Net sales\" value for \"Japan\" in the year \"2023\" directly from this table. I'm cross-referencing rows and columns to extract the exact requested figure.\n> \n> \nBased on the \"Segment Operating Performance\" table in the attached document, the net sales for Japan in 2023 was **$24,257 million**.",
+  "passed": true
+}

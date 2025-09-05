@@ -1,0 +1,11 @@
+{
+  "id": "segment_pdf_net_sales_japan",
+  "query": "What is the net sales for Japan in 2023?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./pdf/Apple_segment_operating_performance.pdf"
+  ],
+  "expected_answer": "$24,257 million",
+  "output": "*Thinking...*\n\n> **Pinpointing Sales Data**\n> \n> I've successfully located the \"Japan\" and \"2023\" data within the provided table. My next step is extracting the precise net sales value associated with this specific combination, which should give me the desired answer.\n> \n> \nThe net sales for Japan in 2023 was $24,257 million.",
+  "passed": true
+}

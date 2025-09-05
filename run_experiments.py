@@ -2,30 +2,14 @@ import asyncio
 import json
 from datetime import datetime
 
+from fastapi_poe import BotError
+
 from experiments import EXPERIMENTS
 from llm import LLM
+from models import JUDGE_MODEL, MODEL_PARAMS, SAMPLE_MODELS
 from prompts import JUDGE_PROMPT_TEMPLATE
 
 llm = LLM()
-
-
-PREMIUM_MODELS = [
-    "GPT-5",
-    "Claude-Sonnet-4",
-    "Gemini-2.5-Pro",
-    "Grok-4",
-    "Qwen3-235B-A22B",
-]
-DEFAULT_MODELS = [
-    "GPT-5-mini",
-    "Claude-Sonnet-3.7",
-    "Gemini-2.5-Flash",
-    "Grok-3",
-    "Qwen3-235B-2507-FW",
-]
-SAMPLE_MODELS = ["Gemini-2.5-Flash"]
-JUDGE_MODEL = "Gemini-2.5-Flash-Lite"
-
 models = SAMPLE_MODELS
 
 
@@ -43,15 +27,25 @@ async def judge(question, correct_answer, output) -> bool:
 
 async def run_experiment(experiment, model):
     print(f"Running experiment for {experiment.get('id')} -- {model}")
+    query = experiment.get("query")
+
+    if (params := MODEL_PARAMS.get(model)) is not None:
+        query = f"{query} {' '.join(params)}"
+
     output = await llm.get_response(
         model=model,
-        query=experiment.get("query"),
+        query=query,
         doc_urls=experiment.get("docs"),
     )
     print(f"Judging output for {experiment.get('id')} -- {model}")
-    passed = await judge(
-        experiment.get("query"), experiment.get("expected_answer"), output
-    )
+    try:
+        passed = await judge(
+            experiment.get("query"), experiment.get("expected_answer"), output
+        )
+    except BotError as error:
+        print(f"Judge error: {str(error)}")
+        passed = False
+
     return experiment, model, output, passed
 
 

@@ -78,7 +78,11 @@
     })
   );
 
-  results.sort((a, b) => b._filename.localeCompare(a._filename));
+  // Sort by date
+  //results.sort((a, b) => b._filename.localeCompare(a._filename));
+
+  // Sort by id
+  results.sort((a, b) => a.id.localeCompare(b.id));
 
   container.innerHTML = '';
   results.forEach(r => {
