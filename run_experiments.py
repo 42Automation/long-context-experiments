@@ -38,11 +38,13 @@ async def judge(question, correct_answer, output) -> bool:
 
 
 async def run_experiment(experiment, model):
+    print(f"Running experiment for {experiment.get('id')} -- {model}")
     output = await llm.get_response(
         model=model,
         query=experiment.get("query"),
         doc_urls=experiment.get("docs"),
     )
+    print(f"Judging output for {experiment.get('id')} -- {model}")
     passed = await judge(
         experiment.get("query"), experiment.get("expected_answer"), output
     )
@@ -50,7 +52,9 @@ async def run_experiment(experiment, model):
 
 
 def record_output(experiment, model, output, passed):
+    print(f"Recording output for {experiment.get('id')} -- {model}")
     record = {
+        "id": experiment.get("id"),
         "query": experiment.get("query"),
         "model": model,
         "doc_urls": experiment.get("docs"),
@@ -75,7 +79,7 @@ async def main():
 
     results = await asyncio.gather(*tasks)
     for experiment, model, output, passed in results:
-        record_output(experiment, output, passed, model)
+        record_output(experiment, model, output, passed)
 
 
 if __name__ == "__main__":

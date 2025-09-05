@@ -1,0 +1,10 @@
+{
+  "query": "my query",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_segment_operating_performance.txt"
+  ],
+  "expected_answer": "answer",
+  "output": "*Thinking...*\n\n> **Analyzing Apple's Performance**\n> \n> I've been diving into Apple's segment performance data. My primary focus is understanding the sales trends, year-over-year. The provided document lays out net sales figures and change explanations for each segment across three years. I'm scrutinizing the changes to identify key drivers of Apple's financial results.\n> \n> \n> **Formulating a Clarification**\n> \n> I'm stuck. The \"my query\" prompt is too vague. I need more direction. I plan to ask the user for specifics about what they need from the data in the document. What exactly are they looking for? I'll keep the questions short and focused.\n> \n> \nPlease specify your query. I need to know what information you are looking for from the document.",
+  "passed": false
+}

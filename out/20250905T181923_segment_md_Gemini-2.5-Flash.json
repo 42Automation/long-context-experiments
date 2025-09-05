@@ -1,0 +1,10 @@
+{
+  "query": "my query",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./md/Apple_segment_operating_performance.md"
+  ],
+  "expected_answer": "answer",
+  "output": "*Thinking...*\n\n> **Defining the Objective**\n> \n> I'm focused on the user's prompt and the provided document. Initially, it seems the user wants me to process \"Apple_segment_operating_performance.md\" based on \"my query,\" which I don't yet have. I anticipate a request concerning the document's contents, likely financial data.\n> \n> \n> **Assessing Document Context**\n> \n> I've analyzed the provided document, \"Apple_segment_operating_performance.md.\" Based on its financial reporting nature, I'm ready to address inquiries about sales figures across geographical segments and specific years. Anticipating potential queries, I'm prepared to provide data on net sales, changes, and related drivers. I await the user's question.\n> \n> \nI have received the document \"Apple_segment_operating_performance.md\". Please provide your query.",
+  "passed": false
+}
