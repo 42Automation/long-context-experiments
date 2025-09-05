@@ -1,0 +1,11 @@
+{
+  "id": "segment_txt_net_sales_japan",
+  "query": "What is the net sales for Japan in 2023?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_segment_operating_performance.txt"
+  ],
+  "expected_answer": "$24,257 million",
+  "output": "*Thinking...*\n\n> **Extracting Japan's Data**\n> \n> I'm zeroing in on the Japan sales data for 2023. My current task is to pinpoint that specific cell within the table provided. It's a direct look-up, focusing on the intersection of \"Japan\" and \"2023\" to grab the net sales figure.\n> \n> \nThe net sales for Japan in 2023 was $24,257 million.",
+  "passed": false
+}
