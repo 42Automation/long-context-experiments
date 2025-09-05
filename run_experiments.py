@@ -34,7 +34,11 @@ async def judge(question, correct_answer, output) -> bool:
         question=question, correct_answer=correct_answer, output=output
     )
     response = await llm.get_response(model=JUDGE_MODEL, query=query)
-    return response.lower().strip() == "true"
+    # Get the last line, which effectively discards eventual thinking part
+    last_line = next(
+        (line for line in reversed(response.splitlines()) if line.strip()), ""
+    )
+    return last_line.lower().strip() == "true"
 
 
 async def run_experiment(experiment, model):

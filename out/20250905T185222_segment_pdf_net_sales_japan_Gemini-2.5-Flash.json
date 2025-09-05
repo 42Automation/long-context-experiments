@@ -1,0 +1,11 @@
+{
+  "id": "segment_pdf_net_sales_japan",
+  "query": "What is the net sales for Japan in 2023?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./pdf/Apple_segment_operating_performance.pdf"
+  ],
+  "expected_answer": "$24,257 million",
+  "output": "*Thinking...*\n\n> **Identifying Sales Figures**\n> \n> I'm now focused on pinpointing the 2023 net sales for Japan. My primary task is to accurately extract the data from the document's table. Precision is key. I need to ensure I isolate the correct figures.\n> \n> \nThe net sales for Japan in 2023 was $24,257 million.",
+  "passed": true
+}
