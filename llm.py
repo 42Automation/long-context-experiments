@@ -59,7 +59,16 @@ if __name__ == "__main__":
 
     async def main():
         llm = LLM()
-        answer = await llm.get_response(model="GPT-5", query="Tell me about you")
-        print("Answer: " + answer)
+        answer = await llm.get_response(
+            model="GPT-5", query="Tell me about you in 2 lines"
+        )
+        print("\nAnswer: " + answer)
+
+        answer = await llm.get_response(
+            model="Qwen-2.5-7B-T",
+            query="Tell me about you in 2 lines",
+            system_prompt="You are a helpful assistant talking in English pirate",
+        )
+        print("\nAnswer: " + answer)
 
     asyncio.run(main())
