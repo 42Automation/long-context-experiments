@@ -29,7 +29,7 @@ class LLM:
     ) -> str:
         attachments = []
         for doc_url in doc_urls:
-            attachment = upload_file_sync(file_url=doc_url, api_key=api_key)
+            attachment = upload_file_sync(open(doc_url, "rb"), api_key=api_key)
             attachments.append(attachment)
 
         messages = []
@@ -68,6 +68,14 @@ if __name__ == "__main__":
             model="Qwen-2.5-7B-T",
             query="Tell me about you in 2 lines",
             system_prompt="You are a helpful assistant talking in English pirate",
+        )
+        print("\nAnswer: " + answer)
+
+        answer = await llm.get_response(
+            model="Gemini-2.5-Flash-Lite",
+            query="Translate this document into Spanish",
+            doc_urls=["./txt/sample.txt"],
+            system_prompt="You are a helpful assistant. Answer user queries succintly.",
         )
         print("\nAnswer: " + answer)
 
