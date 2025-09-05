@@ -12,8 +12,10 @@ from fastapi_poe.client import PROTOCOL_VERSION
 
 load_dotenv()
 
-api_key = os.environ.get("POE_API_KEY", "")
-if not api_key:
+TEMPERATURE = 0
+
+API_KEY = os.environ.get("POE_API_KEY", "")
+if not API_KEY:
     raise ValueError("Could not find POE_API_KEY variable in the environment")
 
 
@@ -29,7 +31,7 @@ class LLM:
     ) -> str:
         attachments = []
         for doc_url in doc_urls:
-            attachment = upload_file_sync(open(doc_url, "rb"), api_key=api_key)
+            attachment = upload_file_sync(open(doc_url, "rb"), api_key=API_KEY)
             attachments.append(attachment)
 
         messages = []
@@ -46,10 +48,11 @@ class LLM:
             user_id=self.user_id,
             conversation_id="",
             message_id="",
-            api_key=api_key,
+            api_key=API_KEY,
+            temperature=TEMPERATURE,
         )
         response = await get_final_response(
-            request=request, bot_name=model, api_key=api_key
+            request=request, bot_name=model, api_key=API_KEY
         )
         return response
 
