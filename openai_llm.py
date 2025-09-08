@@ -1,4 +1,6 @@
+import base64
 import os
+from pathlib import Path
 
 from dotenv import load_dotenv
 from openai import AsyncOpenAI
@@ -25,49 +27,35 @@ class LLM:
         doc_urls: list[str] = [],
         system_prompt: str | None = None,
     ) -> str:
-        messages = []
-        if system_prompt:
-            messages.append({"role": "system", "content": system_prompt})
-        if doc_urls:
-            content = [{"type": "input_text", "text": query}]
-            for doc_url in doc_urls:
-                with open(doc_url, "rb") as doc:
-                    content.append(
-                        {
-                            "type": "input_image",
-                            "image": doc.read(),
-                            "mime_type": "application/pdf",
-                        }
-                    )
-            messages.append({"role": "user", "content": content})
-        else:
-            messages.append({"role": "user", "content": query})
-
-        # print("Messages")
-        # print(messages)
+        with open(doc_urls[0], "rb") as doc:
+            base64_pdf = base64.b64encode(doc.read()).decode("utf-8")
 
         response = await client.chat.completions.create(
-            model=model, temperature=TEMPERATURE, messages=messages
-        )
-
-        for doc_url in doc_urls:
-            with open(doc_url, "rb") as doc:
-                response = await client.responses.create(
-                    model=model,
-                    temperature=TEMPERATURE,
-                    input=[
-                        {"type": "input_text", "text": query},
+            model=model,
+            temperature=TEMPERATURE,
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
                         {
-                            "type": "input_image",
-                            "image": doc.read(),
-                            "mime_type": "application/pdf",
+                            "type": "file",
+                            "file": {
+                                "filename": Path(doc_urls[0]).name,
+                                "file_data": f"data:application/pdf;base64,{base64_pdf}",
+                            },
+                        },
+                        {
+                            "type": "text",
+                            "text": query,
                         },
                     ],
-                )
+                },
+            ],
+        )
 
         print(f"response: {response}")
 
-        return response.output_text
+        return response.choices[0].message.content
 
 
 if __name__ == "__main__":
