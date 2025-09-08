@@ -22,3 +22,7 @@ Response to judge:
 
 Instructions: Respond with only "true" if the response factually aligns with the correct answer, or "false" if it does not. Do not provide any explanation - just "true" or "false".
 """
+
+SYSTEM_PROMPT = """"You are a helpful assistant. Answer the user query succintly.
+If documents are provided, use them for answering the query.
+"""
