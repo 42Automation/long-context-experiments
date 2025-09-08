@@ -25,22 +25,33 @@ class LLM:
         doc_urls: list[str] = [],
         system_prompt: str | None = None,
     ) -> str:
+        attachment_ids = []
+        for doc_url in doc_urls:
+            with open(doc_url, "rb") as doc:
+                upload = await client.files.create(file=doc, purpose="assistants")
+                attachment_ids.append(upload.id)
+
         messages = []
         if system_prompt:
             messages.append({"role": "system", "content": system_prompt})
-        messages.append({"role": "user", "content": query})
+        if attachment_ids:
+            content = [{"type": "input_text", "text": query}]
+            for id in attachment_ids:
+                content.append({"type": "file_reference", "file_id": id})
+            messages.append({"role": "user", "content": content})
+        else:
+            messages.append({"role": "user", "content": query})
 
-        # attachments = []
-        # for doc_url in doc_urls:
-        #     attachment = upload_file_sync(open(doc_url, "rb"), api_key=API_KEY)
-        #     attachments.append(attachment)
+        print("Messages")
+        print(messages)
 
-        response = await client.chat.completions.create(
-            model=model, messages=messages, temperature=TEMPERATURE
+        response = await client.responses.create(
+            model=model, temperature=TEMPERATURE, input=messages
         )
+
         print(f"response: {response}")
 
-        return response.choices[0].message.content
+        return response.output_text
 
 
 if __name__ == "__main__":
@@ -48,10 +59,10 @@ if __name__ == "__main__":
 
     async def main():
         llm = LLM()
-        answer = await llm.get_response(
-            model="GPT-5", query="Tell me about you in 2 lines"
-        )
-        print("\nAnswer: " + answer)
+        # answer = await llm.get_response(
+        #     model="GPT-5", query="Tell me about you in 2 lines"
+        # )
+        # print("\nAnswer: " + answer)
 
         # answer = await llm.get_response(
         #     model="Qwen-2.5-7B-T",
@@ -60,12 +71,12 @@ if __name__ == "__main__":
         # )
         # print("\nAnswer: " + answer)
 
-        # answer = await llm.get_response(
-        #     model="Gemini-2.5-Flash-Lite",
-        #     query="Translate this document into Spanish",
-        #     doc_urls=["./txt/sample.txt"],
-        #     system_prompt="You are a helpful assistant. Answer user queries succintly.",
-        # )
-        # print("\nAnswer: " + answer)
+        answer = await llm.get_response(
+            model="Gemini-2.5-Flash-Lite",
+            query="Translate this document into Spanish",
+            doc_urls=["./txt/sample.txt"],
+            system_prompt="You are a helpful assistant. Answer user queries succintly.",
+        )
+        print("\nAnswer: " + answer)
 
     asyncio.run(main())
