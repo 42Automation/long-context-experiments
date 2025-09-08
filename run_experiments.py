@@ -1,10 +1,12 @@
+import argparse
 import asyncio
+import importlib.util
 import json
+import os
 from datetime import datetime
 
 from fastapi_poe import BotError
 
-from experiments import EXPERIMENTS
 from llm import LLM
 from models import JUDGE_MODEL, MODEL_PARAMS, SAMPLE_MODELS
 from prompts import JUDGE_PROMPT_TEMPLATE
@@ -49,8 +51,15 @@ async def run_experiment(experiment, model):
     return experiment, model, output, passed
 
 
-def record_output(experiment, model, output, passed):
+def record_output(experiment, model, output, passed, experiment_name):
     print(f"Recording output for {experiment.get('id')} -- {model}")
+
+    timestamp = datetime.now().strftime("%Y%m%dT%H%M%S")
+    dir_path = f"./out/{timestamp}_{experiment_name}"
+    os.makedirs(dir_path, exist_ok=True)
+
+    filename = f"{dir_path}/{experiment.get('id')}_{model}.json"
+
     record = {
         "id": experiment.get("id"),
         "query": experiment.get("query"),
@@ -61,23 +70,43 @@ def record_output(experiment, model, output, passed):
         "passed": passed,
     }
 
-    timestamp = datetime.now().strftime("%Y%m%dT%H%M%S")
-    filename = f"./out/{timestamp}_{experiment.get('id')}_{model}.json"
-
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(record, f, indent=2)
 
 
+def load_experiments(experiment_name: str):
+    module_path = f"./experiments/{experiment_name}.py"
+    spec = importlib.util.spec_from_file_location("experiment_module", module_path)
+    if spec is None or spec.loader is None:
+        raise FileNotFoundError(f"Experiment file not found: {module_path}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return getattr(module, "EXPERIMENTS")
+
+
 async def main():
+    parser = argparse.ArgumentParser(description="Run LLM experiments")
+    parser.add_argument(
+        "-e",
+        "--experiment",
+        type=str,
+        required=True,
+        help="Name of the experiment file (without .py) located in ./experiments/",
+    )
+    args = parser.parse_args()
+
+    # Load experiments dynamically based on the CLI argument
+    experiments = load_experiments(args.experiment)
+
     tasks = [
         run_experiment(experiment, model)
-        for experiment in EXPERIMENTS
+        for experiment in experiments
         for model in models
     ]
 
     results = await asyncio.gather(*tasks)
     for experiment, model, output, passed in results:
-        record_output(experiment, model, output, passed)
+        record_output(experiment, model, output, passed, args.experiment)
 
 
 if __name__ == "__main__":
