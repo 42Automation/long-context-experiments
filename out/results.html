@@ -79,12 +79,15 @@
     .filter(h => h.endsWith('/') && !h.startsWith('?')) // keep only directories
     .map(h => h.replace(/^\.?\//, '').replace(/\/$/, '')); // normalize
 
+  // Sort directories so the newest (lexicographically highest) appears first
+  subDirs.sort((a, b) => b.localeCompare(a));
+
   // Populate dropdown
   subDirs.forEach((d, i) => {
     const opt = document.createElement('option');
     opt.value = d;
     opt.textContent = d || '/';
-    if (i === 0) opt.selected = true;
+    if (i === 0) opt.selected = true;   // first entry is now the most recent folder
     dirSelect.appendChild(opt);
   });
 
@@ -134,7 +137,7 @@
     });
   };
 
-  // Initial load with the first subdirectory
+  // Initial load with the first (most‑recent) subdirectory
   if (subDirs.length > 0) {
     loadResults(subDirs[0]);
   } else {
