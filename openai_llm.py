@@ -25,33 +25,49 @@ class LLM:
         doc_urls: list[str] = [],
         system_prompt: str | None = None,
     ) -> str:
-        attachment_ids = []
-        for doc_url in doc_urls:
-            with open(doc_url, "rb") as doc:
-                upload = await client.files.create(file=doc, purpose="assistants")
-                attachment_ids.append(upload.id)
-
         messages = []
         if system_prompt:
             messages.append({"role": "system", "content": system_prompt})
-        if attachment_ids:
+        if doc_urls:
             content = [{"type": "input_text", "text": query}]
-            for id in attachment_ids:
-                content.append({"type": "file_reference", "file_id": id})
+            for doc_url in doc_urls:
+                with open(doc_url, "rb") as doc:
+                    content.append(
+                        {
+                            "type": "input_image",
+                            "image": doc.read(),
+                            "mime_type": "application/pdf",
+                        }
+                    )
             messages.append({"role": "user", "content": content})
         else:
             messages.append({"role": "user", "content": query})
 
-        print("Messages")
-        print(messages)
+        # print("Messages")
+        # print(messages)
 
-        response = await client.responses.create(
-            model=model, temperature=TEMPERATURE, input=messages
+        response = await client.chat.completions.create(
+            model=model, temperature=TEMPERATURE, messages=messages
         )
+
+        for doc_url in doc_urls:
+            with open(doc_url, "rb") as doc:
+                response = await client.chat.completions.create(
+                    model=model,
+                    temperature=TEMPERATURE,
+                    messages=[
+                        {"type": "input_text", "text": query},
+                        {
+                            "type": "input_image",
+                            "image": doc.read(),
+                            "mime_type": "application/pdf",
+                        },
+                    ],
+                )
 
         print(f"response: {response}")
 
-        return response.output_text
+        return response.choices[0].message.content
 
 
 if __name__ == "__main__":
@@ -73,10 +89,18 @@ if __name__ == "__main__":
 
         answer = await llm.get_response(
             model="Gemini-2.5-Flash-Lite",
-            query="Translate this document into Spanish",
-            doc_urls=["./txt/sample.txt"],
+            query="What kind of document is this?",
+            doc_urls=["./pdf/Apple_segment_operating_performance.pdf"],
             system_prompt="You are a helpful assistant. Answer user queries succintly.",
         )
         print("\nAnswer: " + answer)
+
+        # answer = await llm.get_response(
+        #     model="Gemini-2.5-Flash-Lite",
+        #     query="Translate this document into Spanish",
+        #     doc_urls=["./txt/sample.txt"],
+        #     system_prompt="You are a helpful assistant. Answer user queries succintly.",
+        # )
+        # print("\nAnswer: " + answer)
 
     asyncio.run(main())
