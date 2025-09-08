@@ -1,0 +1,13 @@
+{
+  "id": "all_sec_txt_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_SEC_filing_2024.txt",
+    "./txt/Apple_SEC_filing_2023.txt",
+    "./txt/Apple_SEC_filing_2022.txt"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "*Thinking...*\n\n> **Searching For Sales Data**\n> \n> I'm currently focused on extracting the net sales figures for Japan in 2024. I'm starting by examining the \" Apple_SEC_filing_2024.txt\" document and specifically targeting the \"Net sales by reportable segment\" table. My goal is to quickly pinpoint the relevant data within the document.\n> \n> \nBased on the \"Apple_SEC_filing_2024.txt\" document, the net sales for Japan in 2024 were **$25,052 million**.",
+  "passed": true
+}

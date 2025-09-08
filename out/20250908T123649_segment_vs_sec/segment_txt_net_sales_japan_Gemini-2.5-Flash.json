@@ -1,0 +1,11 @@
+{
+  "id": "segment_txt_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_segment_operating_performance.txt"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "*Thinking...*\n\n> **Extracting Sales Data**\n> \n> I've identified the target data, focusing on \"Japan\" and \"2024\" within the document. Now, I'm isolating the specific table and pinpointing the exact cell containing the net sales figure. This is a straightforward lookup operation, so I anticipate a quick resolution.\n> \n> \nThe net sales for Japan in 2024 is $25,052 million.",
+  "passed": true
+}

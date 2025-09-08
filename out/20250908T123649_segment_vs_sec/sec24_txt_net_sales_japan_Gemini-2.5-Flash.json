@@ -1,0 +1,11 @@
+{
+  "id": "sec24_txt_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_SEC_filing_2024.txt"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "*Thinking...*\n\n> **Locating Specific Data**\n> \n> I'm honing in on the relevant table, aiming for \"Segment Operating Performance\". Once located, I'll parse the rows, zeroing in on \"Japan\". The final step is extracting the value from the \"2024\" column; accuracy is the name of the game.\n> \n> \nAccording to the \"Segment Operating Performance\" table on page 22 of the document, the net sales for Japan in 2024 was **$25,052 million**.",
+  "passed": true
+}
