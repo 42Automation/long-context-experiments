@@ -1,7 +1,7 @@
 import os
 
 from dotenv import load_dotenv
-from openai import OpenAI
+from openai import AsyncOpenAI
 
 load_dotenv()
 
@@ -14,7 +14,7 @@ BASE_URL = os.environ.get("POE_BASE_URL", "")
 if not BASE_URL:
     raise ValueError("Could not find POE_BASE_URL variable in the environment")
 
-client = OpenAI(api_key=API_KEY, base_url=BASE_URL)
+client = AsyncOpenAI(api_key=API_KEY, base_url=BASE_URL)
 
 
 class LLM:
@@ -35,7 +35,7 @@ class LLM:
         #     attachment = upload_file_sync(open(doc_url, "rb"), api_key=API_KEY)
         #     attachments.append(attachment)
 
-        response = client.chat.completions.create(
+        response = await client.chat.completions.create(
             model=model, messages=messages, temperature=TEMPERATURE
         )
         print(f"response: {response}")
