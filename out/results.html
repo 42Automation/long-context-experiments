@@ -50,59 +50,102 @@
 <body>
 
 <h1>Experiment Results</h1>
+
+<!-- Dropdown to choose a subdirectory -->
+<select id="dirSelect" style="margin-bottom:1rem; padding:.4rem; font-size:1.2rem;">
+  <!-- options will be injected by script -->
+</select>
+
 <div id="container">Loading…</div>
 
 <script>
 (async () => {
   const container = document.getElementById('container');
+  const dirSelect = document.getElementById('dirSelect');
 
-  const dirResp = await fetch('./?list');
-  const dirHtml = await dirResp.text();
-  const doc     = new DOMParser().parseFromString(dirHtml, 'text/html');
+  // Helper: fetch and parse links from a directory listing page
+  const fetchLinks = async (path) => {
+    const resp = await fetch(path + '?list');
+    const html = await resp.text();
+    const doc  = new DOMParser().parseFromString(html, 'text/html');
+    return [...doc.querySelectorAll('a')]
+      .map(a => a.getAttribute('href'))
+      .filter(h => h);
+  };
 
-  const jsonLinks = [...doc.querySelectorAll('a')]
-    .map(a => a.getAttribute('href'))
-    .filter(h => h && h.split('?')[0].toLowerCase().endsWith('.json'))
-    .map(h => h.replace(/^\.?\//, '').replace(/\?.*$/, ''));
+  // Load sub‑directories for the dropdown
+  const rootLinks = await fetchLinks('./');
+  const subDirs = rootLinks
+    .filter(h => h.endsWith('/') && !h.startsWith('?')) // keep only directories
+    .map(h => h.replace(/^\.?\//, '').replace(/\/$/, '')); // normalize
 
-  if (jsonLinks.length === 0) {
-    container.innerHTML = '<p>No JSON files found.</p>';
-    return;
+  // Populate dropdown
+  subDirs.forEach((d, i) => {
+    const opt = document.createElement('option');
+    opt.value = d;
+    opt.textContent = d || '/';
+    if (i === 0) opt.selected = true;
+    dirSelect.appendChild(opt);
+  });
+
+  // Function to load and display results from a given directory
+  const loadResults = async (dir) => {
+    container.innerHTML = '<p>Loading…</p>';
+
+    // Get JSON file links inside the chosen subdirectory
+    const jsonLinks = (await fetchLinks(`${dir}/`))
+      .filter(h => h.toLowerCase().endsWith('.json'))
+      .map(h => `${dir}/${h.replace(/^\.?\//, '').replace(/\?.*$/, '')}`);
+
+    if (jsonLinks.length === 0) {
+      container.innerHTML = '<p>No JSON files found.</p>';
+      return;
+    }
+
+    const results = await Promise.all(
+      jsonLinks.map(async name => {
+        const resp = await fetch(name);
+        const data = await resp.json();
+        return { ...data, _filename: name };
+      })
+    );
+
+    // Sort by id (you can switch to date sort if desired)
+    results.sort((a, b) => a.id.localeCompare(b.id));
+
+    container.innerHTML = '';
+    results.forEach(r => {
+      const badge = r.passed ? '✅' : '❌';
+      const el = document.createElement('div');
+      el.className = 'result';
+      el.innerHTML = `
+        <div class="header">
+          Experiment ID: ${r.id}
+          <span class="badge">${badge}</span>
+        </div>
+        <div class="field"><span>Model:</span> ${r.model}</div>
+        <div class="field"><span>Query:</span> ${r.query}</div>
+        <div class="field"><span>Expected answer:</span> ${r.expected_answer}</div>
+        <div class="field"><span>Output:</span></div>
+        <pre>${r.output}</pre>
+        <div class="field"><small>Source file: ${r._filename}</small></div>
+      `;
+      container.appendChild(el);
+    });
+  };
+
+  // Initial load with the first subdirectory
+  if (subDirs.length > 0) {
+    loadResults(subDirs[0]);
+  } else {
+    container.innerHTML = '<p>No subdirectories found.</p>';
   }
 
-  const results = await Promise.all(
-    jsonLinks.map(async name => {
-      const resp = await fetch(name);
-      const data = await resp.json();
-      return {...data, _filename: name};
-    })
-  );
-
-  // Sort by date
-  //results.sort((a, b) => b._filename.localeCompare(a._filename));
-
-  // Sort by id
-  results.sort((a, b) => a.id.localeCompare(b.id));
-
-  container.innerHTML = '';
-  results.forEach(r => {
-    const badge = r.passed ? '✅' : '❌';
-    const el = document.createElement('div');
-    el.className = 'result';
-    el.innerHTML = `
-      <div class="header">
-        Experiment ID: ${r.id}
-        <span class="badge">${badge}</span>
-      </div>
-      <div class="field"><span>Model:</span> ${r.model}</div>
-      <div class="field"><span>Query:</span> ${r.query}</div>
-      <div class="field"><span>Expected answer:</span> ${r.expected_answer}</div>
-      <div class="field"><span>Output:</span></div>
-      <pre>${r.output}</pre>
-      <div class="field"><small>Source file: ${r._filename}</small></div>
-    `;
-    container.appendChild(el);
+  // Reload results when the user selects a different directory
+  dirSelect.addEventListener('change', (e) => {
+    loadResults(e.target.value);
   });
+
 })();
 </script>
 
