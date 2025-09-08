@@ -52,10 +52,10 @@ class LLM:
 
         for doc_url in doc_urls:
             with open(doc_url, "rb") as doc:
-                response = await client.chat.completions.create(
+                response = await client.responses.create(
                     model=model,
                     temperature=TEMPERATURE,
-                    messages=[
+                    input=[
                         {"type": "input_text", "text": query},
                         {
                             "type": "input_image",
@@ -67,7 +67,7 @@ class LLM:
 
         print(f"response: {response}")
 
-        return response.choices[0].message.content
+        return response.output_text
 
 
 if __name__ == "__main__":
