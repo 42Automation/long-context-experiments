@@ -1,0 +1,14 @@
+{
+  "id": "all_sec_pdf_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Claude-Sonnet-3.7",
+  "doc_urls": [
+    "./pdf/Apple_SEC_filing_2024.pdf",
+    "./pdf/Apple_SEC_filing_2023.pdf",
+    "./pdf/Apple_SEC_filing_2022.pdf"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "According to the Apple_SEC_filing_2024.pdf, the net sales for Japan in 2024 was $25,052 million (or approximately $25.1 billion).\n\nThis information can be found in the \"Segment Operating Performance\" section on page 22 of the 2024 Form 10-K, where it shows the net sales by reportable segment. The table shows that Japan had net sales of $25,052 million in 2024, which represented a 3% increase from the $24,257 million reported in 2023.",
+  "input_tokens": 79,
+  "passed": true
+}

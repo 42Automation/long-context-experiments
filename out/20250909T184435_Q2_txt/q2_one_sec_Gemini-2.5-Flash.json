@@ -1,0 +1,12 @@
+{
+  "id": "q2_one_sec",
+  "query": "What year had the biggest operating expenditure for Apple?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_SEC_filing_2024.txt"
+  ],
+  "expected_answer": "2024",
+  "output": "The biggest operating expenditure for Apple was in **2024**, with a total of **$57,467 million**.",
+  "input_tokens": 100511,
+  "passed": true
+}

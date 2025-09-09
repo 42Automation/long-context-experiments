@@ -1,0 +1,12 @@
+{
+  "id": "segment_pdf_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Grok-3",
+  "doc_urls": [
+    "./pdf/Apple_segment_operating_performance.pdf"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "The net sales for Japan in 2024 were $25,052 million.",
+  "input_tokens": 48,
+  "passed": true
+}

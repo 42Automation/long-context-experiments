@@ -1,0 +1,12 @@
+{
+  "id": "segment_pdf_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Claude-Sonnet-3.7",
+  "doc_urls": [
+    "./pdf/Apple_segment_operating_performance.pdf"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "According to the document, the net sales for Japan in 2024 was $25,052 million, which represents a 3% increase compared to 2023.",
+  "input_tokens": 53,
+  "passed": true
+}

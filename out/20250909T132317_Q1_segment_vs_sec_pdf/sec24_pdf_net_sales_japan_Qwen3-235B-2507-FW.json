@@ -1,13 +1,12 @@
 {
-  "id": "all_sec_txt_net_sales_japan",
+  "id": "sec24_pdf_net_sales_japan",
   "query": "What is the net sales for Japan in 2024?",
-  "model": "Gemini-2.5-Flash",
+  "model": "Qwen3-235B-2507-FW",
   "doc_urls": [
-    "./txt/Apple_SEC_filing_2024.txt",
-    "./txt/Apple_SEC_filing_2023.txt"
+    "./pdf/Apple_SEC_filing_2024.pdf"
   ],
   "expected_answer": "$25,052 million",
   "output": "The net sales for Japan in 2024 were $25,052 million.",
-  "input_tokens": 168620,
+  "input_tokens": 50,
   "passed": true
 }

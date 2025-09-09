@@ -1,0 +1,13 @@
+{
+  "id": "q2_two_sec",
+  "query": "What year had the biggest operating expenditure for Apple?",
+  "model": "Qwen3-235B-2507-FW",
+  "doc_urls": [
+    "./txt/Apple_SEC_filing_2024.txt",
+    "./txt/Tesla_SEC_filing_2024.txt"
+  ],
+  "expected_answer": "2024",
+  "output": "Based on the provided Form 10-K, the year with the biggest operating expenditure for Apple was **2024**.\n\nThe document shows the following total operating expenses:\n*   **2024:** $57,467 million\n*   **2023:** $54,847 million\n*   **2022:** $51,345 million",
+  "input_tokens": 215961,
+  "passed": true
+}

@@ -1,0 +1,12 @@
+{
+  "id": "q2_segment",
+  "query": "What year had the biggest operating expenditure for Apple?",
+  "model": "GPT-5-mini",
+  "doc_urls": [
+    "./txt/Apple_operating_expenses.txt"
+  ],
+  "expected_answer": "2024",
+  "output": "The largest operating expenses were in 2024: $57,467 million.",
+  "input_tokens": 659,
+  "passed": true
+}

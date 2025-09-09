@@ -1,0 +1,12 @@
+{
+  "id": "q2_segment",
+  "query": "What year had the biggest operating expenditure for Apple?",
+  "model": "Grok-3",
+  "doc_urls": [
+    "./txt/Apple_operating_expenses.txt"
+  ],
+  "expected_answer": "2024",
+  "output": "The year with the biggest operating expenditure for Apple was 2024, with total operating expenses of $57,467 million.",
+  "input_tokens": 653,
+  "passed": true
+}

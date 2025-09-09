@@ -1,0 +1,12 @@
+{
+  "id": "sec24_pdf_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Grok-3",
+  "doc_urls": [
+    "./pdf/Apple_SEC_filing_2024.pdf"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "The net sales for Japan in 2024, as reported in the Apple Inc. Form 10-K for the fiscal year ended September 28, 2024, were $25,052 million.",
+  "input_tokens": 50,
+  "passed": true
+}

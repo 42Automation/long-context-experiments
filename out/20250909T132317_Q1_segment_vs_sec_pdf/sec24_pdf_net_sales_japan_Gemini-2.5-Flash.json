@@ -1,12 +1,12 @@
 {
-  "id": "sec24_txt_net_sales_japan",
+  "id": "sec24_pdf_net_sales_japan",
   "query": "What is the net sales for Japan in 2024?",
   "model": "Gemini-2.5-Flash",
   "doc_urls": [
-    "./txt/Apple_SEC_filing_2024.txt"
+    "./pdf/Apple_SEC_filing_2024.pdf"
   ],
   "expected_answer": "$25,052 million",
-  "output": "Japan's net sales in 2024 were $25,052 million.",
-  "input_tokens": 100513,
+  "output": "The net sales for Japan in 2024 were $25,052 million.",
+  "input_tokens": 59,
   "passed": true
 }
