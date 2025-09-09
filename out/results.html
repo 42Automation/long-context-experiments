@@ -22,6 +22,14 @@
       padding: 2rem;
     }
     h1 { margin-top: 0; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      overflow-x: auto;
+    }
     .result {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -45,6 +53,22 @@
       overflow: auto;
       font-size: .9rem;
     }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: .5rem .8rem;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      background: var(--bg);
+      font-weight: 600;
+    }
+    td {
+      background: var(--surface);
+    }
   </style>
 </head>
 <body>
@@ -56,12 +80,16 @@
   <!-- options will be injected by script -->
 </select>
 
+<!-- Summary card (table) -->
+<div id="summary" class="card"></div>
+
 <div id="container">Loading…</div>
 
 <script>
 (async () => {
   const container = document.getElementById('container');
   const dirSelect = document.getElementById('dirSelect');
+  const summaryDiv = document.getElementById('summary');
 
   // Helper: fetch and parse links from a directory listing page
   const fetchLinks = async (path) => {
@@ -78,7 +106,6 @@
     const num = Number(count);
     if (isNaN(num)) return count;
     const k = num / 1000;
-    // Trim unnecessary trailing zeros
     const formatted = k.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 2});
     return `${formatted}K`;
   };
@@ -97,13 +124,49 @@
     const opt = document.createElement('option');
     opt.value = d;
     opt.textContent = d || '/';
-    if (i === 0) opt.selected = true;   // first entry is now the most recent folder
+    if (i === 0) opt.selected = true;
     dirSelect.appendChild(opt);
   });
+
+  // Function to render the summary table
+  const renderSummary = (results) => {
+    const summary = {};
+    results.forEach(r => {
+      const model = r.model || 'unknown';
+      if (!summary[model]) summary[model] = { passed: 0, failed: 0 };
+      if (r.passed) summary[model].passed++;
+      else summary[model].failed++;
+    });
+
+    const rows = Object.entries(summary).map(
+      ([model, {passed, failed}]) => `
+        <tr>
+          <td>${model}</td>
+          <td>${passed}</td>
+          <td>${failed}</td>
+        </tr>`
+    ).join('');
+
+    summaryDiv.innerHTML = `
+      <h2>Summary</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Model name</th>
+            <th>Passed ✅</th>
+            <th>Failed ❌</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${rows}
+        </tbody>
+      </table>`;
+  };
 
   // Function to load and display results from a given directory
   const loadResults = async (dir) => {
     container.innerHTML = '<p>Loading…</p>';
+    summaryDiv.innerHTML = ''; // clear previous summary
 
     // Get JSON file links inside the chosen subdirectory
     const jsonLinks = (await fetchLinks(`${dir}/`))
@@ -126,6 +189,10 @@
     // Sort by id (you can switch to date sort if desired)
     results.sort((a, b) => a.id.localeCompare(b.id));
 
+    // Render summary before the detailed list
+    renderSummary(results);
+
+    // Render detailed experiment cards
     container.innerHTML = '';
     results.forEach(r => {
       const badge = r.passed ? '✅' : '❌';
