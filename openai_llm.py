@@ -28,7 +28,7 @@ class LLM:
         query: str,
         doc_urls: list[str] = [],
         system_prompt: str = SYSTEM_PROMPT,
-    ) -> str:
+    ) -> dict:
         # Get file data
         content = []
         for doc_url in doc_urls:
@@ -61,53 +61,66 @@ class LLM:
             model=model, temperature=TEMPERATURE, messages=messages
         )
 
-        print(f"response: {response}")
-
-        return response.choices[0].message.content
+        return {"text": response.choices[0].message.content, "usage": response.usage}
 
 
 if __name__ == "__main__":
     import asyncio
 
+    llm = LLM()
+
+    async def run_experiment(
+        description: str,
+        model: str,
+        query: str,
+        doc_urls: list[str] = [],
+        system_prompt: str = SYSTEM_PROMPT,
+    ):
+        answer = await llm.get_response(
+            model=model, query=query, doc_urls=doc_urls, system_prompt=system_prompt
+        )
+        tokens = answer["usage"].prompt_tokens
+        print(f"{description} ({tokens} input tokens) [{model}]: " + answer["text"])
+
     async def main():
-        llm = LLM()
-        answer = await llm.get_response(
-            model="GPT-5", query="Tell me about you in 2 lines"
-        )
-        print("\nAnswer: " + answer)
+        tasks = [
+            run_experiment(
+                description="Simple query",
+                model="Claude-Sonnet-3.7",
+                query="Tell me about you in 2 lines --thinking_budget 0",
+            ),
+            run_experiment(
+                description="Simple query with custom system prompt",
+                model="Qwen3-235B-2507-FW",
+                query="Tell me about you in 2 lines",
+                system_prompt="You are a helpful assistant talking in English pirate",
+            ),
+            run_experiment(
+                description="Answer over PDF file",
+                model="Gemini-2.5-Flash-Lite",
+                query="What kind of document is this? --thinking_budget 0 --web_search false",
+                doc_urls=["./pdf/Apple_segment_operating_performance.pdf"],
+            ),
+            run_experiment(
+                description="Answer over TXT file",
+                model="Grok-3",
+                query="Translate this document into Spanish",
+                doc_urls=["./txt/Apple_segment_operating_performance.txt"],
+            ),
+            run_experiment(
+                description="Answer over multiple files",
+                model="GPT-5-mini",
+                query="What companies are featured in the provided documents? --reasoning_effort minimal",
+                doc_urls=[
+                    "./pdf/Tesla_exhibit_schedules.pdf",
+                    "./pdf/Apple_segment_operating_performance.pdf",
+                ],
+            ),
+        ]
 
-        answer = await llm.get_response(
-            model="Qwen-2.5-7B-T",
-            query="Tell me about you in 2 lines",
-            system_prompt="You are a helpful assistant talking in English pirate",
-        )
-        print("\nAnswer: " + answer)
-
-        answer = await llm.get_response(
-            model="Gemini-2.5-Flash-Lite",
-            query="What kind of document is this? --thinking_budget 0 --web_search false",
-            doc_urls=["./pdf/Apple_segment_operating_performance.pdf"],
-            system_prompt="You are a helpful assistant. Answer user queries succintly.",
-        )
-        print("\nAnswer: " + answer)
-
-        answer = await llm.get_response(
-            model="Gemini-2.5-Flash-Lite",
-            query="Translate this document into Spanish --thinking_budget 0 --web_search false",
-            doc_urls=["./txt/sample.txt"],
-            system_prompt="You are a helpful assistant. Answer user queries succintly.",
-        )
-        print("\nAnswer: " + answer)
-
-        answer = await llm.get_response(
-            model="GPT-5-mini",
-            query="What do these 2 documents have in common?",
-            doc_urls=[
-                "./txt/sample.txt",
-                "./pdf/Apple_segment_operating_performance.pdf",
-            ],
-            system_prompt="You are a helpful assistant. Answer user queries succintly.",
-        )
-        print("\nAnswer: " + answer)
+        for task in tasks:
+            t = asyncio.create_task(task)
+            await t
+            print("---------------------")
 
     asyncio.run(main())
