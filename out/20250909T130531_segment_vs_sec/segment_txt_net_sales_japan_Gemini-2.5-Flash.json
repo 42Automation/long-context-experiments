@@ -1,0 +1,12 @@
+{
+  "id": "segment_txt_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_segment_operating_performance.txt"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "Net sales for Japan in 2024 were $25,052 million.",
+  "input_tokens": 542,
+  "passed": true
+}

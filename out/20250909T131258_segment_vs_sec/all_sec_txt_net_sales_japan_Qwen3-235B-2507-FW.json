@@ -1,0 +1,13 @@
+{
+  "id": "all_sec_txt_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Qwen3-235B-2507-FW",
+  "doc_urls": [
+    "./txt/Apple_SEC_filing_2024.txt",
+    "./txt/Apple_SEC_filing_2023.txt"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "Based on the provided Form 10-K, the net sales for Japan in 2024 were **$25,052 million**.\n\nThis information can be found in the \"Segment Operating Performance\" table on page 22 of the document.",
+  "input_tokens": 168611,
+  "passed": true
+}
