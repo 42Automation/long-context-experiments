@@ -84,38 +84,38 @@ if __name__ == "__main__":
 
     async def main():
         functional_tasks = [
-            # run_experiment(
-            #     description="Simple query",
-            #     model="Claude-Sonnet-3.7",
-            #     query="Tell me about you in 2 lines --thinking_budget 0",
-            # ),
-            # run_experiment(
-            #     description="Simple query with custom system prompt",
-            #     model="Qwen3-235B-2507-FW",
-            #     query="Tell me about you in 2 lines",
-            #     system_prompt="You are a helpful assistant talking in English pirate",
-            # ),
-            # run_experiment(
-            #     description="Answer over PDF file",
-            #     model="Gemini-2.5-Flash-Lite",
-            #     query="What kind of document is this? --thinking_budget 0 --web_search false",
-            #     doc_urls=["./pdf/Apple_segment_operating_performance.pdf"],
-            # ),
-            # run_experiment(
-            #     description="Answer over TXT file",
-            #     model="Grok-3",
-            #     query="Translate this document into Spanish",
-            #     doc_urls=["./txt/Apple_segment_operating_performance.txt"],
-            # ),
-            # run_experiment(
-            #     description="Answer over multiple files",
-            #     model="GPT-5-mini",
-            #     query="What companies are featured in the provided documents? --reasoning_effort minimal",
-            #     doc_urls=[
-            #         "./pdf/Tesla_exhibit_schedules.pdf",
-            #         "./pdf/Apple_segment_operating_performance.pdf",
-            #     ],
-            # ),
+            run_experiment(
+                description="Simple query",
+                model="Claude-Sonnet-3.7",
+                query="Tell me about you in 2 lines --thinking_budget 0",
+            ),
+            run_experiment(
+                description="Simple query with custom system prompt",
+                model="Qwen3-235B-2507-FW",
+                query="Tell me about you in 2 lines",
+                system_prompt="You are a helpful assistant talking in English pirate",
+            ),
+            run_experiment(
+                description="Answer over PDF file",
+                model="Gemini-2.5-Flash-Lite",
+                query="What kind of document is this? --thinking_budget 0 --web_search false",
+                doc_urls=["./pdf/Apple_segment_operating_performance.pdf"],
+            ),
+            run_experiment(
+                description="Answer over TXT file",
+                model="Grok-3",
+                query="Translate this document into Spanish",
+                doc_urls=["./txt/Apple_segment_operating_performance.txt"],
+            ),
+            run_experiment(
+                description="Answer over multiple files",
+                model="GPT-5-mini",
+                query="What companies are featured in the provided documents? --reasoning_effort minimal",
+                doc_urls=[
+                    "./pdf/Tesla_exhibit_schedules.pdf",
+                    "./pdf/Apple_segment_operating_performance.pdf",
+                ],
+            ),
         ]
 
         document_processing_tasks = [
