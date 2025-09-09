@@ -21,4 +21,5 @@ MODEL_PARAMS = {
 }
 
 SAMPLE_MODELS = ["Gemini-2.5-Flash"]
+
 JUDGE_MODEL = "GPT-5-mini"
