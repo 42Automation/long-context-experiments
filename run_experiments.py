@@ -7,8 +7,8 @@ from datetime import datetime
 
 from fastapi_poe import BotError
 
-from llm import LLM
 from models import JUDGE_MODEL, MODEL_PARAMS, SAMPLE_MODELS
+from openai_llm import LLM
 from prompts import JUDGE_PROMPT_TEMPLATE
 
 llm = LLM()
@@ -22,7 +22,7 @@ async def judge(question, correct_answer, output) -> bool:
     response = await llm.get_response(model=JUDGE_MODEL, query=query)
     # Get the last line, which effectively discards eventual thinking part
     last_line = next(
-        (line for line in reversed(response.splitlines()) if line.strip()), ""
+        (line for line in reversed(response["text"].splitlines()) if line.strip()), ""
     )
     return last_line.lower().strip() == "true"
 
@@ -42,16 +42,16 @@ async def run_experiment(experiment, model):
     print(f"Judging output for {experiment.get('id')} -- {model}")
     try:
         passed = await judge(
-            experiment.get("query"), experiment.get("expected_answer"), output
+            experiment.get("query"), experiment.get("expected_answer"), output["text"]
         )
     except BotError as error:
         print(f"Judge error: {str(error)}")
         passed = False
 
-    return experiment, model, output, passed
+    return experiment, model, output["text"], output["usage"].prompt_tokens, passed
 
 
-def record_output(experiment, model, output, passed, experiment_name):
+def record_output(experiment_name, experiment, model, output, input_tokens, passed):
     print(f"Recording output for {experiment.get('id')} -- {model}")
 
     timestamp = datetime.now().strftime("%Y%m%dT%H%M%S")
@@ -67,6 +67,7 @@ def record_output(experiment, model, output, passed, experiment_name):
         "doc_urls": experiment.get("docs"),
         "expected_answer": experiment.get("expected_answer"),
         "output": output,
+        "input_tokens": input_tokens,
         "passed": passed,
     }
 
@@ -94,9 +95,10 @@ async def main():
         help="Name of the experiment file (without .py) located in ./experiments/",
     )
     args = parser.parse_args()
+    experiment_name = args.experiment
 
     # Load experiments dynamically based on the CLI argument
-    experiments = load_experiments(args.experiment)
+    experiments = load_experiments(experiment_name)
 
     tasks = [
         run_experiment(experiment, model)
@@ -105,8 +107,8 @@ async def main():
     ]
 
     results = await asyncio.gather(*tasks)
-    for experiment, model, output, passed in results:
-        record_output(experiment, model, output, passed, args.experiment)
+    for experiment, model, output, input_tokens, passed in results:
+        record_output(experiment_name, experiment, model, output, input_tokens, passed)
 
 
 if __name__ == "__main__":
