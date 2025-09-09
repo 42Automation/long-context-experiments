@@ -73,6 +73,16 @@
       .filter(h => h);
   };
 
+  // Helper: format token count in thousands with up to 2 decimals (e.g., 1230 → 1.23K)
+  const formatTokens = (count) => {
+    const num = Number(count);
+    if (isNaN(num)) return count;
+    const k = num / 1000;
+    // Trim unnecessary trailing zeros
+    const formatted = k.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 2});
+    return `${formatted}K`;
+  };
+
   // Load sub‑directories for the dropdown
   const rootLinks = await fetchLinks('./');
   const subDirs = rootLinks
@@ -129,6 +139,7 @@
         <div class="field"><span>Model:</span> ${r.model}</div>
         <div class="field"><span>Query:</span> ${r.query}</div>
         <div class="field"><span>Expected answer:</span> ${r.expected_answer}</div>
+        <div class="field"><span>Input context:</span> ${formatTokens(r.input_tokens)}</div>
         <div class="field"><span>Output:</span></div>
         <pre>${r.output}</pre>
         <div class="field"><small>Source file: ${r._filename}</small></div>
