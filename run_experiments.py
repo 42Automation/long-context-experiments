@@ -100,6 +100,24 @@ def load_experiments(experiment_name: str):
     return getattr(module, "EXPERIMENTS")
 
 
+async def try_experiment(experiment, model):
+    try:
+        result = await run_experiment(experiment, model)
+        return {
+            "id": experiment.get("id"),
+            "model": model,
+            "result": result,
+            "error": None,
+        }
+    except Exception as exc:
+        return {
+            "id": experiment.get("id"),
+            "model": model,
+            "result": None,
+            "error": exc,
+        }
+
+
 async def main():
     parser = argparse.ArgumentParser(description="Run LLM experiments")
     parser.add_argument(
@@ -132,14 +150,23 @@ async def main():
     experiments = load_experiments(experiment_name)
 
     tasks = [
-        run_experiment(experiment, model)
+        try_experiment(experiment, model)
         for experiment in experiments
         for model in models
     ]
 
     results = await asyncio.gather(*tasks)
-    for experiment, model, output, input_tokens, passed in results:
-        record_output(experiment_name, experiment, model, output, input_tokens, passed)
+    for result in results:
+        if result["error"] is not None:
+            print(
+                f"[ERROR] Experiment '{result['id']}' with model '{result['model']}' "
+                f"failed: {result['error']}"
+            )
+        else:
+            experiment, model, output, input_tokens, passed = result["result"]
+            record_output(
+                experiment_name, experiment, model, output, input_tokens, passed
+            )
 
 
 if __name__ == "__main__":
