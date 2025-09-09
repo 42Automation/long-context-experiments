@@ -19,6 +19,10 @@ async def judge(question, correct_answer, output) -> bool:
     query = JUDGE_PROMPT_TEMPLATE.format(
         question=question, correct_answer=correct_answer, output=output
     )
+
+    if (params := MODEL_PARAMS.get(JUDGE_MODEL)) is not None:
+        query = f"{query} {' '.join(params)}"
+
     response = await llm.get_response(model=JUDGE_MODEL, query=query)
     # Get the last line, which effectively discards eventual thinking part
     last_line = next(
