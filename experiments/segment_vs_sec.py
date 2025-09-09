@@ -19,7 +19,7 @@ EXPERIMENTS = [
     },
     # Two SEC docs
     {
-        "id": "all_sec_txt_net_sales_japan",
+        "id": "two_sec_txt_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
         "docs": [
             "./txt/Apple_SEC_filing_2024.txt",
