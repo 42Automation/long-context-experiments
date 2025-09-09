@@ -7,12 +7,17 @@ from datetime import datetime
 
 from fastapi_poe import BotError
 
-from models import JUDGE_MODEL, MODEL_PARAMS, SAMPLE_MODELS
+from models import (
+    JUDGE_MODEL,
+    MODEL_PARAMS,
+    PREMIUM_MODELS,
+    SAMPLE_MODELS,
+    STANDARD_MODELS,
+)
 from openai_llm import LLM
 from prompts import JUDGE_PROMPT_TEMPLATE
 
 llm = LLM()
-models = SAMPLE_MODELS
 
 
 async def judge(question, correct_answer, output) -> bool:
@@ -52,7 +57,13 @@ async def run_experiment(experiment, model):
         print(f"Judge error: {str(error)}")
         passed = False
 
-    return experiment, model, output["text"], output["usage"].prompt_tokens, passed
+    return (
+        experiment,
+        model,
+        output["text"],
+        output["usage"].prompt_tokens,
+        passed,
+    )
 
 
 def record_output(experiment_name, experiment, model, output, input_tokens, passed):
@@ -98,8 +109,24 @@ async def main():
         required=True,
         help="Name of the experiment file (without .py) located in ./experiments/",
     )
+    parser.add_argument(
+        "-m",
+        "--models",
+        type=str,
+        choices=["sample", "standard", "premium"],
+        default="sample",
+        help="Model set to run: 'sample', 'standard', or 'premium' (default: sample).",
+    )
     args = parser.parse_args()
     experiment_name = args.experiment
+
+    # Choose the appropriate model list based on the CLI flag
+    if args.models == "sample":
+        models = SAMPLE_MODELS
+    elif args.models == "standard":
+        models = STANDARD_MODELS
+    elif args.models == "premium":
+        models = PREMIUM_MODELS
 
     # Load experiments dynamically based on the CLI argument
     experiments = load_experiments(experiment_name)
