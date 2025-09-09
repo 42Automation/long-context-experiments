@@ -1,0 +1,12 @@
+{
+  "id": "segment_txt_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_segment_operating_performance.txt"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "*Thinking...*\n\n> **Locating Sales Data**\n> \n> I've identified the core task: pinpointing Japan's 2024 net sales. My next step is to scan the table, focusing on rows and columns to isolate the specific cell representing the desired data point. I'm honing in on the right combination of row and column labels.\n> \n> \nNet sales for Japan in 2024 were $25,052 million.",
+  "input_tokens": 537,
+  "passed": true
+}

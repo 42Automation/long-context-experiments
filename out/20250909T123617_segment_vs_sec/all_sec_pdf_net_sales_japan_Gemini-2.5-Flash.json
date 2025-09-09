@@ -1,0 +1,14 @@
+{
+  "id": "all_sec_pdf_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./pdf/Apple_SEC_filing_2024.pdf",
+    "./pdf/Apple_SEC_filing_2023.pdf",
+    "./pdf/Apple_SEC_filing_2022.pdf"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "*Thinking...*\n\n> **Considering the Objective**\n> \n> I've pinpointed the core question: figuring out Apple's net sales in Japan for 2024. Now, I'm starting to sift through the provided documents to see which ones hold the key financial details.\n> \n> \n> **Examining Document Contents**\n> \n> I've opened \"Apple_SEC_filing_2024.pdf\" and am now methodically searching within \"Item 7. Management\u2019s Discussion and Analysis of Financial Condition and Results of Operations\". I'm focusing on the \"Segment Operating Performance\" table, since the question involves sales data by region and year.\n> \n> \nThe net sales for Japan in 2024 were $25,052 million.",
+  "input_tokens": 78,
+  "passed": true
+}

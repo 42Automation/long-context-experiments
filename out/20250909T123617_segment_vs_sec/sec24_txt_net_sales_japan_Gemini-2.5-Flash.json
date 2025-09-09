@@ -1,0 +1,12 @@
+{
+  "id": "sec24_txt_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_SEC_filing_2024.txt"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "*Thinking...*\n\n> **Defining the Scope**\n> \n> I've started by parsing the user's request. I'm pinpointing \"net sales,\" \"Japan,\" and \"2024\" as the critical search terms. Next, I'll initiate a keyword scan of the provided document, zeroing in on sections and data points related to these specific elements.\n> \n> \n> **Processing the Document**\n> \n> I've homed in on the \"Segment Operating Performance\" section within the 10-K. The table showing net sales is the prize. I've successfully located the specific row for \"Japan\" and the column for \"2024.\" Now, just extracting the sales figure.\n> \n> \nNet sales for Japan in 2024 were $25,052 million.",
+  "input_tokens": 100508,
+  "passed": true
+}

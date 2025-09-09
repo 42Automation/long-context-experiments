@@ -1,0 +1,14 @@
+{
+  "id": "all_sec_txt_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./txt/Apple_SEC_filing_2024.txt",
+    "./txt/Apple_SEC_filing_2023.txt",
+    "./txt/Apple_SEC_filing_2022.txt"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "*Thinking...*\n\n> **Analyzing the Request**\n> \n> I've analyzed the user's request for \"net sales for Japan in 2024.\" My next step involves pinpointing the \"Segment Operating Performance\" section, or a similar area containing regional financial data within the document.\n> \n> \n> **Finding the Data**\n> \n> I've zeroed in on the \"Segment Operating Performance\" data. After scanning, I've located the relevant table in the provided document. I've found the intersection of \"Japan\" and \"2024\" to extract the target sales figure. My focus is now extraction and preparing the response.\n> \n> \nThe net sales for Japan in 2024 were $25,052 million.",
+  "input_tokens": 239551,
+  "passed": true
+}

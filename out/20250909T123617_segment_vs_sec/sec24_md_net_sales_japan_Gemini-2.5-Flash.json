@@ -1,0 +1,12 @@
+{
+  "id": "sec24_md_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./md/Apple_SEC_filing_2024.md"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "*Thinking...*\n\n> **Analyzing the Data Points**\n> \n> I'm now focusing on the provided context and refining my approach. I see the user's core question: to find Japan's net sales for 2024. Next, I need to identify keywords to guide my search within the information. My plan is to use \"Japan,\" \"net sales,\" and \"2024\" to zero in on the right spot.\n> \n> \n> **Locating Key Information**\n> \n> I've successfully identified the core question and pivotal keywords to utilize. Next, my focus is now on quickly pinpointing the relevant table within the data. I see the \"Segment Operating Performance\" table, which seems to be the key to finding the necessary information. From there, I'll extract the Japan data from the 2024 column to give a concise response.\n> \n> \nJapan's net sales in 2024 were $25,052 million.",
+  "input_tokens": 101709,
+  "passed": true
+}

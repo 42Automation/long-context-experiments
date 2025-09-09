@@ -1,0 +1,12 @@
+{
+  "id": "sec24_pdf_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./pdf/Apple_SEC_filing_2024.pdf"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "*Thinking...*\n\n> **Finding the Data Point**\n> \n> I'm focusing on pinpointing the precise data requested. My current efforts center on navigating the document to locate the 'Segment Operating Performance' table, then zeroing in on the intersection of 'Japan' and '2024' within the 'Net sales' column. This search is systematic and methodical, ensuring accuracy.\n> \n> \nThe net sales for Japan in 2024 were $25,052 million.",
+  "input_tokens": 54,
+  "passed": true
+}

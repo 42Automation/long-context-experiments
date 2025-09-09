@@ -1,0 +1,12 @@
+{
+  "id": "segment_md_net_sales_japan",
+  "query": "What is the net sales for Japan in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": [
+    "./md/Apple_segment_operating_performance.md"
+  ],
+  "expected_answer": "$25,052 million",
+  "output": "*Thinking...*\n\n> **Calculating Japan's 2024 Sales**\n> \n> I'm zeroing in on the task now, focusing on the specific request. My plan is to pinpoint the Japan row and 2024 column. This straightforward approach should give me the net sales figure needed.\n> \n> \nNet sales for Japan in 2024 were $25,052 million.",
+  "input_tokens": 463,
+  "passed": true
+}
