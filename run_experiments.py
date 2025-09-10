@@ -7,6 +7,7 @@ from datetime import datetime
 
 from fastapi_poe import BotError
 
+from llm import get_response
 from models import (
     JUDGE_MODEL,
     MODEL_PARAMS,
@@ -14,10 +15,7 @@ from models import (
     SAMPLE_MODELS,
     STANDARD_MODELS,
 )
-from openai_llm import LLM
 from prompts import JUDGE_PROMPT_TEMPLATE
-
-llm = LLM()
 
 
 async def judge(question, correct_answer, output) -> bool:
@@ -28,7 +26,7 @@ async def judge(question, correct_answer, output) -> bool:
     if (params := MODEL_PARAMS.get(JUDGE_MODEL)) is not None:
         query = f"{query} {' '.join(params)}"
 
-    response = await llm.get_response(model=JUDGE_MODEL, query=query)
+    response = await get_response(model=JUDGE_MODEL, query=query)
     # Get the last line, which effectively discards eventual thinking part
     last_line = next(
         (line for line in reversed(response["text"].splitlines()) if line.strip()), ""
@@ -43,7 +41,7 @@ async def run_experiment(experiment, model):
     if (params := MODEL_PARAMS.get(model)) is not None:
         query = f"{query} {' '.join(params)}"
 
-    output = await llm.get_response(
+    output = await get_response(
         model=model,
         query=query,
         doc_urls=experiment.get("docs"),
@@ -61,7 +59,7 @@ async def run_experiment(experiment, model):
         experiment,
         model,
         output["text"],
-        output["usage"].prompt_tokens,
+        output["input_tokens"],
         passed,
     )
 
