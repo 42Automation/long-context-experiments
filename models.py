@@ -19,6 +19,18 @@ MODEL_PARAMS = {
     "Claude-Sonnet-3.7": ["--thinking_budget 0"],
 }
 
+MODEL_IDS = {
+    "GPT-5": "GPT-5",
+    "Claude-Sonnet-4": "claude-opus-4-1-20250805",
+    "Gemini-2.5-Pro": "Gemini-2.5-Pro",
+    "Grok-4": "Grok-4",
+    "Qwen3-235B-A22B": "Qwen3-235B-A22B",
+    "GPT-5-mini": "GPT-5-mini",
+    "Claude-Sonnet-3.7": "claude-3-7-sonnet-20250219",
+    "Gemini-2.5-Flash": "Gemini-2.5-Flash",
+    "Qwen3-235B-2507": "Qwen3-235B-2507-FW",
+}
+
 SAMPLE_MODELS = ["Gemini-2.5-Flash"]
 
 JUDGE_MODEL = "GPT-5-mini"
