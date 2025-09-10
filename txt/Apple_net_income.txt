@@ -1,0 +1,84 @@
+
+
+   Business Seasonality and Product Introductions
+   The Company has historically experienced higher net sales in its first quarter compared to other quarters in its fiscal year due in part to seasonal holiday
+   demand. Additionally, new product and service introductions can significantly impact net sales, cost of sales and operating expenses. The timing of product
+   introductions can also impact the Company’s net sales to its indirect distribution channels as these channels are filled with new inventory following a product
+   launch, and channel inventory of an older product often declines as the launch of a newer product approaches. Net sales can also be affected when consumers
+   and distributors anticipate a product introduction.
+   Human Capital
+   The Company believes that its people play an important role in its success, and strives to attract, develop and retain the best talent. The Company works to
+   create an inclusive, safe and supportive environment for all of its team members, so that its people can do the best work of their lives. As of September 28, 2024,
+   the Company had approximately 164,000 full-time equivalent employees.
+
+   Compensation and Benefits
+   The Company believes that compensation should be competitive and equitable, and should enable employees to share in the Company’s success. The
+   Company recognizes its people are most likely to thrive when they have the resources to meet their needs and the time and support to succeed in their
+   professional and personal lives. In support of this, the Company offers a wide variety of benefits for employees around the world, including health, wellness and
+   time away.
+   Growth and Development
+   The Company invests in resources to help its people develop and achieve their career goals. The Company offers programs through Apple University on
+   leadership, management and influence, as well as Apple culture and values. Team members can also take advantage of online classes for business, technical
+   and personal development, as well as learning opportunities to support their well-being.
+
+   Workplace Practices and Policies
+   The Company is an equal opportunity employer committed to inclusion and diversity and to providing a workplace free of harassment or discrimination.
+
+   Inclusion and Diversity
+   The Company is committed to its vision to build and sustain a more inclusive workforce that is representative of the communities it serves. The Company
+   continues to work to increase diverse representation at every level, foster an inclusive culture, and support equitable pay and access to opportunity for all
+   employees.
+
+   Engagement
+   The Company believes that open and honest communication among team members, managers and leaders helps create an open, collaborative work
+   environment where everyone can contribute, grow and succeed. Team members are encouraged to come to their managers with questions, feedback or
+   concerns, and the Company conducts surveys that gauge employee sentiment in areas like career development, manager performance and inclusivity.
+   Health and Safety
+   The Company is committed to protecting its team members everywhere it operates. The Company identifies potential workplace risks in order to develop
+   measures to mitigate possible hazards. The Company supports employees with general safety, security and crisis management training, and by putting specific
+   programs in place for those working in potentially high-hazard environments. Additionally, the Company works to protect the safety and security of its team
+   members, visitors and customers through its global security team.
+
+
+                                   Apple Inc. | 2024 Form 10-K | 4
+
+
+
+
+
+                                        Apple Inc.
+                             CONSOLIDATED STATEMENTS OF OPERATIONS
+                  (In millions, except number of shares, which are reflected in thousands, and per-share amounts)
+
+                                                               Years ended
+                                                    September 28, September 30, September 24,
+                                                      2024       2023       2022
+   Net sales:
+    Products                                      $     294,866 $ 298,085 $  316,199
+    Services                                            96,169     85,200     78,129
+     Total net sales                                    391,035   383,285    394,328
+   Cost of sales:
+    Products                                            185,233   189,282    201,471
+    Services                                            25,119     24,855     22,075
+     Total cost of sales                                210,352   214,137    223,546
+       Gross margin                                     180,683   169,148    170,782
+   Operating expenses:
+     Research and development                           31,370     29,915     26,251
+     Selling, general and administrative                26,097     24,932     25,094
+       Total operating expenses                         57,467     54,847     51,345
+   Operating income                                     123,216    114,301   119,437
+   Other income/(expense), net                            269       (565)      (334)
+   Income before provision for income taxes             123,485    113,736   119,103
+   Provision for income taxes                           29,749     16,741     19,300
+   Net income                                     $     93,736 $   96,995 $   99,803
+   Earnings per share:
+     Basic                                        $      6.11 $     6.16 $     6.15
+     Diluted                                      $      6.08 $     6.13 $     6.11
+
+   Shares used in computing earnings per share:
+     Basic                                            15,343,783 15,744,231 16,215,963
+     Diluted                                          15,408,095 15,812,547 16,325,819
+                          See accompanying Notes to Consolidated Financial Statements.
+
+
+                                   Apple Inc. | 2024 Form 10-K | 29

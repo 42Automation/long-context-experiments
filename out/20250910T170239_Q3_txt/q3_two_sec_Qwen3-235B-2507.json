@@ -1,0 +1,10 @@
+{
+  "id": "q3_two_sec",
+  "query": "What is the net income per FTE in 2024 at Apple?",
+  "model": "Qwen3-235B-2507",
+  "doc_urls": null,
+  "expected_answer": "93,736,000 / 164,000, which is over $570K per FTE",
+  "output": "To calculate the net income per full-time equivalent (FTE) employee at Apple in 2024, we need to use the following data from the provided Form 10-K:\n\n1. **Net Income**: From the \"Consolidated Statements of Operations\" on page 29, the net income for the year ended September 28, 2024, is **$93,736 million**.\n2. **Number of Full-Time Equivalent Employees**: From the \"Human Capital\" section on page 4, as of September 28, 2024, Apple had approximately **164,000** full-time equivalent employees.\n\nThe calculation is as follows:\n\\[\n\\text{Net Income per FTE} = \\frac{\\text{Net Income}}{\\text{Number of FTEs}} = \\frac{93,736,000,000}{164,000} \\approx 571,561\n\\]\n\nTherefore, the net income per FTE at Apple in 2024 is approximately **$571,561**.",
+  "input_tokens": 151508,
+  "passed": true
+}
