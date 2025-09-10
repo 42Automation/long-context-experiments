@@ -14,17 +14,17 @@ We consider the following kinds of queries in our analysis, of increasing diffic
 * Q1. Direct query. The information is found directly in the document, so a direct retrieval by lexical match is possible.
 * Q2. Derived query. The information is found in the document, but it needs a reasoning step to relate it to the question.
 * Q3. Distant info query. The information is found in the document, but the answer needs to combine distant pieces of information from the same document.
-* Q4. Multiple document info. The needed information is found in the documents but the answer needs to combine information over multiple documents.
-* Q5. Missing data query. The information requested is not found in the document, though it is semantically related to the document content, so the query cannot be answered.
-* Q6. Ambiguous query. The exact information requested is not directly found in the document but a very close piece of information is available.
-* Q7. Very ambiguous query. The exact information requested is not found in the document and it takes some reasoning to relate available content to the question.
+* Q4. Multiple document query. The needed information is found in the documents but the answer needs to combine information over multiple documents.
+* Q7. Missing data query. The information requested is not found in the document, though it is semantically related to the document content, so the query cannot be answered.
+* Q8. Ambiguous query. The exact information requested is not directly found in the document but a very close piece of information is available.
+* Q9. Very ambiguous query. The exact information requested is not found in the document and it takes some reasoning to relate available content to the question.
 
 ## Actual queries
 
 For the Apple SEC filings:
 * Q1. What is the net sales for Japan in 2024?
-* Q2. What year had the biggest operating expenses?
-
+* Q2. What year had the biggest operating expenditure for Apple?
+* Q3. What is the net income per FTE in 2024 at Apple?
 
 
 ## References
