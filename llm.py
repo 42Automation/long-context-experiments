@@ -61,7 +61,7 @@ async def _get_response_with_poe_client(
             else:
                 doc_content = doc.read().decode("utf-8")
                 doc_message = {"type": "text", "text": doc_content}
-                current_context_size = get_num_tokens(doc_content, model)
+                current_context_size = get_num_tokens(doc_content)
 
             content.append(doc_message)
 
