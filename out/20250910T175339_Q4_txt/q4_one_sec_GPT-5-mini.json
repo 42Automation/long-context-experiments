@@ -1,0 +1,10 @@
+{
+  "id": "q4_one_sec",
+  "query": "What determines the vesting conditions for performance awards in Apple's 2022 Stock Plan?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "Vesting is contingent upon the achievement of specific company performance metrics. In this case, it's tied to Apple's relative Total Shareholder Return (TSR) percentile performance compared to a defined group of peer companies over a predetermined performance period.",
+  "output": "Under the 2022 Employee Stock Plan performance awards (RSUs), vesting is determined by achievement of specified performance criteria measured over a defined performance period. For the performance awards shown in Exhibit A, vesting is based on Apple\u2019s relative Total Shareholder Return (TSR) percentile for the performance period versus a Comparison Group (S&P 500 companies as of the start of the period, with prescribed substitution/adjustment rules). The percentage of the target RSUs that vest corresponds to the Company\u2019s TSR percentile (with linear interpolation between specified performance levels), subject to rounding to whole units and a cap of 100% if TSR is negative.",
+  "input_tokens": 100516,
+  "passed": true
+}
