@@ -14,9 +14,9 @@ We consider the following kinds of queries in our analysis, of increasing diffic
 * Q1. Direct query. The information is found directly in the document, so a direct retrieval by lexical match is possible.
 * Q2. Derived query. The information is found in the document, but it needs a reasoning step to relate it to the question.
 * Q3. Distant info query. The information is found in the document, but the answer needs to combine distant pieces of information from the same document.
-* Q4. Distractor loaded query. The information is found in the document, but the document has similar, yet unrelated pieces of information.
+* Q4. Distractor loaded query. The information is found in the document, but the document has similar, yet conflicting pieces of information.
 
-
+---
 * Q4. Multiple document query. The needed information is found in the documents but the answer needs to combine information over multiple documents.
 * Q5. Missing data query. The information requested is not found in the document, though it is semantically related to the document content, so the query cannot be answered.
 * Q6. Ambiguous query. The exact information requested is not directly found in the document but a very close piece of information is available.
@@ -28,6 +28,7 @@ For the Apple SEC filings:
 * Q1. What is the net sales for Japan in 2024?
 * Q2. What year had the biggest operating expenditure for Apple?
 * Q3. What is the net income per FTE in 2024 at Apple?
+* Q4. What determines the vesting conditions for performance awards in Apple's 2022 Stock Plan?
 
 
 ## References
