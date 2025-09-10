@@ -44,7 +44,8 @@ async def run_experiment(experiment, model):
     output = await get_response(
         model=model,
         query=query,
-        doc_urls=experiment.get("docs"),
+        reference_doc_urls=experiment.get("reference_doc_urls", []),
+        filler_doc_urls=experiment.get("filler_doc_urls", []),
     )
     print(f"Judging output for {experiment.get('id')} -- {model}")
     try:
