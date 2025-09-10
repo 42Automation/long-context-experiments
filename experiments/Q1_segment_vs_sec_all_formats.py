@@ -3,7 +3,7 @@ EXPERIMENTS = [
     {
         "id": "segment_pdf_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./pdf/Apple_segment_operating_performance.pdf",
         ],
         "expected_answer": "$25,052 million",
@@ -11,7 +11,7 @@ EXPERIMENTS = [
     {
         "id": "segment_md_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./md/Apple_segment_operating_performance.md",
         ],
         "expected_answer": "$25,052 million",
@@ -19,7 +19,7 @@ EXPERIMENTS = [
     {
         "id": "segment_txt_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./txt/Apple_segment_operating_performance.txt",
         ],
         "expected_answer": "$25,052 million",
@@ -28,7 +28,7 @@ EXPERIMENTS = [
     {
         "id": "sec24_pdf_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./pdf/Apple_SEC_filing_2024.pdf",
         ],
         "expected_answer": "$25,052 million",
@@ -36,7 +36,7 @@ EXPERIMENTS = [
     {
         "id": "sec24_md_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./md/Apple_SEC_filing_2024.md",
         ],
         "expected_answer": "$25,052 million",
@@ -44,7 +44,7 @@ EXPERIMENTS = [
     {
         "id": "sec24_txt_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./txt/Apple_SEC_filing_2024.txt",
         ],
         "expected_answer": "$25,052 million",
@@ -53,7 +53,7 @@ EXPERIMENTS = [
     {
         "id": "all_sec_pdf_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./pdf/Apple_SEC_filing_2024.pdf",
             "./pdf/Apple_SEC_filing_2023.pdf",
             "./pdf/Apple_SEC_filing_2022.pdf",
@@ -63,10 +63,10 @@ EXPERIMENTS = [
     {
         "id": "all_sec_md_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./md/Apple_SEC_filing_2024.md",
         ],
-        "filler_docs_urls": [
+        "filler_doc_urls": [
             "./md/Apple_SEC_filing_2023.md",
             "./md/Apple_SEC_filing_2022.md",
         ],
@@ -75,10 +75,10 @@ EXPERIMENTS = [
     {
         "id": "all_sec_txt_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./txt/Apple_SEC_filing_2024.txt",
         ],
-        "filler_docs_urls": [
+        "filler_doc_urls": [
             "./txt/Apple_SEC_filing_2023.txt",
             "./txt/Apple_SEC_filing_2022.txt",
         ],

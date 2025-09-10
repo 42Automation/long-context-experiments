@@ -27,6 +27,9 @@ def get_filler_content(
     once the accumulated token count reaches this remaining budget.  Token
     counting uses ``get_num_tokens``.
     """
+    print(
+        f"Getting filler content with current context {current_context} tokens (max {max_context})"
+    )
     # Compute how many tokens we can still add
     remaining_context = max_context - current_context
     if remaining_context <= 0:

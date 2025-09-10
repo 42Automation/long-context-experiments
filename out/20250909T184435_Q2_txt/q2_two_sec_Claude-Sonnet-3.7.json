@@ -1,0 +1,10 @@
+{
+  "id": "q2_two_sec",
+  "query": "What year had the biggest operating expenditure for Apple?",
+  "model": "Claude-Sonnet-3.7",
+  "doc_urls": null,
+  "expected_answer": "2024",
+  "output": "Based on the information provided in the 10-K filing, Apple's operating expenses for the fiscal years 2022, 2023, and 2024 were:\n\n2022: $51,345 million\n2023: $54,847 million\n2024: $57,467 million\n\nTherefore, 2024 had the biggest operating expenditure for Apple at $57,467 million, which represents a 5% increase from 2023.",
+  "input_tokens": 189257,
+  "passed": true
+}

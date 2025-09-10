@@ -3,7 +3,7 @@ EXPERIMENTS = [
     {
         "id": "segment_txt_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./txt/Apple_segment_operating_performance.txt",
         ],
         "expected_answer": "$25,052 million",
@@ -12,7 +12,7 @@ EXPERIMENTS = [
     {
         "id": "sec24_txt_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": [
+        "reference_doc_urls": [
             "./txt/Apple_SEC_filing_2024.txt",
         ],
         "expected_answer": "$25,052 million",
@@ -21,8 +21,8 @@ EXPERIMENTS = [
     {
         "id": "two_sec_txt_net_sales_japan",
         "query": "What is the net sales for Japan in 2024?",
-        "reference_docs_urls": ["./txt/Apple_SEC_filing_2024.txt"],
-        "filler_docs_urls": ["./txt/Apple_SEC_filing_2023.txt"],
+        "reference_doc_urls": ["./txt/Apple_SEC_filing_2024.txt"],
+        "filler_doc_urls": ["./txt/Apple_SEC_filing_2023.txt"],
         "expected_answer": "$25,052 million",
     },
 ]
