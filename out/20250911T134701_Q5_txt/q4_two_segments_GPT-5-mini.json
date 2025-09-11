@@ -1,0 +1,10 @@
+{
+  "id": "q4_two_segments",
+  "query": "Who had more FTEs in 2024, Apple or Tesla?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "Apple",
+  "output": "Apple had more full-time equivalent employees in 2024. Apple: approximately 164,000 FTEs (as of Sept. 28, 2024). Tesla: 125,665 employees (as of Dec. 31, 2024).",
+  "input_tokens": 1508,
+  "passed": true
+}

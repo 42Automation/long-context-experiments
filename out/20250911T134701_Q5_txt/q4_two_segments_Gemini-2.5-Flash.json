@@ -1,0 +1,10 @@
+{
+  "id": "q4_two_segments",
+  "query": "Who had more FTEs in 2024, Apple or Tesla?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "Apple",
+  "output": "Apple had more FTEs in 2024.\n\n*   **Apple:** Approximately 164,000 full-time equivalent employees as of September 28, 2024.\n*   **Tesla:** 125,665 employee headcount worldwide as of December 31, 2024.",
+  "input_tokens": 1511,
+  "passed": true
+}
