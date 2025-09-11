@@ -10,7 +10,7 @@ STANDARD_MODELS = [
     "GPT-5-mini",
     "Claude-Sonnet-3.7",
     "Gemini-2.5-Flash",
-    # "Qwen3-235B-2507",
+    "Qwen3-235B-2507",
 ]
 
 MODEL_PARAMS = {
@@ -27,10 +27,11 @@ MODEL_IDS = {
     "Qwen3-235B-A22B": "Qwen3-235B-A22B",
     "GPT-5-mini": "GPT-5-mini",
     "Claude-Sonnet-3.7": "claude-3-7-sonnet-20250219",
+    "Poe-Claude-Sonnet-3.7": "Claude-Sonnet-3.7",
     "Gemini-2.5-Flash": "Gemini-2.5-Flash",
     "Qwen3-235B-2507": "Qwen3-235B-2507-FW",
 }
 
-SAMPLE_MODELS = ["Qwen3-235B-2507"]
+SAMPLE_MODELS = ["Poe-Claude-Sonnet-3.7"]
 
 JUDGE_MODEL = "GPT-5-mini"

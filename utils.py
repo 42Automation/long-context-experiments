@@ -6,7 +6,8 @@ tokenizer_encoding = get_encoding(
 
 
 def is_anthropic_model(model: str) -> bool:
-    return "claude" in model.lower()
+    model_name = model.lower()
+    return "claude" in model_name and "poe" not in model_name
 
 
 def get_num_tokens(text: str) -> int:
