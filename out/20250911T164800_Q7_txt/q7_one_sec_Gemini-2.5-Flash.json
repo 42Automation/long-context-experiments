@@ -1,0 +1,10 @@
+{
+  "id": "q7_one_sec",
+  "query": "How long is the performance period for vesting RSUs in Apple's Stock Plan?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "The document does not explicitly state the duration of the Performance Period for the vesting of RSUs.",
+  "output": "Apple has two types of Restricted Stock Unit (RSU) awards:\n\n1.  **Standard RSUs:** These generally vest over **four years** based on continued employment. There isn't a specific \"performance period\" tied to these for vesting, beyond the duration of employment.\n2.  **Performance Awards (RSUs):** The vesting of these RSUs is determined based on the Company's relative Total Shareholder Return (TSR) percentile for a specified **Performance Period**. The exact length of this Performance Period is not defined in the general terms of the award agreement but is set at the time of the grant, as indicated by placeholders in the provided documents.",
+  "input_tokens": 100518,
+  "passed": true
+}

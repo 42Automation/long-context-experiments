@@ -1,0 +1,10 @@
+{
+  "id": "q7_one_sec",
+  "query": "How long is the performance period for vesting RSUs in Apple's Stock Plan?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "The document does not explicitly state the duration of the Performance Period for the vesting of RSUs.",
+  "output": "The performance period is the period defined in the award\u2019s Grant Notice and Exhibit A; for Performance Awards in the examples shown the \u201cPerformance Period\u201d is the full multi\u2011year period over which relative total shareholder return (TSR) is measured (typically three years).",
+  "input_tokens": 100515,
+  "passed": false
+}

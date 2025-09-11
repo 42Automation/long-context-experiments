@@ -1,0 +1,10 @@
+{
+  "id": "q7_segment",
+  "query": "How long is the performance period for vesting RSUs in Apple's Stock Plan?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "The document does not explicitly state the duration of the Performance Period for the vesting of RSUs.",
+  "output": "The document shows the Performance Period uses twenty (20) consecutive trading days at its start and end to compute Beginning Price and Ending Price, but it does not state the total length (in years or days) of the Performance Period itself. The excerpt does not specify how long the overall Performance Period is.",
+  "input_tokens": 1515,
+  "passed": true
+}

@@ -17,10 +17,7 @@ We consider the following kinds of queries in our analysis, of increasing diffic
 * Q4. Distractor loaded query. The information is found in the document, but the document has similar, yet conflicting pieces of information.
 * Q5. Multiple document query. The needed information is found in the documents but the answer needs to combine information over multiple documents.
 * Q6. Missing data query. The information requested is not found in the document, though it is semantically related to the document content, so the query cannot be answered.
----
-
 * Q7. Ambiguous query. The exact information requested is not directly found in the document but a very close piece of information is available.
-* Q8. Very ambiguous query. The exact information requested is not found in the document and it takes some reasoning to relate available content to the question.
 
 ## Actual queries
 
@@ -30,7 +27,8 @@ For the Apple SEC filings:
 * Q3. What is the net income per FTE in 2024 at Apple?
 * Q4. What determines the vesting conditions for performance awards in Apple's 2022 Stock Plan?
 * Q5. Who has more FTEs in 2024, Apple or Tesla?
-
+* Q6. What were the costs of internal software tools development and maintenance for Apple in 2024?
+* Q7. How long is the performance period for vesting RSUs in Apple's Stock Plan?
 
 ## References
 * [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://research.trychroma.com/context-rot#yarn)

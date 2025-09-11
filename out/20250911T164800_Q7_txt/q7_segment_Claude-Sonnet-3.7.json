@@ -1,0 +1,10 @@
+{
+  "id": "q7_segment",
+  "query": "How long is the performance period for vesting RSUs in Apple's Stock Plan?",
+  "model": "Claude-Sonnet-3.7",
+  "doc_urls": null,
+  "expected_answer": "The document does not explicitly state the duration of the Performance Period for the vesting of RSUs.",
+  "output": "The document does not specify the exact length of the Performance Period for vesting RSUs. While the document refers to a \"Performance Period\" multiple times when describing how TSR (Total Shareholder Return) is calculated and how vesting percentages are determined, it does not state the specific duration of this period.",
+  "input_tokens": 1662,
+  "passed": true
+}

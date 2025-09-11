@@ -1,0 +1,10 @@
+{
+  "id": "q7_two_sec",
+  "query": "How long is the performance period for vesting RSUs in Apple's Stock Plan?",
+  "model": "Claude-Sonnet-3.7",
+  "doc_urls": null,
+  "expected_answer": "The document does not explicitly state the duration of the Performance Period for the vesting of RSUs.",
+  "output": "Based on the information provided in the Apple Inc. 2024 Form 10-K, the performance period for vesting RSUs in Apple's Stock Plan is generally four years. This is mentioned on page 44 of the document, where it states: \"RSUs granted under the 2022 Plan generally vest over four years, based on continued employment, and are settled upon vesting in shares of the Company's common stock on a one-for-one basis.\"",
+  "input_tokens": 189262,
+  "passed": false
+}

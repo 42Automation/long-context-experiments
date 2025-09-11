@@ -1,0 +1,10 @@
+{
+  "id": "q7_two_sec",
+  "query": "How long is the performance period for vesting RSUs in Apple's Stock Plan?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "The document does not explicitly state the duration of the Performance Period for the vesting of RSUs.",
+  "output": "The performance period for performance-based RSUs is the time specified in the grant\u2019s Exhibit A (the \u201cPerformance Period\u201d). In the sample Performance Award Exhibit A shown, the performance period is the named \u201cPerformance Period\u201d that begins on the Award Date and ends on the Vesting Date \u2014 i.e., the award vests (if performance targets are met) at the single Vesting Date after completion of that Performance Period. (The grant document shows that for interpolated results the portion vested is determined based on performance over that Performance Period.)",
+  "input_tokens": 151516,
+  "passed": false
+}

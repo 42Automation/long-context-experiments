@@ -1,0 +1,10 @@
+{
+  "id": "q7_segment",
+  "query": "How long is the performance period for vesting RSUs in Apple's Stock Plan?",
+  "model": "Qwen3-235B-2507",
+  "doc_urls": null,
+  "expected_answer": "The document does not explicitly state the duration of the Performance Period for the vesting of RSUs.",
+  "output": "The provided document (Exhibit A \u2013 Performance Award) does not specify the exact length or dates of the Performance Period for Apple's RSUs. It outlines the methodology for determining vesting based on the Company\u2019s relative total shareholder return (TSR) Percentile compared to a Comparison Group, but it does not state the start and end dates of the Performance Period or its duration (e.g., one year, three years, etc.).\n\nTo determine the length of the Performance Period, you would need to refer to the specific award agreement or the plan document that identifies the Performance Period (e.g., \"the three-year period beginning January 1, 2023, and ending December 31, 2025\").\n\nIn many corporate performance-based RSU awards, the Performance Period is typically three years, but without additional context or data from Apple\u2019s actual award agreement or plan, the exact duration cannot be confirmed from this exhibit alone.",
+  "input_tokens": 1509,
+  "passed": true
+}

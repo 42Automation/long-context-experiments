@@ -1,0 +1,10 @@
+{
+  "id": "q7_two_sec",
+  "query": "How long is the performance period for vesting RSUs in Apple's Stock Plan?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "The document does not explicitly state the duration of the Performance Period for the vesting of RSUs.",
+  "output": "The performance period for vesting Restricted Stock Units (RSUs) in Apple's Stock Plan, specifically for performance awards, is determined at the time of the individual grant. The exact duration is indicated by a placeholder `[ ]` in the provided template documents (Exhibits 10.20 and 10.22), and the vesting is based on the Company's relative Total Shareholder Return (TSR) Percentile for that specified performance period.",
+  "input_tokens": 151519,
+  "passed": true
+}

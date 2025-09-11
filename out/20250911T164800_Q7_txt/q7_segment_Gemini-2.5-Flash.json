@@ -1,0 +1,10 @@
+{
+  "id": "q7_segment",
+  "query": "How long is the performance period for vesting RSUs in Apple's Stock Plan?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "The document does not explicitly state the duration of the Performance Period for the vesting of RSUs.",
+  "output": "Based on the provided document, the \"Performance Period\" is a defined term used to calculate the Company's relative total shareholder return (TSR) Percentile, which in turn determines the percentage of RSUs that vest.\n\nHowever, the document **does not specify the duration or length of this \"Performance Period.\"** It only refers to \"the first day of the Performance Period\" and \"the last trading day of the Performance Period\" in its definitions.\n\nAdditionally, the document makes no mention of \"Apple\" or \"Apple's Stock Plan.\" It refers generically to \"the Company.\"",
+  "input_tokens": 1518,
+  "passed": true
+}
