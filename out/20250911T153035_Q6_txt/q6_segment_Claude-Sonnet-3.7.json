@@ -1,0 +1,10 @@
+{
+  "id": "q6_segment",
+  "query": "What were the costs of internal software tools development and maintenance for Apple in 2024?",
+  "model": "Claude-Sonnet-3.7",
+  "doc_urls": null,
+  "expected_answer": "The requested information could not be found in the provided documents.",
+  "output": "Based on the provided documents, there is no specific information about the costs of internal software tools development and maintenance for Apple in 2024. The financial information presented includes gross margins, operating expenses (including R&D and selling, general and administrative expenses), but does not break down these categories to show specific expenditures on internal software tools.",
+  "input_tokens": 1706,
+  "passed": true
+}

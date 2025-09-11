@@ -1,0 +1,10 @@
+{
+  "id": "q6_one_sec",
+  "query": "What were the costs of internal software tools development and maintenance for Apple in 2024?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "The requested information could not be found in the provided documents.",
+  "output": "The Form 10\u2011K you provided does not itemize or disclose any specific line item called \u201cinternal software tools\u201d development or maintenance costs for fiscal 2024. Apple reports aggregate research & development expense ($31,370 million for 2024) and general categories of operating expense (R&D, SG&A) and notes that it develops software and invests in R&D, but it does not break out spending specifically for internal software tools in the public 10\u2011K.\n\nIf you need a more specific number, I can:\n- scan the 10\u2011K for any mention of internal tools or internal\u2011use software and summarize any related disclosures; or\n- suggest approaches to estimate the amount (e.g., proportion of R&D and capitalized internal\u2011use software in property, plant & equipment or other non\u2011current assets), if you want an approximate figure. Which would you prefer?",
+  "input_tokens": 100516,
+  "passed": true
+}

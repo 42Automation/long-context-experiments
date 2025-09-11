@@ -1,0 +1,10 @@
+{
+  "id": "q6_segment",
+  "query": "What were the costs of internal software tools development and maintenance for Apple in 2024?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "The requested information could not be found in the provided documents.",
+  "output": "The provided excerpts from Apple\u2019s 2024 Form 10\u2011K do not state the costs specifically for internal software tools development and maintenance in 2024. That detail\u2014if disclosed\u2014would typically appear in the Notes to the Consolidated Financial Statements (for example, within Research and Development, capitalized software, or share\u2011based compensation disclosures) or elsewhere in the full Form 10\u2011K.\n\nIf you\u2019d like, I can:\n- Search the full 2024 Form 10\u2011K (Notes to Consolidated Financial Statements) for \u201cinternal software,\u201d \u201ctools,\u201d \u201ccapitalized software,\u201d or similar terms and report the exact amount; or\n- Summarize where Apple discloses internal software development and maintenance costs and provide the relevant figures if available.\n\nWhich would you prefer?",
+  "input_tokens": 1546,
+  "passed": true
+}

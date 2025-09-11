@@ -1,0 +1,10 @@
+{
+  "id": "q6_two_sec",
+  "query": "What were the costs of internal software tools development and maintenance for Apple in 2024?",
+  "model": "Qwen3-235B-2507",
+  "doc_urls": null,
+  "expected_answer": "The requested information could not be found in the provided documents.",
+  "output": "The provided document does not specify the costs of internal software tools development and maintenance for Apple in 2024.",
+  "input_tokens": 151511,
+  "passed": true
+}

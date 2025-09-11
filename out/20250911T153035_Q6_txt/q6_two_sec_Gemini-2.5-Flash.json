@@ -1,0 +1,10 @@
+{
+  "id": "q6_two_sec",
+  "query": "What were the costs of internal software tools development and maintenance for Apple in 2024?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "The requested information could not be found in the provided documents.",
+  "output": "The exact cost of internal software tools development and maintenance for Apple in 2024 is not separately disclosed in the provided document.\n\nHowever, Apple's total **Research and Development (R&D) expense** for the fiscal year ended September 28, 2024, was **$31,370 million**. This R&D expense includes the development of new technologies to enhance existing products and services, which would encompass software development.",
+  "input_tokens": 151520,
+  "passed": true
+}

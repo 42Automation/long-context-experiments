@@ -1,0 +1,10 @@
+{
+  "id": "q6_segment",
+  "query": "What were the costs of internal software tools development and maintenance for Apple in 2024?",
+  "model": "Qwen3-235B-2507",
+  "doc_urls": null,
+  "expected_answer": "The requested information could not be found in the provided documents.",
+  "output": "The provided document does not disclose specific costs related to the development and maintenance of internal software tools for Apple in 2024. While research and development (R&D) expenses are mentioned\u2014totaling $31,370 million in 2024\u2014the document does not break down these expenses to identify how much was spent on internal software tools. Therefore, based on the available information, the specific costs for internal software tools development and maintenance cannot be determined.",
+  "input_tokens": 1540,
+  "passed": true
+}

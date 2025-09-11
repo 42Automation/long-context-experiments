@@ -1,0 +1,10 @@
+{
+  "id": "q6_two_sec",
+  "query": "What were the costs of internal software tools development and maintenance for Apple in 2024?",
+  "model": "Claude-Sonnet-3.7",
+  "doc_urls": null,
+  "expected_answer": "The requested information could not be found in the provided documents.",
+  "output": "Based on the information provided in the 10-K document, there is no specific disclosure about the costs of internal software tools development and maintenance for Apple in 2024. The document contains Apple's financial statements and business information, but it does not break down expenses specifically for internal software tools development and maintenance costs.\n\nThe document does mention that Apple develops almost all of its software internally, including most user interfaces, and updates its vehicles' software regularly through over-the-air updates (page 3), but it does not provide specific cost figures for these activities.\n\nApple's Research and Development (R&D) expenses are reported as $31,370 million for 2024 (page 24), which would include software development activities, but this figure encompasses all R&D activities and is not broken down to show specific costs for internal software tools.",
+  "input_tokens": 189263,
+  "passed": true
+}

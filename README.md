@@ -16,10 +16,9 @@ We consider the following kinds of queries in our analysis, of increasing diffic
 * Q3. Distant info query. The information is found in the document, but the answer needs to combine distant pieces of information from the same document.
 * Q4. Distractor loaded query. The information is found in the document, but the document has similar, yet conflicting pieces of information.
 * Q5. Multiple document query. The needed information is found in the documents but the answer needs to combine information over multiple documents.
-
+* Q6. Missing data query. The information requested is not found in the document, though it is semantically related to the document content, so the query cannot be answered.
 ---
 
-* Q6. Missing data query. The information requested is not found in the document, though it is semantically related to the document content, so the query cannot be answered.
 * Q7. Ambiguous query. The exact information requested is not directly found in the document but a very close piece of information is available.
 * Q8. Very ambiguous query. The exact information requested is not found in the document and it takes some reasoning to relate available content to the question.
 
