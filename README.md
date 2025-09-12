@@ -4,9 +4,16 @@ We explore the performance of frontier LLMs when retrieving information over fin
 
 ## Documents
 
-We consider 2 set of documents:
+We consider 2 sets of documents:
+
+SEC filings:
 * Apple SEC filings between 2022 and 2024
 * Tesla SEC filings between 2022 and 2024
+
+Prospectus and annual reports from LINK Mobility:
+* LINK Mobility IPO Prospectus 2020
+* LINK Annual Report 2021
+* LINK Annual Report 2020
 
 ## Query types
 
@@ -21,7 +28,7 @@ We consider the following kinds of queries in our analysis, of increasing diffic
 
 ## Actual queries
 
-For the Apple SEC filings:
+For the SEC filing documents:
 * Q1. What is the net sales for Japan in 2024?
 * Q2. What year had the biggest operating expenditure for Apple?
 * Q3. What is the net income per FTE in 2024 at Apple?
@@ -29,6 +36,10 @@ For the Apple SEC filings:
 * Q5. Who has more FTEs in 2024, Apple or Tesla?
 * Q6. What were the costs of internal software tools development and maintenance for Apple in 2024?
 * Q7. How long is the performance period for vesting RSUs in Apple's Stock Plan?
+
+For the LINK mobility documents:
+* Q1. What was LINK Mobility revenue in 2020?
+
 
 ## References
 * [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://research.trychroma.com/context-rot#yarn)
