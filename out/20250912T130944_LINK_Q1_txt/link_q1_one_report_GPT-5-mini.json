@@ -1,0 +1,10 @@
+{
+  "id": "link_q1_one_report",
+  "query": "What was LINK Mobility revenue in 2020?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "NOK 3 539 million",
+  "output": "LINK Mobility reported revenue of NOK 3,539 million in 2020.",
+  "input_tokens": 64635,
+  "passed": true
+}

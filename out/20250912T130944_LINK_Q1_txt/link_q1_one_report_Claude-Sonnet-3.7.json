@@ -1,0 +1,10 @@
+{
+  "id": "link_q1_one_report",
+  "query": "What was LINK Mobility revenue in 2020?",
+  "model": "Claude-Sonnet-3.7",
+  "doc_urls": null,
+  "expected_answer": "NOK 3 539 million",
+  "output": "LINK Mobility's revenue in 2020 was NOK 3,539 million (or 3.539 billion NOK).",
+  "input_tokens": 90924,
+  "passed": true
+}

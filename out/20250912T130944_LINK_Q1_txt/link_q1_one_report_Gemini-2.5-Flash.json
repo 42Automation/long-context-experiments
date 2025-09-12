@@ -1,0 +1,10 @@
+{
+  "id": "link_q1_one_report",
+  "query": "What was LINK Mobility revenue in 2020?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "NOK 3 539 million",
+  "output": "LINK Mobility's revenue in 2020 was NOK 3,539,231 thousand.",
+  "input_tokens": 64638,
+  "passed": true
+}
