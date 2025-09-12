@@ -91,17 +91,16 @@
   const dirSelect = document.getElementById('dirSelect');
   const summaryDiv = document.getElementById('summary');
 
-// Replace the old fetchLinks implementation with this:
-const fetchLinks = async (path) => {
-  const apiUrl = `https://api.github.com/repos/42automation/long-context-experiments/contents/${path}`;
-  const resp   = await fetch(apiUrl);
-  if (!resp.ok) throw new Error(`GitHub API error ${resp.status}`);
-  const items  = await resp.json();   // array of {name, path, type, download_url, …}
-  // keep only files (type === "file") and return their **relative** paths
-  return items
-    .filter(i => i.type === 'file')
-    .map(i => i.path);
-};
+  const fetchLinks = async (path) => {
+    const apiUrl = `https://api.github.com/repos/42automation/long-context-experiments/contents/${path}`;
+    const resp   = await fetch(apiUrl);
+    if (!resp.ok) throw new Error(`GitHub API error ${resp.status}`);
+    const items  = await resp.json();   // array of {name, path, type, download_url, …}
+    // keep only files (type === "file") and return their **relative** paths
+    return items
+      .filter(i => i.type === 'file')
+      .map(i => i.path);
+  };
 
   // Helper: format token count in thousands with up to 2 decimals (e.g., 1230 → 1.23K)
   const formatTokens = (count) => {
@@ -113,7 +112,7 @@ const fetchLinks = async (path) => {
   };
 
   // Load sub‑directories for the dropdown
-  const rootLinks = await fetchLinks('./');
+  const rootLinks = await fetchLinks('docs');
   const subDirs = rootLinks
     .filter(h => h.endsWith('/') && !h.startsWith('?')) // keep only directories
     .map(h => h.replace(/^\.?\//, '').replace(/\/$/, '')); // normalize
