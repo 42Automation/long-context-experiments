@@ -91,15 +91,17 @@
   const dirSelect = document.getElementById('dirSelect');
   const summaryDiv = document.getElementById('summary');
 
-  // Helper: fetch and parse links from a directory listing page
-  const fetchLinks = async (path) => {
-    const resp = await fetch(path + '?list');
-    const html = await resp.text();
-    const doc  = new DOMParser().parseFromString(html, 'text/html');
-    return [...doc.querySelectorAll('a')]
-      .map(a => a.getAttribute('href'))
-      .filter(h => h);
-  };
+// Replace the old fetchLinks implementation with this:
+const fetchLinks = async (path) => {
+  const apiUrl = `https://api.github.com/repos/42automation/long-context-experiments/contents/${path}`;
+  const resp   = await fetch(apiUrl);
+  if (!resp.ok) throw new Error(`GitHub API error ${resp.status}`);
+  const items  = await resp.json();   // array of {name, path, type, download_url, …}
+  // keep only files (type === "file") and return their **relative** paths
+  return items
+    .filter(i => i.type === 'file')
+    .map(i => i.path);
+};
 
   // Helper: format token count in thousands with up to 2 decimals (e.g., 1230 → 1.23K)
   const formatTokens = (count) => {
