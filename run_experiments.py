@@ -69,7 +69,7 @@ def record_output(experiment_name, experiment, model, output, input_tokens, pass
     print(f"Recording output for {experiment.get('id')} -- {model}")
 
     timestamp = datetime.now().strftime("%Y%m%dT%H%M%S")
-    dir_path = f"./out/{timestamp}_{experiment_name}"
+    dir_path = f"./docs/{timestamp}_{experiment_name}"
     os.makedirs(dir_path, exist_ok=True)
 
     filename = f"{dir_path}/{experiment.get('id')}_{model}.json"
