@@ -75,34 +75,31 @@
 
 <h1>Experiment Results</h1>
 
-<!-- Dropdown to choose a subdirectory -->
 <select id="dirSelect" style="margin-bottom:1rem; padding:.4rem; font-size:1.2rem;">
-  <!-- options will be injected by script -->
+  <!-- options injected by script -->
 </select>
 
-<!-- Summary card (table) -->
 <div id="summary" class="card"></div>
 
 <div id="container">Loading…</div>
 
 <script>
 (async () => {
-  const container = document.getElementById('container');
-  const dirSelect = document.getElementById('dirSelect');
-  const summaryDiv = document.getElementById('summary');
+  const container   = document.getElementById('container');
+  const dirSelect   = document.getElementById('dirSelect');
+  const summaryDiv  = document.getElementById('summary');
 
+  // ----------------------------------------------------------------------
+  // Helper: fetch raw items (files + directories) from the GitHub Contents API
+  // ----------------------------------------------------------------------
   const fetchLinks = async (path) => {
     const apiUrl = `https://api.github.com/repos/42automation/long-context-experiments/contents/${path}`;
     const resp   = await fetch(apiUrl);
     if (!resp.ok) throw new Error(`GitHub API error ${resp.status}`);
-    const items  = await resp.json();   // array of {name, path, type, download_url, …}
-    // keep only files (type === "file") and return their **relative** paths
-    return items
-      .filter(i => i.type === 'file')
-      .map(i => i.path);
+    return await resp.json();   // [{name, path, type, download_url, …}, …]
   };
 
-  // Helper: format token count in thousands with up to 2 decimals (e.g., 1230 → 1.23K)
+  // Helper: format token counts (e.g., 1230 → 1.23K)
   const formatTokens = (count) => {
     const num = Number(count);
     if (isNaN(num)) return count;
@@ -111,16 +108,18 @@
     return `${formatted}K`;
   };
 
-  // Load sub‑directories for the dropdown
-  const rootLinks = await fetchLinks('docs');
-  const subDirs = rootLinks
-    .filter(h => h.endsWith('/') && !h.startsWith('?')) // keep only directories
-    .map(h => h.replace(/^\.?\//, '').replace(/\/$/, '')); // normalize
+  // --------------------------------------------------------------
+  // Get the list of sub‑directories that hold experiment runs.
+  // --------------------------------------------------------------
+  const rootItems = await fetchLinks('docs');
+  const subDirs = rootItems
+    .filter(item => item.type === 'dir')
+    .map(item => item.name);
 
-  // Sort directories so the newest (lexicographically highest) appears first
+  // Sort so newest (lexicographically highest) appears first
   subDirs.sort((a, b) => b.localeCompare(a));
 
-  // Populate dropdown
+  // Populate the dropdown
   subDirs.forEach((d, i) => {
     const opt = document.createElement('option');
     opt.value = d;
@@ -129,71 +128,65 @@
     dirSelect.appendChild(opt);
   });
 
-  // Function to render the summary table
+  // --------------------------------------------------------------
+  // Render the summary table
+  // --------------------------------------------------------------
   const renderSummary = (results) => {
     const summary = {};
     results.forEach(r => {
       const model = r.model || 'unknown';
-      if (!summary[model]) summary[model] = { passed: 0, failed: 0 };
-      if (r.passed) summary[model].passed++;
-      else summary[model].failed++;
+      if (!summary[model]) summary[model] = {passed: 0, failed: 0};
+      r.passed ? summary[model].passed++ : summary[model].failed++;
     });
-
     const rows = Object.entries(summary).map(
       ([model, {passed, failed}]) => `
         <tr>
-          <td>${model}</td>
-          <td>${passed}</td>
-          <td>${failed}</td>
-        </tr>`
-    ).join('');
-
+          <td>${model}</td><td>${passed}</td><td>${failed}</td>
+        </tr>`).join('');
     summaryDiv.innerHTML = `
       <h2>Summary</h2>
       <table>
         <thead>
-          <tr>
-            <th>Model name</th>
-            <th>Passed ✅</th>
-            <th>Failed ❌</th>
-          </tr>
+          <tr><th>Model name</th><th>Passed ✅</th><th>Failed ❌</th></tr>
         </thead>
-        <tbody>
-          ${rows}
-        </tbody>
+        <tbody>${rows}</tbody>
       </table>`;
   };
 
-  // Function to load and display results from a given directory
+  // --------------------------------------------------------------
+  // Load and display results from a given subdirectory
+  // --------------------------------------------------------------
   const loadResults = async (dir) => {
     container.innerHTML = '<p>Loading…</p>';
-    summaryDiv.innerHTML = ''; // clear previous summary
+    summaryDiv.innerHTML = '';
 
-    // Get JSON file links inside the chosen subdirectory
-    const jsonLinks = (await fetchLinks(`${dir}/`))
-      .filter(h => h.toLowerCase().endsWith('.json'))
-      .map(h => `${dir}/${h.replace(/^\.?\//, '').replace(/\?.*$/, '')}`);
+    // Fetch all items inside the chosen subdirectory
+    const dirItems = await fetchLinks(`docs/${dir}`);
+
+    // Keep only JSON files and use their raw download URL
+    const jsonLinks = dirItems
+      .filter(i => i.type === 'file' && i.name.toLowerCase().endsWith('.json'))
+      .map(i => i.download_url);
 
     if (jsonLinks.length === 0) {
       container.innerHTML = '<p>No JSON files found.</p>';
       return;
     }
 
+    // Load every JSON payload
     const results = await Promise.all(
-      jsonLinks.map(async name => {
-        const resp = await fetch(name);
+      jsonLinks.map(async (url) => {
+        const resp = await fetch(url);
         const data = await resp.json();
-        return { ...data, _filename: name };
+        return {...data, _filename: url};
       })
     );
 
-    // Sort by id (you can switch to date sort if desired)
+    // Sort by experiment id (adjust if you prefer date sorting)
     results.sort((a, b) => a.id.localeCompare(b.id));
 
-    // Render summary before the detailed list
+    // Render summary then detailed cards
     renderSummary(results);
-
-    // Render detailed experiment cards
     container.innerHTML = '';
     results.forEach(r => {
       const badge = r.passed ? '✅' : '❌';
@@ -210,24 +203,20 @@
         <div class="field"><span>Input context:</span> ${formatTokens(r.input_tokens)}</div>
         <div class="field"><span>Output:</span></div>
         <pre>${r.output}</pre>
-        <div class="field"><small>Source file: ${r._filename}</small></div>
-      `;
+        <div class="field"><small>Source file: ${r._filename}</small></div>`;
       container.appendChild(el);
     });
   };
 
-  // Initial load with the first (most‑recent) subdirectory
+  // Initial load (first subdirectory, if any)
   if (subDirs.length > 0) {
     loadResults(subDirs[0]);
   } else {
     container.innerHTML = '<p>No subdirectories found.</p>';
   }
 
-  // Reload results when the user selects a different directory
-  dirSelect.addEventListener('change', (e) => {
-    loadResults(e.target.value);
-  });
-
+  // Reload when the user selects a different directory
+  dirSelect.addEventListener('change', e => loadResults(e.target.value));
 })();
 </script>
 
