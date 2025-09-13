@@ -89,14 +89,42 @@
   const dirSelect   = document.getElementById('dirSelect');
   const summaryDiv  = document.getElementById('summary');
 
+  const IS_LOCAL = location.hostname === 'localhost'
+
   // ----------------------------------------------------------------------
   // Helper: fetch raw items (files + directories) from the GitHub Contents API
   // ----------------------------------------------------------------------
   const fetchLinks = async (path) => {
-    const apiUrl = `https://api.github.com/repos/42automation/long-context-experiments/contents/${path}`;
-    const resp   = await fetch(apiUrl);
-    if (!resp.ok) throw new Error(`GitHub API error ${resp.status}`);
-    return await resp.json();   // [{name, path, type, download_url, …}, …]
+    if (IS_LOCAL) {
+      // Get the directory listing HTML (the simple index page that python/http-server or npx serve produce)
+      const resp = await fetch(`${path}`);
+      if (!resp.ok) throw new Error(`Failed to list ${path}`);
+      const html = await resp.text();
+
+      // Parse the <a> links from the generated index page
+      const doc   = new DOMParser().parseFromString(html, 'text/html');
+      const links = [...doc.querySelectorAll('a')]
+        .map(a => a.getAttribute('href'))
+        .filter(h => h && h !== '../');               // ignore the parent‑dir link
+
+      // Convert each link into the same shape the GitHub API returns
+      return links.map(h => {
+        const isDir = h.endsWith('/');
+        const cleanName = isDir ? h.slice(0, -1) : h;
+        const fullPath = `${path}/${cleanName}`;
+        return {
+          name: cleanName,
+          type: isDir ? 'dir' : 'file',
+          path: fullPath,
+          download_url: fullPath            // relative URL works for local files
+        };
+      });
+    } else {
+      const apiUrl = `https://api.github.com/repos/42automation/long-context-experiments/contents/docs/${path}`;
+      const resp   = await fetch(apiUrl);
+      if (!resp.ok) throw new Error(`GitHub API error ${resp.status}`);
+      return await resp.json();   // [{name, path, type, download_url, …}, …]
+    }
   };
 
   // Helper: format token counts (e.g., 1230 → 1.23K)
@@ -111,7 +139,7 @@
   // --------------------------------------------------------------
   // Get the list of sub‑directories that hold experiment runs.
   // --------------------------------------------------------------
-  const rootItems = await fetchLinks('docs');
+  const rootItems = await fetchLinks('.');
   const subDirs = rootItems
     .filter(item => item.type === 'dir')
     .map(item => item.name);
@@ -161,7 +189,7 @@
     summaryDiv.innerHTML = '';
 
     // Fetch all items inside the chosen subdirectory
-    const dirItems = await fetchLinks(`docs/${dir}`);
+    const dirItems = await fetchLinks(`${dir}`);
 
     // Keep only JSON files and use their raw download URL
     const jsonLinks = dirItems
