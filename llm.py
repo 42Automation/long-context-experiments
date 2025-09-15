@@ -14,8 +14,8 @@ from utils import get_filler_content, get_num_tokens, is_anthropic_model
 load_dotenv()
 
 TEMPERATURE = 0
-MAX_CONTEXT_WINDOW = 200_000  # Lowest common denominator, determined by Claude
-CONTEXT_WINDOW_BUFFER_PERCENT = 27
+MAX_CONTEXT_WINDOW = 256_000
+CONTEXT_WINDOW_BUFFER_PERCENT = 5
 MAX_EFFECTIVE_CONTEXT_WINDOW = MAX_CONTEXT_WINDOW - floor(
     MAX_CONTEXT_WINDOW * CONTEXT_WINDOW_BUFFER_PERCENT / 100
 )
@@ -72,7 +72,8 @@ async def _get_response_with_poe_client(
             current_context=current_context_size + get_num_tokens(query),
             max_context=max_context,
         )
-        content.append({"type": "text", "text": filler_content})
+        if filler_content:
+            content.append({"type": "text", "text": filler_content})
 
     # Add query
     content.append({"type": "text", "text": query})
@@ -130,7 +131,8 @@ async def _get_response_with_anthropic_client(
             current_context=current_context_size + get_num_tokens(query),
             max_context=max_context,
         )
-        content.append({"type": "text", "text": filler_content})
+        if filler_content:
+            content.append({"type": "text", "text": filler_content})
 
     # Add query
     content.append({"type": "text", "text": query})
