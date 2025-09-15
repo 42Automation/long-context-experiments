@@ -6,5 +6,5 @@
   "expected_answer": "The document does not explicitly state the duration of the Performance Period for the vesting of RSUs.",
   "output": "Based on the provided Form 10-K, the performance period for vesting Restricted Stock Units (RSUs) in Apple's Stock Plan is not a single fixed duration. Instead, the vesting schedule is determined on a grant-by-grant basis and is specified in the individual grant notice.\n\nThe document states that the vesting schedule is outlined in the \"Grant Notice\" corresponding to each specific grant. For example, the form of the award agreement mentions a \"Vesting Schedule\" that is filled in for each grant, indicating that the terms can vary.\n\nWhile the document does not specify a standard performance period, it does mention that the vesting schedule for RSUs granted under the 2022 Plan is generally over four years.",
   "input_tokens": 151510,
-  "passed": false
+  "passed": true
 }
