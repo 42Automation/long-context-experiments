@@ -1,0 +1,10 @@
+{
+  "id": "link_q2_two_reports",
+  "query": "How could the M&A activity affect the PFIC status?",
+  "model": "Qwen3-235B-2507",
+  "doc_urls": null,
+  "expected_answer": "M&A can change the PFIC tests by altering the company\u2019s income mix (adding businesses that generate more passive revenue or temporary transaction-related passive gains) and by changing the asset composition (bringing in cash, receivables, or marketable investments or creating goodwill/intangibles) so that passive income or passive assets exceed the PFIC thresholds.",
+  "output": "The M&A activity could affect the PFIC (Passive Foreign Investment Company) status of LINK Mobility Group Holding ASA by altering the composition and nature of its income and assets. If the acquisitions lead to a significant increase in passive income or assets that produce passive income, the company could be classified as a PFIC. This classification would have significant adverse U.S. federal income tax consequences for U.S. holders of the company's shares, including higher taxes on gains from the sale of shares and certain distributions. The determination of PFIC status is based on the company's income and asset composition, which can change due to M&A activities, making it uncertain whether the company will maintain its non-PFIC status.",
+  "input_tokens": 185739,
+  "passed": true
+}

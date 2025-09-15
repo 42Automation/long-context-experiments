@@ -1,0 +1,10 @@
+{
+  "id": "link_q2_one_report",
+  "query": "How could the M&A activity affect the PFIC status?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "M&A can change the PFIC tests by altering the company\u2019s income mix (adding businesses that generate more passive revenue or temporary transaction-related passive gains) and by changing the asset composition (bringing in cash, receivables, or marketable investments or creating goodwill/intangibles) so that passive income or passive assets exceed the PFIC thresholds.",
+  "output": "The company's M&A activity can affect its Passive Foreign Investment Company (PFIC) status primarily through the nature of the assets acquired and the deployment of cash.\n\nAccording to the document, a non-U.S. entity is classified as a PFIC if:\n* At least 75% of its gross income is \"passive income\" (e.g., dividends, interest, rents, royalties).\n* At least 50% of the value of its assets is attributable to assets that produce or are held for the production of passive income.\n\nThe document specifically states that \"any cash the Company holds, including the cash raised in the Offering, is generally treated as held for the production of passive income for the purpose of the PFIC test.\" Therefore, the company's ability to avoid PFIC status \"may depend in part on its ability to deploy proceeds from this or future offerings within limited periods of time following such offering\" into active, non-passive assets, which would include acquisitions of operating businesses. If M&A activities involve acquiring businesses that primarily generate passive income or hold passive assets, this could also contribute to the company being classified as a PFIC.",
+  "input_tokens": 185747,
+  "passed": true
+}
