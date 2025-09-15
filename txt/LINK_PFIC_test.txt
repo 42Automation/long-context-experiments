@@ -1,0 +1,273 @@
+
+                            Link Mobility Group Holding ASA - Prospectus
+
+
+        2     RISK FACTORS
+        Investing in the Shares involves inherent risks. Prior to making any investment decision with respect to the Shares, an
+        investor should carefully consider all of the information contained in this Prospectus, and in particular the risks and
+        uncertainties described in this Section 2, which the Company believes are the most material known risks and
+        uncertainties faced by the Group as of the date hereof. The risk factors presented in this Section are limited to the risks
+        that the Company believes to be specific to the issuer and material for investors when making their investment decision.
+        An investment in the Shares is suitable only for investors who understand the risks associated with this type of
+        investment and who can afford to lose all or part of their investment.
+        The risk factors presented in this Section are divided into a limited number of categories based on their nature. Within
+        each category, the risk factors which are deemed by the Company to be the most material based on an overall
+        assessment of the probability of their occurrence and the expected magnitude of their negative impact on the Group,
+        are presented first. However, this does not imply that the remaining risk factors presented are ranked in order of their
+        likelihood of occurrence or the severity or significance of each risk. The order of the categories does not intend to
+        represent any assessment of the materiality or the probability of occurrence of the risk factors within that category,
+        when compared to risk factors in another category. The absence of negative past experience associated with a given
+        risk factor does not mean that the risks and uncertainties described are not a genuine potential threat to an investment
+        in the Shares.
+        Should any of the following risks occur, they could have a material adverse effect on the Group's business, prospects,
+        results of operations, cash flows and financial position, and the trading price of the Shares may decline, causing investors
+        to lose all or part of their invested capital. Additional risks not presently known to the Company or which the Company
+        currently deems not to be material may also have a material adverse effect on the Group. A prospective investor should
+        consult his or her own expert advisors as to the suitability of an investment in the Company's Shares. It is not possible
+        to quantify the significance to the Company of each individual risk factor as each of the risk factors mentioned below
+        may materialise to a greater or lesser degree.
+        The information in this Section 2 is accurate as of the date of this Prospectus.
+        2.1   Risks related to the Group’s business activities and industry
+        2.1.1 The Group may not be able to implement its M&A strategy successfully or manage its growth effectively
+        The Group’s future growth will depend on the successful implementation of the six main pillars of the Group's business
+        strategy. See Section 8.4 "Strategy and objectives". Mergers and acquisitions are a key component of the Group’s growth
+        strategy (see Section 11.3.2 for an overview of the Group's previous acquisitions). The Group’s failure to execute its
+        business strategy or to manage its growth effectively could adversely affect the Group’s business, prospects, results of
+        operations, cash flows and financial position. The Group’s Acquisition Revenue was NOK 104.0 million, NOK 803.9 million,
+        NOK 584.1 million and NOK 38.6 million, for the periods ending 30 June 2020 and 31 December 2019, 2018 and 2017,
+        respectively. In addition, there can be no guarantee that, even if the Group successfully implements the Group’s strategy,
+        it would result in an improvement of the Group’s results of operations. The Group’s ability to achieve its business and
+        financial objectives is subject to a variety of factors, many of which are beyond the Group’s control.
+        The integration and consolidation of acquisitions requires substantial human, financial and other resources, including
+        management time and attention, and may depend on the Group’s ability to retain the existing management and
+        employees of the acquired business or recruit acceptable replacements. For example, it took the Group approximately
+        one year to fully integrate TeraComm Group after the acquisition in 2019. Ultimately, if the Group is unsuccessful in
+        integrating any acquisitions in a timely and cost-effective manner, the Group’s business, prospects, results of operations,
+        cash flows and financial position could be materially adversely affected. Acquisitions may also expose the Group to
+        liabilities that it may not be aware of at the time of the acquisition, for example, if acquired companies and business do
+        not act, or have not acted, in compliance with applicable laws and regulations. Given the above, in particular the Group’s
+        rapid growth strategy, this risk is of material and specific importance the Group. If the Group is unable to implement its
+        strategy or successfully adapt to rapidly changing market conditions should consumer behaviour change, or if demand
+        for its services decreases, then its business, prospects, results of operations, cash flows and financial position could be
+        materially adversely affected.
+        2.1.2 The markets in which the Group competes in are undergoing rapid technological change
+        The communications industry has undergone significant technological development over time and these changes
+        continue to affect the Group’s business, financial condition and results of operations. The CPaaS market is evolving and
+        is expanding in several directions as enterprise adoption of cloud-based communications occurs. From SMS, to WhatsApp
+        Business, new and more complex communication methods continue to be introduced. For example, Juniper Research
+        estimates that in the next five years RCS will continue to grow and represent a larger market of the Global A2P messaging
+        revenue. Such changes have had, and will continue to have, a profound impact on customers’ needs and expectations.
+        For the Group to survive and grow, the Group must continue to enhance and improve the functionality and features of
+        the Group’s information delivery and retrieval product and services to address the customer’s changing needs. If new
+        industry standards and practices emerge, the Group’s existing products, services and technology may become obsolete.
+        Developing the Group’s products, services and other technologies entails significant technical and business risks and
+        substantial costs. In addition, demand for the Group’s platform is also price sensitive. The Group must anticipate far in
+        advance which technology it should use for the development of new products and services or the enhancement of existing
+        products and services, and there is no guarantee that it will anticipate such changes correctly or timely. In addition, the
+        market changes may result in changes in the demand mix for the Group's services, shifting them from high margin
+        services such as advanced mobile solutions (Mobile Invoice, e.g.) to low margin services such as OTP traffic, resulting
+        could result in an erosion of the Group’s margins. Given the above, in particular the rapid technological development in
+        the market, changes in consumer sentiments and the expansion of the array of products available within the Group’s
+                                         8
+
+
+                            Link Mobility Group Holding ASA - Prospectus
+
+        market, this risk is of material and specific importance the Group. If the Group is unable to properly anticipate and
+        address changes in the market and expectations of its customers, the Group’s business, prospects, results of operations,
+        cash flows and financial position could be materially adversely affected. For more information regarding the risk the
+        implementation of the Group’s strategy, see Section 2.1.1 "The Group may not be able to implement its M&A strategy
+        successfully or manage its growth effectively".
+        2.1.3 The Group may experience operational problems, system failures, defects or errors
+        The Group's platform and services are based on inherently complex software technology, which may have real or
+        perceived defects, errors, failures, vulnerabilities, or bugs in the platform and the Group's products could result in
+        negative publicity or lead to data security, access, retention or other performance issues. The Group relies on network
+        and information systems for its operations, some of which it outsources, and a disruption or failure of, or defects in,
+        those systems may disrupt its operations, damage its reputation with customers and adversely affect its results of
+        operations. Operational problems may lead to loss of revenue or higher than anticipated operating expenses may require
+        additional capital expenditures. See Section 2.2.1 "The Group outsources certain of its IT functions to third parties and
+        an interruption or cessation of any such services could adversely affect the Group". Any significant disruption, system
+        failure, errors or defects could compromise the Group's ability to deliver contractual services and/or increased costs and
+        result in the loss of customers, curtailed operations and the Group's reputation, any of which could have materially
+        adverse effect on the Group’s business, prospects, results of operations, cash flows and financial position.
+        2.1.4 The Group is exposed to risks related to cyberattacks
+        As the Group’s business and business strategy are tied to its technology, computer hacking, computer viruses, worms
+        and other destructive or disruptive software, "cyber-attacks," phishing attacks and other malicious activity, can have a
+        material effect on the Group’s business, prospects, results of operations. For example, in last 12 months, several DDoS
+        attacks were launched against the Group, and although the Group did not experience any material breaches, such events
+        could have an adverse impact on the Group and its customers, including degradation of service, service disruption,
+        excessive call volume to call centres, theft and damage to its plant, equipment and data, costs associated with
+        remediation, notification, and potential damages to third parties affected by such malicious activities.
+        IT security breaches could lead to shutdowns or disruptions of the Group's systems and potential unauthorized disclosure
+        of confidential information or data, including personal data. Data security breaches may also result in negative publicity
+        resulting in reputation or brand damage. If the Group experiences a material data security breach or fails to detect and
+        appropriately respond to a significant data security breach, the Group’s business, prospects, results of operations, cash
+        flows, financial position and reputation could be materially adversely affected. Given the above, in particular that the
+        Group has been subject in the past to cyberattacks and the nature of the Group’s business, this risk is of material and
+        specific importance the Group. If the Group is unable to protect its platform and digital structure from cyber-threats,
+        this could have a material adverse effect on the Group's business, results of operations, financial condition, cash flows
+        and/or prospects.
+        2.1.5 The Group may be unable to attract, retain and train the required personnel
+        As a high-growth company in a rapidly changing and complex industry, the Group's success depends to a significant
+        extent upon the abilities and efforts of the Group's management team and its ability to retain key members of the
+        management team and other highly skilled employees. There is intense competition for personnel with skills in areas
+        such as coders, software developers and software engineers in the markets in which the Group operates and there are,
+        and may continue to be, shortages in the availability of appropriately such personnel at all levels. Shortages of skilled
+        personnel is particular prominent for skilled local sales force employees with critical know-how and expertise that are
+        key to the Group’s success given its M&A and growth strategy. For example, if the Group expands into a new market, it
+        needs to hire personnel with technical skills such as C# developers, but also with knowledge about the CPaaS market in
+        such particular jurisdiction. Such layering of skills are difficult to find.
+        Key to the Group's successful integration of acquired business has been the ability to insert into such businesses
+        seasoned senior management from the Group, who are able to ensure that the Group’s methodology and business
+        practices are properly implemented and applied throughout the acquired organisation. If the Group is unable to retain
+        its senior management team, its M&A and growth strategy may be hindered. Because the Group operates in a relatively
+        new market, the talent pool of senior management with significant experience is scares. In addition, in order to
+        seamlessly integrate and later operate any acquired business, the Group needs to retain key skilled personnel from its
+        acquired businesses, which has the necessary local knowledge that can help drive growth and integrate the acquired
+        platforms with the Group's systems. The employees of an acquired company often become the targets of recruiters
+        trying to lure them to other opportunities given the uncertainties that arise for employees at an acquired company. If
+        the Group is unable to attract and retain key management personnel and other highly skilled employees, its business,
+        prospects, results of operations, cash flows and financial position could be materially and adversely affected.
+        2.1.6 The Group may be unable to maintain competitive prices
+        The Group’s ability to maintain or increase its profitability depends on its ability to offset decreases in sales prices by
+        reducing the purchase cost of the services that it provides. In addition, pricing pressure may also be created if customers
+        transact larger volumes on the Group’s platform for which they negotiate a lower price per transaction. If the Group is
+        not able to negotiate correspondingly lower purchase costs from service providers for larger volumes, this may negatively
+        impact the Group’s margins. If the Group is unable to offset decreases in sales prices or to otherwise maintain its
+        competitive position, it may lose market share. For example, the Group has exited the Spanish market after the Group’s
+        partner, Telefonica, S.A., lost many material customers to its main competitor that offered products and services at
+        more competitive prices. Given the above, in particular the importance of margins to the Group’s financial success and
+        the presence of local and/or international competitors in all of the markets in which the Group participates, this risk is
+        of material and specific importance the Group. There can be no assurance that increased competition from current and
+        potential competitors will not adversely affect the Group’s business, prospects, results of operations, cash flows and
+        financial position.
+                                         9
+
+        of all tax considerations that may be relevant to a particular person’s decision to acquire the Shares. This discussion
+        applies only to U.S. Holders that purchase Shares in this offering and hold the Shares as capital assets for U.S. federal
+        income tax purposes. In addition, it does not describe all of the tax consequences that may be relevant in light of a
+        U.S. Holder’s particular circumstances, including alternative minimum tax consequences, estate and gift tax laws, the
+        tax on net investment income, and tax consequences applicable to U.S. Holders subject to special rules, such as:
+                   banks or other financial institutions;
+                   dealers or traders in securities who use a mark-to-market method of tax accounting;
+
+                   insurance companies;
+                   real estate investment trusts;
+
+                   regulated investment companies;
+                   persons holding Shares as part of a hedging transaction, straddle, wash sale, conversion transaction
+                    or integrated transaction or persons entering into a constructive sale with respect to the Shares;
+                   persons whose functional currency for U.S. federal income tax purposes is not the U.S. dollar;
+
+                   entities or arrangements classified as partnerships for U.S. federal income tax purposes;
+                   tax-exempt entities, including an "individual retirement account" or "Roth IRA" or other tax-
+                    deferred accounts;
+                   persons that own directly, indirectly or constructively own ten percent or more of the Company’s
+                    voting stock or value;
+
+                   persons who acquired Shares pursuant to the exercise of an employee stock option or otherwise as
+                    compensation; or
+                   persons holding Shares in connection with a trade or business conducted outside of the United
+                    States.
+        If an entity or arrangement that is classified as a partnership for U.S. federal income tax purposes holds Shares, the
+        U.S. federal income tax treatment of a partner of such partnership will generally depend on the status of the partner
+        and the activities of the partnership. Partnerships holding Shares and partners in such partnerships should consult their
+        tax advisors as to the particular U.S. federal income tax consequences of the acquisition, beneficial ownership and
+        disposition of the Shares.
+        This discussion is based on the U.S. Internal Revenue Code of 1986, as amended (the "Code"), its legislative history,
+        administrative pronouncements of the U.S. Internal Revenue Service (the "IRS"), judicial decisions, the income tax
+        treaty between Norway and the United States (the "Treaty") and final, temporary and proposed Treasury regulations,
+        all as of the date hereof, any of which is subject to change, possibly with retroactive effect. The Group has not sought
+        any ruling from the IRS with respect to the statements made and the conclusions reached in this discussion, and there
+        can be no assurance that the IRS will agree with these statements and conclusions.
+        A "U.S. Holder" is a person who, for U.S. federal income tax purposes, is a beneficial owner of Shares and:
+                   a citizen or individual resident of the United States;
+                   a corporation, or other entity taxable as a corporation, created or organised in or under the laws
+                    of the United States, any state therein or the District of Columbia; or
+                   an estate or trust the income of which is subject to U.S. federal income taxation regardless of its
+                    source.
+        U.S. Holders should consult their tax advisors concerning the U.S. federal, state, local and foreign tax consequences of
+        the acquisition, beneficial ownership and disposition of Shares in their particular circumstances.
+        This discussion assumes that the Company is not, and will not become, a passive foreign investment company, as
+        described below.
+        16.2.2 Passive Foreign Investment Company Rules
+        Special adverse U.S. federal income tax rules apply to U.S. persons owning shares of a passive foreign investment
+        company, or PFIC. A non-U.S. entity treated as a corporation for U.S. federal income tax purposes generally will be
+        classified as a PFIC for U.S. federal income tax purposes for any taxable year in which, after applying relevant look-
+        through rules with respect to certain subsidiaries, either:
+                   at least 75% of its gross income is "passive income" or,
+                   at least 50% of the value of its assets, generally based on their quarterly average, is attributable
+                    to assets that produce or are held for the production of passive income.
+
+
+                            Link Mobility Group Holding ASA - Prospectus
+
+        For this purpose, passive income generally includes, among other things, dividends, interest, rents and royalties, gains
+        from the disposition of assets that produce passive income and gains from commodities transactions.
+
+        The Company does not expect to be a PFIC for U.S. federal income tax purposes for the current taxable year or in in the
+        foreseeable future. However, whether the Company is a PFIC will be determined annually based upon the composition
+        and nature of its income, the composition, nature and valuation of its assets (including goodwill), all of which are subject
+        to change (including in the current taxable year), and which may be determined in large part by reference to the market
+        value of the Shares, which may be volatile. The determination of whether the Company is a PFIC will also depend upon
+        the application of complex U.S. federal income tax rules concerning the classification of the Company’s assets (including
+        goodwill) and income for this purpose, and the application of these rules is uncertain in some respects. Accordingly no
+        assurance can be provided that the IRS will not successfully assert that the Company has been or will be a PFICfor the
+        current year or any subsequent taxable year for U.S. federal income tax purposes. The Company will not provide annual
+        determinations regarding its PFIC status for any taxable year.
+        The Company’s ability to avoid being a PFIC for U.S. federal income tax purposes will depend on its ability to meet, on
+        a continuing basis, through actual operating results, certain requirements regarding the nature of its gross assets and
+        revenue. In particular, any cash the Company holds, including the cash raised in the Offering, is generally treated as
+        held for the production of passive income for the purpose of the PFIC test, and any income generated from cash or other
+        liquid assets is generally treated as passive income for such purpose. As a result, the Company’s ability to avoid being
+        characterised as a PFIC may depend in part on its ability to deploy proceeds from this or future offerings within limited
+        periods of time following such offering.
+        If the Company were a PFIC for any taxable year during which a U.S. Holder held Shares, gain recognised by a U.S.
+        Holder on a sale or other disposition (including certain pledges) of the Shares would be allocated ratably over the U.S.
+        Holder’s holding period for the Shares. The amounts allocated to the taxable year of the sale or other disposition and to
+        any year before the Company became a PFIC would be taxed as ordinary income. The amount allocated to each other
+        taxable year would be subject to tax at the highest rate in effect for individuals or corporations, as appropriate, for that
+        taxable year, and an interest charge (at the rate generally applicable to underpayments of tax) would be imposed on
+        the tax on such amount. Further, to the extent that any distribution received by a U.S. Holder on its Shares exceeds
+        125% of the average of the annual distributions on the Shares received during the preceding three years or the U.S.
+        Holder’s holding period, whichever is shorter, that distribution would be subject to taxation in the same manner as gain,
+        described immediately above. Certain elections may be available that would result in alternative treatments (such as
+        mark-to-market or qualified electing fund treatment) of the Shares. U.S. Holders should consult their tax advisors to
+        determine whether any of these elections would be available and, if so, what the consequences of the alternative
+        treatments would be in their particular circumstances. U.S. Holders should note, however, that the Company does not
+        intend to comply with such reporting requirements necessary to permit U.S. Holders to elect to treat the Company as a
+        qualified electing fund.
+        16.2.3 Taxation of Distributions
+        Distributions paid on Shares, other than certain pro rata distributions of Shares, will be treated as dividends to the extent
+        paid out of the Company’s current or accumulated earnings and profits (as determined under U.S. federal income tax
+        principles). To the extent that the amount of any distribution exceeds the Company’s current and accumulated earnings
+        and profits for a taxable year, the distribution will first be treated as a tax-free return of capital, causing a reduction in
+        a U.S. Holder’s tax basis of common shares (but not below zero), and to the extent the amount of the distribution
+        exceeds a U.S. Holder’s tax basis, the excess will be taxed as capital gain recognised on a sale or exchange. However,
+        because the Company does not maintain calculations of its earnings and profits under U.S. federal income tax principles,
+        it is expected that distributions in their entirety generally will be reported to U.S. Holders as dividends. Subject to
+        applicable limitations, dividends paid to certain non-corporate U.S. Holders may be classified as "qualified dividend
+        income" and be taxable at a rate lower than the rates applicable to ordinary income. U.S. Holders should consult their
+        tax advisors regarding the availability of the reduced tax rate on dividends in their particular circumstances.
+        The amount of a dividend will include any amounts withheld by the Company in respect of Norwegian withholding taxes.
+        The amount of the dividend will be treated as foreign-source dividend income to U.S. Holders and will not be eligible for
+        the dividends-received deduction generally available to U.S. corporations under the Code. Dividends will be included in
+        a U.S. Holder’s income on the date of the U.S. Holder’s receipt of the dividend. The amount of any dividend income paid
+        in NOK will generally be the U.S. dollar amount calculated by reference to the exchange rate in effect on the date of
+        receipt, regardless of whether the payment is in fact converted into U.S. dollars. If the dividend is converted into U.S.
+        dollars on the date of receipt, a U.S. Holder should not be required to recognise foreign currency gain or loss in respect
+        of the dividend income. A U.S. Holder may have foreign currency gain or loss if the dividend is converted into U.S. dollars
+        after the date of receipt, and any such gain or loss will be U.S.-source ordinary income or loss.
+        Subject to applicable limitations, some of which vary depending upon the U.S. Holder’s circumstances, Norwegian taxes
+        withheld from dividends on Shares (at a rate not exceeding the Treaty rate for U.S. Holders entitled for Treaty benefits)
+        may be creditable against the U.S. Holder’s U.S. federal income tax liability. Dividends paid by the Company on the
+        shares will generally constitute "passive category income" or in certain cases "general category income" for foreign tax
+        credit purposes. The rules governing foreign tax credits are complex, and U.S. Holders should consult their tax advisors
+        regarding the creditability of foreign taxes in their particular circumstances or the ability to deduct foreign taxes in lieu
+        of claiming a foreign tax credit and any applicable limitations.
+        16.2.4 Sale or Other Taxable Disposition of Shares
+        For U.S. federal income tax purposes, gain or loss realised on the sale or other disposition of Shares will be capital gain
+        or loss, and will be long-term capital gain or loss if the U.S. Holder held the Shares for more than one year. The amount
+        of the gain or loss will equal the difference between the U.S. Holder’s adjusted tax basis in the Shares disposed of and
+        the amount realised on the disposition, in each case as determined in U.S. dollars. This gain or loss will generally be
+                                        108
