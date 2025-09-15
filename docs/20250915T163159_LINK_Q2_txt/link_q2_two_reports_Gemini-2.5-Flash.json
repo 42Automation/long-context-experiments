@@ -1,0 +1,10 @@
+{
+  "id": "link_q2_two_reports",
+  "query": "What currency pair has the strongest impact in case of exchange rates fluctuations?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "NOK/EUR has the stronges impact in case of exchange rates fluctuations",
+  "output": "Based on the provided document, fluctuations in **NOK/EUR, NOK/DKK, and NOK/SEK** currency pairs have the most significant impact on the financial reporting of financial assets and liabilities.",
+  "input_tokens": 185750,
+  "passed": false
+}

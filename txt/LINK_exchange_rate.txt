@@ -1,0 +1,66 @@
+
+
+                            Link Mobility Group Holding ASA - Prospectus
+
+        revenue growth from such customers, demonstrated by a 111% Revenue Net Retention Rate in the six months ended
+        30 June 2020 and 106% in the year ended 31 December 2019.
+
+        11.3.6 Direct relationships with mobile network operators, OTT-providers and financial services providers
+        The Group’s direct relationships with mobile network operators, OTT-providers and financial services providers have a
+        significant impact on the Group’s results of operations. The Group’s ability to source certain CPaaS and payments services
+        can drive demand for The Group’s services, reduce the cost of services and provide a competitive advantage in certain
+        markets. The Group has generally experienced a positive correlation between the number of its direct relationships and
+        growth in revenue and gross margin.
+        In addition, certain CPaaS services provided by the Group require direct relationships with OTT providers. The contracts
+        with the OTT providers enable the Group to supplement its traditional CPaaS messaging and voice services with OTT
+        communication services and offer its customers omni-channel communication capabilities, thereby providing the Group
+        with a competitive advantage vis-à-vis traditional CPaaS providers. In addition, the Group’s omni-channel
+        communication capabilities also allow the Group to mitigate its communication services supplier risk and manage its
+        communication-related cost of services as it can shift its messaging and voice services to different communication
+        channels.
+        11.3.7 Platform costs and operating expenses
+        The Group believes that to expand its business, it needs to continue to invest in development of its products and services.
+        As its products and services have been primarily built in-house, it expects to continue to make significant investments
+        in research and development activities that will enable the Group not to rely significantly on any third-party systems or
+        service providers to provide its products and services and, consequently, to not make significant investments in
+        integrating and maintaining third-party systems or resolving legacy system issues. The Group expects to realise cost
+        savings through economies of scale, but may incur costs during phases of expansion and optimisation. For information
+        relating to the Group's investments reference is made to Section 11.14 "Investments".
+        11.3.8 Exchange rates
+        The Group undertakes business in foreign currencies and is consequently exposed to fluctuations in exchange rates.
+        Foreign exchange risk arises from transactions related to operations conducted, and assets and liabilities arising in
+        foreign currencies. The Group undertakes transactions denominated in NOK, SEK, DKK, EUR, GBP, BGN, CHF, RON, MKD
+        and PLN. Revenue and cost transactions within foreign subsidiaries are normally carried out in the same currency, which
+        mitigates the currency risk. The Group has no hedging arrangements. See Section 2.3.2 "Currency fluctuations could
+        affect the Group’s cash flow and financial condition".
+        However, as the Group's overall financial reporting is presented in NOK, changes in the value of SEK, DKK, EUR, GBP,
+        BGN, CHF, RON, MKD or PLN in relation to NOK affect the Group’s overall revenue, profit or loss and financial position.
+        Based on exposure throughout the year and balances at the period-end, the Group assesses that fluctuations in
+        NOK/EUR, NOK/DKK and NOK/SEK have the most significant impact on the financial reporting of financial assets and
+        liabilities.
+        For the year ended 31 December 2019, 80% of the Group’s revenue were generated in a currency other than the NOK.
+        Based on exposure throughout the year and balances at the period-end, the Group assesses that fluctuations in
+        NOK/EUR, NOK/DKK and NOK/SEK have the most significant impact on the financial reporting of financial assets and
+        liabilities.
+        The table below summarises the impact a change in these currencies will have on the consolidated income statement
+        and on retained earnings/accumulated losses as of 30 June 2020. The analysis is based on the assumption that the
+        foreign exchange rates increase or decrease by 10%, all other variables held constant.
+                                            Six months ended 30 June 2020
+         (In NOK 1,000)
+                                   NOK/EUR impact NOK/DKK impact NOK/SEK impact
+         Trade receivables ................................. 521 7       -
+         Trade payables ..................................... 436 44   250
+         Borrowings .......................................... 58,066 -  -
+                                            Year ended 31 December 2019
+         (In NOK 1,000)
+                                   NOK/EUR impact NOK/DKK impact NOK/SEK impact
+         Trade receivables ................................. 32,662 1,506 6,192
+         Trade payables ..................................... 18,157 904 7,230
+         Borrowings .......................................... 167,684 - -
+                                            Year ended 31 December 2018
+         (In NOK 1,000)
+                                   NOK/EUR impact NOK/DKK impact NOK/SEK impact
+         Trade receivables ................................. 521 7       -
+         Trade payables ..................................... 436 44   250
+         Borrowings .......................................... 58,066 -  -
+                                        63

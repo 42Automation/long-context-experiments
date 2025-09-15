@@ -1,0 +1,10 @@
+{
+  "id": "link_q2_two_reports",
+  "query": "What currency pair has the strongest impact in case of exchange rates fluctuations?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "NOK/EUR has the stronges impact in case of exchange rates fluctuations",
+  "output": "Based on the prospectus, fluctuations in NOK/EUR, NOK/DKK and NOK/SEK have the most significant impact on the Group\u2019s financial reporting and results. Of those three, the prospectus singles out NOK/EUR as having the largest absolute exposure (e.g., 80% of 2019 revenue was generated in currencies other than NOK and the EUR\u2011denominated debt is a major source of FX impact). \n\nSo: NOK/EUR has the strongest impact, followed by NOK/DKK and NOK/SEK.",
+  "input_tokens": 185747,
+  "passed": true
+}

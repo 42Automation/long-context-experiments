@@ -1,0 +1,10 @@
+{
+  "id": "link_q2_segment",
+  "query": "What currency pair has the strongest impact in case of exchange rates fluctuations?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "NOK/EUR has the stronges impact in case of exchange rates fluctuations",
+  "output": "NOK/EUR has the strongest impact \u2014 fluctuations in NOK/EUR produce the largest effects on the Group\u2019s income statement and retained earnings.",
+  "input_tokens": 1184,
+  "passed": true
+}

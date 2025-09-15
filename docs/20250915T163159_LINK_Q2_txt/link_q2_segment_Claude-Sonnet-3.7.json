@@ -1,0 +1,10 @@
+{
+  "id": "link_q2_segment",
+  "query": "What currency pair has the strongest impact in case of exchange rates fluctuations?",
+  "model": "Claude-Sonnet-3.7",
+  "doc_urls": null,
+  "expected_answer": "NOK/EUR has the stronges impact in case of exchange rates fluctuations",
+  "output": "Based on the document, the Group assesses that fluctuations in NOK/EUR, NOK/DKK, and NOK/SEK have the most significant impact on their financial reporting of assets and liabilities. However, looking at the specific numbers in the tables, NOK/EUR appears to have the strongest impact, particularly on borrowings (58,066 thousand NOK in 2020 and 167,684 thousand NOK in 2019), which is substantially higher than the impacts from the other currency pairs.",
+  "input_tokens": 1303,
+  "passed": true
+}

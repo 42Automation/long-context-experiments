@@ -39,7 +39,8 @@ For the SEC filing documents:
 
 For the LINK mobility documents:
 * Q1. What was LINK Mobility revenue in 2020?
-* Q2. How could the M&A activity affect the PFIC status?
+* Q2. What currency has the strongest impact in case of exchange rates fluctuations?
+* Q3. How could the M&A activity affect the PFIC status?
 
 ## Results
 
