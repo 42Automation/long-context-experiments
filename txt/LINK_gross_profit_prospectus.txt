@@ -1,0 +1,70 @@
+
+                            Link Mobility Group Holding ASA - Prospectus
+
+        10.6  Revenues and Gross Profit per reporting segment
+        The table below sets out the Group's revenues per reporting segment as of the financial year ended 31 December 2019,
+        2018 and 2017, and the for the six months ended 30 June 2020 and 2019.
+
+                                     Six months ended      Year ended
+         (In NOK 1,000)                 30 June           31 December
+                                    20201   20191   20192   20183    20174
+         Revenues
+         Nordics5 ................................................... 545,235 468,373 980,105 915,558 802,301
+         Central Europe6......................................... 374,219 272,334 639,486 515,390 345,139
+         Western Europe7 ....................................... 534,147 441,884 956,616 242,477 146,562
+         Global Messaging8 ..................................... 264,028 153,524 356,499 298,584 n.a
+         Total ........................................................ 1,717,629 1,336,114 2,932,707 1,972,009 1,294,002
+         Gross Profit
+         Nordics1 ................................................... 173,010 155,805 312,713 301,372 291,994
+         Central Europe2......................................... 94,269 72,798 167,235 132,628 75,193
+         Western Europe3 ....................................... 136,997 107,012 232,853 73,596 29,464
+         Global Messaging4 ..................................... 25,042 19,694 40,100 39,616 n.a
+         Total ........................................................ 429,318 355,309 752,901 547,213 396,651
+         1 Represents the Six Months Condensed Interim Financial Statements.
+         2 Represents the 2019 Consolidated Financial Statements.
+         3 Represents the 2018 Consolidated Financial Statements.
+         4 Represents the 2017 Consolidated Financial Statements
+         5 Nordics include Norway, Sweden, Denmark, Finland and Baltics.
+         6 Central Europe includes Austria, Bulgaria, Germany, Hungary, Poland, Romania and North Macedonia.
+         7 Western Europe includes Spain, the United Kingdom, Italy and France.
+         8 Global Messaging includes the main share of aggregator business and the Swiss entity also holding global enterprise customers.
+        10.7  Non-IFRS financial measures
+        10.7.1 Non-IFRS financial measures for the Group
+                                         Six months ended    Year ended
+         (In NOK million)                   30 June         31 December
+                                        2020    2019    2019    2018  2017
+         Gross Profit1 ................................................................. 429.3 355.3 752.9 547.2 396.6
+         Gross Margin1 ............................................................... 25% 27% 26% 28% 31%
+         EBITDA2 ....................................................................... 160.0 83.4 210.4 115.0 86.9
+         Adjusted EBITDA2 .......................................................... 182.6 134.2 307.5 212.0 140.0
+         Adjusted EBITDA Margin3 ................................................ 11% 10% 10% 11% 11%
+         LTM Adjusted EBITDA4 .................................................... 356.1 - - - -
+         Like-for-Like Revenue5 ................................................... 1,613.6 965.3 2,128.7 1,387.9 1,255.4
+         Gross Profit Conversion6 ................................................. 43% 38% 41% 39% 35%
+         Revenue Net Retention Rate7 ........................................... 113% - 106% - -
+         Churn Rate8 .................................................................. 4% - 3% - -
+         Net Customer Expansion Rate9 ......................................... 121% - - - -
+           1   The following table reconciles shows the reconciliation between Gross Profit and revenue for the relevant periods:
+                                         Six months ended   Year ended
+               (In NOK million)             30 June         31 December
+                                          2020  2019 2019    2018    2017
+               Revenue ..................................................................... 1,718 1,336 2,933 1,972 1,294
+               Direct Cost ................................................................... 1,288 981 2,180 1,425 897
+               Gross Profit ................................................................ 429 355 753 547 397
+               Gross Margin .............................................................. 25% 27% 26% 28% 31%
+           2   The following table shows the reconciliation between operating profit, EBITDA and Adjusted EBITDA for the relevant periods:
+                                         Six months ended   Year ended
+               (In NOK million)            30 June         31 December
+                                          2020  2019 2019    2018    2017
+               Operating profit ......................................................... 53 -20 -37 30 45
+               Depreciation and amortisation ........................................ 108 103 247 86 42
+               EBITDA ...................................................................... 160 83 210 115 87
+               Share option program cost ............................................. 0 0.0 0 23.1 19.0
+               M&A activities costs(a) .................................................... 3.3 15.6 27.2 40.5 26.0
+               Restructuring cost and other(b) ....................................... 19.3 35.2 70.0 33.3 8.0
+               Total adjustments ...................................................... 22.6 50.8 97.1 96.9 53.1
+               Adjusted EBITDA........................................................ 182.6 134.2 307.5 212.4 140.0
+                    (a)    The adjustment M&A activities costs refers to the financial line item cost related to acquisition of subsidiaries
+                           presented in total other operating expenses and are mainly related to consultant and legal advisor expenses
+                           incurred in connection with acquisition of subsidiaries.
+                                        54

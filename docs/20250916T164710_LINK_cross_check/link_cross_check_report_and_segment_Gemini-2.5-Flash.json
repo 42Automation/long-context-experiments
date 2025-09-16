@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_report_and_segment",
+  "query": "Are there any discrepancies in the revenue and gross profit values between prospectus and annual report?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "Yes, there are discrepancies. In particular, the revenue per segment for Central Europe in 2019 is 596,805K NOK in the annual report and 639,486K NOK in the prospectus, which also causes the totals to differ with 2,890,025K NOK in the annual report and 2,932,707K NOK in the prospectus.",
+  "output": "Yes, there are discrepancies in the revenue figures for 2019 between the prospectus and the annual report, specifically for \"Total Revenue\" and \"Central Europe\" revenue. The gross profit figures, however, appear to match.\n\nHere's a breakdown for 2019:\n\n**Revenue (NOK 1,000)**\n\n*   **Total Revenue:**\n    *   **Prospectus (Table 10.6):** 2,932,707\n    *   **Annual Report (Appendix C, page 53):** 2,890,025\n    *   **Discrepancy:** 42,682\n\n*   **Central Europe Revenue:**\n    *   **Prospectus (Table 10.6):** 639,486\n    *   **Annual Report (Appendix C, page 53):** 596,805\n    *   **Discrepancy:** 42,681\n\n*   **Other Segments (Nordics, Western Europe, Global Messaging):** The revenue figures for these segments match between the two documents.\n\n**Gross Profit (NOK 1,000)**\n\n*   **Total Gross Profit:**\n    *   **Prospectus (Table 10.6):** 752,901\n    *   **Annual Report (Appendix C, page 53):** 752,901\n    *   **Match.**\n\n*   **All Segments (Nordics, Central Europe, Western Europe, Global Messaging):** The gross profit figures for all segments match between the two documents.\n\nThe discrepancy in total revenue appears to be primarily due to the difference reported for the Central Europe segment.",
+  "input_tokens": 186326,
+  "passed": true
+}

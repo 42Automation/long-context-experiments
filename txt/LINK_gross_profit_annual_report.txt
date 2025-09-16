@@ -1,0 +1,55 @@
+
+
+         6. Segment  reporting
+
+
+         The Group reports revenue, gross margin (revenue less direct costs) and adjusted EBITDA in functional operating
+         segments to the Board of Directors (the Group’s chief operating decision makers). While LINK uses all four measures
+         to analyze performance, the Group’s strategy of profitable growth means that adjusted EBITDA is the prevailing
+         measure of performance (refer to alternate performance measures).
+         An examination of operating units based on market maturity and product development as well as geography identifies
+         four natural reporting segments. These are the Nordics, Western Europe, Central Europe, and Global Messaging; these
+         represent market clusters. Generally, regions are segregated into similar geographic locations as these follow similar
+         market trends. Common routing includes all regions with aggregator traffic; the other three have enterprise traffic.
+
+         The Nordics
+         The Nordics is comprised of Norway, Sweden, Denmark, and Finland.
+
+         Central Europe
+         Central Europe is comprised of Bulgaria, Romania, North Macedonia, Poland, Hungary, Germany, and Austria.
+
+         Western Europe
+         Western Europe is comprised of Spain, France, the United Kingdom, and Italy.
+
+         Global Messaging
+         Global messaging is comprised of non-enterprise traffic and is representative of either stand-alone business or as
+         a component of revenues in countries included above. If a business is comprised of both enterprise and wholesale/
+         aggregator transactions, the latter is segregated here. The Swiss operation Horisen Messaging is included here.
+
+         Wholesale/aggregator business is defined as an operating unit within LINK’s industry, and that use LINK connections
+         in markets where they do not have such connections themselves. This business can generally be referred to, at least
+         partly, as a direct competitor that use LINK connections. Smaller local aggregators cannot be expected to be covered
+         efficiently by Global Messaging and as such they are still subject to local management.
+
+
+
+          Revenue per segment                        2020             2019
+          Northern Europe                         1,169,382         980,105
+          Central Europe*                          765,980          596,805
+          Western Europe                          1,125,316         956,616
+          Global Messaging                         478,553          356,499
+          Total                                   3,539,231        2,890,025
+
+
+          Gross profit per segment                  2020              2019
+          Northern Europe                          350,957           312,713
+
+          Central Europe                           218,603           167,235
+          Western Europe                           276,462           232,853
+          Global Messaging                         53,198            40,100
+          Total                                    899,220          752,901
+
+
+
+                                              Because every communication matters. 53
+

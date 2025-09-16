@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_two_segments",
+  "query": "Are there any discrepancies in the revenue and gross profit values between prospectus and annual report?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "Yes, there are discrepancies. In particular, the revenue per segment for Central Europe in 2019 is 596,805K NOK in the annual report and 639,486K NOK in the prospectus, which also causes the totals to differ with 2,890,025K NOK in the annual report and 2,932,707K NOK in the prospectus.",
+  "output": "Yes. The prospectus and the annual report figures do not match for the same labels/periods:\n\n1) Six-month / year-ended table (prospectus pages shown near 10.6 / 10.7)\n- Total revenue for year ended 31 Dec 2019: 2,932,707 (NOK 1,000) = NOK 2,932.7 million.\n- Total gross profit for year ended 31 Dec 2019: 752,901 (NOK 1,000) = NOK 752.9 million.\n\n2) Segment summary table (later in the document, labelled \u201cRevenue per segment\u201d / \u201cGross profit per segment\u201d)\n- Total revenue for 2019: 2,890,025 (NOK 1,000) = NOK 2,890.0 million.\n- Total gross profit for 2019: 752,901 (NOK 1,000) = NOK 752.9 million.\n\nDiscrepancies:\n- Revenue for 2019 differs: 2,932,707 vs. 2,890,025 (difference 42,682 = ~NOK 42.7 million).\n- Gross profit for 2019 is consistent: both show 752,901 (NOK 1,000).\n\nAdditionally, per-segment revenues in the first table for \u201cNordics / Central Europe / Western Europe / Global Messaging\u201d (summing to total 2,932,707) differ from the later \u201cRevenue per segment\u201d numbers (which sum to 2,890,025). Per-segment gross profit totals in the later table sum to 899,220 for 2020 and 752,901 for 2019; the 2019 gross profit matches the earlier 752,901, but 2020 totals are different formats (the six-month table showed 429,318 for six months 2020 vs. the later table shows full-year 2020 totals of 899,220).\n\nSummary: The main inconsistency is total revenue for 2019 (a ~NOK 42.7m difference) between the two tables; gross profit for 2019 is consistent.",
+  "input_tokens": 1976,
+  "passed": true
+}

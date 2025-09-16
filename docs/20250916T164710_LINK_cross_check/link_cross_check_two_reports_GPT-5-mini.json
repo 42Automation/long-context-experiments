@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_two_reports",
+  "query": "Are there any discrepancies in the revenue and gross profit values between prospectus and annual report?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "Yes, there are discrepancies. In particular, the revenue per segment for Central Europe in 2019 is 596,805K NOK in the annual report and 639,486K NOK in the prospectus, which also causes the totals to differ with 2,890,025K NOK in the annual report and 2,932,707K NOK in the prospectus.",
+  "output": "Yes.\n\nComparing the figures reported for the same periods:\n\n- Six months ended 30 June 2020\n  - Prospectus: Revenue 1,717,629 NOKk; Gross profit 429,318 NOKk.\n  - Annual report (interim, Appendix B): Revenue 1,717,629 NOKk; Gross profit 429,318 NOKk.\n  \u2192 These match.\n\n- Year ended 31 December 2019\n  - Prospectus: Revenue 2,932,707 NOKk; Gross profit 752,901 NOKk.\n  - Annual report (Appendix C): Revenue 2,890,025 NOKk; gross profit (reported as \u201cGross margin\u201d / implied) 752,901 NOKk in the prospectus; the annual-report detailed split shows gross profit components summing to 752,901 NOKk in 2019 as well.\n  \u2192 Revenue differs: Prospectus reports 2,932,707 NOKk while the annual report shows 2,890,025 NOKk (difference 42,682 NOKk). Gross profit is consistent at 752,901 NOKk.\n\nIn short: gross profit for 2019 is consistent; total revenue for 2019 differs between the prospectus (2,932,707) and the annual report (2,890,025).",
+  "input_tokens": 220617,
+  "passed": false
+}
