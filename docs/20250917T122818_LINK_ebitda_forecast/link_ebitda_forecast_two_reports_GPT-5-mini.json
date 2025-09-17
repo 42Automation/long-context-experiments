@@ -1,0 +1,10 @@
+{
+  "id": "link_ebitda_forecast_two_reports",
+  "query": "Does the forecasted EBITDA for 2020 match the actual values?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "No, the prospectus forescast for the 2020 EBITDA is NOK 360 million to NOK 370 million but the actual values is roughly 390 million, according to the annual report.",
+  "output": "No.\n\nThe prospectus outlook (Section 11.4.8) forecasted Adjusted EBITDA for 2020 in the range NOK 360\u2013370 million. The reported actual LTM/2020 figures show:\n\n- Adjusted EBITDA for the twelve months ended 30 June 2020 (LTM) of NOK 356.1 million (prospectus datapoint).\n- Reported Adjusted EBITDA for full year 2020 in the audited results (consolidated statement) is NOK 390.8 million.\n\nThus the full\u2011year 2020 Adjusted EBITDA of NOK 390.8 million exceeded the prospectus forecast range (NOK 360\u2013370m).",
+  "input_tokens": 220642,
+  "passed": true
+}

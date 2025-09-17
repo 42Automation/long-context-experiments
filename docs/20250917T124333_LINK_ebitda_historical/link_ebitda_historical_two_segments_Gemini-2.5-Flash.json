@@ -1,0 +1,10 @@
+{
+  "id": "link_ebitda_historical_two_segments",
+  "query": "Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "The data in the documents provided allows us to compare historical adjusted EBITDA data for 2019 (previous years are not documented in the yearly report and 2020 is partially forecasted in the prospectus). For 2019, there are slight variations in adjusted EBITDA values reported. It can be found reported as 307,941 NOKK, or as 307,549 NOKK or as 307.5 NOKM or as 307,548 NOKK. So the values don't fully match, though they are all within 307.5 and 307.9 NOKM.",
+  "output": "No, the historical Adjusted EBITDA values do not perfectly match between the IPO prospectus and the Annual Report for the year 2019. The Annual Report also does not provide Adjusted EBITDA figures for 2017 and 2018 in the provided snippets.\n\nFor the year ended 31 December 2019:\n*   **IPO Prospectus:**\n    *   Adjusted EBITDA (from 10.7.1 Non-IFRS financial measures for the Group): **307.5 million NOK**\n    *   Adjusted EBITDA (from 10.7.2 Non-IFRS financial measures by operating segments, Total): **307,548 thousand NOK** (or 307.548 million NOK)\n*   **Annual Report:**\n    *   Adjusted EBITDA (from \"Adjusted EBITDA by segment\", Total): **390,841 thousand NOK** (or 390.841 million NOK)\n    *   Adjusted EBITDA (from \"Reconciliation of EBIT to Adjusted EBITDA\"): **307,941 thousand NOK** (or 307.941 million NOK)\n    *   Adjusted EBITDA (from \"Reconciliation of EBITDA to Adjusted EBITDA\"): **307,549 thousand NOK** (or 307.549 million NOK)\n\nWhile some figures are very close (e.g., 307.548 million NOK from prospectus vs. 307.549 million NOK from one annual report table), there are discrepancies, such as the 307.941 million NOK and 390.841 million NOK figures in the Annual Report for 2019.",
+  "input_tokens": 6122,
+  "passed": true
+}

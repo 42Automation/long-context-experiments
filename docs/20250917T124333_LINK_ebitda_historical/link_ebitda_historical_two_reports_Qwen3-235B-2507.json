@@ -1,0 +1,10 @@
+{
+  "id": "link_ebitda_historical_two_reports",
+  "query": "Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "Qwen3-235B-2507",
+  "doc_urls": null,
+  "expected_answer": "The data in the documents provided allows us to compare historical adjusted EBITDA data for 2019 (previous years are not documented in the yearly report and 2020 is partially forecasted in the prospectus). For 2019, there are slight variations in adjusted EBITDA values reported. It can be found reported as 307,941 NOKK, or as 307,549 NOKK or as 307.5 NOKM or as 307,548 NOKK. So the values don't fully match, though they are all within 307.5 and 307.9 NOKM.",
+  "output": "The historical adjusted EBITDA values between the IPO prospectus and the annual report do not match. The prospectus reports an adjusted EBITDA of 307.5 million NOK for the year ended 31 December 2019, while the annual report shows a value of 307,941 thousand NOK for the same period.",
+  "input_tokens": 220642,
+  "passed": true
+}

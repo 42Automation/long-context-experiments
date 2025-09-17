@@ -1,0 +1,337 @@
+                            Link Mobility Group Holding ASA - Prospectus
+
+        10.6  Revenues and Gross Profit per reporting segment
+        The table below sets out the Group's revenues per reporting segment as of the financial year ended 31 December 2019,
+        2018 and 2017, and the for the six months ended 30 June 2020 and 2019.
+
+                                     Six months ended      Year ended
+         (In NOK 1,000)                 30 June           31 December
+                                    20201   20191   20192   20183    20174
+         Revenues
+         Nordics5 ................................................... 545,235 468,373 980,105 915,558 802,301
+         Central Europe6......................................... 374,219 272,334 639,486 515,390 345,139
+         Western Europe7 ....................................... 534,147 441,884 956,616 242,477 146,562
+         Global Messaging8 ..................................... 264,028 153,524 356,499 298,584 n.a
+         Total ........................................................ 1,717,629 1,336,114 2,932,707 1,972,009 1,294,002
+         Gross Profit
+         Nordics1 ................................................... 173,010 155,805 312,713 301,372 291,994
+         Central Europe2......................................... 94,269 72,798 167,235 132,628 75,193
+         Western Europe3 ....................................... 136,997 107,012 232,853 73,596 29,464
+         Global Messaging4 ..................................... 25,042 19,694 40,100 39,616 n.a
+         Total ........................................................ 429,318 355,309 752,901 547,213 396,651
+         1 Represents the Six Months Condensed Interim Financial Statements.
+         2 Represents the 2019 Consolidated Financial Statements.
+         3 Represents the 2018 Consolidated Financial Statements.
+         4 Represents the 2017 Consolidated Financial Statements
+         5 Nordics include Norway, Sweden, Denmark, Finland and Baltics.
+         6 Central Europe includes Austria, Bulgaria, Germany, Hungary, Poland, Romania and North Macedonia.
+         7 Western Europe includes Spain, the United Kingdom, Italy and France.
+         8 Global Messaging includes the main share of aggregator business and the Swiss entity also holding global enterprise customers.
+        10.7  Non-IFRS financial measures
+        10.7.1 Non-IFRS financial measures for the Group
+                                         Six months ended    Year ended
+         (In NOK million)                   30 June         31 December
+                                        2020    2019    2019    2018  2017
+         Gross Profit1 ................................................................. 429.3 355.3 752.9 547.2 396.6
+         Gross Margin1 ............................................................... 25% 27% 26% 28% 31%
+         EBITDA2 ....................................................................... 160.0 83.4 210.4 115.0 86.9
+         Adjusted EBITDA2 .......................................................... 182.6 134.2 307.5 212.0 140.0
+         Adjusted EBITDA Margin3 ................................................ 11% 10% 10% 11% 11%
+         LTM Adjusted EBITDA4 .................................................... 356.1 - - - -
+         Like-for-Like Revenue5 ................................................... 1,613.6 965.3 2,128.7 1,387.9 1,255.4
+         Gross Profit Conversion6 ................................................. 43% 38% 41% 39% 35%
+         Revenue Net Retention Rate7 ........................................... 113% - 106% - -
+         Churn Rate8 .................................................................. 4% - 3% - -
+         Net Customer Expansion Rate9 ......................................... 121% - - - -
+           1   The following table reconciles shows the reconciliation between Gross Profit and revenue for the relevant periods:
+                                         Six months ended   Year ended
+               (In NOK million)             30 June         31 December
+                                          2020  2019 2019    2018    2017
+               Revenue ..................................................................... 1,718 1,336 2,933 1,972 1,294
+               Direct Cost ................................................................... 1,288 981 2,180 1,425 897
+               Gross Profit ................................................................ 429 355 753 547 397
+               Gross Margin .............................................................. 25% 27% 26% 28% 31%
+           2   The following table shows the reconciliation between operating profit, EBITDA and Adjusted EBITDA for the relevant periods:
+                                         Six months ended   Year ended
+               (In NOK million)            30 June         31 December
+                                          2020  2019 2019    2018    2017
+               Operating profit ......................................................... 53 -20 -37 30 45
+               Depreciation and amortisation ........................................ 108 103 247 86 42
+               EBITDA ...................................................................... 160 83 210 115 87
+               Share option program cost ............................................. 0 0.0 0 23.1 19.0
+               M&A activities costs(a) .................................................... 3.3 15.6 27.2 40.5 26.0
+               Restructuring cost and other(b) ....................................... 19.3 35.2 70.0 33.3 8.0
+               Total adjustments ...................................................... 22.6 50.8 97.1 96.9 53.1
+               Adjusted EBITDA........................................................ 182.6 134.2 307.5 212.4 140.0
+                    (a)    The adjustment M&A activities costs refers to the financial line item cost related to acquisition of subsidiaries
+                           presented in total other operating expenses and are mainly related to consultant and legal advisor expenses
+                           incurred in connection with acquisition of subsidiaries.
+                                        54
+
+                            Link Mobility Group Holding ASA - Prospectus
+
+                    (b)    The adjustment restructuring cost and other represents costs which are mainly related to efficiency projects,
+                           start-up costs for new businesses and branding/re-branding costs in connection with the acquisitions of
+                           subsidiaries presented in the financial line item total other operating expenses with NOK 10,561 thousand,
+                           NOK 20,892 thousand and NOK 48,425 thousand for the six months ended 30 June 2020, 2019 and full year
+                           2019, whereof NOK 3,245 thousand NOK 14,783 thousand and NOK 39,796 thousand, respectively relates to
+                           the financial line item Restructuring costs, presented within Total other operating expenses.
+                           In addition, in the six months ended 30 June 2020, 2019 and full year 2019 an adjustment has been performed
+                           of NOK 8,689 thousand, NOK 14,272 thousand and NOK 21,542 thousand, respectively extracted from the
+                           financial line item total payroll and related expenses and relating to severance paid to certain employees as a
+                           result of the acquisition of subsidiaries and changes in the Group’s strategic focus as well as certain
+                           replacement/rehiring costs
+           3   Adjusted EBITDA Margin is defined as Adjusted EBITDA as a percentage of operating revenues in the respective periods.
+           4   The following table shows the reconciliation between operating profit and LTM Adjusted EBITDA for the relevant periods:
+                                             LTM ended
+               (In NOK million)               30 June
+                                               2020
+               Operating profit .................................................................... 35.2
+               Depreciation and amortisation ................................................... 251.9
+               EBITDA ................................................................................. 287.1
+               Share option program cost ........................................................ -
+               M&A activities costs .................................................................. 14.9
+               Restructuring cost and other(a) .................................................. 54.1
+               LTM Adjusted EBITDA ........................................................... 356.1
+           5   The following table reconciles Like-for-Like Revenue to revenue for the relevant periods:
+                                             Six months ended Year ended
+                                                30 June       31 December
+               (In NOK million)
+                                             2020   2019  2019  2018  2017
+               Revenue ................................................................................ 1,717.6 1,336.1 2,932.7 1,972.0 1,294.0
+               Acquisition Revenue(a) ............................................................. -104.0 -370.8 -803.9 -584.1 -38.6
+               Like-for-Like Revenue(b) ........................................................... 1,613.6 965.3 2,128.7 1,387.9 1,255.4
+                   (a)   Acquisition Revenue is defined as revenue generated by the acquired entities for the periods indicated. The Company
+                         considers Acquisition Revenue any revenue generated by acquired entities for four full consecutive quarters after
+                         complete ownership by the Company of such entity. From 1 January 2018 an acquired Spanish entity was merged
+                         with an existing entity, hence the allocation of revenues between organic and acquired revenue is based on a
+                         management estimate. In 2017 an acquired Danish entity was merged with an existing Danish entity, hence the
+                         allocation between organic and acquired revenue is estimated. See Section 11.3.2 "Acquisitions".
+                   (b)   When comparing the Like-for-Like Revenue for a relevant period, the entities used for such calculation differ from
+                         period to period, as the Company excludes revenues from companies acquired during the relevant periods in
+                         calculating Like-for-Like Revenue. This methodology allows the Company to isolate and compare the revenue
+                         generated by the companies that were operating for the full relevant period compared. See Section 11.3.2
+                         "Acquisitions".
+                         When comparing the years ended 31 December 2018 to 31 December 2019, the Company excludes revenues from
+                         companies acquired in 2019 and 2018, but includes the revenue from companies acquired in 2017, as the Company
+                         no longer considers such revenue as Acquisition Revenue. The growth rate of Like-for-Like Revenue for the years
+                         ended 31 December 2018 to 31 December 2019 increased from 1,956.9 to 2,128.7, an increase of 9%.
+                         When comparing the years ended 31 December 2017 to 31 December 2018, the Company excludes revenues from
+                         companies acquired in 2017 and 2018. The growth rate of Like-for-Like Revenue for the years ended 31 December
+                         2017 to 31 December 2018 increased from 1,255.4 to 1,387.9, an increase of 11%.
+           6   Gross Profit Conversion is defined as Adjusted EBITDA divided by Gross Profit.
+           7   Revenue Net Retention Rate is defined as revenue from the net of upsale, downsale and churn for customers throughout the period, not
+               taking into account new customers during the year. Revenue Net Retention Rate excludes the acquisitions of TeraComm Group and Spothit.
+               Excluding Spain, these figures are 116% and 111% for the six months ended 30 June 2020 and as of 31 December 2020, respectively. The
+               data required to calculate these measures was not yet monitored in the years ended 31 December 2017 and 2018 and as a result
+               comparatives for the years ended 31 December 2017 and 2018 are not available.
+           8   Churn Rate is defined as revenue of customers that were a customer in the prior period but were not a customer at the beginning of the
+               current period divided by the total revenue of the prior period. The data required to calculate these measures was not yet monitored in the
+               years ended 31 December 2017 and 2018 and as a result comparatives for the years ended 31 December 2017 and 2018 are not available.
+           9   Net Customer Expansion Rate is defined as the revenue generated from customers at the end of the period with their corresponding revenue
+               from the same period in the previous year.
+        10.7.2 Non-IFRS financial measures by operating segments
+                                     Six months ended      Year ended
+         (In NOK 1,000)                 30 June           31 December
+                                    2020     2019    2019    2018    2017
+         Adjusted EBITDA
+         Nordics1................................................ 118,942 96,361 194,266 172,606 134,922
+         Central Europe2 ..................................... 57,945 43,676 101,021 80,484 42,514
+         Western Europe3 .................................... 55,118 31,204 83,834 26,866 17,626
+         Global Messaging4 .................................. 12,442 14,168 26,603 32,262 -
+         Group Costs .......................................... -61,802 -51,225 -98,176 -99,849 -55,074
+         Total ................................................... 182,645 134,183 307,548 212,370 139,988
+                                        55
+
+
+                            Link Mobility Group Holding ASA - Prospectus
+
+        However, not all companies may calculate the non-IFRS financial measures in the same manner or on a consistent basis
+        and, as a result, the presentation thereof may not be comparable to measures used by other companies under the same
+        or similar names. Accordingly, undue reliance should not be placed on the non-IFRS financial measures contained in this
+        Prospectus and they should not be considered as a substitute for revenue, and EBIT or other financial measures
+        computed in accordance with IFRS, as adopted by the European Union. For a description of non-IFRS measures discussed
+        in this Section, see Section 4.2.3 "Non-IFRS financial measures".
+                                              Six months ended Year ended
+         (In NOK million)                        30 June      31 December
+                                               2020   2019 2019  2018  2017
+         Gross Profit1 ..................................................................................... 429.3 355.3 752.9 547.2 396.6
+         Gross Margin1 ................................................................................... 25% 27% 26% 28% 31%
+         EBITDA2 ........................................................................................... 160.0 83.4 210.4 115.0 86.9
+         Adjusted EBITDA2 .............................................................................. 182.6 134.2 307.5 212.0 140.0
+         Adjusted EBITDA Margin3 .................................................................... 11% 10% 10% 11% 11%
+         LTM Adjusted EBITDA4 ........................................................................ 356.1 - - - -
+         Like-for-Like Revenue5 ....................................................................... 1,613.6 965.3 2,128.7 1,387.9 1,255.4
+         Gross Profit Conversion6 ..................................................................... 43% 38% 41% 39% 35%
+         Revenue Net Retention Rate7 ............................................................... 113% - 106% - -
+         Churn Rate8 ...................................................................................... 4% - 3% - -
+         Net Customer Expansion Rate9 ............................................................. 121% - - - -
+         1 The following table reconciles shows the reconciliation between Gross Profit and revenue for the relevant periods:
+                                                Six months ended Year ended
+           (In NOK million)                        30 June      31 December
+                                                 2020  2019  2019  2018 2017
+           Revenue ...................................................................................................... 1,718 1,336 2,933 1,972 1,294
+           Direct Cost .................................................................................................... 1,288 981 2,180 1,425 897
+           Gross Profit ................................................................................................. 429 355 753 547 397
+           Gross Margin ............................................................................................... 25% 27% 26% 28% 31%
+         2 The following table shows the reconciliation between operating profit, EBITDA and Adjusted EBITDA for the relevant periods:
+                                                 Six months ended Year ended
+           (In NOK million)                        30 June      31 December
+                                                 2020  2019  2019  2018 2017
+           Operating profit ......................................................................................... 53 -20 -37 30 45
+           Depreciation and amortisation ........................................................................ 108 103 247 86 42
+           EBITDA ...................................................................................................... 160 83 210 115 87
+           Share option program cost ............................................................................. - - - 23.1 19.0
+           M&A activities costs(a) .................................................................................... 3.3 15.6 27.2 40.5 26.0
+           Restructuring cost and other(b) ....................................................................... 19.3 35.2 70.0 33.3 8.0
+           Total adjustments ...................................................................................... 22.6 50.8 97.1 96.9 53.1
+           Adjusted EBITDA ....................................................................................... 182.6 134.2 307.5 212.4 140.0
+             (a)  The adjustment M&A activities costs refers to the financial line item cost related to acquisition of subsidiaries presented in total other operating
+                  expenses and are mainly related to consultant and legal advisor expenses incurred in connection with acquisition of subsidiaries.
+             (b)  The adjustment restructuring cost and other represents costs which are mainly related to efficiency projects, start-up costs for new businesses
+                  and branding/re-branding costs in connection with the acquisitions of subsidiaries presented in the financial line item total other operating
+                  expenses with NOK 10,561 thousand, NOK 20,892 thousand and NOK 48,425 thousand for the six months ended 30 June 2020, 2019 and full
+                  year 2019, whereof NOK 3,245 thousand NOK 14,783 thousand and NOK 39,796 thousand, respectively relates to the financial line item
+                  Restructuring costs, presented within Total other operating expenses.
+                  In addition, in the six months ended 30 June 2020, 2019 and full year 2019 an adjustment has been performed of NOK 8,689 thousand,
+                  NOK 14,272 thousand and NOK 21,542 thousand, respectively extracted from the financial line item total payroll and related expenses and
+                  relating to severance paid to certain employees as a result of the acquisition of subsidiaries and changes in the Group’s strategic focus as well
+                  as certain replacement/rehiring costs
+         3 Adjusted EBITDA Margin is defined as Adjusted EBITDA as a percentage of operating revenues in the respective periods.
+         4 The following table shows the reconciliation between operating profit and LTM Adjusted EBITDA for the relevant periods:
+                                               LTM ended
+           (In NOK million)                     30 June
+                                                 2020
+           Operating profit ........................................................................................ 35.2
+           Depreciation and amortisation ....................................................................... 251.9
+           EBITDA ..................................................................................................... 287.1
+           Share option program cost ............................................................................ -
+           M&A activities costs ..................................................................................... 14.9
+           Restructuring cost and other(a) ...................................................................... 54.1
+           LTM Adjusted EBITDA ............................................................................... 356.1
+                                        78
+
+
+
+
+         Gross margin per segment YTD 2020 YTD 2019 Year 2019
+
+         Nordics                173 010 155 805  312 713
+         Central Europe          94 269  72 798  167 235
+         Western Europe         136 997 107 012  232 853
+         Global Messaging        25 042  19 694  40 100
+         Total                  429 318 355 309  752 901
+
+
+
+         Adjusted EBITDA by segment YTD 2020 YTD 2019 Year 2019
+         Nordics                118 942  96 361  194 266
+         Central Europe          57 945  43 676  101 021
+         Western Europe          55 118  31 204  83 834
+
+         Global Messaging        12 442  14 168  26 603
+         Group Costs            (61 755) (51 102) (97 783)
+         Adjusted EBITDA        182 692 134 306  307 941
+
+
+
+         Reconciliation of Adjusted
+         EBITDA to Group profit (loss) YTD 2020 YTD 2019 Year 2019
+         before income tax
+         Adjusted EBITDA       182 692 134 306   307 941
+         Non-recurring items*  (22 644) (50 937) (97 527)
+         Depreciation and amortization (107 503) (102 958) (247 369)
+         Operating profit       52 545 (19 587)  (36 955)
+         Finance income (expense) (294 547) (54 912) (193 901)
+         Profit (loss) before income tax (242 002) (74 499) (230 856)
+
+        *Non-recurring items
+        A reconciliation of adjusted EBITDA to profit (loss) before income tax expense is included in note 3. Non-
+        recurring items is comprised of amounts that relate entirely to the company. Costs related to mergers and
+        acquisitions, personnel cost deemed to be non-recurring (or one-off), restructuring expenses, advisors,
+        licenses, and sales and marketing are included in this reconciliation line item (this list is not exhaustive).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Copyright 2020 LINK Mobility. All rights reserved.         12
+
+
+
+
+
+
+
+        Adjusted EBITDA margin
+        Adjusted EBITDA margin is presented as adjusted EBITDA as a percentage of operating
+        revenues in the respective periods.
+
+        See below for a reconciliation of EBIT to Adjusted EBITDA, and adjusted EBITDA margin.
+
+                               YTD 2020 YTD 2019 Year 2019
+         Operating profit (loss), ("EBIT") 52 545 (19 588) (36 955)
+
+         Depreciation intangible assets (107 503) (102 958) (247 369)
+         EBITDA                 160 048 83 370 210 414
+
+         Restructuring costs    19 296  37 598 72 687
+         Expenses related to acquisitions 3 348 13 338 24 840
+
+         Share-based compensation   -      -       -
+         Adjusted EBITDA        182 692 134 306 307 941
+
+         Operating revenues    1 717 629 1 336 114 2 932 707
+
+         Adjusted EBITDA        182 692 134 306 307 941
+         Adjusted EBITDA margin  10,6%  10,1%   10,5%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        Copyright 2020 LINK Mobility. All rights reserved.         23
+
+

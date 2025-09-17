@@ -1,0 +1,10 @@
+{
+  "id": "link_ebitda_historical_two_reports",
+  "query": "Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "The data in the documents provided allows us to compare historical adjusted EBITDA data for 2019 (previous years are not documented in the yearly report and 2020 is partially forecasted in the prospectus). For 2019, there are slight variations in adjusted EBITDA values reported. It can be found reported as 307,941 NOKK, or as 307,549 NOKK or as 307.5 NOKM or as 307,548 NOKK. So the values don't fully match, though they are all within 307.5 and 307.9 NOKM.",
+  "output": "Short answer: No \u2014 they do not match exactly.\n\nDetails:\n- Prospectus (approved 12 Oct 2020) \u2014 LTM Adjusted EBITDA shown in Summary/Non\u2011IFRS section (for the last twelve months ended 30 June 2020) = NOK 356.1 million (see Section 11.4 and Section 10.7.1).\n- Annual report / consolidated statements (for year ended 31 Dec 2020) \u2014 Adjusted EBITDA for 2020 is presented as NOK 390.8 million (see note/segment reconciliation: Adjusted EBITDA total 390,842 kNOK).\n\nBecause one figure (356.1 mNOK) is the LTM Adjusted EBITDA at 30 June 2020 used in the Prospectus, and the other (390.8 mNOK) is Adjusted EBITDA for the full calendar year 2020 reported in the Annual Report, they are different measures and do not match. The difference is also consistent with timing (the Prospectus LTM covers the 12 months ending 30 June 2020; the Annual Report figure covers the calendar year 2020).",
+  "input_tokens": 220648,
+  "passed": false
+}

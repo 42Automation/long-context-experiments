@@ -1,63 +1,63 @@
 
+        comparable in the second half of 2019 for Denmark, while Finland had a soft start to 2020 and management has assumed
+        a pick-up in growth rates late in 2020.
 
-
-
-
-
-
-         Gross margin per segment YTD 2020 YTD 2019 Year 2019
-
-         Nordics                173 010 155 805  312 713
-         Central Europe          94 269  72 798  167 235
-         Western Europe         136 997 107 012  232 853
-         Global Messaging        25 042  19 694  40 100
-         Total                  429 318 355 309  752 901
-
-
-
-         Adjusted EBITDA by segment YTD 2020 YTD 2019 Year 2019
-         Nordics                118 942  96 361  194 266
-         Central Europe          57 945  43 676  101 021
-         Western Europe          55 118  31 204  83 834
-
-         Global Messaging        12 442  14 168  26 603
-         Group Costs            (61 755) (51 102) (97 783)
-         Adjusted EBITDA        182 692 134 306  307 941
-
-
-
-         Reconciliation of Adjusted
-         EBITDA to Group profit (loss) YTD 2020 YTD 2019 Year 2019
-         before income tax
-         Adjusted EBITDA       182 692 134 306   307 941
-         Non-recurring items*  (22 644) (50 937) (97 527)
-         Depreciation and amortization (107 503) (102 958) (247 369)
-         Operating profit       52 545 (19 587)  (36 955)
-         Finance income (expense) (294 547) (54 912) (193 901)
-         Profit (loss) before income tax (242 002) (74 499) (230 856)
-
-        *Non-recurring items
-        A reconciliation of adjusted EBITDA to profit (loss) before income tax expense is included in note 3. Non-
-        recurring items is comprised of amounts that relate entirely to the company. Costs related to mergers and
-        acquisitions, personnel cost deemed to be non-recurring (or one-off), restructuring expenses, advisors,
-        licenses, and sales and marketing are included in this reconciliation line item (this list is not exhaustive).
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        Copyright 2020 LINK Mobility. All rights reserved.         12
+        Gross Margin assumptions: Management assumes fairly stable margins overall for the full year in the region with normal
+        seasonality with lower margins in the fourth quarter of 2020, as a higher portion of the volume derives from high volume
+        but lower margin customers due to campaigns in connection with the Christmas season. Management assumes Gross
+        Margin to be slightly reduced for the year ending 31 December 2020 as a result of customer mix as high volume but
+        lower margin customers constituting a larger portion of the growth in volumes and thereby diluting margins slightly. The
+        negative effect on gross margin from customer mix outweighs the increased margins from positive product mix.
+        Central region
+        Revenue assumptions: Overall growth rates for the region are assumed to decrease in the second half compared to first
+        half of 2020 as the acquisition of the TeraComm Group in August 2019 becomes part of the organic footprint while
+        underlying business excluding acquisitions is expected to maintain a stable growth rate in line with the year ended
+        31 December 2019. The revenue momentum in Germany is strongly linked to industries like logistics and e-commerce
+        which experience a volume increase from COVID-19. Management also expects a rebound in messaging volumes and
+        activity in markets like Bulgaria, Romania and Poland although recovery has been slower than for the Western Europe
+        region. Management has forecasted lower mobile payments revenue in Bulgaria and Romania for the remaining months
+        in 2020 due to COVID-19. Due to the revenue streams in Bulgaria and Romania, lower gross margin will have limited
+        impact on Group’s profitability.
+        Gross Margin assumptions: Management assumes gross margin will remain stable compared to the financial year ended
+        31 December 2019 based on current trends. Stabilisation of Germany’s gross margin through the second quarter 2020
+        has been key to set an assumption of stable margin development.
+        Western region
+        Revenues assumptions: Overall growth rate for the region is assumed to decline from the 21% level in the first half of
+        2020 as Spot-Hit becomes part of the organic footprint. The outlook assumes continued fairly open societies in countries
+        which were mostly impacted by severe lockdown measures during the first half of 2020 (Italy, France and Spain). The
+        assumed growth rates for second half of 2020 are in line with reported growth rates before COVID-19 negatively
+        impacted growth rates from April.
+        Gross Margin assumptions: Overall management assumes stable margin development in the region with a margin decline
+        in entities like Netmessage and Spot Hit from customer mix and quality measures. In entities like Spain and Netsize
+        management has assumed expanded margins from healthier customer and country mix and new products.
+        Global messaging
+        Revenue assumptions: Growth rates on global messaging are assumed to decline in the second half of 2020 primarily
+        due to lower aggregator revenue. The Group observes that volume thresholds that enable discounts from the mobile
+        operators on certain destinations will be met to a larger extent compared to the financial year ended 31 December 2019
+        by enterprise traffic, thus resulting in reduced aggregator volumes. The reduction on aggregator volumes will have close
+        to zero impact on gross margin, as the profitability is very low for the relevant destinations. The Group expects to
+        continue to experience healthy growth in their Global Enterprises business through expansion of their business to new
+        destinations for P2A messaging volumes. Growth rates can be volatile in global messaging while gross margin sensitivity
+        is limited due to the lower margin level, especially for aggregator customers.
+        Gross Margin assumptions: Gross margin is assumed to slightly decline for the year ending 31 December 2020 compared
+        to the financial year ended 31 December 2019. The decline is mainly driven by the highly competitive aggregator
+        landscape with competition pushing traffic at a loss margin, especially during the second quarter of 2020. As the Group
+        moves away from the most competitive routes, management expects Gross Margins to improve during the second half
+        of 2020.
+        11.4.8 The Group's 2020 outlook
+        Revenue
+        The Group’s total revenue for the year ending 31 December 2020 is forecasted to be in the range of NOK 3,500 – 3,600
+        million.
+        Gross Margin
+        The Group’s total Gross Margin for the year ending 31 December 2020 is forecasted in the range 24.2% – 24.7% of total
+        revenues.
+        Adjusted EBITDA6
+        For the year ending 31 December 2020, the Group forecasts the Adjusted EBITDA to be in the range of NOK 360 million
+        – NOK 370 million.
+        6 For the purpose of this Section 11.4.8, Adjusted EBITDA is derived from operating profit (loss) and defined as operating profit (loss)
+        added back depreciation and amortization and adjusted for M&A activities costs and restructuring costs and other. M&A activities costs
+        are mainly related to consultant and legal advisors expenses incurred in connection with acquisition of subsidiaries. Restructuring costs
+        and other are mainly related to (i) efficiency projects, start-up costs for new businesses and branding/rebranding costs in connection with
+        the acquisition of subsidiaries and (ii) severance paid to certain employees as a result of acquisition of subsidiaries and changes in the
+        Group’s strategic focus also including certain replacement/rehiring cost. See also Section 4.2.3 "Non-IFRS financial measures".
+                                        65

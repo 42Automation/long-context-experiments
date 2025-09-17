@@ -1,0 +1,10 @@
+{
+  "id": "link_ebitda_forecast_two_segments",
+  "query": "Does the forecasted EBITDA for 2020 match the actual values?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "No, the prospectus forescast for the 2020 EBITDA is NOK 360 million to NOK 370 million but the actual values is roughly 390 million, according to the annual report.",
+  "output": "No, the actual Adjusted EBITDA for 2020 (NOK 390.842 million) is higher than the forecasted range (NOK 360 million - NOK 370 million).",
+  "input_tokens": 1752,
+  "passed": true
+}

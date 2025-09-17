@@ -1,0 +1,10 @@
+{
+  "id": "link_ebitda_historical_report_and_segment",
+  "query": "Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "The data in the documents provided allows us to compare historical adjusted EBITDA data for 2019 (previous years are not documented in the yearly report and 2020 is partially forecasted in the prospectus). For 2019, there are slight variations in adjusted EBITDA values reported. It can be found reported as 307,941 NOKK, or as 307,549 NOKK or as 307.5 NOKM or as 307,548 NOKK. So the values don't fully match, though they are all within 307.5 and 307.9 NOKM.",
+  "output": "They do not match.\n\n- Prospectus (12 Oct 2020) \u2014 condensed interim figures (see Section 10.7.1 / 11.11 reconcil.): Adjusted EBITDA (six months ended 30 June 2020) = NOK 182.6 million; LTM Adjusted EBITDA = NOK 356.1 million; Adjusted EBITDA (year 2019) = NOK 307.5 million.\n\n- Annual report 2020 \u2014 consolidated figures: Adjusted EBITDA (full year 2020) = NOK 390.842 million; Adjusted EBITDA (year 2019) = NOK 307.549 million; Adjusted EBITDA (six months/other period) = NOK 390.841 million (presented reconciliation differs).\n\nComparison notes:\n- The 2019 Adjusted EBITDA values are effectively the same (Prospectus: NOK 307.5m; Annual report: NOK 307.549m \u2014 difference immaterial, likely rounding).\n- The Prospectus shows Adjusted EBITDA for the six months ended 30 June 2020 as NOK 182.6m and an LTM Adjusted EBITDA of NOK 356.1m; the Annual report reports Adjusted EBITDA for full year 2020 of NOK 390.842m (and repeats 390.841m in a reconciliation). Those 2020 numbers do not match: NOK 182.6m (half\u2011year / prospectus) \u2260 NOK 390.8m (full year / annual report) and NOK 356.1m (LTM in prospectus) \u2260 NOK 390.8m (annual report full year).\n\nConclusion: 2019 figures match; 2020 figures differ (prospectus half\u2011year / LTM vs. annual report full\u2011year), so the historical adjusted EBITDA values are not consistent across the two documents for 2020.",
+  "input_tokens": 186721,
+  "passed": true
+}
