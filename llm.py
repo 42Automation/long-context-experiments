@@ -31,7 +31,7 @@ poe_client = AsyncOpenAI(api_key=POE_API_KEY, base_url=POE_BASE_URL)
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 if not ANTHROPIC_API_KEY:
     raise ValueError("Could not find ANTHROPIC_API_KEY variable in the environment")
-anthropic_cient = AsyncAnthropic()
+anthropic_client = AsyncAnthropic()
 
 
 async def _get_response_with_poe_client(
@@ -142,7 +142,7 @@ async def _get_response_with_anthropic_client(
 
     # Get response
     model_id = MODEL_IDS[model]
-    response = await anthropic_cient.messages.create(
+    response = await anthropic_client.messages.create(
         max_tokens=300,
         messages=messages,
         model=model_id,
