@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_report_and_segment",
+  "query": "Check the full-year EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "Yes, from the values provided, the EBITDA values for 2019 are consistent.",
+  "output": "They do not match.\n\n- Prospectus (prospectus excerpts): Adjusted EBITDA for year ended 31 Dec 2019 = NOK 307.5 million (presented in multiple places: Section 11.10 / 10.7.1).\n- Annual report (appendix): Adjusted EBITDA for 2019 = NOK 307.941 million (shown in the reconciliation at the end).\n\nThe values differ slightly (NOK 307.5m vs NOK 307.941m) \u2014 a small discrepancy of NOK 0.441 million.",
+  "input_tokens": 186250,
+  "passed": false
+}

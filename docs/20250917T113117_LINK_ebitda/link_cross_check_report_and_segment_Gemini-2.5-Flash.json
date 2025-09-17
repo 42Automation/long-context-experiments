@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_report_and_segment",
+  "query": "Check the full-year EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "Yes, from the values provided, the EBITDA values for 2019 are consistent.",
+  "output": "Based on the provided documents:\n\n**For 2019 (Full Year):**\n*   **IPO Prospectus (Section 10.7.1):** Adjusted EBITDA is NOK 307.5 million.\n*   **Annual Report (snippet):** Adjusted EBITDA is NOK 307,941 thousand (NOK 307.941 million).\n\nThe Adjusted EBITDA values for 2019 are very close, with a minor difference likely due to rounding. Therefore, they essentially match.\n\n**For 2020 (Full Year):**\n*   **IPO Prospectus (Section 11.4.8):** The forecasted Adjusted EBITDA for 2020 was in the range of NOK 360 million - NOK 370 million.\n*   **Annual Report (snippet):** Adjusted EBITDA is NOK 390,842 thousand (NOK 390.842 million).\n\nThe actual Adjusted EBITDA from the Annual Report for 2020 (NOK 390.842 million) is higher than the forecasted range provided in the IPO prospectus (NOK 360-370 million). Therefore, they do not match.",
+  "input_tokens": 186253,
+  "passed": false
+}

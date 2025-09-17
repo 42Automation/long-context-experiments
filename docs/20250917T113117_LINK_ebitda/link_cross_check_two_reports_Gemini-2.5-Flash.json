@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_two_reports",
+  "query": "Check the full-year EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "Yes, from the values provided, the EBITDA values for 2019 are consistent.",
+  "output": "When comparing the full-year EBITDA values between the IPO Prospectus and the Annual Report for LINK Mobility Group Holding ASA:\n\n1.  **EBITDA (unadjusted):**\n    *   **2019:** Both the IPO Prospectus (page 54) and the Annual Report (calculated from page 33) report **NOK 210.4 million**. These values match.\n\n2.  **Adjusted EBITDA:**\n    *   **2019:** The IPO Prospectus (page 54) reports **NOK 307.5 million**, while the Annual Report (page 53) reports **NOK 307.9 million**. These values are very close, with a minor difference likely due to rounding.\n    *   **2018:** Both the IPO Prospectus (page 54) and the Annual Report (chart on page 4) report **NOK 212 million**. These values match.\n    *   **2017:** Both the IPO Prospectus (page 54) and the Annual Report (chart on page 4) report **NOK 140 million**. These values match.\n\nThe Annual Report also provides 2020 EBITDA figures (NOK 293.6 million) and Adjusted EBITDA figures (NOK 390.8 million), which are not available as full-year data in the earlier IPO Prospectus.",
+  "input_tokens": 220651,
+  "passed": true
+}

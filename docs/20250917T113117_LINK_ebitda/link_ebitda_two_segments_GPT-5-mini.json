@@ -1,0 +1,10 @@
+{
+  "id": "link_ebitda_two_segments",
+  "query": "Check the full-year EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "GPT-5-mini",
+  "doc_urls": null,
+  "expected_answer": "Yes, from the values provided, the EBITDA values for 2019 are consistent.",
+  "output": "From the provided extracts:\n\nIPO prospectus (labeled \"Adjusted EBITDA\" table with \"Year 2019\"):\n- Adjusted EBITDA (total) Year 2019 = 307,941\n\nAnnual report (separate \"Adjusted EBITDA per segment\" table with \"2019\"):\n- Adjusted EBITDA (total) 2019 = 307,941\n\nBoth sources show the same full\u2011year (2019) Adjusted EBITDA: 307,941 \u2014 they match.",
+  "input_tokens": 1080,
+  "passed": true
+}

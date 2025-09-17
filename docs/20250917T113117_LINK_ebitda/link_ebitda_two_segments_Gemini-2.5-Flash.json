@@ -1,0 +1,10 @@
+{
+  "id": "link_ebitda_two_segments",
+  "query": "Check the full-year EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "Yes, from the values provided, the EBITDA values for 2019 are consistent.",
+  "output": "Yes, the full-year Adjusted EBITDA values for 2019 match in both provided documents.\n\n*   **First document (IPO prospectus context):** Adjusted EBITDA for Year 2019 is **307,941**.\n*   **Second document (Annual report context):** Adjusted EBITDA for 2019 is **307,941**.",
+  "input_tokens": 1083,
+  "passed": true
+}

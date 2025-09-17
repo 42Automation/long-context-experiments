@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_two_reports",
+  "query": "Check the EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "Qwen3-235B-2507",
+  "doc_urls": null,
+  "expected_answer": "Yes, from the values provided, the EBITDA values for 2019 are consistent.",
+  "output": "The EBITDA values in the IPO prospectus and the annual report do not match. The IPO prospectus reports an EBITDA of 160.0 million NOK for the six months ended 30 June 2020, while the annual report shows an EBITDA of 160,048 thousand NOK for the same period, which is a slight discrepancy.",
+  "input_tokens": 220640,
+  "passed": false
+}

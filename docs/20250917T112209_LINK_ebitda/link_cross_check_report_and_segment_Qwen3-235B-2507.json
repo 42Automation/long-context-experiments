@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_report_and_segment",
+  "query": "Check the EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "Qwen3-235B-2507",
+  "doc_urls": null,
+  "expected_answer": "Yes, from the values provided, the EBITDA values for 2019 are consistent.",
+  "output": "The EBITDA values in the IPO prospectus and the annual report do not match. The EBITDA value in the IPO prospectus is 210.4 million, while the EBITDA value in the annual report is 22.2 million.",
+  "input_tokens": 186242,
+  "passed": false
+}

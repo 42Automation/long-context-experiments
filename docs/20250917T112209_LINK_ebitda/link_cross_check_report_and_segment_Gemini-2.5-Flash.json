@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_report_and_segment",
+  "query": "Check the EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "Yes, from the values provided, the EBITDA values for 2019 are consistent.",
+  "output": "Here's a comparison of the EBITDA values from the IPO Prospectus and the provided Annual Report data:\n\n**From the IPO Prospectus (Section 10.7.1 \"Non-IFRS financial measures for the Group\"):**\n\n*   **EBITDA for Year ended 31 December 2019:** NOK **210.4** million\n*   **EBITDA for Six months ended 30 June 2020:** NOK **160.0** million\n\n**From the Annual Report (Appendix B, \"Condensed consolidated income statement\"):**\n\nTo calculate EBITDA, we use the formula: Operating Profit (Loss) + Depreciation and Amortization.\n\n*   **For Year ended 31 December 2019:**\n    *   Operating profit (loss): (36,955) NOKk\n    *   Depreciation and amortization: 247,369 NOKk\n    *   EBITDA = -36,955 + 247,369 = **210,414** NOKk (or NOK **210.414** million)\n\n*   **For Six months ended 30 June 2020:**\n    *   Operating profit (loss): 52,545 NOKk\n    *   Depreciation and amortization: 107,503 NOKk\n    *   EBITDA = 52,545 + 107,503 = **160,048** NOKk (or NOK **160.048** million)\n\n**Conclusion:**\n\nThe EBITDA values for the respective periods match very closely between the IPO Prospectus and the Annual Report (Appendix B), with minor differences likely due to rounding:\n\n*   **2019 EBITDA:** NOK 210.4 million (Prospectus) vs. NOK 210.414 million (Annual Report) - **Match**\n*   **H1 2020 EBITDA:** NOK 160.0 million (Prospectus) vs. NOK 160.048 million (Annual Report) - **Match**",
+  "input_tokens": 186251,
+  "passed": true
+}

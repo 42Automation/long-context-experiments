@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_two_reports",
+  "query": "Check the full-year EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "Qwen3-235B-2507",
+  "doc_urls": null,
+  "expected_answer": "Yes, from the values provided, the EBITDA values for 2019 are consistent.",
+  "output": "The EBITDA values for the full year 2019 in the IPO prospectus and the annual report do not match.\n\nIn the IPO prospectus, the EBITDA for the year ended 31 December 2019 is reported as **NOK 210.4 million** (see Section 10.7.1 \"Non-IFRS financial measures for the Group\").\n\nIn the annual report, the EBITDA for the year ended 31 December 2020 is reported as **NOK 210.414 million** (see the \"Reconciliation of adjusted EBITDA to Group profit (loss) before income tax\" table on page 12 of the annual report).\n\nThe values are very close but not identical, with the annual report showing a slightly higher figure.",
+  "input_tokens": 220642,
+  "passed": false
+}

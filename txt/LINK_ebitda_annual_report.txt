@@ -1,0 +1,61 @@
+
+
+
+
+
+
+         Adjusted EBITDA per segment                 2020            2019
+         Northern Europe                           240,485         194,266
+         Central Europe                            129,283         101,021
+
+         Western Europe                            127,826          83,834
+         Global Messaging                           27,150          26,603
+         Group Costs                               -133,902         -97,783
+         Total                                     390,842         307,941
+
+
+         Reconciliation of adjusted EBITDA to Group
+         profit (loss) before income tax             2020            2019
+         Adjusted EBITDA                           390,842         307,941
+         Non-recurring items*                       -97,235         -97,527
+         Depreciation and amortization             -271,389        -247,369
+         Operating profit                           22,218          -36,955
+         Finance income (expense)                  -427,047        -193,901
+
+         Total                                     -404,829        -230,856
+
+        *Non-recurring items
+        Non-recurring items is comprised of amounts that relate entirely to the company. Costs related to mergers and
+        acquisitions, personnel cost deemed to be non-recurring (or one-off), restructuring expenses, advisors, licenses, and
+        sales and marketing are included in this reconciliation line item (this list is not exhaustive).
+
+        Disaggregation of revenue
+        The Group’s operations are conducted through its subsidiaries in the countries listed below. The Group derives its
+        revenue from contracts with customers for the transfer of services as described in the table provided in note 3 to the
+        financial statments.
+
+
+         Revenue per business line                  2020             2019
+
+
+         Mobile messaging transactions            3,325,620        2,686,616
+         Payment services                          35,414           28,822
+         Licenses                                  155,456         159,266
+         Consulting services                       22,740           15,321
+         Group                                   3,539,231        2,890,025
+
+
+
+
+
+
+
+
+
+          54 LINK Mobility Group Holding ASA Annual report 2020
+
+
+
+
+
+                                                    Financial statements 2020

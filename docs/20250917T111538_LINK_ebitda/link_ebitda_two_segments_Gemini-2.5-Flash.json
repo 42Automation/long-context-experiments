@@ -1,0 +1,10 @@
+{
+  "id": "link_ebitda_two_segments",
+  "query": "Check the EBITDA values between the IPO prospectus and the Annual report. Do they match?",
+  "model": "Gemini-2.5-Flash",
+  "doc_urls": null,
+  "expected_answer": "Yes, the values are consistent.",
+  "output": "Yes, the Adjusted EBITDA values for 2019 match, but the 2020 values do not, as one is a Year-to-Date (YTD) figure and the other is for the full year.\n\n*   **Adjusted EBITDA for 2019:**\n    *   From the first table (likely IPO prospectus): **307,941**\n    *   From the Annual Report 2020: **307,941**\n    *   **Match.**\n\n*   **Adjusted EBITDA for 2020:**\n    *   From the first table (YTD 2020): **182,692**\n    *   From the Annual Report 2020: **390,842**\n    *   **Do not match** (as the first is YTD and the second is the full year).",
+  "input_tokens": 1054,
+  "passed": false
+}
