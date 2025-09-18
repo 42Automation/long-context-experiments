@@ -83,7 +83,7 @@ async def _get_response_with_poe_client(
     messages.append({"role": "user", "content": content})
 
     # Get response
-    model_id = MODEL_IDS[model]
+    model_id = MODEL_IDS.get(model, model)
     response = await poe_client.chat.completions.create(
         model=model_id, temperature=TEMPERATURE, messages=messages
     )
@@ -141,7 +141,7 @@ async def _get_response_with_anthropic_client(
     messages = [{"role": "user", "content": content}]
 
     # Get response
-    model_id = MODEL_IDS[model]
+    model_id = MODEL_IDS.get(model, model)
     response = await anthropic_client.messages.create(
         max_tokens=300,
         messages=messages,
