@@ -9,7 +9,7 @@ from openai import AsyncOpenAI
 
 from models import MODEL_IDS
 from prompts import SYSTEM_PROMPT
-from utils import get_filler_content, get_num_tokens, is_anthropic_model
+from utils import is_anthropic_model
 
 load_dotenv()
 
@@ -37,43 +37,29 @@ anthropic_client = AsyncAnthropic()
 async def _get_response_with_poe_client(
     model: str,
     query: str,
-    reference_doc_urls: list[str] = [],
-    filler_doc_urls: list[str] = [],
+    pdf_doc_urls: list[str],
+    text_docs: list[str],
     system_prompt: str = SYSTEM_PROMPT,
-    max_context: int = MAX_EFFECTIVE_CONTEXT_WINDOW,
 ) -> dict:
-    # Get reference documents (if any)
     content = []
-    current_context_size = 0
-    for doc_url in reference_doc_urls:
+
+    # Get pdf files, if any
+    for doc_url in pdf_doc_urls:
         with open(doc_url, "rb") as doc:
             print(f"Getting data from {Path(doc_url).name}")
-            extension = Path(doc_url).suffix
-            if extension == ".pdf":
-                doc_content = b64encode(doc.read()).decode("utf-8")
-                doc_message = {
-                    "type": "file",
-                    "file": {
-                        "filename": Path(doc_url).name,
-                        "file_data": f"data:application/pdf;base64,{doc_content}",
-                    },
-                }
-            else:
-                doc_content = doc.read().decode("utf-8")
-                doc_message = {"type": "text", "text": doc_content}
-                current_context_size = get_num_tokens(doc_content)
-
+            doc_content = b64encode(doc.read()).decode("utf-8")
+            doc_message = {
+                "type": "file",
+                "file": {
+                    "filename": Path(doc_url).name,
+                    "file_data": f"data:application/pdf;base64,{doc_content}",
+                },
+            }
             content.append(doc_message)
 
-    # Get filler content (if any) up to max context window size
-    if filler_doc_urls:
-        filler_content = get_filler_content(
-            filler_doc_urls=filler_doc_urls,
-            current_context=current_context_size + get_num_tokens(query),
-            max_context=max_context,
-        )
-        if filler_content:
-            content.append({"type": "text", "text": filler_content})
+    # Get text docs, if any
+    for text in text_docs:
+        content.append({"type": "text", "text": text})
 
     # Add query
     content.append({"type": "text", "text": query})
@@ -97,42 +83,30 @@ async def _get_response_with_poe_client(
 async def _get_response_with_anthropic_client(
     model: str,
     query: str,
-    reference_doc_urls: list[str] = [],
-    filler_doc_urls: list[str] = [],
+    pdf_doc_urls: list[str],
+    text_docs: list[str],
     system_prompt: str = SYSTEM_PROMPT,
-    max_context: int = MAX_EFFECTIVE_CONTEXT_WINDOW,
 ) -> dict:
-    # Get reference documents (if any)
     content = []
-    for doc_url in reference_doc_urls:
+
+    # Get pdf files, if any
+    for doc_url in pdf_doc_urls:
         with open(doc_url, "rb") as doc:
             print(f"Getting data from {Path(doc_url).name}")
-            extension = Path(doc_url).suffix
-            if extension == ".pdf":
-                doc_content = b64encode(doc.read()).decode("utf-8")
-                doc_message = {
-                    "type": "document",
-                    "source": {
-                        "type": "base64",
-                        "media_type": "application/pdf",
-                        "data": doc_content,
-                    },
-                }
-                content.append(doc_message)
-            else:
-                doc_content = doc.read().decode("utf-8")
-                content.append({"type": "text", "text": doc_content})
-                current_context_size = get_num_tokens(doc_content)
+            doc_content = b64encode(doc.read()).decode("utf-8")
+            doc_message = {
+                "type": "document",
+                "source": {
+                    "type": "base64",
+                    "media_type": "application/pdf",
+                    "data": doc_content,
+                },
+            }
+            content.append(doc_message)
 
-    # Get filler content (if any) up to max context window size
-    if filler_doc_urls:
-        filler_content = get_filler_content(
-            filler_doc_urls=filler_doc_urls,
-            current_context=current_context_size + get_num_tokens(query),
-            max_context=max_context,
-        )
-        if filler_content:
-            content.append({"type": "text", "text": filler_content})
+    # Get text docs, if any
+    for text in text_docs:
+        content.append({"type": "text", "text": text})
 
     # Add query
     content.append({"type": "text", "text": query})
@@ -159,52 +133,39 @@ async def _get_response_with_anthropic_client(
 async def get_response(
     model: str,
     query: str,
-    reference_doc_urls: list[str] = [],
-    filler_doc_urls: list[str] = [],
+    pdf_doc_urls: list[str],
+    text_docs: list[str],
     system_prompt: str = SYSTEM_PROMPT,
-    max_context_size: int = MAX_EFFECTIVE_CONTEXT_WINDOW,
 ) -> dict:
     if is_anthropic_model(model):
         print("Using ANTHROPIC client")
         return await _get_response_with_anthropic_client(
-            model,
-            query,
-            reference_doc_urls,
-            filler_doc_urls,
-            system_prompt,
-            max_context_size,
+            model, query, pdf_doc_urls, text_docs, system_prompt
         )
 
     print("Using POE client")
     return await _get_response_with_poe_client(
-        model,
-        query,
-        reference_doc_urls,
-        filler_doc_urls,
-        system_prompt,
-        max_context_size,
+        model, query, pdf_doc_urls, text_docs, system_prompt
     )
 
 
 if __name__ == "__main__":
     import asyncio
 
+    def get_text_docs(doc_url: str) -> str:
+        with open(doc_url, "r") as f:
+            return f.read()
+
     async def run_experiment(
         description: str,
         model: str,
         query: str,
-        reference_doc_urls: list[str] = [],
-        filler_doc_urls: list[str] = [],
+        pdf_doc_urls: list[str] = [],
+        text_docs: list[str] = [],
         system_prompt: str = SYSTEM_PROMPT,
-        max_context_size: int = MAX_EFFECTIVE_CONTEXT_WINDOW,
     ):
         answer = await get_response(
-            model,
-            query,
-            reference_doc_urls,
-            filler_doc_urls,
-            system_prompt,
-            max_context_size,
+            model, query, pdf_doc_urls, text_docs, system_prompt
         )
         print(
             f"{description} ({answer['input_tokens']} input tokens) [{model}]: {answer['text']}\n"
@@ -228,19 +189,21 @@ if __name__ == "__main__":
                 description="Answer over PDF file",
                 model="Gemini-2.5-Flash-Lite",
                 query="What kind of document is this? --thinking_budget 0 --web_search false",
-                reference_doc_urls=["./pdf/Apple_segment_operating_performance.pdf"],
+                pdf_doc_urls=["./pdf/Apple_segment_operating_performance.pdf"],
             ),
             run_experiment(
                 description="Answer over TXT file",
                 model="Grok-3",
                 query="Translate this document into Spanish",
-                reference_doc_urls=["./txt/Apple_segment_operating_performance.txt"],
+                text_docs=[
+                    get_text_docs("./txt/Apple_segment_operating_performance.txt")
+                ],
             ),
             run_experiment(
                 description="Answer over multiple files",
                 model="GPT-5-mini",
                 query="What companies are featured in the provided documents? --reasoning_effort minimal",
-                reference_doc_urls=[
+                pdf_doc_urls=[
                     "./pdf/Tesla_exhibit_schedules.pdf",
                     "./pdf/Apple_segment_operating_performance.pdf",
                 ],
@@ -252,7 +215,7 @@ if __name__ == "__main__":
                 description="Answer over PDF file",
                 model="Claude-Sonnet-3.7",
                 query="What is the filing date for the fifth amended and restated investors'rights agreement?",
-                reference_doc_urls=[
+                pdf_doc_urls=[
                     "./pdf/Tesla_exhibit_schedules.pdf",
                 ],
             ),
@@ -260,11 +223,9 @@ if __name__ == "__main__":
                 description="Answer over TXT file",
                 model="Claude-Sonnet-3.7",
                 query="What is the filing date for the fifth amended and restated investors'rights agreement?",
-                reference_doc_urls=[
-                    "./txt/Tesla_exhibit_schedules.txt",
+                text_docs=[
+                    get_text_docs("./txt/Tesla_exhibit_schedules.txt"),
                 ],
-                filler_doc_urls=["./txt/Apple_segment_operating_performance.txt"],
-                max_context_size=2_000,
             ),
         ]
 
