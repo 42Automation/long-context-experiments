@@ -65,6 +65,7 @@ class Retriever:
         if new_docs:
             self.vector_store.add_documents(new_docs)
 
+        # TODO: fix
         semantic_retriever = self.vector_store.as_retriever(
             search_kwargs={"k": k, "filter": {"filename": filename}}
         )
