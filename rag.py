@@ -39,8 +39,6 @@ class Retriever:
         return has_doc
 
     def _get_retriever(self, pdf_doc_urls: list[str], k: int = 3) -> EnsembleRetriever:
-        global vector_store
-
         # Load documents
         source_docs = []
         for doc_url in pdf_doc_urls:
