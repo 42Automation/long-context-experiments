@@ -23,6 +23,10 @@ def _has_rag_treatment(experiment: dict) -> bool:
     return "rag" in list(experiment.get("treatments", {}).keys())
 
 
+def _has_agent_treatment(experiment: dict) -> bool:
+    return "agent" in list(experiment.get("treatments", {}).keys())
+
+
 def _get_default_texts(experiment: dict, max_context: int) -> list[str]:
     texts = []
 
@@ -55,12 +59,13 @@ def _get_rag_texts(experiment: dict, dump_texts: bool = True) -> list[str]:
 
     experiment_id = experiment["id"]
     k = experiment.get("treatments", {}).get("rag", {}).get("k", 5)
-
-    retriever = Retriever()
     pdf_doc_urls = [
         d for d in experiment.get("reference_doc_urls", []) if Path(d).suffix == ".pdf"
     ]
-    docs = retriever.get_relevant_documents(query, pdf_doc_urls, k)
+
+    retriever = Retriever(pdf_doc_urls=pdf_doc_urls, k=k)
+    docs = retriever.get_relevant_documents(query)
+
     texts = []
     for doc in docs:
         content = ""
