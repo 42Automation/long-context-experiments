@@ -26,10 +26,10 @@ Instructions: Respond with only "true" if the response factually aligns with the
 DOC_TEMPLATE = """Here are some excerpts from the following document for your consideration:
 <{filename}>
 {content}
-</{filename}>s
+</{filename}>
 """
 
-EXCERPT_TEMPLATE = """"<excerpt_{index}>
+EXCERPT_TEMPLATE = """<excerpt_{index}>
 {content}
 </excerpt_{index}>
 """
