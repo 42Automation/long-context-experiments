@@ -3,9 +3,8 @@ import asyncio
 import importlib.util
 import json
 import os
+import traceback
 from datetime import datetime
-
-from fastapi_poe import BotError
 
 from llm import get_response
 from models import (
@@ -15,7 +14,8 @@ from models import (
     SAMPLE_MODELS,
     STANDARD_MODELS,
 )
-from prompts import JUDGE_PROMPT_TEMPLATE
+from prompts import JUDGE_PROMPT_TEMPLATE, JUDGE_SYSTEM_PROMPT
+from treatments import get_pdf_urls, get_texts
 
 
 async def judge(question, correct_answer, output) -> bool:
@@ -26,7 +26,13 @@ async def judge(question, correct_answer, output) -> bool:
     if (params := MODEL_PARAMS.get(JUDGE_MODEL)) is not None:
         query = f"{query} {' '.join(params)}"
 
-    response = await get_response(model=JUDGE_MODEL, query=query)
+    response = await get_response(
+        model=JUDGE_MODEL,
+        query=query,
+        pdf_doc_urls=[],
+        text_docs=[],
+        system_prompt=JUDGE_SYSTEM_PROMPT,
+    )
     # Get the last line, which effectively discards eventual thinking part
     last_line = next(
         (line for line in reversed(response["text"].splitlines()) if line.strip()), ""
@@ -44,16 +50,16 @@ async def run_experiment(experiment, model):
     output = await get_response(
         model=model,
         query=query,
-        reference_doc_urls=experiment.get("reference_doc_urls", []),
-        filler_doc_urls=experiment.get("filler_doc_urls", []),
+        pdf_doc_urls=get_pdf_urls(experiment),
+        text_docs=get_texts(experiment),
     )
     print(f"Judging output for {experiment.get('id')} -- {model}")
     try:
         passed = await judge(
             experiment.get("query"), experiment.get("expected_answer"), output["text"]
         )
-    except BotError as error:
-        print(f"Judge error: {str(error)}")
+    except Exception as error:
+        print(f"Judge error: {str(error)}.\n{traceback.format_exc()}")
         passed = False
 
     return (
@@ -108,12 +114,12 @@ async def try_experiment(experiment, model):
             "result": result,
             "error": None,
         }
-    except Exception as exc:
+    except Exception:
         return {
             "id": experiment.get("id"),
             "model": model,
             "result": None,
-            "error": exc,
+            "error": traceback.format_exc(),
         }
 
 

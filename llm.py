@@ -1,6 +1,5 @@
 import os
 from base64 import b64encode
-from math import floor
 from pathlib import Path
 
 from anthropic import AsyncAnthropic
@@ -8,17 +7,12 @@ from dotenv import load_dotenv
 from openai import AsyncOpenAI
 
 from models import MODEL_IDS
-from prompts import SYSTEM_PROMPT
+from prompts import QUERY_SYSTEM_PROMPT
 from utils import is_anthropic_model
 
 load_dotenv()
 
 TEMPERATURE = 0
-MAX_CONTEXT_WINDOW = 256_000
-CONTEXT_WINDOW_BUFFER_PERCENT = 5
-MAX_EFFECTIVE_CONTEXT_WINDOW = MAX_CONTEXT_WINDOW - floor(
-    MAX_CONTEXT_WINDOW * CONTEXT_WINDOW_BUFFER_PERCENT / 100
-)
 
 POE_API_KEY = os.environ.get("POE_API_KEY", "")
 if not POE_API_KEY:
@@ -39,7 +33,7 @@ async def _get_response_with_poe_client(
     query: str,
     pdf_doc_urls: list[str],
     text_docs: list[str],
-    system_prompt: str = SYSTEM_PROMPT,
+    system_prompt: str = QUERY_SYSTEM_PROMPT,
 ) -> dict:
     content = []
 
@@ -85,7 +79,7 @@ async def _get_response_with_anthropic_client(
     query: str,
     pdf_doc_urls: list[str],
     text_docs: list[str],
-    system_prompt: str = SYSTEM_PROMPT,
+    system_prompt: str = QUERY_SYSTEM_PROMPT,
 ) -> dict:
     content = []
 
@@ -135,7 +129,7 @@ async def get_response(
     query: str,
     pdf_doc_urls: list[str],
     text_docs: list[str],
-    system_prompt: str = SYSTEM_PROMPT,
+    system_prompt: str = QUERY_SYSTEM_PROMPT,
 ) -> dict:
     if is_anthropic_model(model):
         print("Using ANTHROPIC client")
@@ -162,7 +156,7 @@ if __name__ == "__main__":
         query: str,
         pdf_doc_urls: list[str] = [],
         text_docs: list[str] = [],
-        system_prompt: str = SYSTEM_PROMPT,
+        system_prompt: str = QUERY_SYSTEM_PROMPT,
     ):
         answer = await get_response(
             model, query, pdf_doc_urls, text_docs, system_prompt
