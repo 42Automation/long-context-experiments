@@ -1,0 +1,796 @@
+Here are some excerpts from the following document for your consideration:
+<LINK Mobility IPO Prospectus Dec 10 2020>
+<excerpt_0>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        4.2.3 Non-IFRS financial measures                                         
+        In this Prospectus, the Group presents certain alternative performance measures ("APMs"), including Churn Rate, Gross
+        Profit, Gross Margin, EBITDA, Adjusted EBITDA, Adjusted EBITDA Margin, LTM Adjusted EBITDA, Gross Profit Conversion,
+        Revenue Net Retention Rate and Like-for-Like Revenue. The APMs presented herein are not measurements of financial
+        performance or liquidity under IFRS or other generally accepted accounting principles, are not audited and investors
+        should not consider any such measures to be an alternative to (a) operating revenues or operating profit (as determined
+        in accordance with generally accepted accounting principles), (b) as a measure of the Group's operating performance;
+        or (c) any other measures of performance under generally accepted accounting principles. The APMs presented herein
+        may not be indicative of the Group's historical operating results, nor are such measures meant to be predictive of the
+        Group's future results.                                                   
+        The Group believes that APMs are commonly reported by companies in the markets in which it competes and are widely
+        used by investors in comparing performance on a consistent basis without regard to factors such as depreciation and
+        amortisation, which can vary significantly, depending upon accounting methods (particularly when acquisitions have
+        occurred) or based on non-operating factors. Accordingly, the Group discloses Churn Rate, Gross Profit, Gross Margin,
+        EBITDA, Adjusted EBITDA, Adjusted EBITDA Margin, LTM Adjusted EBITDA, Gross Profit Conversion, Revenue Net
+        Retention Rate and Like-for-Like Revenue herein to permit a more complete and comprehensive analysis of its underlying
+        operating performance relative to other companies and across periods, and of the Group's ability to service its debt.
+        Because companies may calculate Churn Rate, Gross Profit, Gross Margin, EBITDA, Adjusted EBITDA, Adjusted EBITDA
+        Margin, LTM Adjusted EBITDA, Gross Profit Conversion, Revenue Net Retention Rate and Like-for-Like Revenue
+        differently, the Group's presentation of these APMs may not be comparable to similar titled measures used by other
+        companies.                                                                
+        The Group defines "Churn Rate" as revenue of customers that were a customer in the prior period but were not a
+        customer at the beginning of the current period divided by the total revenue of the prior period.
+        The group defines "Gross Profit" as revenue less direct costs of services rendered.
+        The Group defines "Gross Margin" as revenue less direct costs divided by revenue.
+        The Group defines "EBITDA" as operating profit (loss) adding back depreciation and amortisation.
+        The Group defines "Adjusted EBITDA" as EBITDA adjusted for mergers and acquisitions costs, restructuring costs and
+        costs related to share option program.                                    
+        The Group defines "Adjusted EBITDA Margin" as Adjusted EBITDA as a percentage of operating revenues in the
+        respective periods.                                                       
+        The Group defines "Like-for-Like Revenue" as revenue recorded in an audited or reviewed period excluding the
+        revenue from acquired entities in such period.                            
+        The Group defined "LTM Adjusted EBITDA" as Adjusted EBITDA for the last twelve months from the end of the period
+        The Group defines "Gross Profit Conversion" as Adjusted EBITDA divided by Gross Profit.
+        The Group defines "Net Customer Expansion Rate" as the revenue generated from customers at the end of the period
+        with their corresponding revenue from the same period in the previous year.
+        The Group defines "Revenue Net Retention Rate" as revenue from the net of upsale, downsale and churn for
+        customers throughout the period, not taking into account new customers during the period. Revenue Net Retention Rate
+        excludes the acquisitions of TeraComm Group and Spothit.                  
+        For an overview of reconciliation and calculation of the relevant APMs, please see Section 10.7 "Non-IFRS financial
+        measures".                                                                
+        4.2.4 Industry and market data                                            
+        This Prospectus contains statistics, data, statements and other information relating to markets, market sizes, market
+        shares, market positions and other industry data pertaining to the Group’s business and the industries and markets in
+        which it operates. Unless otherwise indicated, such information reflects the Group’s estimates based on analysis of
+        multiple sources, including data compiled by professional organisations, consultants and analysts and information
+        otherwise obtained from other third party sources, such as annual and interim financial statements and other
+        presentations published by listed companies operating within the same industry as the Group, as well as the Group’s
+        internal data and its own experience, or on a combination of the foregoing. Unless otherwise indicated in the Prospectus,
+        the basis for any statements regarding the Group’s competitive position is based on the Company’s own assessment and
+        knowledge of the market in which it operates.                             
+        The Company confirms that where information has been sourced from a third party, such information has been accurately
+        reproduced and that as far as the Company is aware and is able to ascertain from information published by that third
+        party, no facts have been omitted that would render the reproduced information inaccurate or misleading. Where
+        information sourced from third parties has been presented, the source of such information has been identified. The
+        Company does not intend, and does not assume any obligations to update industry or market data set forth in this
+        Prospectus.                                                               
+        Industry publications or reports generally state that the information they contain has been obtained from sources
+        believed to be reliable, but the accuracy and completeness of such information is not guaranteed. The Company has not
+                                        18
+</excerpt_0>
+
+<excerpt_1>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+                    (b)    The adjustment restructuring cost and other represents costs which are mainly related to efficiency projects,
+                           start-up costs for new businesses and branding/re-branding costs in connection with the acquisitions of
+                           subsidiaries presented in the financial line item total other operating expenses with NOK 10,561 thousand,
+                           NOK 20,892 thousand and NOK 48,425 thousand for the six months ended 30 June 2020, 2019 and full year
+                           2019, whereof NOK 3,245 thousand NOK 14,783 thousand and NOK 39,796 thousand, respectively relates to
+                           the financial line item Restructuring costs, presented within Total other operating expenses.
+                           In addition, in the six months ended 30 June 2020, 2019 and full year 2019 an adjustment has been performed
+                           of NOK 8,689 thousand, NOK 14,272 thousand and NOK 21,542 thousand, respectively extracted from the
+                           financial line item total payroll and related expenses and relating to severance paid to certain employees as a
+                           result of the acquisition of subsidiaries and changes in the Group’s strategic focus as well as certain
+                           replacement/rehiring costs                             
+           3   Adjusted EBITDA Margin is defined as Adjusted EBITDA as a percentage of operating revenues in the respective periods.
+           4   The following table shows the reconciliation between operating profit and LTM Adjusted EBITDA for the relevant periods:
+                                             LTM ended                            
+               (In NOK million)               30 June                             
+                                               2020                               
+               Operating profit .................................................................... 35.2
+               Depreciation and amortisation ................................................... 251.9
+               EBITDA ................................................................................. 287.1
+               Share option program cost ........................................................ -
+               M&A activities costs .................................................................. 14.9
+               Restructuring cost and other(a) .................................................. 54.1
+               LTM Adjusted EBITDA ........................................................... 356.1
+           5   The following table reconciles Like-for-Like Revenue to revenue for the relevant periods:
+                                             Six months ended Year ended          
+                                                30 June       31 December         
+               (In NOK million)                                                   
+                                             2020   2019  2019  2018  2017        
+               Revenue ................................................................................ 1,717.6 1,336.1 2,932.7 1,972.0 1,294.0
+               Acquisition Revenue(a) ............................................................. -104.0 -370.8 -803.9 -584.1 -38.6
+               Like-for-Like Revenue(b) ........................................................... 1,613.6 965.3 2,128.7 1,387.9 1,255.4
+                   (a)   Acquisition Revenue is defined as revenue generated by the acquired entities for the periods indicated. The Company
+                         considers Acquisition Revenue any revenue generated by acquired entities for four full consecutive quarters after
+                         complete ownership by the Company of such entity. From 1 January 2018 an acquired Spanish entity was merged
+                         with an existing entity, hence the allocation of revenues between organic and acquired revenue is based on a
+                         management estimate. In 2017 an acquired Danish entity was merged with an existing Danish entity, hence the
+                         allocation between organic and acquired revenue is estimated. See Section 11.3.2 "Acquisitions".
+                   (b)   When comparing the Like-for-Like Revenue for a relevant period, the entities used for such calculation differ from
+                         period to period, as the Company excludes revenues from companies acquired during the relevant periods in
+                         calculating Like-for-Like Revenue. This methodology allows the Company to isolate and compare the revenue
+                         generated by the companies that were operating for the full relevant period compared. See Section 11.3.2
+                         "Acquisitions".                                          
+                         When comparing the years ended 31 December 2018 to 31 December 2019, the Company excludes revenues from
+                         companies acquired in 2019 and 2018, but includes the revenue from companies acquired in 2017, as the Company
+                         no longer considers such revenue as Acquisition Revenue. The growth rate of Like-for-Like Revenue for the years
+                         ended 31 December 2018 to 31 December 2019 increased from 1,956.9 to 2,128.7, an increase of 9%.
+                         When comparing the years ended 31 December 2017 to 31 December 2018, the Company excludes revenues from
+                         companies acquired in 2017 and 2018. The growth rate of Like-for-Like Revenue for the years ended 31 December
+                         2017 to 31 December 2018 increased from 1,255.4 to 1,387.9, an increase of 11%.
+           6   Gross Profit Conversion is defined as Adjusted EBITDA divided by Gross Profit.
+           7   Revenue Net Retention Rate is defined as revenue from the net of upsale, downsale and churn for customers throughout the period, not
+               taking into account new customers during the year. Revenue Net Retention Rate excludes the acquisitions of TeraComm Group and Spothit.
+               Excluding Spain, these figures are 116% and 111% for the six months ended 30 June 2020 and as of 31 December 2020, respectively. The
+               data required to calculate these measures was not yet monitored in the years ended 31 December 2017 and 2018 and as a result
+               comparatives for the years ended 31 December 2017 and 2018 are not available.
+           8   Churn Rate is defined as revenue of customers that were a customer in the prior period but were not a customer at the beginning of the
+               current period divided by the total revenue of the prior period. The data required to calculate these measures was not yet monitored in the
+               years ended 31 December 2017 and 2018 and as a result comparatives for the years ended 31 December 2017 and 2018 are not available.
+           9   Net Customer Expansion Rate is defined as the revenue generated from customers at the end of the period with their corresponding revenue
+               from the same period in the previous year.                         
+        10.7.2 Non-IFRS financial measures by operating segments                  
+                                     Six months ended      Year ended             
+         (In NOK 1,000)                 30 June           31 December             
+                                    2020     2019    2019    2018    2017         
+         Adjusted EBITDA                                                          
+         Nordics1................................................ 118,942 96,361 194,266 172,606 134,922
+         Central Europe2 ..................................... 57,945 43,676 101,021 80,484 42,514
+         Western Europe3 .................................... 55,118 31,204 83,834 26,866 17,626
+         Global Messaging4 .................................. 12,442 14,168 26,603 32,262 -
+         Group Costs .......................................... -61,802 -51,225 -98,176 -99,849 -55,074
+         Total ................................................... 182,645 134,183 307,548 212,370 139,988
+                                        55
+</excerpt_1>
+
+<excerpt_2>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        revenue growth from such customers, demonstrated by a 111% Revenue Net Retention Rate in the six months ended
+        30 June 2020 and 106% in the year ended 31 December 2019.                 
+                                                                                  
+        11.3.6 Direct relationships with mobile network operators, OTT-providers and financial services providers
+        The Group’s direct relationships with mobile network operators, OTT-providers and financial services providers have a
+        significant impact on the Group’s results of operations. The Group’s ability to source certain CPaaS and payments services
+        can drive demand for The Group’s services, reduce the cost of services and provide a competitive advantage in certain
+        markets. The Group has generally experienced a positive correlation between the number of its direct relationships and
+        growth in revenue and gross margin.                                       
+        In addition, certain CPaaS services provided by the Group require direct relationships with OTT providers. The contracts
+        with the OTT providers enable the Group to supplement its traditional CPaaS messaging and voice services with OTT
+        communication services and offer its customers omni-channel communication capabilities, thereby providing the Group
+        with a competitive advantage vis-à-vis traditional CPaaS providers. In addition, the Group’s omni-channel
+        communication capabilities also allow the Group to mitigate its communication services supplier risk and manage its
+        communication-related cost of services as it can shift its messaging and voice services to different communication
+        channels.                                                                 
+        11.3.7 Platform costs and operating expenses                              
+        The Group believes that to expand its business, it needs to continue to invest in development of its products and services.
+        As its products and services have been primarily built in-house, it expects to continue to make significant investments
+        in research and development activities that will enable the Group not to rely significantly on any third-party systems or
+        service providers to provide its products and services and, consequently, to not make significant investments in
+        integrating and maintaining third-party systems or resolving legacy system issues. The Group expects to realise cost
+        savings through economies of scale, but may incur costs during phases of expansion and optimisation. For information
+        relating to the Group's investments reference is made to Section 11.14 "Investments".
+        11.3.8 Exchange rates                                                     
+        The Group undertakes business in foreign currencies and is consequently exposed to fluctuations in exchange rates.
+        Foreign exchange risk arises from transactions related to operations conducted, and assets and liabilities arising in
+        foreign currencies. The Group undertakes transactions denominated in NOK, SEK, DKK, EUR, GBP, BGN, CHF, RON, MKD
+        and PLN. Revenue and cost transactions within foreign subsidiaries are normally carried out in the same currency, which
+        mitigates the currency risk. The Group has no hedging arrangements. See Section 2.3.2 "Currency fluctuations could
+        affect the Group’s cash flow and financial condition".                    
+        However, as the Group's overall financial reporting is presented in NOK, changes in the value of SEK, DKK, EUR, GBP,
+        BGN, CHF, RON, MKD or PLN in relation to NOK affect the Group’s overall revenue, profit or loss and financial position.
+        Based on exposure throughout the year and balances at the period-end, the Group assesses that fluctuations in
+        NOK/EUR, NOK/DKK and NOK/SEK have the most significant impact on the financial reporting of financial assets and
+        liabilities.                                                              
+        For the year ended 31 December 2019, 80% of the Group’s revenue were generated in a currency other than the NOK.
+        Based on exposure throughout the year and balances at the period-end, the Group assesses that fluctuations in
+        NOK/EUR, NOK/DKK and NOK/SEK have the most significant impact on the financial reporting of financial assets and
+        liabilities.                                                              
+        The table below summarises the impact a change in these currencies will have on the consolidated income statement
+        and on retained earnings/accumulated losses as of 30 June 2020. The analysis is based on the assumption that the
+        foreign exchange rates increase or decrease by 10%, all other variables held constant.
+                                            Six months ended 30 June 2020         
+         (In NOK 1,000)                                                           
+                                   NOK/EUR impact NOK/DKK impact NOK/SEK impact   
+         Trade receivables ................................. 521 7       -        
+         Trade payables ..................................... 436 44   250        
+         Borrowings .......................................... 58,066 -  -        
+                                            Year ended 31 December 2019           
+         (In NOK 1,000)                                                           
+                                   NOK/EUR impact NOK/DKK impact NOK/SEK impact   
+         Trade receivables ................................. 32,662 1,506 6,192   
+         Trade payables ..................................... 18,157 904 7,230    
+         Borrowings .......................................... 167,684 - -        
+                                            Year ended 31 December 2018           
+         (In NOK 1,000)                                                           
+                                   NOK/EUR impact NOK/DKK impact NOK/SEK impact   
+         Trade receivables ................................. 521 7       -        
+         Trade payables ..................................... 436 44   250        
+         Borrowings .......................................... 58,066 -  -        
+                                        63
+</excerpt_2>
+
+<excerpt_3>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        11.4  The Group's 2020 outlook                                            
+        11.4.1 Introduction                                                       
+        The Group’s future growth will depend on the successful implementation of the Group’s business strategy. The Group’s
+        ability to achieve its business and financial objectives is subject to a variety of factors, many of which are beyond the
+        Group’s control. The forecasts included in this Prospectus have been prepared by the Company to give guidance into
+        how management views the Group’s expected financial performance for the financial year ending 31 December 2020.
+        The profit forecasts has been compiled and prepared on a basis which is both comparable with the historical financial
+        information and consistent with the issuers' accounting policies. The outlook statements are forward looking statements
+        and carry the risk associated therewith (see Section 4.3 "Cautionary note regarding forward-looking statements" and
+        Section 2.3.4 "The Group's future results may differ materially from what is expressed or implied by the forecast of
+        consolidated financial information included in this Prospectus, and investors should not place undue reliance on this
+        information").                                                            
+        The Group's 2020 outlook included in this Prospectus has been prepared by, and are the sole responsibility of the
+        Company's management. PricewaterhouseCoopers AS has not audited, reviewed, examined, compiled nor applied
+        agreed-upon procedures with respect to the Group’s 2020 outlook, and, accordingly, PricewaterhouseCoopers AS does
+        not express an opinion or any other form of assurance with respect thereto. PricewaterhouseCoopers AS reports included
+        in the Prospectus relate solely to the Company's previously issued consolidated financial statements. They do not extend
+        to the Group’s 2020 outlook and should not be read to do so.              
+        11.4.2 Methodology and assumptions                                        
+        The outlook of consolidated financial information for the financial year ending 31 December 2020 has been prepared on
+        the basis of the accounting policies set out in note 3 of the 2019 Consolidated Financial Statements. The outlook for
+        2020 has been prepared for the purpose of this Offering in accordance with the Group's ordinary forecasting procedures
+        and on a basis comparable to the historical financial information included elsewhere in this Offering. However, the
+        forecast of consolidated financial information is based on a large number of estimates made by the Group based on
+        assumptions about future events, which are subject to numerous and significant uncertainties, for example, caused by
+        business and/or wider economic risks and uncertainties, which could cause the Company's actual results to differ
+        materially from the forecast of financial targets presented herein. Certain of the assumptions, uncertainties and
+        contingencies relating to the forecast of consolidated financial information and the projections of consolidated financial
+        targets are wholly or partially within the Group's control, while others are outside or substantially outside of its control.
+        11.4.3 Key management assumptions that can be influenced by management    
+        The Group’s target for reported revenue growth measured in NOK is based on the following key assumptions that can
+        be influenced by management: (i) growth from new contracts are estimated on a normalised basis meaning that the
+        outlook does not assume revenue streams from single material contracts which have not been signed at the time of
+        modelling; and (ii) the Group assumes no M&A transactions in the financial forecast.
+        11.4.4 Key management assumptions outside of management’s influence       
+        The Group’s target for reported revenue growth measured in NOK is based on the following key assumptions that are
+        outside of management’s control: (i) Exchange rate assumptions are based on stable Exchange rates based on average
+        rates during the first six months of 2020; (ii) stable macroeconomic situation across the Group's footprint; and (iii) the
+        Group assumes low customer concentration and hence no loss of single major contracts that will impact the Group's
+        financial performance.                                                    
+        11.4.5 Key management assumptions that could materially change the outcome of the forecasts
+        The Group’s target for reported revenue growth measured in NOK is based on the following key assumptions that could
+        materially change the outcome of the forecasts: (i) growth rates from existing customers are modelled according to
+        historical growth rates and amended with expected future trends based on management’s best judgment; (ii) in regards
+        to COVID-19, it is assumed that societies remain fairly open and that no material lockdown measures as observed in
+        March to June are implemented during second half of 2020 in the Group’s core geographies. Material lockdown measures
+        will impact marketing messaging volumes directly; (iii) no material changes to legislation impacting the Group’s ability
+        to deliver services efficiently across its regions; and (iv) the Group assumes mobile network operators maintains a
+        predictable pricing regime and no material price increases limiting demand for the Group’s services across its customer
+        base.                                                                     
+        11.4.6 Other key management assumptions                                   
+        The Group’s target for reported revenue growth measured in NOK is also based on the following key assumptions: (i)
+        existing footprint, no M&A activities included; (ii) revenue growth rates and gross margins are modelled per country and
+        summarised on a regional level; (iii) the outlook for the financial year ended 31 December 2020 is based on internal
+        management figures up to June 2020 and a forecast for the period from July to December 2020; and (iv) assumptions
+        are based on historical trends and run-rate per country and adapted to expected future trends. Expected future trends
+        are based on management’s best judgment.                                  
+        11.4.7 Key management assumptions per region for revenue and gross margin 
+        Nordic region                                                             
+        Revenue assumptions: Overall growth rate for the region is assumed to show a moderate decline from 16% in the first
+        half of 2020 driven by the extraordinary strong first half results in Norway resulting from additional information
+        messaging volumes connected to the COVID-19 pandemic. Sweden experienced a very strong development for second
+        half 2019 and management has forecasted lower growth rates in second half 2020, compared to the underlying growth
+        in the first half of 2020. In Denmark and Finland, management expects pick-up in growth rates driven by softer
+                                        64
+</excerpt_3>
+
+<excerpt_4>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        comparable in the second half of 2019 for Denmark, while Finland had a soft start to 2020 and management has assumed
+        a pick-up in growth rates late in 2020.                                   
+                                                                                  
+        Gross Margin assumptions: Management assumes fairly stable margins overall for the full year in the region with normal
+        seasonality with lower margins in the fourth quarter of 2020, as a higher portion of the volume derives from high volume
+        but lower margin customers due to campaigns in connection with the Christmas season. Management assumes Gross
+        Margin to be slightly reduced for the year ending 31 December 2020 as a result of customer mix as high volume but
+        lower margin customers constituting a larger portion of the growth in volumes and thereby diluting margins slightly. The
+        negative effect on gross margin from customer mix outweighs the increased margins from positive product mix.
+        Central region                                                            
+        Revenue assumptions: Overall growth rates for the region are assumed to decrease in the second half compared to first
+        half of 2020 as the acquisition of the TeraComm Group in August 2019 becomes part of the organic footprint while
+        underlying business excluding acquisitions is expected to maintain a stable growth rate in line with the year ended
+        31 December 2019. The revenue momentum in Germany is strongly linked to industries like logistics and e-commerce
+        which experience a volume increase from COVID-19. Management also expects a rebound in messaging volumes and
+        activity in markets like Bulgaria, Romania and Poland although recovery has been slower than for the Western Europe
+        region. Management has forecasted lower mobile payments revenue in Bulgaria and Romania for the remaining months
+        in 2020 due to COVID-19. Due to the revenue streams in Bulgaria and Romania, lower gross margin will have limited
+        impact on Group’s profitability.                                          
+        Gross Margin assumptions: Management assumes gross margin will remain stable compared to the financial year ended
+        31 December 2019 based on current trends. Stabilisation of Germany’s gross margin through the second quarter 2020
+        has been key to set an assumption of stable margin development.           
+        Western region                                                            
+        Revenues assumptions: Overall growth rate for the region is assumed to decline from the 21% level in the first half of
+        2020 as Spot-Hit becomes part of the organic footprint. The outlook assumes continued fairly open societies in countries
+        which were mostly impacted by severe lockdown measures during the first half of 2020 (Italy, France and Spain). The
+        assumed growth rates for second half of 2020 are in line with reported growth rates before COVID-19 negatively
+        impacted growth rates from April.                                         
+        Gross Margin assumptions: Overall management assumes stable margin development in the region with a margin decline
+        in entities like Netmessage and Spot Hit from customer mix and quality measures. In entities like Spain and Netsize
+        management has assumed expanded margins from healthier customer and country mix and new products.
+        Global messaging                                                          
+        Revenue assumptions: Growth rates on global messaging are assumed to decline in the second half of 2020 primarily
+        due to lower aggregator revenue. The Group observes that volume thresholds that enable discounts from the mobile
+        operators on certain destinations will be met to a larger extent compared to the financial year ended 31 December 2019
+        by enterprise traffic, thus resulting in reduced aggregator volumes. The reduction on aggregator volumes will have close
+        to zero impact on gross margin, as the profitability is very low for the relevant destinations. The Group expects to
+        continue to experience healthy growth in their Global Enterprises business through expansion of their business to new
+        destinations for P2A messaging volumes. Growth rates can be volatile in global messaging while gross margin sensitivity
+        is limited due to the lower margin level, especially for aggregator customers.
+        Gross Margin assumptions: Gross margin is assumed to slightly decline for the year ending 31 December 2020 compared
+        to the financial year ended 31 December 2019. The decline is mainly driven by the highly competitive aggregator
+        landscape with competition pushing traffic at a loss margin, especially during the second quarter of 2020. As the Group
+        moves away from the most competitive routes, management expects Gross Margins to improve during the second half
+        of 2020.                                                                  
+        11.4.8 The Group's 2020 outlook                                           
+        Revenue                                                                   
+        The Group’s total revenue for the year ending 31 December 2020 is forecasted to be in the range of NOK 3,500 – 3,600
+        million.                                                                  
+        Gross Margin                                                              
+        The Group’s total Gross Margin for the year ending 31 December 2020 is forecasted in the range 24.2% – 24.7% of total
+        revenues.                                                                 
+        Adjusted EBITDA6                                                          
+        For the year ending 31 December 2020, the Group forecasts the Adjusted EBITDA to be in the range of NOK 360 million
+        – NOK 370 million.                                                        
+        6 For the purpose of this Section 11.4.8, Adjusted EBITDA is derived from operating profit (loss) and defined as operating profit (loss)
+        added back depreciation and amortization and adjusted for M&A activities costs and restructuring costs and other. M&A activities costs
+        are mainly related to consultant and legal advisors expenses incurred in connection with acquisition of subsidiaries. Restructuring costs
+        and other are mainly related to (i) efficiency projects, start-up costs for new businesses and branding/rebranding costs in connection with
+        the acquisition of subsidiaries and (ii) severance paid to certain employees as a result of acquisition of subsidiaries and changes in the
+        Group’s strategic focus also including certain replacement/rehiring cost. See also Section 4.2.3 "Non-IFRS financial measures".
+                                        65
+</excerpt_4>
+
+<excerpt_5>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        11.4.9 Capital expenditures                                               
+        For the year ending 31 December 2020, the Group forecasts capital expenditure levels at NOK 95 million – NOK 105
+        million as the Group continues to invest in CPaaS innovation and LINK Suite capabilities which will differentiate the
+        business in the long-term.                                                
+        11.4.10 Medium-to-long term outlook                                       
+        From 2017 to 2019, the Company recorded a 51% CAGR in revenue driven by both organic growth and M&A activity.
+        The Company is targeting continued strong revenue growth in the medium-to-long term, fuelled by increased customer
+        and market penetration, investments in go-to market initialise, continued expansion of the CPaaS platform and M&A
+        strategy. If such sustained growth is achieved, the Company will realize its medium-to-long term revenue target of
+        NOK 10 billion. In addition, the Company intends to achieve incremental growth in Gross Margins due to increased
+        revenue mix of higher value-add solutions and software, partially offset by growing mix of Western and Central European
+        revenues.                                                                 
+        From 2017 to 2019, the Company recorded a 55% CAGR in EBITDA. The Company is targeting continued strong EBITDA
+        growth in the medium-to-long term, with growth investments in the CPaaS platform and GTM initiatives expected to
+        drive a slight decline in EBITDA Margin. In the longer term, the Company is targeting net debt to Adjusted EBITDA below
+        3.0x. Capital expenditure levels are targeted to stay between NOK 100 million and NOK 125 million, as the Company
+        continues to invest in CPaaS innovation and LINK Suite capabilities which will differentiate the business in the long-term.
+        No other initiatives currently planned suggest that capital expenditure will exceed the projected amounts upon
+        completion of LINK Suite investments.                                     
+        11.5  Recent development                                                  
+        During 2020, the Company has seen a growth in services rendered to existing customers as well as adding new customers
+        to its portfolio as further described in Section 8.8 "Customers". In addition, the Group has fully integrated companies
+        acquired in 2019, which have further expanded the Group's presence in the market. Please refer to Section 11.14.3
+        "Acquisitions". For a further description of the recent trends reference is made to note 9 in the Condensed Interim
+        Financial Statements.                                                     
+        On 15 September 2020, the Company adopted 1:20 share split that reduces the nominal value per share from NOK 0.10
+        to NOK 0.005 with the Company's shareholders being allocated 19 new shares for each share they own as of the
+        resolution. Following such resolution, the share capital of the Company was NOK 1,082,289.50 divided on 216,457,900
+        shares, each with a nominal value of NOK 0.005 and of which 213,874,740 are ordinary shares, and 2,583,160 are
+        preference shares, see Section 13.3 "Share capital and share capital history". For adjustments for significant transactions
+        between 30 June 2020 to the date of the Prospectus, not subject to the Offering and Listing, see Section 11.5 "Recent
+        development".                                                             
+        On 15 September 2020, the Company's general meeting resolved a share capital increase of 324,000 new shares directed
+        towards LINK ESOT. For more information about LINK ESOT and the share capital increase, see Section 12.6.4
+        "Participation of the employees in the Company’s share capital" and Section 13.3 "Share capital and share capital
+        history".                                                                 
+        Further, on 24 September 2020, the Company’s general meeting resolved to redeem the Company’s class of preference
+        shares, resulting in a share capital decrease of NOK 12,915.80 and the Company having a share capital of
+        NOK 1,070,993.70, divided on 214.198.740 Shares and the Company only having one class of ordinary shares. The
+        share capital decrease was registered with the Norwegian Register of Enterprises on 2 October 2020, see Section 13.3
+        "Share capital and share capital history".                                
+        Apart from the above, from 30 June 2020 up to the date of this Prospectus, there have been no significant changes in
+        the Group's financial and trading position. To the best of the Company's knowledge, there are no trends, uncertainties,
+        demands, commitments or events that will have a material effect on the Group’s business during the current financial
+        period.                                                                   
+        11.6  Comparison of results for the Group for the three months ended 30 June 2020 compared to the
+              three months ended 30 June 2019                                     
+        The following table presents selected comparative results of operations from the Condensed Interim Financial Statements
+        for the three months periods ended 30 June 2020 and 2019:                 
+                                                           Three months ended     
+        (In NOK 1,000)                                         30 June            
+                                                           20201    20191         
+        Revenue ........................................................................................................ 854,457 683,749
+        Total operating revenue ............................................................................... 854,457 683,749
+        Cost of services rendered ................................................................................. -634,059 -501,618
+        Payroll and related expenses ............................................................................ -91,990 -86,509
+        Other operating expenses ................................................................................ -41,364 -52,915
+        Depreciation and amortisation .......................................................................... -55,721 -51,794
+        Total operating expenses ............................................................................. -823,134 -692,835
+        Operating profit (loss) ................................................................................. 31,323 -9,086
+                                        66
+</excerpt_5>
+
+<excerpt_6>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        The Company's register of shareholders with the VPS is administrated by Danske Bank Verdipapirservice Søndre Gate
+        13-15, 7011 Trondheim, Norway.                                            
+                                                                                  
+        17.15 Conditions for completion of the Offering – Listing and trading of the Offer Shares
+        The Company will on or around 13 October 2020 apply for listing of its Shares on the Oslo Stock Exchange. It is expected
+        that the Oslo Stock Exchange will approve the listing application of the Company on or around 16 October 2020, and
+        that such approval will be conditional upon obtaining a minimum of 500 shareholders, each holding Shares with a value
+        more than NOK 10,000 and there being a minimum free float of the Shares of 25%. The Company expects that the
+        conditions will be fulfilled through the Offering.                        
+        Completion of the Offering on the terms set forth in this Prospectus is expressly conditional upon the Oslo Stock Exchange
+        approving the application for listing of the Shares on or about 16 October 2020, on conditions acceptable to the Company
+        and that any such conditions are satisfied by the Company. The Offering will be cancelled in the event that the conditions
+        are not satisfied. There can be no assurance that the Oslo Stock Exchange will give such approval or that the Company
+        will satisfy these conditions.                                            
+        Completion of the Offering on the terms set forth in this Prospectus is otherwise only conditional upon (i) the Board of
+        Directors having resolved to issue the New Shares in the Offering, (ii) the Company and the Principal Shareholder, in
+        consultation with the Managers, having approved the allocation of the Offer Shares to eligible investors following the
+        bookbuilding process, (iii) the Company, the Selling Shareholders and the Managers having entered into the Purchase
+        Agreement (as applicable), (iv) satisfaction of the conditions precedent contained in the Purchase Agreement, and (v)
+        the Purchase Agreement not having been terminated in accordance with its terms (see Section 17.1 "Overview of the
+        Offering"). There can be no assurance that these conditions will be satisfied. If the conditions are not satisfied, the
+        Offering may be revoked or suspended.                                     
+        Assuming that the conditions are satisfied, the first day of trading on an "if issued/if sold" basis of the Shares, including
+        the Offer Shares, on the Oslo Stock Exchange is expected to be on or about 21 October 2020. The Shares are expected
+        to trade under the ticker code "LINK".                                    
+        Applicants in the Retail Offering selling Offer Shares prior to delivery must ensure that payment for such Offer Shares is
+        made on or prior to the Payment Date, by ensuring that the stated bank account is sufficiently funded on 21 October
+        2020. Applicants in the Institutional Offering selling Offer Shares prior to delivery must ensure that payment for such
+        Offer Shares is made on or prior to the Institutional Closing Date. Accordingly, an applicant who wishes to sell his/her
+        Offer Shares, following confirmed allocation of Offer Shares, but before delivery, must ensure that payment is made in
+        order for such Offer Shares to be delivered in time to the applicant.     
+        Prior to the Listing and the Offering, the Shares are not listed on any stock exchange or authorized market place, and
+        no application has been filed for listing on any other stock exchanges or regulated market places other than Oslo Stock
+        Exchange.                                                                 
+        17.16 Expenses of the Offering and the Listing                            
+        Assuming that the Company raises gross proceeds of NOK 2,500 million from the issuance of the New Shares, the
+        Company estimates that expenses in connection with the Offering and the Listing, which will be paid by the Company,
+        will amount to approximately NOK 140 million. Accordingly, the net proceeds to the Company will be up to approximately
+        NOK 2,360 million. In consideration of the Managers' commitments under the Purchase Agreement, the Company and
+        the Selling Shareholders will pay the Managers a fixed base commission calculated on the basis of the gross proceeds
+        from the Offering, i.e. the aggregate number of New Shares issued by the Company to be payable by the Company and
+        the aggregate number of Sale Shares and, if applicable, any Additional Shares, sold by the Selling Shareholders to be
+        payable by the Selling Shareholders. In addition to the above, the Managers may receive a fixed discretionary fee of
+        0.5% in connection with the Offering calculated on the basis of the gross proceeds from the Offering determined at the
+        Company's and the Principal Shareholder's sole discretion. The payment of the discretionary fee, if any, shall be divided
+        between the Company and the Selling Shareholders based on the number of New Shares issued by the Company and
+        the number of Offer Shares sold by the Selling Shareholders in the Offering. The estimated expenses above is based on
+        the assumption that the variable discretionary fee becomes fully payable. 
+        In addition, an IPO bonus of NOK 10 million becomes payable to certain employees and members of the management,
+        only subject to successful listing, see Section 12.5 "Bonus program for Management".
+        No expenses or taxes will be charged by the Company, the Selling Shareholders or the Managers to the applicants in
+        the Offering.                                                             
+        17.17 Dilution                                                            
+        The issuance of New Shares in the Offering may result in a maximum number of Shares in the Company of 267,398,740,
+        which will correspond to a dilution for the existing shareholders of approximately 20%. This is based on the assumption
+        that the Company issues the maximum number of New Shares, and that none of the existing Shareholders subscribes
+        for any New Shares in the Offering. The existing shareholders' pre-emption rights to subscribe for the New Shares has
+        been deviated from, see Section 17.3.                                     
+        The net asset value per existing Share as at 30 June 2020 was approximately NOK 11.32.
+        17.18 Lock-up                                                             
+        17.18.1 The Company's lock-up undertaking                                 
+        Pursuant to the Underwriting Agreement, the Company undertakes that it will not, without the prior written consent of
+        the Managers, during the period ending 180 days after the first date of trading and listing of the Offer Shares: (i) issue,
+                                        119
+</excerpt_6>
+
+<excerpt_7>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        members, provided in each case that the transferee agrees in writing for the benefit of the Underwriters to be bound by
+        the provisions of lock-up undertaking and to assume, jointly and severally, the obligations of the undersigned under the
+        Underwriting Agreement or (c) the acceptance or pre-acceptance of a public tender offer pursuant to the Norwegian
+        Securities Trading Act and any transfer or sale in connection therewith.  
+        17.19 Interest of natural and legal persons involved in the Offering      
+        The Managers or their affiliates have provided from time to time, and may provide in the future, financial advisory,
+        investment and commercial banking services, as well as financing, to the Company and its affiliates in the ordinary
+        course of business, for which they may have received and may continue to receive customary fees and commissions.
+        The Managers will receive a management fee in connection with the Offering which will be based on the amount of gross
+        proceeds received from investors, and, as such, have an interest in the Offering. In addition, the Company may, at its
+        sole and absolute discretion, pay to the Managers an additional discretionary fee in connection with the Offering. See
+        Section 17.16 "Expenses of the Offering and the Listing" for information on fees to the Managers in connection with the
+        Offering.                                                                 
+        To the extent that there are any profits earned from stabilisation transactions, any profit therefrom (after deduction of
+        any dealing costs and stamp duty or transfer tax costs arising in relation to any stabilisation transactions) shall fall to
+        the Company and the Selling Shareholders on a pro rata basis in accordance with their respective shares of the total
+        proceeds of the Offering.                                                 
+        Beyond the above-mentioned, the Company is not aware of any interest, including conflicting ones, of any natural or
+        legal persons involved in the Offering.                                   
+        17.20 Participation of major existing shareholders and members of the Management, supervisory and
+              administrative bodies in the Offering                               
+        None of the members of the Board of Directors and Management have indicated an intention to apply for Offer Shares
+        and are expected to consider any possible applications during the application period.
+        The Company is not aware of whether any major shareholders of the Company or members of the Management,
+        supervisory or administrative bodies intend to apply for Offer Shares in the Offering, or whether any person intends to
+        apply for more than 5% of the Offer Shares.                               
+        17.21 Governing law and jurisdiction                                      
+        This Prospectus, the Retail Application Form and the terms and conditions of the Offering shall be governed by and
+        construed in accordance with Norwegian law. Any dispute arising out of, or in connection with, this Prospectus, the Retail
+        Application Form or the Offering shall be subject to the exclusive jurisdiction of the courts of Norway, with Oslo City
+        Court as legal venue.                                                     
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                        121
+</excerpt_7>
+
+<excerpt_8>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        This EEA selling restriction is in addition to any other selling restrictions set out in this Prospectus.
+                                                                                  
+        18.2.4 Additional jurisdictions                                           
+        Canada                                                                    
+        The Offer Shares may be sold only to purchasers purchasing, or deemed to be purchasing, as principal that are accredited
+        investors, as defined in National Instrument 45-106 Prospectus Exemptions or subsection 73.3(1) of the Securities Act
+        (Ontario), and are permitted clients, as defined in National Instrument 31-103 Registration Requirements, Exemptions
+        and Ongoing Registrant Obligations. Any resale of the Offer Shares must be made in accordance with an exemption
+        from, or in a transaction not subject to, the prospectus requirements of applicable securities laws.
+        Securities legislation in certain provinces or territories of Canada may provide a purchaser with remedies for rescission
+        or damages if this Prospectus (including any amendment thereto) contains a misrepresentation, provided that the
+        remedies for rescission or damages are exercised by the purchaser within the time limit prescribed by the securities
+        legislation of the purchaser's province or territory. The purchaser should refer to any applicable provisions of the
+        securities legislation of the purchaser's province or territory for particulars of these rights or consult with a legal advisor.
+        Pursuant to Section 3A.3 (or, in the case of securities issued or guaranteed by the government of a non-Canadian
+        jurisdiction, Section 3A.4) of National Instrument 33-105 Underwriting Conflicts (NI 33-105), the Managers are not
+        required to comply with the disclosure requirements of NI 33-105 regarding underwriter conflicts of interest in connection
+        with this offering.                                                       
+        Hong Kong                                                                 
+        The Offer Shares may not be offered or sold in Hong Kong by means of any document other than (i) in circumstances
+        which do not constitute an offer to the public within the meaning of the Companies Ordinance (Cap. 32) of Hong Kong,
+        or (ii) to "professional investors" within the meaning of the Securities and Futures Ordinance (Cap. 571) of Hong Kong
+        and any rules made thereunder, or (iii) in other circumstances which do not result in the document being a "prospectus"
+        within the meaning of the Companies Ordinance (Cap. 32) of Hong Kong, and no advertisement, invitation or document
+        relating to the Offer Shares may be issued or may be in the possession of any person for the purposes of issue (in each
+        case whether in Hong Kong or elsewhere), which is directed at, or the contents of which are likely to be accessed or
+        read by, the public of Hong Kong (except if permitted to do so under the securities laws of Hong Kong) other than with
+        respect to Offer Shares which are or are intended to be disposed of only to persons outside Hong Kong or only to
+        "professional investors" within the meaning of the Securities and Futures Ordinance (Cap. 571) of Hong Kong and any
+        rules made thereunder.                                                    
+        Singapore                                                                 
+        This Prospectus has not been registered as a prospectus with the Monetary Authority of Singapore. Accordingly, this
+        Prospectus and any other document or material in connection with the offer or sale, or invitation for subscription or
+        purchase, of the Offer Shares may not be circulated or distributed, nor may they be offered or sold, or be made the
+        subject of an invitation for subscription or purchase, whether directly or indirectly, to persons in Singapore other than
+        (i) to an institutional investor under Section 274 of the Securities and Futures Act, Chapter 289 of Singapore (the "SFA"),
+        (ii) to a relevant person, or any person pursuant to Section 275(1A), and in accordance with the conditions, specified in
+        Section 275 of the SFA or (iii) otherwise pursuant to, and in accordance with the conditions of, any other applicable
+        provision of the SFA.                                                     
+        Switzerland                                                               
+        This Prospectus is not intended to constitute an offer or solicitation to purchase or invest in the Offer Shares. The Offer
+        Shares may not be publicly offered, directly or indirectly, in Switzerland within the meaning of the Swiss Financial
+        Services Act ("FinSA") (unless in circumstances falling within article 36 of the FinSA), and no application has been made
+        or will be made to admit the Offer Shares to trading on any trading venue (i.e., exchange or multilateral trading facility)
+        in Switzerland. Neither this Prospectus nor any other offering or marketing material relating to the Offering or the Offer
+        Shares constitutes a prospectus within the meaning of the FinSA, and neither this Prospectus nor any other offering or
+        marketing material relating to the Offering or the Offer Shares may be publicly distributed or otherwise made publicly
+        available in Switzerland.                                                 
+        Neither this Prospectus nor any other offering or marketing material relating to the Offering or the Offer Shares has
+        been or will be filed with or approved by any Swiss regulatory authority. In particular, this Prospectus has not been and
+        will not be reviewed or approved by a Swiss reviewing body (Prüfstelle) pursuant to article 51 of the FinSA and does not
+        comply with the disclosure requirements applicable to a prospectus within the meaning of article 35 of the FinSA
+        Other jurisdictions                                                       
+        The Offer Shares may not be offered, sold, resold, transferred or delivered, directly or indirectly, in or into, Japan,
+        Australia or any other jurisdiction in which it would not be permissible to offer the Offer Shares.
+        In jurisdictions outside the United States, the United Kingdom and the EEA where the Offering would be permissible, the
+        Offer Shares will only be offered pursuant to applicable exceptions from prospectus requirements in such jurisdictions.
+        18.3  Transfer restrictions                                               
+        18.3.1 United States                                                      
+        The Offer Shares have not been and will not be registered under the U.S. Securities Act or with any securities regulatory
+        authority of any state or other jurisdiction in the United States, and may not be offered or sold, directly or indirectly, or
+        otherwise transferred within the United States except: (i) within the United States only to persons reasonably believed
+        to be QIBs in reliance on Rule 144A or pursuant to another exemption from, or in a transaction not subject to, the
+        registration requirements of the U.S. Securities Act; and (ii) outside the United States in compliance with Regulation S,
+                                        123
+</excerpt_8>
+
+<excerpt_9>
+(Unofficial translation. The official language of
+                                          these minutes is English. In the event of any
+                                          discrepancies between the English and   
+                                          Norwegian text, the English text shall precede.)
+                    VEDTEKTER FOR             ARTICLES OF ASSOCIATION OF          
+            LINK MOBILITY GROUP HOLDING ASA LINK MOBILITY GROUPHOLDING ASA        
+                                                Adopted on 2 October 2020         
+                  Vedtatt 2. oktober 2020                                         
+                                                                                  
+           1.   SELSKAPSNAVN OG           1.    COMPANY NAME AND BUSINESS         
+                FORRETNINGSKOMMUNE              OFFICE                            
+           Navnet på selskapet er LINK Mobility Group The name of the company is LINK Mobility
+           Holding ASA.  Selskapet er  et Group Holding ASA. The company is a public
+           allmennaksjeselskap.           limited liability company.              
+                                          The company's registered business office is in
+           Selskapets forretningskontor er i Oslo Oslo municipality.              
+           kommune.                                                               
+                                                                                  
+                                                                                  
+           2.   AKSJEKAPITAL              2.    SHARE CAPITAL                     
+           Aksjekapitalen er NOK 1.070.993,70, The share capital is NOK 1,070,993.70,
+           bestående av 214.198.740 aksjer pålydende consisting of 214,198,740 shares with a
+           NOK 0,005 hver. Selskapets aksjer skal være nominal value of NOK 0.005 each. The shares of
+           registrert i Verdipapirsentralen (VPS). the Company shall be registered in the
+                                          Norwegian Central Securities Depository.
+                                                                                  
+           3.   OVERDRAGELSE AV AKSJER    3.    TRANSFER OF SHARES                
+           Erverv av aksjer er ikke betinget av samtykke Acquisition of shares is not subject to approval
+           fra Selskapet. Aksjeeierne har ikke forkjøpsrett. by the Company. Shareholders do not have
+                                          rights of first refusal in connection with transfer
+                                          of shares.                              
+                                                                                  
+           4.   SELSKAPETS VIRKSOMHET     4.    OPERATIONS OF THE COMPANY         
+           Selskapets virksomhet er å eie aksjer i andre The Company's operations are to own shares in
+           selskaper og enten selv eller gjennom andre other companies, and either itself or through
+           selskaper å utvikle og drifte programvare for other companies, develop and operate software
+           mobil telefontjenester til private og offentlige for mobile telephone services to private and
+           virksomheter.                  public businesses.                      
+                                                                                  
+           5.   STYRE                     5.    BOARD OF DIRECTORS                
+           Selskapet skal ha et styre bestående av mellom The board of directors shall consist of between
+           5 og 9 aksjonærvalgte styremedlemmer. 5 and 9 shareholder elected board members.
+                                                                                  
+                                                                                  
+           6.   GENERALFORSAMLINGEN       6.    THE GENERAL MEETING               
+           Den ordinære generalforsamling skal behandle: The annual general meeting shall resolve:
+                                                                                  
+             - Godkjennelse av årsregnskap og - The approval of the annual accounts
+               årsberetning, herunder utdeling av and annual report, as well as   
+               utbytte.                        distribution of dividends.         
+             - Andre saker som i henhold til lov hører - Other matters that the general meeting
+               under generalforsamlingens myndighet. is required by law to resolve.
+           Retten til å delta og stemme på The right to participate and vote at general
+           generalforsamlinger kan bare utøves for aksjer meetings of the company can only be exercised
+                                          for shares which have been acquired and 
+                                                                                  
+                                       Side 1/2
+</excerpt_9>
+
+<excerpt_10>
+Covenants                                                                 
+        Under the terms of the Group’s Senior Facilities Agreement borrowing facilities, the Group is
+        required to comply with the financial covenants as described in note 18 to the consolidated
+        annual report for 2019 at the respective quarterly test dates.            
+                                                                                  
+        The first test date of the maintenance covenants was 30 June 2019. The Group has complied
+        with these covenants on all test dates including 31 December 2019, 31 March 2020, and 30
+                                                                                  
+        June 2020. For 31 December 2019 and 31 March 2020, the consolidated total net debt was
+        7.03 times LTM consolidated proforma EBITDA including synergies compared to the term of
+        loan agreement of 8.50:1 and 11.50:1. For 30 June 2020, the consolidated net debt was 6.84
+        time LTM consolidated proforma EBIDTA including synergies compared to the term of loan
+        agreement of 8.00:1 and 11.00:1.                                          
+                                                                                  
+        Collateral                                                                
+        In connection with the SFA, Lucid Trustee Services Limited (as security agent under the SFA)
+        has been granted certain guarantees and security interests for the benefits of the SFA lenders.
+                                                                                  
+        These securities include, with some carve-outs and exceptions due to local regulations and
+        otherwise pursuant to the agreed security principles set out in the SFA: (i) security over the
+        shares in any subsidiary deemed material pursuant to the SFA; (ii) non-blocking charges over
+        material bank accounts held by Victory Partners VIII Norway AS (the Company) and any
+        subsidiary deemed material pursuant to the SFA; and (iii) security over material intra-group
+                                                                                  
+        loans between the Company and LINK Mobility Group AS and between the Company and its
+        parent company, Victory Partners VIII Norway Holding AS.                  
+                                                                                  
+        Furthermore, all direct or indirect subsidiaries of the Company which is deemed to be a
+        material subsidiary (as defined in the SFA) have, or will if such material threshold is met in the
+        future, accede to the SFA as guarantors. Each guarantor guarantees the performance of the
+        borrowers and the other guarantors’ performance under the SFA on a joint and several basis,
+        however subject to any local law restrictions. Additionally, the SFA includes an annual
+        guarantor coverage test ensuring that if the guarantors’ consolidated EBITDA is less than 80%
+        of the group’s consolidated pro forma EBITDA, additional subsidiaries will have to accede to
+        the SFA as guarantors in order to increase the guarantors’ consolidated EBITDA to be above
+        the 80% threshold. Such additional acceding subsidiaries must provide collateral as if they
+        were deemed a material subsidiary pursuant to the SFA.                    
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+        Copyright 2020 LINK Mobility. All rights reserved.         16
+</excerpt_10>
+
+<excerpt_11>
+Risks                                                                   
+          The Group has identified three types of risks that can prevent successful implementation of its
+          business strategy or manage its growth effectively: market risk, financial risk, and acquisition risk.
+                                                                                  
+          The below section describes how the Group evaluates and mitigates these risks and includes a
+          brief comment to the risk related to the Covid-19 virus.                
+                                                                                  
+          Market risk                                                             
+          LINK’s market share for A2P mobile services have grown rapidly over time through both organic
+          growth and through acquisitions and benefits from a unique competitive position. LINK is by far
+          the largest player in Europe within its industry resulting in economies of scale relating to capacity
+          and competences for developing and launching new products, broad existing product offerings
+          and solid expertise in operations and system integrations towards customers.
+                                                                                  
+          Based on market and competitive advantages, LINK builds long-term customer relationships
+                                                                                  
+          through high quality of services, system integration and development of new products and
+          solutions. LINK has very low customer churn in all markets as customers who have first started
+          using mobile communications in one area, tend to move more and more business activities to
+          mobile platforms increasing integration and reliability on LINK.        
+                                                                                  
+          LINK’s revenue, costs and profits are subjected to the risk of changes in customer prices. As the
+          market is expanding, margin pressure is observed and anticipated in some parts of the market.
+          The price pressure is likely to be focused on low-value wholesale/bulk SMS and basic mobile
+          payment services. LINK will therefore continue its strategy of delivering value added services to
+          its customers through new innovative solutions such as conversational messaging and channel
+          agnostic solutions improving the mobile messaging use case. LINK’s broad specter of mobile
+          services enables a customer offering that is complete and covering multiple needs. This creates
+          high customer satisfaction and creates close relationships between LINK and its customers. As
+          the use case expands, LINK address smaller and medium sized customers which typically have a
+          higher price point per message. These factors reduce the overall price risk. Expanding towards a
+                                                                                  
+          channel-agnostic messaging solution will contribute to reducing message delivery cost by utilizing
+          more IP based protocols and hence improving and protecting gross margin.
+                                                                                  
+                                                                                  
+          Financial risk                                                          
+          The Group’s activities expose it to financial risks, such as price, currency, liquidity, interest rate
+          and credit. Overall, these risks are regarded as low and manageable.    
+                                                                                  
+          By being the leading provider and thus the largest buyers of SMS in its markets, LINK can
+          purchase SMS from the telecom operators at favorable prices. Additionally, LINK’s position
+          ensures priority from the operators securing high quality in terms of delivery reliability.
+                                                                                  
+          LINK’s subsidiaries operate using their local currencies (NOK, SEK, DKK, PLN, BGN, HUF, GBP,
+          MKD, RON, and EUR). Revenue and cost transactions are usually carried out in the same
+                                                                                  
+          currency, which reduces the currency risk, however Victory and LINK present annual reports in
+          NOK and changes in the underlying currencies in relation to NOK impact the overall revenue and
+          financial position in the presentation currency.                        
+                                                                                  
+          LINK is also exposed to exchange risk regarding the EUR share of its Senior Facility Agreement
+          (loan), Capex Facility and Revolving Facility in EUR.                   
+                                                                                  
+                                                                  Side 4 av 7
+</excerpt_11>
+
+
+</LINK Mobility IPO Prospectus Dec 10 2020>

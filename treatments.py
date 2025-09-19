@@ -14,13 +14,13 @@ MAX_EFFECTIVE_CONTEXT_WINDOW = MAX_CONTEXT_WINDOW - floor(
 
 def _has_default_treatment(experiment: dict) -> bool:
     if (treatments := experiment.get("treatments")) is not None:
-        if "default" not in treatments:
+        if "default" not in list(treatments.keys()):
             return False
     return True
 
 
 def _has_rag_treatment(experiment: dict) -> bool:
-    return "rag" in experiment.get("treatments", [])
+    return "rag" in list(experiment.get("treatments", {}).keys())
 
 
 def _get_default_texts(experiment: dict, max_context: int) -> list[str]:
@@ -53,9 +53,14 @@ def _get_rag_texts(experiment: dict, dump_texts: bool = True) -> list[str]:
     if (query := experiment.get("query")) is None:
         return []
 
+    experiment_id = experiment["id"]
+    k = experiment.get("treatments", {}).get("rag", {}).get("k", 5)
+
     retriever = Retriever()
-    pdf_doc_urls = get_pdf_urls(experiment)
-    docs = retriever.get_relevant_documents(query, pdf_doc_urls)
+    pdf_doc_urls = [
+        d for d in experiment.get("reference_doc_urls", []) if Path(d).suffix == ".pdf"
+    ]
+    docs = retriever.get_relevant_documents(query, pdf_doc_urls, k)
     texts = []
     for doc in docs:
         content = ""
@@ -64,16 +69,20 @@ def _get_rag_texts(experiment: dict, dump_texts: bool = True) -> list[str]:
             content += EXCERPT_TEMPLATE.format(index=idx, content=page["text"]) + "\n"
         full_text = DOC_TEMPLATE.format(filename=filename, content=content)
         if dump_texts:
-            with open(f"./rag_texts/{filename}.txt", "w") as f:
+            with open(f"./rag_texts/{experiment_id}_{filename}.txt", "w") as f:
                 f.write(full_text)
         texts.append(full_text)
     return texts
 
 
 def get_pdf_urls(experiment: dict) -> list[str]:
-    return [
-        d for d in experiment.get("reference_doc_urls", []) if Path(d).suffix == ".pdf"
-    ]
+    if _has_default_treatment(experiment):
+        return [
+            d
+            for d in experiment.get("reference_doc_urls", [])
+            if Path(d).suffix == ".pdf"
+        ]
+    return []
 
 
 def get_texts(

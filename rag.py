@@ -63,14 +63,16 @@ class Retriever:
         if new_docs:
             self.vector_store.add_documents(new_docs)
 
-        semantic_retriever = self.vector_store.as_retriever(search_kwargs={"k": k})
+        semantic_retriever = self.vector_store.as_retriever(
+            search_kwargs={"k": k, "filter": {"filename": filename}}
+        )
 
         return EnsembleRetriever(
             retrievers=[bm25_retriever, semantic_retriever], weights=[0.5, 0.5]
         )
 
     def get_relevant_documents(
-        self, query: str, pdf_doc_urls: list[str], k: int = 20
+        self, query: str, pdf_doc_urls: list[str], k: int
     ) -> list[dict[str, Any]]:
         print("Getting retriever...")
         retriever = self._get_retriever(pdf_doc_urls, k)
@@ -101,7 +103,7 @@ if __name__ == "__main__":
     doc_urls = ["./pdf/Apple_SEC_filing_2024.pdf"]
     retriever = Retriever()
     query = "How many employees does Apple have?"
-    docs = retriever.get_relevant_documents(query, doc_urls)
+    docs = retriever.get_relevant_documents(query, doc_urls, 10)
 
     for doc in docs:
         print(f"Filename: {doc['filename']}")
