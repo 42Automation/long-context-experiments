@@ -23,6 +23,17 @@ Response to judge:
 Instructions: Respond with only "true" if the response factually aligns with the correct answer, or "false" if it does not. Do not provide any explanation - just "true" or "false".
 """
 
+DOC_TEMPLATE = """Here are some excerpts from the following document for your consideration:
+<{filename}>
+{content}
+</{filename}>s
+"""
+
+EXCERPT_TEMPLATE = """"<excerpt_{index}>
+{content}
+</excerpt_{index}>
+"""
+
 JUDGE_SYSTEM_PROMPT = (
     "You are a helpful assistant. Provide accurate judgement for the queries provided"
 )

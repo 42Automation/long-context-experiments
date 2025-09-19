@@ -1,6 +1,8 @@
 from math import floor
 from pathlib import Path
 
+from prompts import DOC_TEMPLATE, EXCERPT_TEMPLATE
+from rag import Retriever
 from utils import get_filler_content, get_num_tokens
 
 MAX_CONTEXT_WINDOW = 256_000
@@ -17,13 +19,8 @@ def _has_default_treatment(experiment: dict) -> bool:
     return True
 
 
-def get_pdf_urls(experiment: dict) -> list[str]:
-    doc_urls = (
-        experiment.get("reference_doc_urls", [])
-        if _has_default_treatment(experiment)
-        else []
-    )
-    return [d for d in doc_urls if Path(d).suffix == ".pdf"]
+def _has_rag_treatment(experiment: dict) -> bool:
+    return "rag" in experiment.get("treatments", [])
 
 
 def _get_default_texts(experiment: dict, max_context: int) -> list[str]:
@@ -52,10 +49,40 @@ def _get_default_texts(experiment: dict, max_context: int) -> list[str]:
     return texts
 
 
+def _get_rag_texts(experiment: dict, dump_texts: bool = True) -> list[str]:
+    if (query := experiment.get("query")) is None:
+        return []
+
+    retriever = Retriever()
+    pdf_doc_urls = get_pdf_urls(experiment)
+    docs = retriever.get_relevant_documents(query, pdf_doc_urls)
+    texts = []
+    for doc in docs:
+        content = ""
+        filename = doc["filename"]
+        for idx, page in enumerate(doc["pages"]):
+            content += EXCERPT_TEMPLATE.format(index=idx, content=page["text"]) + "\n"
+        full_text = DOC_TEMPLATE.format(filename=filename, content=content)
+        if dump_texts:
+            with open(f"./rag_texts/{filename}.txt", "w") as f:
+                f.write(full_text)
+        texts.append(full_text)
+    return texts
+
+
+def get_pdf_urls(experiment: dict) -> list[str]:
+    return [
+        d for d in experiment.get("reference_doc_urls", []) if Path(d).suffix == ".pdf"
+    ]
+
+
 def get_texts(
     experiment: dict, max_context: int = MAX_EFFECTIVE_CONTEXT_WINDOW
 ) -> list[str]:
     if _has_default_treatment(experiment):
         return _get_default_texts(experiment, max_context)
+
+    if _has_rag_treatment(experiment):
+        return _get_rag_texts(experiment)
 
     return []
