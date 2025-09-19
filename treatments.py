@@ -1,9 +1,8 @@
 from math import floor
 from pathlib import Path
 
-from prompts import DOC_TEMPLATE, EXCERPT_TEMPLATE
 from rag import Retriever
-from utils import get_filler_content, get_num_tokens
+from utils import get_filler_content, get_num_tokens, get_pages_text
 
 MAX_CONTEXT_WINDOW = 256_000
 CONTEXT_WINDOW_BUFFER_PERCENT = 5
@@ -68,11 +67,8 @@ def _get_rag_texts(experiment: dict, dump_texts: bool = True) -> list[str]:
 
     texts = []
     for doc in docs:
-        content = ""
         filename = doc["filename"]
-        for idx, page in enumerate(doc["pages"]):
-            content += EXCERPT_TEMPLATE.format(index=idx, content=page["text"]) + "\n"
-        full_text = DOC_TEMPLATE.format(filename=filename, content=content)
+        full_text = get_pages_text(pages=doc["pages"], filename=filename)
         if dump_texts:
             with open(f"./rag_texts/{experiment_id}_{filename}.txt", "w") as f:
                 f.write(full_text)

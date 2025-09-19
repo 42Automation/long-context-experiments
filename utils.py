@@ -3,6 +3,7 @@ from tiktoken import get_encoding
 tokenizer_encoding = get_encoding(
     "cl100k_base"
 )  # Use base tokenizer encoding as approximation
+from prompts import DOC_TEMPLATE, EXCERPT_TEMPLATE
 
 
 def is_anthropic_model(model: str) -> bool:
@@ -59,3 +60,10 @@ def get_filler_content(
         except FileNotFoundError:
             continue
     return "\n".join(filler_parts)
+
+
+def get_pages_text(pages: list[dict], filename: str) -> str:
+    content = ""
+    for idx, page in enumerate(pages):
+        content += EXCERPT_TEMPLATE.format(index=idx, content=page["text"]) + "\n"
+    return DOC_TEMPLATE.format(filename=filename, content=content)
