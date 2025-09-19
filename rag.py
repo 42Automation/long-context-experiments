@@ -38,7 +38,7 @@ class Retriever:
         has_doc = len(match["ids"]) > 0
         return has_doc
 
-    def _get_retriever(self, pdf_doc_urls: list[str], k: int = 3) -> EnsembleRetriever:
+    def _get_retriever(self, pdf_doc_urls: list[str], k: int) -> EnsembleRetriever:
         # Load documents
         source_docs = []
         for doc_url in pdf_doc_urls:
@@ -70,7 +70,7 @@ class Retriever:
         )
 
     def get_relevant_documents(
-        self, query: str, pdf_doc_urls: list[str], k: int = 10
+        self, query: str, pdf_doc_urls: list[str], k: int = 20
     ) -> list[dict[str, Any]]:
         print("Getting retriever...")
         retriever = self._get_retriever(pdf_doc_urls, k)
