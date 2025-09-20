@@ -62,8 +62,8 @@ def _get_rag_texts(experiment: dict, dump_texts: bool = True) -> list[str]:
         d for d in experiment.get("reference_doc_urls", []) if Path(d).suffix == ".pdf"
     ]
 
-    retriever = Retriever(pdf_doc_urls=pdf_doc_urls, k=k)
-    docs = retriever.get_relevant_documents(query)
+    retriever = Retriever(pdf_doc_urls=pdf_doc_urls)
+    docs = retriever.get_relevant_documents(query, k=k)
 
     texts = []
     for doc in docs:
