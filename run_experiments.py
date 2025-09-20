@@ -6,6 +6,7 @@ import os
 import traceback
 from datetime import datetime
 
+from agent import get_agent_team
 from llm import get_response
 from models import (
     JUDGE_MODEL,
@@ -14,8 +15,12 @@ from models import (
     SAMPLE_MODELS,
     STANDARD_MODELS,
 )
-from prompts import JUDGE_PROMPT_TEMPLATE, JUDGE_SYSTEM_PROMPT
-from treatments import get_pdf_urls, get_texts
+from prompts import (
+    JUDGE_PROMPT_TEMPLATE,
+    JUDGE_SYSTEM_PROMPT,
+    MANAGER_AGENT_PROMPT_TEMPLATE,
+)
+from treatments import get_max_k, get_pdf_urls, get_texts, has_agent_treatment
 
 
 async def judge(question, correct_answer, output) -> bool:
@@ -40,8 +45,48 @@ async def judge(question, correct_answer, output) -> bool:
     return last_line.lower().strip() == "true"
 
 
-async def run_experiment(experiment, model):
-    print(f"Running experiment for {experiment.get('id')} -- {model}")
+async def run_experiment(experiment, model) -> tuple:
+    if not has_agent_treatment(experiment):
+        return await run_experiment_with_model(experiment, model)
+
+    pdf_doc_urls = get_pdf_urls(experiment)
+    max_k = get_max_k(experiment)
+
+    agent = get_agent_team(model_id=model, pdf_doc_urls=pdf_doc_urls, max_k=max_k)
+    return run_experiment_with_agent(experiment, agent)
+
+
+async def evaluate(experiment, model, answer):
+    print(f"Judging output for {experiment.get('id')} -- {model}")
+    try:
+        return await judge(
+            experiment.get("query"), experiment.get("expected_answer"), answer
+        )
+    except Exception as error:
+        print(f"Judge error: {str(error)}.\n{traceback.format_exc()}")
+        return False
+
+
+async def run_experiment_with_agent(experiment, agent) -> tuple:
+    model = agent.model.model_id
+    print(f"Running experiment for {experiment.get('id')} with agent over {model}")
+    query = experiment.get("query")
+    prompt = MANAGER_AGENT_PROMPT_TEMPLATE.format(query=query)
+    result = agent.run(prompt, return_full_results=True)
+
+    passed = await evaluate(experiment, model, result.output)
+
+    return (
+        experiment,
+        model,
+        result.output,
+        result.token_usage.input_tokens,
+        passed,
+    )
+
+
+async def run_experiment_with_model(experiment, model) -> tuple:
+    print(f"Running experiment for {experiment.get('id')} with model {model}")
     query = experiment.get("query")
 
     if (params := MODEL_PARAMS.get(model)) is not None:
@@ -53,14 +98,8 @@ async def run_experiment(experiment, model):
         pdf_doc_urls=get_pdf_urls(experiment),
         text_docs=get_texts(experiment),
     )
-    print(f"Judging output for {experiment.get('id')} -- {model}")
-    try:
-        passed = await judge(
-            experiment.get("query"), experiment.get("expected_answer"), output["text"]
-        )
-    except Exception as error:
-        print(f"Judge error: {str(error)}.\n{traceback.format_exc()}")
-        passed = False
+
+    passed = await evaluate(experiment, model, output["text"])
 
     return (
         experiment,

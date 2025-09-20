@@ -11,19 +11,23 @@ MAX_EFFECTIVE_CONTEXT_WINDOW = MAX_CONTEXT_WINDOW - floor(
 )
 
 
-def _has_default_treatment(experiment: dict) -> bool:
+def has_default_treatment(experiment: dict) -> bool:
     if (treatments := experiment.get("treatments")) is not None:
         if "default" not in list(treatments.keys()):
             return False
     return True
 
 
-def _has_rag_treatment(experiment: dict) -> bool:
+def has_rag_treatment(experiment: dict) -> bool:
     return "rag" in list(experiment.get("treatments", {}).keys())
 
 
-def _has_agent_treatment(experiment: dict) -> bool:
+def has_agent_treatment(experiment: dict) -> bool:
     return "agent" in list(experiment.get("treatments", {}).keys())
+
+
+def get_max_k(experiment: dict) -> int | None:
+    return experiment.get("treatments", {}).get("agent", {}).get("k_max")
 
 
 def _get_default_texts(experiment: dict, max_context: int) -> list[str]:
@@ -77,7 +81,7 @@ def _get_rag_texts(experiment: dict, dump_texts: bool = True) -> list[str]:
 
 
 def get_pdf_urls(experiment: dict) -> list[str]:
-    if _has_default_treatment(experiment):
+    if has_default_treatment(experiment):
         return [
             d
             for d in experiment.get("reference_doc_urls", [])
@@ -89,10 +93,10 @@ def get_pdf_urls(experiment: dict) -> list[str]:
 def get_texts(
     experiment: dict, max_context: int = MAX_EFFECTIVE_CONTEXT_WINDOW
 ) -> list[str]:
-    if _has_default_treatment(experiment):
+    if has_default_treatment(experiment):
         return _get_default_texts(experiment, max_context)
 
-    if _has_rag_treatment(experiment):
+    if has_rag_treatment(experiment):
         return _get_rag_texts(experiment)
 
     return []

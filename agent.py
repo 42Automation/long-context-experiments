@@ -1,8 +1,11 @@
 import os
 
 from dotenv import load_dotenv
-from poe_code_agent import PoeCodeAgent
 from smolagents import OpenAIServerModel, models
+
+from poe_code_agent import PoeCodeAgent
+from prompts import RETRIEVAL_AGENT_DESCRIPTION_TEMPLATE
+from tools import RetrieverTool
 
 load_dotenv()
 
@@ -25,6 +28,24 @@ def _get_agent_model(model_id: str) -> OpenAIServerModel:
     )
 
 
-def get_agent(model_id: str) -> PoeCodeAgent:
+def get_agent_team(model_id: str, pdf_doc_urls: list[str], max_k: int) -> PoeCodeAgent:
     agent_model = _get_agent_model(model_id)
-    return PoeCodeAgent(tools=[], model=agent_model, verbosity_level=2)
+
+    retrieval_agent = PoeCodeAgent(
+        model=agent_model,
+        tools=RetrieverTool(pdf_doc_urls=pdf_doc_urls),
+        max_steps=3,
+        verbosity_level=2,
+        name="retriever_agent",
+        description=RETRIEVAL_AGENT_DESCRIPTION_TEMPLATE.format(max_k=max_k),
+    )
+
+    manager_agent = PoeCodeAgent(
+        model=agent_model,
+        max_steps=6,
+        verbosity_level=2,
+        managed_agents=[retrieval_agent],
+        planning_interval=3,
+    )
+
+    return manager_agent
