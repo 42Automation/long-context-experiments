@@ -64,61 +64,6 @@ Financial statements 2020
 </excerpt_0>
 
 <excerpt_1>
-Consolidated  statement  of Changes  in Equity                           
-         for the period ended 31 December                                         
-                                                                                  
-                                                                                  
-                                                             Retained             
-                                                     Currency earnings            
-          (Amounts in NOK 1000)         Share  Share translation (accumulated Total
-                                    Note capital premium reserve losses) equity   
-          Balance at 01 January 2019     1 ,068 2,694,969 137,97 7 -278,678 2,555,336
-                                                                                  
-          Profit (loss) for the period    -       -      -   -233,034 -233,034    
-          Other comprehensive income (loss) for the                               
-                                          -       -    -12,60 3 -     -12,603     
-          period, net of income tax                                               
-          Total comprehensive income for the period - - -12,60 3 -233,034 -245,637
-          Issue of ordinary shares        1 4   30 437   -      -     30,451      
-          Reduction of capital            -       -      -      -       -         
-          Balance at 31 December 2019 17 1 ,081 2,725,406 125,37 4 -511,713 2,340,149
-                                                                                  
-          Balance at 01 January 2020     1 ,081 2,725,406 125,37 4 -511,713 2,340,149
-                                                                                  
-          Profit (loss) for the period    -       -      -   -328,006 -328,006    
-          Other comprehensive income (loss) for the                               
-                                          -       -   134,37 3  -    134,373      
-          period, net of income tax                                               
-          Total comprehensive income for the period - - 134,37 3 -328,006 -193,632
-          Issue of ordinary shares        2 86 2,538,146 -      -   2,538,432     
-          Redemption of preference shares -13  -411,744  -      -    411,757      
-          Share based payment             -     30,704   -      -     30,704      
-          Balance at 31 December 2020 17 1 ,355 4,882,513 259,74 8 -839,718 4,303,897
-          The accompanying notes are an integral part of these financial statements.
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-          36 LINK Mobility Group Holding ASA Annual report 2020
-</excerpt_1>
-
-<excerpt_2>
 Notes  to the financial statements for the period ended               
             31 December   2020                                                    
                                                                                   
@@ -171,9 +116,9 @@ Notes  to the financial statements for the period ended
                                                                                   
                                                                                   
           38 LINK Mobility Group Holding ASA Annual report 2020
-</excerpt_2>
+</excerpt_1>
 
-<excerpt_3>
+<excerpt_2>
 Financial statements 2020     
                                                                                   
                                                                                   
@@ -234,113 +179,9 @@ Financial statements 2020
                                                                                   
                                                                                   
                                               Because every communication matters. 45
-</excerpt_3>
+</excerpt_2>
 
-<excerpt_4>
-expected to arise from the continued use of the asset. The gain or loss arising on the disposal or retirement of an
-         item of equipment and fixtures is determined as the difference between the sales proceeds and the carrying amount
-         of the asset and is presented as other income or other expenses in the income statement.
-                                                                                  
-         3.9 Impairment of non-financial assets                                   
-         At the end of each reporting period, the Group reviews the carrying amounts of its tangible and intangible assets to
-         determine whether there is any indication that those assets have suffered an impairment loss. If any such indication
-         exists, the recoverable amount of the asset is estimated to determine the extent of the impairment loss (if any).
-         Where the asset does not generate cash flows that are independent from other assets, the Group estimates the
-         recoverable amount of the cash-generating unit to which the asset belongs. When a reasonable and consistent basis
-         of allocation can be identified, corporate assets are also allocated to individual cash-generating units, or otherwise
-         they are allocated to the smallest group of cash-generating units for which a reasonable and consistent allocation
-         basis can be identified.                                                 
-                                                                                  
-         Goodwill and intangible assets with an indefinite useful life are tested for impairment at least annually and whenever
-         there is an indication that the asset may be impaired.                   
-         Recoverable amount is the higher of fair value less costs of disposal and value in use. In assessing value in use, the
-         estimated future cash flows are discounted to their present value using a pre-tax discount rate that reflects current
-         market assessments of the time value of money and the risks specific to the asset for which the estimates of future
-         cash flows have not been adjusted.                                       
-                                                                                  
-         If the recoverable amount of an asset (or cash-generating unit) is estimated to be less than its carrying amount, the
-         carrying amount of the asset (or cash-generating unit) is reduced to its recoverable amount. An impairment loss is
-         recognised immediately in profit or loss.                                
-                                                                                  
-         Where an impairment loss subsequently reverses, the carrying amount of the asset (or cash-generating unit) is
-         increased to the revised estimate of its recoverable amount, but so that the increased carrying amount does not
-         exceed the carrying amount that would have been determined had no impairment loss been recognised for the asset
-         (or cash-generating unit) in prior years. A reversal of an impairment loss is recognised immediately in profit or loss,
-         unless the relevant asset is carried at a revalued amount, in which case the reversal of the impairment loss is treated
-         as a revaluation increase. Any impairment loss recognised for goodwill is not reversed in a subsequent period.
-                                                                                  
-         3.10 IFRS 16 Leases                                                      
-         The Group initially applied IFRS 16 from 01 January 2019; IFRS 16 is applied using the modified retrospective
-         approach. When applying the modified retrospective method, a lessee measures the right-of-use asset at either
-         its carrying amount as if IFRS 16 had always been applied since the commencement date (discounted using the
-         incremental borrowing rate at the date of initial application), or at an amount equal to the lease liability (adjusted for
-         previously recognised prepaid or accrued lease payments). The choice between the two options shall be made on a
-         lease-by-lease basis.                                                    
-                                                                                  
-         The Group has chosen to measure the right-of-use asset at an amount equal to the lease liability for all leases by
-         using the lessee’s incremental borrowing rate; the rate may differ from country to country.
-                                                                                  
-         The lessee’s incremental borrowing rate is the rate of interest that a lessee would have to pay to borrow over a
-         similar term, and with similar security, the funds necessary to obtain an asset of a similar value of the right-of-use
-         asset in a similar economic environment.                                 
-                                                                                  
-                                                                                  
-          46 LINK Mobility Group Holding ASA Annual report 2020
-</excerpt_4>
-
-<excerpt_5>
-Adjusted EBITDA per segment                 2020            2019         
-         Northern Europe                           240,485         194,266        
-         Central Europe                            129,283         101,021        
-                                                                                  
-         Western Europe                            127,826          83,834        
-         Global Messaging                           27,150          26,603        
-         Group Costs                               -133,902         -97,783       
-         Total                                     390,842         307,941        
-                                                                                  
-                                                                                  
-         Reconciliation of adjusted EBITDA to Group                               
-         profit (loss) before income tax             2020            2019         
-         Adjusted EBITDA                           390,842         307,941        
-         Non-recurring items*                       -97,235         -97,527       
-         Depreciation and amortization             -271,389        -247,369       
-         Operating profit                           22,218          -36,955       
-         Finance income (expense)                  -427,047        -193,901       
-                                                                                  
-         Total                                     -404,829        -230,856       
-                                                                                  
-        *Non-recurring items                                                      
-        Non-recurring items is comprised of amounts that relate entirely to the company. Costs related to mergers and
-        acquisitions, personnel cost deemed to be non-recurring (or one-off), restructuring expenses, advisors, licenses, and
-        sales and marketing are included in this reconciliation line item (this list is not exhaustive).
-                                                                                  
-        Disaggregation of revenue                                                 
-        The Group’s operations are conducted through its subsidiaries in the countries listed below. The Group derives its
-        revenue from contracts with customers for the transfer of services as described in the table provided in note 3 to the
-        financial statments.                                                      
-                                                                                  
-                                                                                  
-         Revenue per business line                  2020             2019         
-                                                                                  
-                                                                                  
-         Mobile messaging transactions            3,325,620        2,686,616      
-         Payment services                          35,414           28,822        
-         Licenses                                  155,456         159,266        
-         Consulting services                       22,740           15,321        
-         Group                                   3,539,231        2,890,025       
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-          54 LINK Mobility Group Holding ASA Annual report 2020
-</excerpt_5>
-
-<excerpt_6>
+<excerpt_3>
 Financial statements 2020     
                                                                                   
                                                                                   
@@ -401,178 +242,9 @@ Financial statements 2020
                                                                                   
                                                                                   
                                               Because every communication matters. 55
-</excerpt_6>
+</excerpt_3>
 
-<excerpt_7>
-Financial statements 2020     
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-          Name               Grant date Number Number  Expiry date Exercise       
-                                       of RSU’s of RSU’s       price range        
-                                       granted vested at                          
-                                             31.12.2020                           
-          Guillaume Alain Van Gaver 10/20/2020 1,237,209 0 10/20/2028 47.00       
-          Thomas Berge      10/20/2020 878,775     0  10/20/2028  47.00           
-          Torbjørn Krøvel   10/20/2020 340,847     0  10/20/2028  47.00           
-          Fredrik Nyman     10/20/2020 340,847     0  10/20/2028  47.00           
-          Benoit Bole       10/20/2020 340,847     0  10/20/2028  47.00           
-          Hendrik Faasch    10/20/2020  68,169     0  10/20/2028  47.00           
-          Ina Rasmussen     10/20/2020 102,256     0  10/20/2028  47.00           
-          Lin Ackema        10/20/2020  68,169     0  10/20/2028  47.00           
-          Others (not specified) 10/20/2020 391,973 0 10/20/2028  47.00           
-                                                                                  
-          Sum                         3,769,092    -                              
-                                                                                  
-         As at 31.12.2021 there was a total of NOK 4,006,460 accrued in social security expenses, based on a weighted
-         average of the social security tax rates in the recipients countries.    
-                                                                                  
-         Fair value of the RSUs and options are calculated using a Black-Scholes option pricing model.
-         The following assumptions are used in the calculations:                  
-                                                                                  
-                                                                                  
-         y The share price is set equal to the offer price on October 20th 2020 (date of completetion of the Initial Public
-          Offering (IPO)) of Link Mobility Group Holding ASA.                     
-         y The strike price for the RSUs is set equal to the nominal share value (NOK 0.005).
-                                                                                  
-         y Expected volatility is set identical to historical volatility, equal to 61 % in the calculations.
-         y We assume that historical volatility of a selected group comparable companies within the CPaaS-univserse
-          is an indication of future volatility.                                  
-         y We assume that the employees will exercise the options at the mid-point between earliest and latest
-          possible exercise possibility.                                          
-                                                                                  
-         y Risk free rate used in the calculations is set equal to the rate of Norwegian treasury bills and Government
-          Bonds corresponding to the lifetime of the option.                      
-                                                                                  
-         Remuneration to the Board of Directors                                   
-         The Board of Directors did not receive any remuneration for the year ended 31 December 2020. On 09 October
-         2020, the Company’s general meeting resolved the following remuneration for the board of directors for the
-         period from 02 October 2020 until the annual general meeting is held in 2021:
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                              Because every communication matters. 61
-</excerpt_7>
-
-<excerpt_8>
-11. Earnings per share                                                   
-                                                                                  
-         (Amounts in NOK 1000)                                                    
-                                                                                  
-         The Group’s earnings per share are calculated as below:                  
-                                                                                  
-                                                             2020    2019         
-         Net income                                        -328,006 -233,034      
-         Non-controlling interests                              -       -         
-         Owners of LINK Mobility Group Holding ASA         -328,006 -233,034      
-                                                                                  
-                                                                                  
-         Weighted average number of ordinary shares (basic)                       
-         Issued ordinary shares at 01 January               213,656 10,547        
-         Effect of shares issued (29 July 2019)                        67         
-         Effect of shares issued (30 August 2019)                      68         
-         Effect of shares issued (07 January 2020)            219                 
-         Share split (15 September 2020)                    213,875 213,656       
-                                                                                  
-         Effect of shares issued (15 September 2020)          324                 
-         Effect of shares issued (05 October 2020)           53,200               
-         Effect of shares issued (16 November 2020)          3,512                
-         Weighted average number of ordinary shares (basic) at 31 December 270,911 213,656
-                                                                                  
-         Basic earnings/(loss) per share (NOK)               -1.21   -1.09        
-                                                                                  
-         Weighted average number of ordinary shares (diluted)                     
-                                                                                  
-         Weighted average number of ordinary shares (basic) 270,911 213,656       
-         Effect of share options on issue                       -       -         
-         Weighted average number of ordinary shares (diluted) at 31 December 270,911 213,656
-                                                                                  
-         Diluted earnings/(loss) per share (NOK)             -1.21   -1.09        
-                                                                                  
-         Number of outstanding ordinary shares per 01.01    213,656 10,547        
-                                                                                  
-         Number of outstanding ordinary shares per 31.12    270,911 213,656       
-                                                                                  
-                                                                                  
-         12. Transactions with related parties                                    
-                                                                                  
-         Balances and transactions between LINK Mobility Group Holding ASA and its subsidiaries, which are related parties
-         of LINK Mobility Pecunia AS, have been eliminated on consolidation and are not disclosed in this note.
-         During the year, the Group has not entered into any transactions with related parties.
-                                                                                  
-         At 31 December 2020, the Company had no balances with related parties.   
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-          64 LINK Mobility Group Holding ASA Annual report 2020
-</excerpt_8>
-
-<excerpt_9>
-Trade name                                                                
-        The LINK name was established in 2008 and has become a known name within the mobile solutions industry.
-        The estimated useful life is determined to be 25 years and is amortised accordingly. The trade name has not been
-        allocated to specific CGUs.                                               
-                                                                                  
-        Customer Relationships                                                    
-        For customer relationships identified and recognised through business combinations, the amortisation period is
-        estimated to be between 7-10 years. The amortisation period is based on an analysis of customer churn and the
-        remaining useful life of the customer relationships recogonised in the balance sheet.
-                                                                                  
-        Technology                                                                
-        Amortisation of capital expenditure for the development of Group technology is between 3-10 years. For technology
-        acquired through business combinations, the amortisation period is between 7-10 years based on an evalution of
-        the technological solution.                                               
-                                                                                  
-        Goodwill                                                                  
-        Goodwill generated from business combinations is primarily related to anticipated growth prospects for the acquired
-        businesses. No impairment has been recognised subsequent to the business combination.
-                                                                                  
-        Impairment test                                                           
-        “Goodwill and other intangible assets with an indefinite useful life are not amortised. They are tested for impairment
-        on an annual basis at a cash generating unit (hereafter “”CGU””) level, and more frequently if there are indications
-        that amounts may be impaired. In accordance with IAS 36 - Impairment of Assets, the carrying amount of the
-        CGU to which goodwill has been allocated is compared with the recoverable amount of the CGU. The recoverable
-        amount is determined based on value-in-use calculations. These calculations use cash flow projections reflective
-        of management’s best estimate extended over a five year period. The assumed growth rate has been based on the
-        management growth estimate for the next five years and subsequently reduced to 2% for the purpose of determining
-        the terminal value. The pre-tax discount rates applied to the cash flows are calculated based on the weighted
-        average cost of capital (WACC) specific to each CGU and are within the range of 7.7% - 12.0%.
-                                                                                  
-        Based on the calculations referred to above, it has been concluded that the recoverable amount exceeds the carrying
-        amount of each CGU. No impairment has been recognized for FY2020 (FY2019 - nil).
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-          66 LINK Mobility Group Holding ASA Annual report 2020
-</excerpt_9>
-
-<excerpt_10>
+<excerpt_4>
 14. Equipment  and fixtures                                              
                                                                                   
          (Amounts in NOK 1000)                                                    
@@ -624,72 +296,9 @@ Trade name
                                                                                   
                                                                                   
           68 LINK Mobility Group Holding ASA Annual report 2020
-</excerpt_10>
+</excerpt_4>
 
-<excerpt_11>
-Financial statements 2020     
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-         24. Events after the reporting date                                      
-                                                                                  
-         (Amounts in NOK 1000)                                                    
-                                                                                  
-         As at 31 December 2020, there was a business acquisition that had been initiated but not yet concluded. The acquisition
-         presented below was closed in FY2021.                                    
-                                                                                  
-          2021             Main business Date of Proportion of Acquiring entity   
-                           activity     business voting equity                    
-                                        combination acquired                      
-          Tismi B.V.       CPaaS enabler with 01 March 2021 100% LINK Mobility Group AS
-          Tismi Mobile B.V. national operator                                     
-                           licenses in multiple                                   
-                           European countries.                                    
-         On 12th February 2021, LINK announced the acquisition of Dutch CPaaS enabler Tismi. Tismi was established in
-         2008 in the Netherlands and is today headquartered in Bunnik, Netherlands. Tismi is a provider of telecommunication
-         services and products and holds licensed operator status in 8 European countries. The company’s main business
-         comprises of providing virtual mobile phone numbers, smart traffic routing and signaling services to Enterprise
-         customers and CPaaS providers.                                           
-         The transaction values Tismi at an enterprise value of EUR 20 million. The purchase price will be settled partly with
-         cash, sellers’ credit and shares in LINK. The transaction was closed on 10 March 2021.
-                                                                                  
-         On 15 April 2020, LINK Mobility Group Holding ASA entered into a definitive agreement for the acquisition of
-         MarketingPlatform based in Denmark. The acquisition is not complete as at the date of these financial statements.
-                                                                                  
-         MarketingPlatform was established in Denmark in 2011 and is today headquartered in Vejen. The company has
-         developed an omnichannel marketing platform with an integrated customer data platform (CDP) giving customers a
-         unified profile view.                                                    
-                                                                                  
-         Omnichannel output is to e-mail, SMS, app, web and social media. MarketingPlatform is active across markets in
-         Denmark, Sweden, Norway, Perú and Spain with focus on enterprise, large and medium sized customers. Software
-         development is located in Macedonia. The company’s revenues are primarily related to software licenses.
-                                                                                  
-                                                                                  
-         25. Alternate performance  measures  (“APMs“)                            
-                                                                                  
-         The financial information in this report is prepared under International Financial Reporting Standards (IFRS), as
-         adopted by the EU. To enhance the understanding of LINK’s performance, the Group presents several alternative
-         performance measures (“APM’s”). An APM is defined by the European Securities and Markets Authority (ESMA)
-         guidelines as a financial measure of historical or future financial performance, financial position, or cash flows, other
-         than a financial measure defined or specified in the applicable financial reporting framework (IFRS).
-                                                                                  
-         See below for a reconciliation of EBITDA to Adjusted EBITDA, and adjusted EBITDA margin.
-         Below, LINK presents certain APMs, including gross margin, EBITDA, adjusted EBITDA, and adjusted EBITDA margin.
-         APMs such as EBITDA are commonly reported by companies in the markets in which LINK competes and are widely
-         used by investors when comparing performance on a consistent basis without regard to factors such as depreciation
-         and amortization, which can vary significantly, depending upon accounting methods (particularly when acquisitions
-         have occurred) or based on non-operating factors.                        
-                                                                                  
-                                                                                  
-                                                                                  
-                                              Because every communication matters. 81
-</excerpt_11>
-
-<excerpt_12>
+<excerpt_5>
 LINK uses the following APMs:                                            
                                                                                   
          Gross Profit                                                             
@@ -739,72 +348,9 @@ LINK uses the following APMs:
                                                                                   
                                                                                   
           82 LINK Mobility Group Holding ASA Annual report 2020
-</excerpt_12>
+</excerpt_5>
 
-<excerpt_13>
-Financial statements 2020     
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-         Statement  of Changes  in Equity                                         
-                                                                                  
-         (Amounts in NOK 1000)                         For the period ended 31 December
-                                                                                  
-                                                            Retained              
-                                                            earnings              
-                                          Share    Share (accumulated             
-                                  Note    capital premium   losses) Total equity  
-          Balance at 01 January 2019      1,068  2,694,969     -1  2,696,036      
-          Profit for the period              -        -       -392    -392        
-          Other comprehensive income (loss) for -     -         -                 
-          the year, net of income tax                                             
-          Total comprehensive income for the year -   -       -392    -392        
-                                                                                  
-                                                                                  
-          Issue of ordinary shares          14     30,437       -    30,451       
-          Balance at 31 December 2019 8   1,081  2,725,406    -393 2,726,094      
-                                                                                  
-          Balance at 01 January 2020      1,081  2,725,406    -393 2,726,094      
-                                                                                  
-          Profit for the year                -        -      29,095  29,095       
-                                                                                  
-          Other comprehensive income (loss) for -     -         -                 
-          the year, net of income tax                                             
-          Total comprehensive income for the year -   -      29,095  29,095       
-                                                                                  
-          Issue of ordinary shares         273   2,150,562         2,150,835      
-          Share based payment                -     30,704       -    30,704       
-          Balance at 31 December 2020 8   1,355  4,906,672   28,701 4,936,728     
-                                                                                  
-         The accompanying notes are an integral part of these financial statements.
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                              Because every communication matters. 85
-</excerpt_13>
-
-<excerpt_14>
+<excerpt_6>
 Financial statements 2020     
                                                                                   
                                                                                   
@@ -865,72 +411,9 @@ Financial statements 2020
                                                                                   
                                                                                   
                                               Because every communication matters. 89
-</excerpt_14>
+</excerpt_6>
 
-<excerpt_15>
-Financial statements 2020     
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-         Licences       License revenue consists of revenue from The revenue is based on the price
-                        monthly fees paid by customers for access to specified in the sales contract, net of
-                        Group platforms and solutions. No proprietary discounts and value added tax.
-                        rights are transferred to the customer. The               
-                        revenue is recognised throughout the duration             
-                        of the license agreement.                                 
-                                                                                  
-         Consulting services Revenue from consulting services is The revenue is based on the price
-                        recognised in the accounting period during specified in the sales contract, net of
-                        which the services are rendered. discounts and value added tax.
-                                                                                  
-                                                                                  
-         3.6 Foreign currency translation                                         
-         In preparing the financial statements of the individual companies, transactions in currencies other than the entity’s
-         functional currency (foreign currencies) are recognised at the rates of exchange prevailing on the dates of the
-         transactions. At each reporting date, monetary assets and liabilities that are denominated in foreign currencies are
-         retranslated at the rates prevailing at that date. Non-monetary items carried at fair value that are denominated in
-         foreign currencies are translated at the rates prevailing at the date when the fair value was determined. Non-monetary
-         items that are measured in terms of historical cost in a foreign currency are not retranslated after the transaction
-         date.                                                                    
-                                                                                  
-         Foreign exchange gains and losses that relate to borrowings and cash and cash equivalents are presented in the
-         income statement as financial items. All other foreign exchange gains and losses are presented on a net basis in the
-         income statement as other operating expenses. Exchange differences are recognised in profit or loss in the period in
-         which they arise.                                                        
-                                                                                  
-         For the purposes of presenting consolidated financial statements, the assets and liabilities of the Company’s
-         foreign operations are translated at exchange rates prevailing on the reporting date. Income and expense items are
-         translated at the average exchange rates for the period, unless exchange rates fluctuate significantly during that
-         period, in which case the exchange rates at the date of transactions are used. Exchange differences arising, if any, are
-         recognised in other comprehensive income and accumulated in a separate component of equity.
-                                                                                  
-         Goodwill and fair value adjustments arising from the acquisition of a foreign entity are considered as assets and
-         liabilities of the foreign entity and translated at the closing rate. These exchange differences are recognised in other
-         comprehensive income.                                                    
-                                                                                  
-         On the disposal of a foreign operation (i.e. a disposal of the Company’s entire interest in a foreign operation), or a
-         disposal involving loss of control over a subsidiary that includes a foreign operation, all of the exchange differences
-         accumulated in a separate component of equity in respect of that operation attributable to the owners of the
-         company are reclassified to profit or loss. In addition, in relation to a partial disposal of a subsidiary that includes
-         a foreign operation that does not result in the Company losing control over the subsidiary, the proportionate share
-         of accumulated exchange differences is re-attributed to non-controlling interests and are not recognised in profit or
-         loss.                                                                    
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                                                                  
-                                              Because every communication matters. 91
-</excerpt_15>
-
-<excerpt_16>
+<excerpt_7>
 Financial statements 2020     
                                                                                   
                                                                                   
@@ -991,9 +474,9 @@ Financial statements 2020
                                                                                   
                                                                                   
                                               Because every communication matters. 93
-</excerpt_16>
+</excerpt_7>
 
-<excerpt_17>
+<excerpt_8>
 Independent Auditor's Report - LINK Mobility Group Holding ASA
                                                                                   
                                                                                   
@@ -1051,7 +534,7 @@ Independent Auditor's Report - LINK Mobility Group Holding ASA
                                                                                   
                                                                                   
                                                                          (2)
-</excerpt_17>
+</excerpt_8>
 
 
 </LINK Annual Report 2020>

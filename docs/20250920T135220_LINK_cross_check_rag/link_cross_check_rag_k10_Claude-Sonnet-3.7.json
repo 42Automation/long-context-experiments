@@ -1,0 +1,10 @@
+{
+  "id": "link_cross_check_rag_k10",
+  "query": "Are there any discrepancies in the revenue and gross profit values between prospectus and annual report?",
+  "model": "Claude-Sonnet-3.7",
+  "doc_urls": null,
+  "expected_answer": "Yes, there are discrepancies. In particular, the revenue per segment for Central Europe in 2019 is 596,805K NOK in the annual report and 639,486K NOK in the prospectus, which also causes the totals to differ with 2,890,025K NOK in the annual report and 2,932,707K NOK in the prospectus.",
+  "output": "Based on the documents provided, I'll compare the revenue and gross profit values between the Link Mobility Group Holding ASA prospectus and the 2020 annual report.\n\nIn the prospectus, the company forecasted its 2020 revenue to be in the range of NOK 3,500-3,600 million (as stated in excerpt_8 of the prospectus). The actual revenue reported in the 2020 annual report was NOK 3,539,231 thousand (or NOK 3,539 million), which falls within the forecasted range.\n\nFor Gross Profit, the prospectus forecasted the 2020 Gross Margin to be in the range of 24.2%-24.7% of total revenues. In the 2020 annual report, the direct cost of services rendered was NOK 2,640,012 thousand, which means the Gross Profit would be NOK 899,219 thousand (revenue of NOK 3,539,231 minus direct cost of NOK 2,640,012). This gives a Gross Margin of approximately 25.4% (899,219/3,539,231), which is slightly higher than the forecasted range in the prospectus.\n\nFor Adjusted EBITDA, the prospectus forecasted a range of NOK 360",
+  "input_tokens": 40069,
+  "passed": false
+}
