@@ -24,31 +24,28 @@ def get_sorted_docs(filename: str, docs: list[Document]) -> list[Document]:
 
 class Retriever:
     vector_store: Chroma
-    ensemble_retriever: EnsembleRetriever
-    pdf_doc_urls: list[str]
-    k: int
+    filenames: list[str]
+    bm25_per_doc: dict[str, BM25Retriever]
 
-    def __init__(self, pdf_doc_urls: list[str], k: int):
+    def __init__(self, pdf_doc_urls: list[str]):
         # Init vector store
-        print("Initalizing vector store...")
         self.vector_store = Chroma(
             collection_name="docs",
             persist_directory=CHROMA_FOLDER,
             embedding_function=embedding,
         )
 
-        self.pdf_doc_urls = pdf_doc_urls
-        self.k = k
-
         # Load documents
-        print("Building retriever...")
         source_docs = []
+        self.filenames = []
         for doc_url in pdf_doc_urls:
+            filename = Path(doc_url).stem
+            print(f"Loading {filename}...")
+            self.filenames.append(filename)
             with pdfplumber.open(doc_url) as pdf:
                 # Chunk by pages
                 for idx, page in enumerate(pdf.pages):
                     text = page.extract_text(layout=True)
-                    filename = Path(doc_url).stem
                     source_docs.append(
                         Document(
                             page_content=text.strip(),
@@ -56,21 +53,33 @@ class Retriever:
                         )
                     )
 
-        # Create BM25 retriever
-        bm25_retriever = BM25Retriever.from_documents(source_docs)
-        bm25_retriever.k = k
+        # Create BM25 retrievers
+        self.bm25_per_doc: dict[str, BM25Retriever] = {}
+        for filename in self.filenames:
+            docs_for_file = [
+                d for d in source_docs if d.metadata["filename"] == filename
+            ]
+            b = BM25Retriever.from_documents(docs_for_file)
+            self.bm25_per_doc[filename] = b
 
         # Add documents to vector store, if needed
         new_docs = [d for d in source_docs if (not self._has_doc(d)) and d.page_content]
         if new_docs:
+            print(
+                f"Adding following document(s) to vector store: {', '.join(set([d.metadata['filename'] for d in new_docs]))}"
+            )
             self.vector_store.add_documents(new_docs)
 
-        # TODO: fix
+    def _get_retriever(self, filename: str, k: int) -> EnsembleRetriever:
+        assert filename in list(self.bm25_per_doc.keys())
+        bm25_retriever = self.bm25_per_doc[filename]
+        bm25_retriever.k = k
+
         semantic_retriever = self.vector_store.as_retriever(
             search_kwargs={"k": k, "filter": {"filename": filename}}
         )
 
-        self.ensemble_retriever = EnsembleRetriever(
+        return EnsembleRetriever(
             retrievers=[bm25_retriever, semantic_retriever], weights=[0.5, 0.5]
         )
 
@@ -80,36 +89,39 @@ class Retriever:
         has_doc = len(match["ids"]) > 0
         return has_doc
 
-    def get_relevant_documents(self, query: str) -> list[dict[str, Any]]:
+    def get_relevant_documents(self, query: str, k: int) -> list[dict[str, Any]]:
         print("Getting relevant documents...")
-        docs = self.ensemble_retriever.invoke(query)
-
-        names = [Path(f).stem for f in self.pdf_doc_urls]
-        sorted_docs = []
-        for name in names:
-            sorted_docs.append(
+        docs = []
+        for filename in self.filenames:
+            retriever = self._get_retriever(filename=filename, k=k)
+            matches = retriever.invoke(query)
+            docs.append(
                 {
-                    "filename": name,
+                    "filename": filename,
                     "pages": [
                         {
                             "page_number": d.metadata["page_number"],
                             "text": d.page_content,
                         }
-                        for d in get_sorted_docs(name, docs)
+                        for d in get_sorted_docs(filename, matches)
                     ],
                 }
             )
-        return sorted_docs
+        return docs
 
 
 if __name__ == "__main__":
-    pdf_doc_urls = ["./pdf/Apple_SEC_filing_2024.pdf"]
-    retriever = Retriever(pdf_doc_urls=pdf_doc_urls, k=10)
-    query = "How many employees does Apple have?"
-    docs = retriever.get_relevant_documents(query=query)
+    pdf_doc_urls = [
+        "./pdf/Apple_SEC_filing_2024.pdf",
+        "./pdf/Tesla_SEC_filing_2024.pdf",
+    ]
+    retriever = Retriever(pdf_doc_urls=pdf_doc_urls)
+    query = "How many employees does the company have?"
+    docs = retriever.get_relevant_documents(query=query, k=10)
 
     for doc in docs:
-        print(f"Filename: {doc['filename']}")
         pages = doc["pages"]
+        print(f"\nFilename: {doc['filename']} -- {len(pages)} excerpts")
+        print("-------------------------")
         for page in pages:
-            print(f"Page {page['page_number']}:\n{page['text']}")
+            print(f"Page {page['page_number']}:\n{page['text'][:100]}")
