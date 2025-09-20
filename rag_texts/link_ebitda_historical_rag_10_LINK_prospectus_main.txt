@@ -1,0 +1,1034 @@
+Here are some excerpts from the following document for your consideration:
+<LINK_prospectus_main>
+<excerpt_0>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        4.2.3 Non-IFRS financial measures                                         
+        In this Prospectus, the Group presents certain alternative performance measures ("APMs"), including Churn Rate, Gross
+        Profit, Gross Margin, EBITDA, Adjusted EBITDA, Adjusted EBITDA Margin, LTM Adjusted EBITDA, Gross Profit Conversion,
+        Revenue Net Retention Rate and Like-for-Like Revenue. The APMs presented herein are not measurements of financial
+        performance or liquidity under IFRS or other generally accepted accounting principles, are not audited and investors
+        should not consider any such measures to be an alternative to (a) operating revenues or operating profit (as determined
+        in accordance with generally accepted accounting principles), (b) as a measure of the Group's operating performance;
+        or (c) any other measures of performance under generally accepted accounting principles. The APMs presented herein
+        may not be indicative of the Group's historical operating results, nor are such measures meant to be predictive of the
+        Group's future results.                                                   
+        The Group believes that APMs are commonly reported by companies in the markets in which it competes and are widely
+        used by investors in comparing performance on a consistent basis without regard to factors such as depreciation and
+        amortisation, which can vary significantly, depending upon accounting methods (particularly when acquisitions have
+        occurred) or based on non-operating factors. Accordingly, the Group discloses Churn Rate, Gross Profit, Gross Margin,
+        EBITDA, Adjusted EBITDA, Adjusted EBITDA Margin, LTM Adjusted EBITDA, Gross Profit Conversion, Revenue Net
+        Retention Rate and Like-for-Like Revenue herein to permit a more complete and comprehensive analysis of its underlying
+        operating performance relative to other companies and across periods, and of the Group's ability to service its debt.
+        Because companies may calculate Churn Rate, Gross Profit, Gross Margin, EBITDA, Adjusted EBITDA, Adjusted EBITDA
+        Margin, LTM Adjusted EBITDA, Gross Profit Conversion, Revenue Net Retention Rate and Like-for-Like Revenue
+        differently, the Group's presentation of these APMs may not be comparable to similar titled measures used by other
+        companies.                                                                
+        The Group defines "Churn Rate" as revenue of customers that were a customer in the prior period but were not a
+        customer at the beginning of the current period divided by the total revenue of the prior period.
+        The group defines "Gross Profit" as revenue less direct costs of services rendered.
+        The Group defines "Gross Margin" as revenue less direct costs divided by revenue.
+        The Group defines "EBITDA" as operating profit (loss) adding back depreciation and amortisation.
+        The Group defines "Adjusted EBITDA" as EBITDA adjusted for mergers and acquisitions costs, restructuring costs and
+        costs related to share option program.                                    
+        The Group defines "Adjusted EBITDA Margin" as Adjusted EBITDA as a percentage of operating revenues in the
+        respective periods.                                                       
+        The Group defines "Like-for-Like Revenue" as revenue recorded in an audited or reviewed period excluding the
+        revenue from acquired entities in such period.                            
+        The Group defined "LTM Adjusted EBITDA" as Adjusted EBITDA for the last twelve months from the end of the period
+        The Group defines "Gross Profit Conversion" as Adjusted EBITDA divided by Gross Profit.
+        The Group defines "Net Customer Expansion Rate" as the revenue generated from customers at the end of the period
+        with their corresponding revenue from the same period in the previous year.
+        The Group defines "Revenue Net Retention Rate" as revenue from the net of upsale, downsale and churn for
+        customers throughout the period, not taking into account new customers during the period. Revenue Net Retention Rate
+        excludes the acquisitions of TeraComm Group and Spothit.                  
+        For an overview of reconciliation and calculation of the relevant APMs, please see Section 10.7 "Non-IFRS financial
+        measures".                                                                
+        4.2.4 Industry and market data                                            
+        This Prospectus contains statistics, data, statements and other information relating to markets, market sizes, market
+        shares, market positions and other industry data pertaining to the Group’s business and the industries and markets in
+        which it operates. Unless otherwise indicated, such information reflects the Group’s estimates based on analysis of
+        multiple sources, including data compiled by professional organisations, consultants and analysts and information
+        otherwise obtained from other third party sources, such as annual and interim financial statements and other
+        presentations published by listed companies operating within the same industry as the Group, as well as the Group’s
+        internal data and its own experience, or on a combination of the foregoing. Unless otherwise indicated in the Prospectus,
+        the basis for any statements regarding the Group’s competitive position is based on the Company’s own assessment and
+        knowledge of the market in which it operates.                             
+        The Company confirms that where information has been sourced from a third party, such information has been accurately
+        reproduced and that as far as the Company is aware and is able to ascertain from information published by that third
+        party, no facts have been omitted that would render the reproduced information inaccurate or misleading. Where
+        information sourced from third parties has been presented, the source of such information has been identified. The
+        Company does not intend, and does not assume any obligations to update industry or market data set forth in this
+        Prospectus.                                                               
+        Industry publications or reports generally state that the information they contain has been obtained from sources
+        believed to be reliable, but the accuracy and completeness of such information is not guaranteed. The Company has not
+                                        18
+</excerpt_0>
+
+<excerpt_1>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+                                                                                  
+        9     CAPITALISATION AND INDEBTEDNESS                                     
+        9.1   Capitalisation and indebtedness of the Group                        
+        The tables below should be read in conjunction with the information included elsewhere in this Prospectus, including
+        Section 10 "Selected financial and other information", Section 11 "Operating and financial review" and the Financial
+        Statements and the Condensed Interim Financial Statements and related notes, attached to this Prospectus.
+        This Section provides information about the Company's unaudited capitalisation and net financial indebtedness on an
+        actual basis as of 30 June 2020 and, in the "As Adjusted at the date of the Prospectus" columns, the Company's unaudited
+        capitalisation and net financial indebtedness as of the date of the Prospectus adjusted for the following transactions that
+        happened between 30 June 2020 and the date of the Prospectus and that are not subject to the Offering and Listing,
+        and on an adjusted basis to show the estimated effects of the following transactions as if they had happened as of the
+        date of the Prospectus:                                                   
+        Adjustments for significant transactions between 30 June 2020 to the date of the Prospectus, not subject to the Offering
+        and Listing:                                                              
+                   The 1:20 share split as resolved by the Company's general meeting on 15 September 2020, see
+                    Section 13.3 "Share capital and share capital history". The share split had no cash effect on the
+                    Company and no effect on the monetary amount of equity.       
+                   Proceeds from the share capital increase towards LINK ESOT in connection with the Group's
+                    employee share purchase program, by way of issuance of 324,000 new Shares at a subscription
+                    price of NOK 11.25 per Share, each with a nominal value of NOK 0.005, resulting in an increase in
+                    share capital of NOK 1.6 thousand, an increase in share premium of NOK 3,643 thousand and an
+                    increase in cash of NOK 3,645 thousand.                       
+                   Payment of the non-contingent holdback related to the acquisition of Inwave SAS (part of the Spot-
+                    hit acquisition completed on 30 August 2019) of NOK 7,527 thousand, see Section 11.3.2
+                    "Acquisitions".                                               
+                   Accrued interests under the Senior Facilities Agreement of approximately NOK 62,536 thousand (of
+                    which NOK 41,633 thousand related to accrued interest under Facility B, NOK 19,263 thousand
+                    related to accrued interest under the Capex Facility and NOK 1,640 thousand related to accrued
+                    interest under the RCF).                                      
+                   Payment of accrued interests under the Senior Facilities Agreement of approximately NOK 102,393
+                    thousand (of which NOK 72,209 thousand related to accrued interest under Facility B, NOK 28,735
+                    thousand related to accrued interest under the Capex Facility and NOK 1,449 thousand related to
+                    accrued interest under the RCF).                              
+                   Net decrease in lease liabilities amounted to approximately NOK 1,985 thousand consisting of cash
+                    payments of NOK 2,420 thousand offset by increased interests in the period of NOK 436 thousand.
+                   The redemption of all preference shares resulting in a reduction in Share capital of NOK 12.9
+                    thousand and Other reserves of NOK 322,882 thousand and a corresponding increase in current
+                    debt of NOK 322,895 thousand. Additionally, the redemption triggered the booking of the previously
+                    off balance accrued interest on the preference shares resulting in a further increase in current debt
+                    of NOK 90,745 thousand resulting in a total increase in current debt of NOK 413,640 thousand.
+        Adjustments for estimated effects of the following transactions subject to the Offering and Listing as if they had happened
+        as of the date of the Prospectus:                                         
+                   That subject to the completion of the Offering and Listing, the Company will raise approximately
+                    NOK 2,500,400 thousand in gross proceeds through the issuance of New Shares, assuming the
+                    issuance of 53,200,000 New Shares which is the maximum number of New Shares at an Offer Price
+                    of NOK 47.00 and receive net proceeds in the amount of approximately NOK 2,360,727 thousand,
+                    after deduction of related costs and expenses estimated to be NOK 139,673 thousand.
+                   That subject to the completion of the Offering and Listing, the Company intends to use part of the
+                    proceeds for the repayment of the current debt relating to the redeemed preference shares with
+                    NOK 413,640 thousand.                                         
+                   That subject to the completion of the Offering and Listing, the Company intends to use part of the
+                    proceeds for payment of employee transaction bonuses of NOK 10,000 thousand. See Section 17.16
+                    "Expenses of the Offering and the Listing" for more information.
+                   Additionally, the Company intends to use part of the proceeds for partial repayment of the Senior
+                    Facilities Agreement with approximately NOK 1,399,385 thousand related to:
+                        Facility B with approximately NOK 969,839 thousand;      
+                        the Capex Facility with approximately NOK 429,546 thousand.
+                                                                                  
+                                        42
+</excerpt_1>
+
+<excerpt_2>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+         8  Subject to the Offering and Listing Current portion of Other current financial debt decreased by NOK 413,640 thousand due to the repayment of the
+            Preference Shares.                                                    
+         9  Subject to the Offering and Listing, Other Non-current loans decreased by NOK 1,399,385 thousand with partial repayment of the Senior Facilities
+            Agreement (of which approximately NOK 969,839 thousand related to partial repayment of Facility B and approximately NOK 429,546 thousand
+            related to partial repayment of the Capex Facility. Subject to the Offering and Listing, outstanding amounts on the Senior Facilities Agreement will be
+            NOK 1,721,683 thousand (of which approximately NOK 1,083,689 thousand relates to Facility B, approximately NOK 497,974 thousand relates the
+            Capex Facility and approximately NOK 140,020 thousand relates to the RCF).
+            See Section 9.4 "Certain financing arrangements" for more information on the Senior Facilities Agreement.
+        9.2   Working capital statement                                           
+        The Company is of the opinion that the working capital available to the Group is sufficient for the Group’s present
+        requirements, for the period covering at least 12 months from the date of this Prospectus.
+        9.3   Indirect and contingent indebtedness                                
+        The Group has contingent liabilities in connection with the Netsize Group acquisition. For the Netsize Group transaction,
+        LINK will pay an additional earn out based on EBITDA performance for 2019 and 2020. The earn-out is limited to a
+        maximum of EUR 15.0 million. The earn-out will equal five times the amount by which the actual EBITDA is above the
+        base case EBITDA. The first earn out has not been paid yet as the earn-out amount is being disputed between the
+        Company and Gemalto, and the second earn-out will be paid on 31 May 2021, if not disputed. The EBITDA calculation
+        are adjusted for certain costs according the terms in the SPA.            
+        9.4   Certain financing arrangements                                      
+        The following is a summary of key provisions of certain material financing arrangements to which the Company, LINK
+        Pecunia (formerly known as Victory Partners VIII Norway AS) and certain of the Group's subsidiaries are a party.
+        This summary does not purport to be complete and is subject to, and qualified in its entirety by reference to, the
+        underlying documents.                                                     
+        9.4.1 The financing and intercreditor arrangements                        
+        The Company, LINK Pecunia, each of Barings Global Advisers Limited and ICG Alternative Investment Limited as the
+        mandated lead arrangers, certain other entities as the original lenders, Danske Bank, Norwegian Branch as the revolving
+        facility lender, Lucid Agency Services Limited as the agent, and Lucid Trustee Services Limited as the security agent
+        entered into a senior facilities agreement dated 27 September 2018 (the "Senior Facilities Agreement"). The Senior
+        Facilities Agreement is governed by English law.                          
+        The facilities made available, and loans advanced under, the Senior Facilities Agreement are guaranteed by the Company
+        and certain of its subsidiaries comprising the Guarantors described below, and are also secured by security interests
+        granted over specific assets by the Company, LINK Pecunia and certain of its subsidiaries (the "Transaction Security")
+        as further described below.                                               
+        In connection with the Senior Facilities Agreement, and in order to govern the relationships and establish the relative
+        rights and priorities amongst the creditors of LINK Pecunia and its subsidiaries under the Senior Facilities Agreement, as
+        well as to regulate the ranking and rights to proceeds of any enforcement of the Transaction Security, the Company,
+        LINK Pecunia, certain of LINK Pecunia’s subsidiaries as debtors and intra-group lenders, the Agent, the Security Agent,
+        Danske Bank, Norwegian Branch as the original super senior lender and certain other entities party to the Senior Facilities
+        Agreement as the original senior lenders entered into an intercreditor agreement dated 27 September 2018 (the
+        "Intercreditor Agreement"). The Intercreditor Agreement is governed by English law.
+        Under the Senior Facilities Agreement, LINK Pecunia was the original borrower and the original guarantor of the facilities
+        made available thereunder. Following the first utilisation of the Senior Facilities Agreement, LINK Mobility Group AS also
+        acceded as an additional borrower and a guarantor. LINK Pecunia and LINK Mobility Group AS are referred in this
+        summary together as the "Borrowers".                                      
+        9.4.2 Amount and ranking of the facilities                                
+        The Senior Facilities Agreement provides for three committed facilities, comprising: (1) a "Facility B" term loan
+        acquisition facility split into a Norwegian kroner denominated tranche (in principal amount of NOK 755 million) and a
+        euro denominated tranche (in principal amount of EUR 119 million) (both tranches together, "Facility B"), (2) a revolving
+        credit facility in principal amount of EUR 25 million (the "RCF") and (3) a capital expenditure and committed acquisition
+        term loan facility in principal amount of EUR 85 million (the "Capex Facility", and together with Facility B and the RCF,
+        the "Facilities").                                                        
+        Pursuant to the Intercreditor Agreement, the liabilities owed by the Borrowers and certain other subsidiaries of Victory
+        and outstanding under the Facilities rank in right and priority of payment pari passu and without any preference between
+        them, and the Transaction Security ranks and secures such liabilities under the Facilities pari passu and without any
+        preference between them.                                                  
+        However, the Intercreditor Agreement provides that the liabilities outstanding in respect of the RCF shall have "super-
+        senior" ranking in relation to the application of proceeds from the realisation or enforcement of all or any part of the
+        Transaction Security (the "Recoveries"). Any such Recoveries shall be applied for application towards the discharge of
+        liabilities outstanding under the RCF (and certain priority hedging liabilities) ahead of being applied towards the discharge
+        of liabilities outstanding under Facility B or the Capex Facility.        
+                                        45
+</excerpt_2>
+
+<excerpt_3>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+                                                                                  
+        10    SELECTED FINANCIAL AND OTHER INFORMATION                            
+        The following selected annual financial information for the financial years ended 31 December 2019, 2018 and 2017 has
+        been extracted from the Group’s Consolidated Financial Statements. Unless otherwise indicated, the interim financial
+        information for the six months ended 30 June 2020 and 2019 has been derived from the Condensed Interim Financial
+        Statements (together the "Financial Statements").                         
+        The financial information included as of and for the three and six months ended 30 June 2020 and 2019 and as of and
+        for the year ended 31 December 2019 represent the consolidated financial statements of the Group. As the Company
+        acquired Link Mobility Group AS in 2018, full-year 2018 and 2017 financial statements for the consolidated Group are
+        not available. Accordingly, the financial statements included as of and for the years ended 31 December 2018 and 2017
+        represent the consolidated financial statements of the Group’s operating entity, Link Mobility Group AS. See Section
+        4.2.1 "Financial information in the Prospectus" for a description of the Financial Statements and Section 8.1
+        "Introduction" for a description of the Take-over.                        
+        As set out in Section 4.2.1 "Financial information in the Prospectus", the 2018 Consolidated Financial Statements have
+        been prepared for the purpose of the Offering and this Prospectus. A reader should note that as a consequence of the
+        difference in reporting entity, the 2019 Consolidated Financial Statements and the 2018 Consolidated Financial
+        Statements are not fully comparable.                                      
+        In July 2018, the Take-over was launched. Following completion of the Take-over, the Company controlled 100% of the
+        shares in LINK Mobility Group AS through LINK Pecunia (formerly known as Victory Partners VIII Norway AS) and became
+        the new parent company of the Group.                                      
+        The Company was incorporated in May 2018 in connection with the Take-over. The Company has prepared annual
+        financial statements for the years ended 31 December 2018 and 2019. As the Take-over was completed in October
+        2018, the Company's annual accounts for the year ended 31 December 2018 only cover the operations of the Group
+        from 9 October 2018 to and as of 31 December 2018. To provide comparable figures for the Group's operation, the
+        Prospectus will present the 2017 Consolidated Financial Statements and the 2018 Consolidated Financial Statements
+        prepared by Link Mobility Group AS.                                       
+        The 2017 Consolidated Financial Statements and the 2018 Consolidated Financial Statements included herein do not
+        reflect the Group’s financing arrangements because the borrowings under such agreements were drawn by LINK Pecunia
+        and the costs associated with the acquisition of LINK Mobility Group AS by LINK Pecunia. Accordingly, there are
+        limitations in the comparability of following line items in the 2017 Consolidated Financial Statement and the 2018
+        Financial Statement as compared to the 2019 Consolidated Financial Statements and the Condensed Interim Financial
+        Statements: other operating expenses; depreciation and amortisation; total finance income (expense); income tax; total
+        non-current assets, and total non-current liabilities. Therefore, undue reliance should not be placed on the comparability
+        of these line items in the Prospectus. See Section 11 "Operating and financial review". For description of impact on the
+        line items, see Section 11.7 "Comparison of results for the Group for the six months ended 30 June 2020 compared to
+        six months ended 30 June 2019".                                           
+        In addition, the Group has had an active M&A strategy as part of its growth strategy. The M&A strategy has continued
+        to be a key driver for growth under the Company’s ownership. Since 2017 the Group has completed 16 strategic
+        acquisitions. See Section 11.3.2 "Acquisitions". These acquisitions limit the comparability of the Consolidated Financial
+        Statements and the Condensed Interim Financial Statements. See Section 2.3.3 "The Group's complex operating history
+        makes it difficult to evaluate and forecast the Group's future results of operations".
+        The selected financial information included herein should be read in connection with, and is qualified in its entirety by
+        reference to, the Financial Statements, which are attached as appendices to this Prospectus.
+        10.1  Key accounting principles, estimates and judgments                  
+        For a description of the principal accounting policies applied in the preparation of the Group’s consolidated financial
+        statements, see note 3 to the 2019 Consolidated Financial Statements attached as Appendix C to this Prospectus, see
+        Section 19.3 "Documents on display".                                      
+        The preparation of the Group’s accounts requires the Group's management to make estimates and assumptions that
+        affect reported amounts of assets and liabilities, income and expenses. Management bases its estimates and judgments
+        on experience, current economic and industry conditions and on various other factors that are considered reasonable
+        under the circumstances. Estimates and judgments are continually reviewed and are based on historical experiences
+        and expectations of future events. The resulting accounting estimates will seldom accurately match actual results but
+        are based on the best estimate at the time. For a description of the critical accounting judgments management has
+        made in the process of applying the Group’s accounting policies, see note 3 to the 2019 Consolidated Financial
+        Statements attached as Appendix C to this Prospectus, see Section 19.3 "Documents on display".
+                                                                                  
+                                                                                  
+                                                                                  
+                                        50
+</excerpt_3>
+
+<excerpt_4>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+                    (b)    The adjustment restructuring cost and other represents costs which are mainly related to efficiency projects,
+                           start-up costs for new businesses and branding/re-branding costs in connection with the acquisitions of
+                           subsidiaries presented in the financial line item total other operating expenses with NOK 10,561 thousand,
+                           NOK 20,892 thousand and NOK 48,425 thousand for the six months ended 30 June 2020, 2019 and full year
+                           2019, whereof NOK 3,245 thousand NOK 14,783 thousand and NOK 39,796 thousand, respectively relates to
+                           the financial line item Restructuring costs, presented within Total other operating expenses.
+                           In addition, in the six months ended 30 June 2020, 2019 and full year 2019 an adjustment has been performed
+                           of NOK 8,689 thousand, NOK 14,272 thousand and NOK 21,542 thousand, respectively extracted from the
+                           financial line item total payroll and related expenses and relating to severance paid to certain employees as a
+                           result of the acquisition of subsidiaries and changes in the Group’s strategic focus as well as certain
+                           replacement/rehiring costs                             
+           3   Adjusted EBITDA Margin is defined as Adjusted EBITDA as a percentage of operating revenues in the respective periods.
+           4   The following table shows the reconciliation between operating profit and LTM Adjusted EBITDA for the relevant periods:
+                                             LTM ended                            
+               (In NOK million)               30 June                             
+                                               2020                               
+               Operating profit .................................................................... 35.2
+               Depreciation and amortisation ................................................... 251.9
+               EBITDA ................................................................................. 287.1
+               Share option program cost ........................................................ -
+               M&A activities costs .................................................................. 14.9
+               Restructuring cost and other(a) .................................................. 54.1
+               LTM Adjusted EBITDA ........................................................... 356.1
+           5   The following table reconciles Like-for-Like Revenue to revenue for the relevant periods:
+                                             Six months ended Year ended          
+                                                30 June       31 December         
+               (In NOK million)                                                   
+                                             2020   2019  2019  2018  2017        
+               Revenue ................................................................................ 1,717.6 1,336.1 2,932.7 1,972.0 1,294.0
+               Acquisition Revenue(a) ............................................................. -104.0 -370.8 -803.9 -584.1 -38.6
+               Like-for-Like Revenue(b) ........................................................... 1,613.6 965.3 2,128.7 1,387.9 1,255.4
+                   (a)   Acquisition Revenue is defined as revenue generated by the acquired entities for the periods indicated. The Company
+                         considers Acquisition Revenue any revenue generated by acquired entities for four full consecutive quarters after
+                         complete ownership by the Company of such entity. From 1 January 2018 an acquired Spanish entity was merged
+                         with an existing entity, hence the allocation of revenues between organic and acquired revenue is based on a
+                         management estimate. In 2017 an acquired Danish entity was merged with an existing Danish entity, hence the
+                         allocation between organic and acquired revenue is estimated. See Section 11.3.2 "Acquisitions".
+                   (b)   When comparing the Like-for-Like Revenue for a relevant period, the entities used for such calculation differ from
+                         period to period, as the Company excludes revenues from companies acquired during the relevant periods in
+                         calculating Like-for-Like Revenue. This methodology allows the Company to isolate and compare the revenue
+                         generated by the companies that were operating for the full relevant period compared. See Section 11.3.2
+                         "Acquisitions".                                          
+                         When comparing the years ended 31 December 2018 to 31 December 2019, the Company excludes revenues from
+                         companies acquired in 2019 and 2018, but includes the revenue from companies acquired in 2017, as the Company
+                         no longer considers such revenue as Acquisition Revenue. The growth rate of Like-for-Like Revenue for the years
+                         ended 31 December 2018 to 31 December 2019 increased from 1,956.9 to 2,128.7, an increase of 9%.
+                         When comparing the years ended 31 December 2017 to 31 December 2018, the Company excludes revenues from
+                         companies acquired in 2017 and 2018. The growth rate of Like-for-Like Revenue for the years ended 31 December
+                         2017 to 31 December 2018 increased from 1,255.4 to 1,387.9, an increase of 11%.
+           6   Gross Profit Conversion is defined as Adjusted EBITDA divided by Gross Profit.
+           7   Revenue Net Retention Rate is defined as revenue from the net of upsale, downsale and churn for customers throughout the period, not
+               taking into account new customers during the year. Revenue Net Retention Rate excludes the acquisitions of TeraComm Group and Spothit.
+               Excluding Spain, these figures are 116% and 111% for the six months ended 30 June 2020 and as of 31 December 2020, respectively. The
+               data required to calculate these measures was not yet monitored in the years ended 31 December 2017 and 2018 and as a result
+               comparatives for the years ended 31 December 2017 and 2018 are not available.
+           8   Churn Rate is defined as revenue of customers that were a customer in the prior period but were not a customer at the beginning of the
+               current period divided by the total revenue of the prior period. The data required to calculate these measures was not yet monitored in the
+               years ended 31 December 2017 and 2018 and as a result comparatives for the years ended 31 December 2017 and 2018 are not available.
+           9   Net Customer Expansion Rate is defined as the revenue generated from customers at the end of the period with their corresponding revenue
+               from the same period in the previous year.                         
+        10.7.2 Non-IFRS financial measures by operating segments                  
+                                     Six months ended      Year ended             
+         (In NOK 1,000)                 30 June           31 December             
+                                    2020     2019    2019    2018    2017         
+         Adjusted EBITDA                                                          
+         Nordics1................................................ 118,942 96,361 194,266 172,606 134,922
+         Central Europe2 ..................................... 57,945 43,676 101,021 80,484 42,514
+         Western Europe3 .................................... 55,118 31,204 83,834 26,866 17,626
+         Global Messaging4 .................................. 12,442 14,168 26,603 32,262 -
+         Group Costs .......................................... -61,802 -51,225 -98,176 -99,849 -55,074
+         Total ................................................... 182,645 134,183 307,548 212,370 139,988
+                                        55
+</excerpt_4>
+
+<excerpt_5>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+                                                                                  
+        11    OPERATING AND FINANCIAL REVIEW                                      
+        Consolidated financial statements of the Group have been prepared for the reporting period covering the years ended
+        31 December 2017, 2018 and 2019 and the six months period ended 30 June 2020 in accordance with IFRS, as adopted
+        by the European Union. See Section 4.2.1 "Financial information in the Prospectus" for a description of the Financial
+        Statements.                                                               
+        The reporting entity of the 2019 Consolidated Financial Statements and the Condensed Interim Financial Statements is
+        the Company. The reporting entity of the 2018 Consolidated Financial Statements and 2017 Consolidated Financial
+        Statements is the Company’s subsidiary LINK Mobility Group AS, a company that was listed on the Oslo Stock Exchange
+        until completion of the Take-over in October 2018 whereby it was acquired by the Company. See Section 4.2.1 "Financial
+        information in the Prospectus" for a description of the Financial Statements and Section 8.1 "Introduction" for a
+        description of the Take-over.                                             
+        As set out in Section 4.2.1 "Financial information in the Prospectus", the 2018 Consolidated Financial Statements have
+        been prepared for the purpose of the Offering and this Prospectus. A reader should note that as a consequence of the
+        difference in reporting entity, the 2019 Consolidated Financial Statements and the 2018 Consolidated Financial
+        Statements are not fully comparable.                                      
+        The main differences between the consolidated financial information of the Company and LINK Mobility Group AS'
+        statement of financial position are higher non-current assets in the Company mainly attributable to recognition of
+        Goodwill and other intangible assets as part of the purchase price allocation in connection with the acquisition of LINK
+        Mobility Group AS, as well as higher non-current liabilities in the Company due to the borrowing held at Company level
+        in connection with the refinancing of LINK Mobility Group AS and increasing its borrowings through the SFA. The main
+        differences between the consolidated financial information of the Company and LINK Mobility Group AS’ income
+        statements are higher amortisation in the Company due to the effects of the recognition of other intangible assets as
+        part of the purchase price allocation in connection with the acquisition of LINK Mobility Group AS, as well as higher net
+        finance expenses in the Company due to the interests on the Senior Facilities Agreement held at Company level.
+        Therefore, undue reliance should not be placed on the comparability of these line items in the Prospectus. See Section
+        4.2.2 "Factors affecting comparability of results" for further description of the factors affecting the comparability of the
+        2019 Consolidated Financial Statements and the 2018 Consolidated Financial Statements and undue reliance should not
+        be placed on the comparability of the line items described therein in the Prospectus.
+        The selected financial information included herein should be read in connection with, and is qualified in its entirety by
+        reference to, the Financial Statements, which are attached as appendices to this Prospectus, and the related notes
+        included elsewhere in this Prospectus.                                    
+        The financial information included in this Prospectus includes measures which are not accounting measures as defined
+        by IFRS. These measures have been included for the reasons described below. However, these measures should not be
+        used instead of, or considered as alternatives to, the Group’s historical financial results based on IFRS. Further, these
+        measures may not be comparable to similarly titled measures disclosed by other companies. See 11.10 "Non-IFRS
+        financial measures and other key performance indicators" and 4.2.3 "General information - Presentation of financial and
+        other information - Non-IFRS financial measures".                         
+        This discussion may contain forward-looking statements, which are subject to risks and uncertainties, including, but not
+        limited to, certain risks described in Section 2 "Risk factors". Actual results could differ materially from those expressed
+        or implied in any forward-looking statements. See Section 4.3 "Cautionary note regarding forward-looking statements".
+        11.1  Overview                                                            
+        LINK, a leading provider of mobile solutions for customer engagement in Europe based on volume market share5, is
+        headquartered in Oslo, Norway. LINK assists enterprise, SME and government customers in providing mobile solutions
+        for their end-customers and users. LINK is headquartered in Oslo, Norway. The Group was founded in 2001 and its
+        original focus was SMS Application to Person (A2P) messaging services. As of 30 June 2020, the Group had 461
+        employees and more than 33,000 global customers across Europe, served from its headquarters in Oslo as well as from
+        its offices in Austria, Bulgaria, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, North Macedonia, Poland,
+        Romania, Spain, Sweden, Switzerland and the United Kingdom.               
+        In 2007, the Group acquired LINK Messaging AB, a voice services company founded in 1995. Over time, the Group has
+        grown and evolved its business model into an omni-channel messaging and mobile technology platform leveraging CPaaS
+        functionality to deliver efficient, automated solutions spanning across functions that are mission critical in customer’s
+        operations including customer service, customer engagement, marketing, notifications and payments amongst several
+        others.                                                                   
+        Since its creation, the Group has expanded its business both organically and through acquisitions. For further information
+        on the recent acquisitions made by the Group see Section 11.3.2 "Acquisitions". These acquisitions increased LINK's
+        market position, financial strength and operational capability.           
+        5 Source: Company estimate.                                               
+                                        57
+</excerpt_5>
+
+<excerpt_6>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        11.7.8 Finance income                                                     
+        The table below shows the breakdown of finance income for the periods indicated:
+                                                                                  
+                                                         Six months ended         
+        (In NOK 1,000)                                      30 June               
+                                                       20201       20191          
+        Foreign exchange gain ......................................................................... 320,911 78,801
+        Interest income on bank deposits .......................................................... 425 -164
+        Other financial income ......................................................................... 227 4,023
+        Finance income ................................................................................ 321,563 82,660
+        1 Represents the Six Months Condensed Interim Financial Statements.       
+        Finance income was NOK 321.6 million for the six months ended 30 June 2020, compared to NOK 82.7 million for the
+        six months ended 30 June 2019, an increase of 289.0%. The increase in finance income was primarily a result of the
+        increase in the Group’s indebtedness and cash draws under the Senior Facilities Agreement, as well as foreign exchange
+        rate fluctuations.                                                        
+        11.7.9 Finance expenses                                                   
+        The table below shows the breakdown of finance income for the periods indicated:
+                                                         Six months ended         
+        (In NOK 1,000)                                      30 June               
+                                                       20201       20191          
+        Foreign exchange loss ......................................................................... 504,695 40,918
+        Interest expense financial institutions and other ..................................... 109,393 92,610
+        Other finance expense ......................................................................... 2,021 4,043
+        Finance expense .............................................................................. 616,109 137,572
+        1 Represents the Six Months Condensed Interim Financial Statements.       
+        Finance expense was NOK 616.1 million for the six months ended 30 June 2020, compared to NOK 137.6 million for the
+        six months ended 30 June 2019, an increase of 347.8%. This increase was primarily as a result of unrealised losses on
+        the Senior Facilities Agreement tranches denominated in EUR from fluctuations in currency rates and an increase in
+        interest expenses on borrowings.                                          
+        11.7.10 Total finance income (expense)                                    
+        Primarily as a result of the factors described above, net financial expense for the six months ended 30 June 2020 was
+        NOK 294.5 million, compared to NOK 54.9 million expense for the six months ended 30 June 2019, an increase of
+        436.4%.                                                                   
+        11.7.11 Income tax                                                        
+        Total tax expense was NOK 2.7 million for the six months ended 30 June 2020, compared to NOK 2.6 million for the six
+        months ended 30 June 2019, an increase of 1.9%.                           
+        11.7.12 Profit (loss)                                                     
+        As a result of the factors described above, the loss for the six months ended 30 June 2020 was NOK 244.7 million, a
+        negative development of NOK 167.6 million or 217.21% compared to the loss of NOK 77.1 million for the six months
+        ended 30 June 2019.                                                       
+        11.8  Comparison of results for the Group for the year ended 31 December 2019 compared to
+              31 December 2018                                                    
+        The following table presents selected comparative results of operations from the 2019 Consolidated Financial
+        Statements:                                                               
+                                                            Year ended            
+        (In NOK 1,000)                                      31 December           
+                                                         20191      20182         
+        Revenue .................................................................................................. 2,932,707 1,972,009
+        Total operating revenue ......................................................................... 2,932,707 1,972,009
+        Cost of services rendered                         -2,179,806 -1,424,796   
+        Payroll and related expenses ...................................................................... -317,845 -223,070
+        Other operating expenses .......................................................................... -224,642 -208,703
+        Depreciation and amortisation .................................................................... -247,369 -85,649
+        Total operating expenses ....................................................................... -2,969,662 -1,942,218
+        Operating profit (loss) ........................................................................... -36,955 29,791
+                                                                                  
+                                                                                  
+                                                                                  
+                                        71
+</excerpt_6>
+
+<excerpt_7>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        11.9  Comparison of results for the Group for the years ended 31 December 2018 and 31 December 2017
+        The following table presents selected comparative results of operations from the 2018 Consolidated Financial
+        Statements:                                                               
+                                                                                  
+                                                              Year ended          
+         (In NOK 1,000)                                      31 December          
+                                                           20181    20171         
+         Revenue ......................................................................................................... 1,972,009 1,294,002
+         Total operating revenue ............................................................................... 1,972,009 1,294,002
+         Cost of services rendered ................................................................................. -1,424,796 -897,351
+         Payroll and related expenses ............................................................................. -223,070 -204,971
+         Other operating expenses ................................................................................. -208,703 -104,755
+         Depreciation and amortisation ........................................................................... -85,649 -41,710
+         Total operating expenses.............................................................................. -1,942,218 -1,248,787
+         Operating profit (loss) .................................................................................. 29,791 45,213
+         Finance income and finance expenses                                      
+         Finance income ............................................................................................... 15,037 8,645
+         Finance expenses ............................................................................................ -149,446 -54,904
+         Total finance income (expense) .................................................................... -134,409 -46,260
+         Profit before income tax ............................................................................... -104,618 -1,047
+                                                                                  
+         Income tax ..................................................................................................... 23,371 -4,307
+         Profit (loss) for the period ............................................................................ -81,246 -5,354
+                                                                                  
+         1 Represents the 2018 Consolidated Financial Statements.                 
+        11.9.1 Revenue                                                            
+        The following table presents selected comparative results of operations from the 2018 Consolidated Financial Statement
+        for the year ended 31 December 2018 and 2017:                             
+                                                              Year ended          
+         (In NOK 1,000)                                      31 December          
+                                                           20181    20171         
+         Revenues                                                                 
+         Nordics2.......................................................................................................... 915,558 802,301
+         Central Europe3 ............................................................................................... 515,390 345,139
+         Western Europe4 .............................................................................................. 242,477 146,562
+         Global Messaging5 ............................................................................................ 298,584 n.a
+         Total ............................................................................................................. 1,972,009 1,294,002
+         1 Represents the 2018 Consolidated Financial Statements.                 
+         2 Nordics include Norway, Sweden, Denmark, Finland and Baltics.          
+         3 Central Europe includes Austria, Bulgaria, Germany, Hungary, Poland, Romania and North Macedonia.
+         4 Western Europe includes Spain, the United Kingdom, Italy and France.   
+         5 Global Messaging includes the main share of aggregator business and the Swiss entity also holding global enterprise customers.
+        Revenue was NOK 1,972.0 million for the year ended 31 December 2018 compared to NOK 1,294.0 million for the
+        year ended 31 December 2017, an increase of 52.4%. This increase was primarily as a result of organic
+        growth and acquisitions during the year 2018. The organic growth was driven by the expansion of the Group’s
+        customer base and stable revenue intake from the existing customers and the integration of the Global Messaging
+        segment, which was acquired in 2018, to the Group’s operations. This growth is also partly as a result of the
+        introduction of new products such as Link Conversations, Link Data Insight and RCS in 2018. The revenue growth in
+        the year ended 30 December 2018 was partially offset by costs and lower volumes related to GDPR
+        compliance and data protection related adjustments.                       
+        For the year ended 31 December 2018, Like-for-Like Revenue was NOK 1.4 billion (equal to 72.3% of the revenue for
+        such period) compared to NOK 810.5 million for the year ended 31 December 2017 (equal to 62.6% of the revenue for
+        such period) See 4.2.3 "General information - Presentation of financial and other information - Non-IFRS financial
+        measures".                                                                
+        In the Nordics, the revenue was NOK 915.6 million for the year ended 31 December 2018 compared to NOK 802.3 million
+        for the year ended 31 December 2017, an increase of 14.1%. The increase was primarily driven by expansion of the
+        customer base and stable revenue intake from the existing customers.      
+        In Central Europe, the revenue was NOK 515.4 million for the year ended 31 December 2018 compared to NOK 345.1
+        million for the year ended 31 December 2017, an increase of 49.33%. The increase was primarily driven by the
+                                        75
+</excerpt_7>
+
+<excerpt_8>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+        However, not all companies may calculate the non-IFRS financial measures in the same manner or on a consistent basis
+        and, as a result, the presentation thereof may not be comparable to measures used by other companies under the same
+        or similar names. Accordingly, undue reliance should not be placed on the non-IFRS financial measures contained in this
+        Prospectus and they should not be considered as a substitute for revenue, and EBIT or other financial measures
+        computed in accordance with IFRS, as adopted by the European Union. For a description of non-IFRS measures discussed
+        in this Section, see Section 4.2.3 "Non-IFRS financial measures".         
+                                              Six months ended Year ended         
+         (In NOK million)                        30 June      31 December         
+                                               2020   2019 2019  2018  2017       
+         Gross Profit1 ..................................................................................... 429.3 355.3 752.9 547.2 396.6
+         Gross Margin1 ................................................................................... 25% 27% 26% 28% 31%
+         EBITDA2 ........................................................................................... 160.0 83.4 210.4 115.0 86.9
+         Adjusted EBITDA2 .............................................................................. 182.6 134.2 307.5 212.0 140.0
+         Adjusted EBITDA Margin3 .................................................................... 11% 10% 10% 11% 11%
+         LTM Adjusted EBITDA4 ........................................................................ 356.1 - - - -
+         Like-for-Like Revenue5 ....................................................................... 1,613.6 965.3 2,128.7 1,387.9 1,255.4
+         Gross Profit Conversion6 ..................................................................... 43% 38% 41% 39% 35%
+         Revenue Net Retention Rate7 ............................................................... 113% - 106% - -
+         Churn Rate8 ...................................................................................... 4% - 3% - -
+         Net Customer Expansion Rate9 ............................................................. 121% - - - -
+         1 The following table reconciles shows the reconciliation between Gross Profit and revenue for the relevant periods:
+                                                Six months ended Year ended       
+           (In NOK million)                        30 June      31 December       
+                                                 2020  2019  2019  2018 2017      
+           Revenue ...................................................................................................... 1,718 1,336 2,933 1,972 1,294
+           Direct Cost .................................................................................................... 1,288 981 2,180 1,425 897
+           Gross Profit ................................................................................................. 429 355 753 547 397
+           Gross Margin ............................................................................................... 25% 27% 26% 28% 31%
+         2 The following table shows the reconciliation between operating profit, EBITDA and Adjusted EBITDA for the relevant periods:
+                                                 Six months ended Year ended      
+           (In NOK million)                        30 June      31 December       
+                                                 2020  2019  2019  2018 2017      
+           Operating profit ......................................................................................... 53 -20 -37 30 45
+           Depreciation and amortisation ........................................................................ 108 103 247 86 42
+           EBITDA ...................................................................................................... 160 83 210 115 87
+           Share option program cost ............................................................................. - - - 23.1 19.0
+           M&A activities costs(a) .................................................................................... 3.3 15.6 27.2 40.5 26.0
+           Restructuring cost and other(b) ....................................................................... 19.3 35.2 70.0 33.3 8.0
+           Total adjustments ...................................................................................... 22.6 50.8 97.1 96.9 53.1
+           Adjusted EBITDA ....................................................................................... 182.6 134.2 307.5 212.4 140.0
+             (a)  The adjustment M&A activities costs refers to the financial line item cost related to acquisition of subsidiaries presented in total other operating
+                  expenses and are mainly related to consultant and legal advisor expenses incurred in connection with acquisition of subsidiaries.
+             (b)  The adjustment restructuring cost and other represents costs which are mainly related to efficiency projects, start-up costs for new businesses
+                  and branding/re-branding costs in connection with the acquisitions of subsidiaries presented in the financial line item total other operating
+                  expenses with NOK 10,561 thousand, NOK 20,892 thousand and NOK 48,425 thousand for the six months ended 30 June 2020, 2019 and full
+                  year 2019, whereof NOK 3,245 thousand NOK 14,783 thousand and NOK 39,796 thousand, respectively relates to the financial line item
+                  Restructuring costs, presented within Total other operating expenses.
+                  In addition, in the six months ended 30 June 2020, 2019 and full year 2019 an adjustment has been performed of NOK 8,689 thousand,
+                  NOK 14,272 thousand and NOK 21,542 thousand, respectively extracted from the financial line item total payroll and related expenses and
+                  relating to severance paid to certain employees as a result of the acquisition of subsidiaries and changes in the Group’s strategic focus as well
+                  as certain replacement/rehiring costs                           
+         3 Adjusted EBITDA Margin is defined as Adjusted EBITDA as a percentage of operating revenues in the respective periods.
+         4 The following table shows the reconciliation between operating profit and LTM Adjusted EBITDA for the relevant periods:
+                                               LTM ended                          
+           (In NOK million)                     30 June                           
+                                                 2020                             
+           Operating profit ........................................................................................ 35.2
+           Depreciation and amortisation ....................................................................... 251.9
+           EBITDA ..................................................................................................... 287.1
+           Share option program cost ............................................................................ -
+           M&A activities costs ..................................................................................... 14.9
+           Restructuring cost and other(a) ...................................................................... 54.1
+           LTM Adjusted EBITDA ............................................................................... 356.1
+                                        78
+</excerpt_8>
+
+<excerpt_9>
+Link Mobility Group Holding ASA - Prospectus          
+                                                                                  
+         5 The following table reconciles Like-for-Like Revenue to revenue for the relevant periods:
+                                                   Six months ended Year ended    
+                                                     30 June     31 December      
+           (In NOK million)                                                       
+                                                   2020 2019  2019 2018 2017      
+           Revenue .................................................................................................................. 1,717.6 1,336.1 2,932.7 1,972.0 1,294.0
+           Acquisition Revenue(a) ............................................................................................... -104.0 -370.8 -803.9 -584.1 -38.6
+           Like-for-Like Revenue(b) ............................................................................................. 1,613.6 965.3 2,128.7 1,387.9 1,255.4
+            (a) Acquisition Revenue is defined as revenue generated by the acquired entities for the periods indicated. The Company considers Acquisition
+                Revenue any revenue generated by acquired entities for four full consecutive quarters after complete ownership by the Company of such
+                entity. From 1 January 2018 an acquired Spanish entity was merged with an existing entity, hence the allocation of revenues between organic
+                and acquired revenue is based on a management estimate. In 2017 an acquired Danish entity was merged with an existing Danish entity,
+                hence the allocation between organic and acquired revenue is estimated. See Section 11.3.2 "Acquisitions".
+            (b) When comparing the Like-for-Like Revenue for a relevant period, the entities used for such calculation differ from period to period, as the
+                Company excludes revenues from companies acquired during the relevant periods in calculating Like-for-Like Revenue. This methodology
+                allows the Company to isolate and compare the revenue generated by the companies that were operating for the full relevant period compared.
+                See Section 11.3.2 "Acquisitions".                                
+                When comparing the years ended 31 December 2018 to 31 December 2019, the Company excludes revenues from companies acquired in
+                2019 and 2018, but includes the revenue from companies acquired in 2017, as the Company no longer considers such revenue as Acquisition
+                Revenue. The growth rate of Like-for-Like Revenue for the years ended 31 December 2018 to 31 December 2019 increased from 1,956.9 to
+                2,128.7, an increase of 9%.                                       
+                When comparing the years ended 31 December 2017 to 31 December 2018, the Company excludes revenues from companies acquired in
+                2017 and 2018. The growth rate of Like-for-Like Revenue for the years ended 31 December 2017 to 31 December 2018 increased from
+                1,255.4 to 1,387.9, an increase of 11%.                           
+         6 Gross Profit Conversion is defined as Adjusted EBITDA divided by Gross Profit.
+         7 Revenue Net Retention Rate is defined as revenue from the net of upsale, downsale and churn for customers throughout the period, not taking into
+           account new customers during the year. Revenue Net Retention Rate excludes the acquisitions of TeraComm Group and Spothit. Excluding Spain, these
+           figures are 116% and 111% for the six months ended 30 June 2020 and as of 31 December 2020, respectively. The data required to calculate these
+           measures was not yet monitored in the years ended 31 December 2017 and 2018 and as a result comparatives for the years ended 31 December 2017
+           and 2018 are not available.                                            
+         8 Churn Rate is defined as revenue of customers that were a customer in the prior period but were not a customer at the beginning of the current period
+           divided by the total revenue of the prior period. The data required to calculate these measures was not yet monitored in the years ended 31 December
+           2017 and 2018 and as a result comparatives for the years ended 31 December 2017 and 2018 are not available.
+         9 Net Customer Expansion Rate is defined as the revenue generated from customers at the end of the period with their corresponding revenue from the
+           same period in the previous year.                                      
+        11.11 Liquidity and capital resources                                     
+              1Introduction                                                       
+        The Group manages its financing structure and cash flow requirements in response to the Group’s strategy and
+        objectives, deploying financial and other resources related to those objectives.
+        As of the date of this Prospectus, the Group has available cash resources amounting to approximately NOK 515 million.
+        The Group currently has undrawn credit facilities in an amount of NOK 9 million. The Group holds cash in in the following
+        currencies: BGN, CHF, DKK, EUR, GBP, HUF, MKD, NOK, PLN, RON, SEK and USD.
+        The Group’s liquidity requirements arise primarily from the need to fund working capital and capital expenditures for the
+        expansion, maintenance and refurbishment of the Group’s information technology and other assets, as well as to make
+        acquisitions and realise potential growth and cost-saving opportunities from acquisitions and related synergies.
+        The Group's main source of liquidity are primarily through financing arrangements, revenues from operating activities
+        and cash and cash equivalents.                                            
+        The Group may also dispose of non-core businesses or enter into joint ventures or other partnerships that would generate
+        cash. The Group’s future financing requirements will depend on a number of factors, many of which are not foreseeable.
+        The Group assesses capital on the basis of a leverage ratio as shown in the table below on an as adjusted basis as of
+        the date of the Prospectus (prior to Adjustments subject to the Offering and Listing). Please also refer to Section 9
+        "Capitalisation and indebtedness".                                        
+                                               As adjusted as of the date of the  
+         Amounts in NOK million unless otherwise indicated Prospectus (before Adjustments subject
+                                               to the Listing and Offering)       
+         Net financial indebtedness(1).................................................... 3 087
+         LTM Adjusted EBITDA(2) .......................................................... 356
+         Net leverage ratio(3) ............................................................... 8.7x
+         (1) As presented in Section 9.1 "Capitalisation and indebtedness of the Group" on an as adjusted basis as of the date of the Prospectus reflecting net
+           financial indebtedness as of 30 June 2020 including the adjustments not subject to the Offering and Listing, and before the adjustments subject to
+           the Offering and Listing.                                              
+         (2) See Section 4.2.3 "Non-IFRS financial measures" and Section 10.7.1 "Non-IFRS financial measures for the Group". Represents Adjusted EBITDA for
+           the last twelve months period ended 30 June 2020.                      
+         (3) Represents Net financial indebtedness divided by LTM Adjusted EBITDA.
+        As of the date of the Prospectus and on an as adjusted basis (and prior to adjustments subject to the Listing and offering.
+        (See also Section 9.1 "Capitalisation and indebtedness of the Group"), and as shown on the table above, the Group’s
+        net leverage ratio is 8.7x, whereas net financial indebtedness is NOK 3,087 million (net of cash of NOK 469 million).
+                                        79
+</excerpt_9>
+
+<excerpt_10>
+Note 2 – Basis for preparation and significant accounting policies        
+                                                                                  
+        The consolidated condensed interim financial report for the half-year reporting period ended
+        30 June 2020 has been prepared in accordance with Accounting Standard IAS 34 Interim
+        Financial Reporting.                                                      
+                                                                                  
+        The interim report does not include all the notes of the type normally included in an annual
+        financial report. Accordingly, this report is to be read in conjunction with Group’s annual report
+        for 2019, which has been prepared according to IFRS as adopted by the EU. 
+                                                                                  
+                                                                                  
+        The preparation of interim financial statements requires the Group to make certain estimates
+        and assumptions that affect the application of accounting policies and reported amounts of
+        assets, liabilities, income, and expenses. Estimates and judgements are continually evaluated
+        by the Group based on historical experience and other factors, including expectations of future
+        events that are deemed to be reasonable under the circumstances. Actual results may differ
+        from these estimates. The most significant judgements used in preparing these interim
+        financial statements and the key areas of estimation uncertainty are the same as those
+        applied in the consolidated annual report for 2019.                       
+                                                                                  
+        The annual report for 2019 provides a description of the uncertainties and potential business
+        impact from the COVID-19 pandemic. This extraordinary situation creates risk and affects
+        estimates and judgements used in preparing these interim financial statements as its effects
+        are unforeseeable and not possible to quantify accurately. The Group has experienced varied
+        effects of COVID-19.                                                      
+                                                                                  
+                                                                                  
+        Goodwill and other Intangible assets with an indefinite useful economic life are not amortized
+        but are tested annually for impairment. The company performs an impairment test for goodwill
+        on an annual basis or when there are circumstances which would indicate that the carrying
+        value of goodwill may be impaired. When assessing impairment, assets are grouped into cash
+        generating units (CGU’s).                                                 
+                                                                                  
+        Impairment of goodwill and other intangible assets are tested by comparing the carrying value
+        of goodwill for each CGU to the recoverable amount (enterprise value). The recoverable
+        amount is the higher of fair value less cost to sell and value in use and the impairment
+        assessment is built on a discounted cash flow model. At 30 June 2020, such indications have
+        been identified as a result of the COVID-19 pandemic, specifically in the Spanish and
+        Bulgarian CGU’s. The COVID-19 pandemic is considered a significant event with potential
+        adverse effect on markets and economic environments within our footprint. 
+                                                                                  
+                                                                                  
+        With reference to the the annual report for FY2019 (note 12), calculations use cash flow
+        projections approved by management extended over a five-year period. The assumed growth
+        rate has been based on the management growth estimate for the next five years and
+        subsequently reduced to 3% for the purpose of determining the terminal value. The pre-tax
+        discount rates applied to the cash flows are calculated based on the weighted average cost of
+        capital (WACC) specific to each CGU and are within the range of 7.1-12.5%.
+                                                                                  
+        The discounted cash flow performed at 30 June 2020 does not deviate from the methodology
+        used at year-end, however the growth estimates specific to Spain and Bulgaria are updated in
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+        Copyright 2020 LINK Mobility. All rights reserved.          9
+</excerpt_10>
+
+<excerpt_11>
+line with the global strategy introduced in 2020. In this way, future cash flow estimates are
+        revised; the discount rate used in the half-year assessment is 10%.       
+                                                                                  
+        Given that estimates and assumptions are more volatile and uncertain, a sensitivity analysis
+        has been prepared. The enterprise value for the two CGU’s are still significantly higher than
+        the carrying value of the tested goodwill and intangible assets with indefinite useful lives. The
+        calculation identifies sensitivities to changes in EBITDA margins and terminal growth.
+        Reductions in EBITDA margins by 4 percentage points and a terminal growth of 1.5
+        percentage points would still not indicate any impairment losses.         
+                                                                                  
+        The presentation currency of the consolidated financial statement is Norwegian kroner (NOK),
+                                                                                  
+        which is also the functional currency of the parent company. Unless otherwise stated, amounts
+        presented are in thousands of NOK.                                        
+                                                                                  
+        The accounting policies applied in the preparation of the consolidated interim financial
+        statements are consistent with those applied in the preparation of the annual IFRS financial
+        statements for the year ended December 31, 2019, except for the estimation of income tax
+        and the adoption of new and amended standards as set out below.           
+                                                                                  
+        IAS 33 Earnings per share and IFRS 8 Operating Segments have been applied in these
+        interim financial statements. These standards are not mandatory for entities that do not have
+        shares traded in a public market or that file or are in the process of filing financial statements
+        with a regulatory organization and have thus not been applied in prior periods. Prior period
+        information has been amended to reflect the requirements set out in IAS 33 and IFRS 8.
+                                                                                  
+        Operating segments are reported in the same manner as internal reporting to the chief
+                                                                                  
+        operating decision maker. The chief operating decision maker, who is responsible for
+        allocating resources to and assessing performance of operating segments, is defined as the
+        Board of Directors. Group costs consist of any operational expenditures incurred in LINK
+        Mobility Group AS, Victory Partners VIII Norway AS, or Victory Partners VIII Norway Holding
+        AS.                                                                       
+                                                                                  
+        For information related to amendments to standards, new standards and interpretations
+        effective from 1 January 2020, please refer to the Group Annual Report for 2019. None of the
+                                                                                  
+        amendments, standards, or interpretations effective from 1 January 2020 have had a
+        significant impact on the Group’s consolidated interim financial information.
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+        Copyright 2020 LINK Mobility. All rights reserved.         10
+</excerpt_11>
+
+<excerpt_12>
+Note 3 – Segment reporting                                                
+                                                                                  
+        The Group reports revenue, gross margin (revenue less direct costs) and adjusted EBITDA in
+        functional operating segments to the Board of Directors (the Group’s chief operating decision
+        makers). While LINK uses all four measures to analyze performance, the Group’s strategy of
+        profitable growth means that adjusted EBITDA is the prevailing measure of performance (refer
+        to alternate performance measures).                                       
+                                                                                  
+        An examination of operating units based on market maturity and product development as well
+        as geography identifies four natural reporting segments. These are the Nordics, Western
+        Europe, Central Europe, and Global Messaging; these represent market clusters. Generally,
+        regions are segregated into similar geographic locations as these follow similar market trends.
+        Common routing includes all regions with aggregator traffic; the other three have enterprise
+        traffic.                                                                  
+                                                                                  
+        The regions are:                                                          
+        The Nordics                                                               
+                                                                                  
+        The Nordics is composed of Norway, Sweden, Denmark, and Finland.          
+        Central Europe                                                            
+                                                                                  
+        Central Europe is composed of Bulgaria, Romania, North Macedonia, Poland, Hungary,
+        Germany, Austria, and Switzerland.                                        
+                                                                                  
+        Western Europe                                                            
+        Western Europe is composed of Spain, France, the United Kingdom, and Italy.
+                                                                                  
+        Global Messaging                                                          
+        Global messaging is comprised of non-enterprise traffic and is representative of either stand-
+        alone business or as a component of revenues in countries included above. If a business is
+        comprised of both enterprise and wholesale/aggregator transactions, the latter is segregated
+        here.                                                                     
+                                                                                  
+        Wholesale/aggregator business is defined as an operating unit within LINK Mobility’s industry,
+        and that use LINK Mobility connections in markets where they do not have such connections
+        themselves. This business can generally be referred to, at least partly, as a direct competitor
+        that use LINK connections. Smaller local aggregators cannot be expected to be covered
+        efficiently by common routing and as such they are still subject to local handling (not a focus
+        area though because they are generally low margin and switch easily).     
+                                                                                  
+                                                                                  
+         Revenues per segment  YTD 2020 YTD 2019 Year 2019                        
+         Nordics                545 235 468 373  980 105                          
+         Central Europe         374 219 272 334  639 486                          
+                                                                                  
+         Western Europe         534 147 441 884  956 616                          
+         Global Messaging       264 028 153 524  356 499                          
+         Total                 1 717 629 1 336 114 2 932 707                      
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+        Copyright 2020 LINK Mobility. All rights reserved.         11
+</excerpt_12>
+
+<excerpt_13>
+Covenants                                                                 
+        Under the terms of the Group’s Senior Facilities Agreement borrowing facilities, the Group is
+        required to comply with the financial covenants as described in note 18 to the consolidated
+        annual report for 2019 at the respective quarterly test dates.            
+                                                                                  
+        The first test date of the maintenance covenants was 30 June 2019. The Group has complied
+        with these covenants on all test dates including 31 December 2019, 31 March 2020, and 30
+                                                                                  
+        June 2020. For 31 December 2019 and 31 March 2020, the consolidated total net debt was
+        7.03 times LTM consolidated proforma EBITDA including synergies compared to the term of
+        loan agreement of 8.50:1 and 11.50:1. For 30 June 2020, the consolidated net debt was 6.84
+        time LTM consolidated proforma EBIDTA including synergies compared to the term of loan
+        agreement of 8.00:1 and 11.00:1.                                          
+                                                                                  
+        Collateral                                                                
+        In connection with the SFA, Lucid Trustee Services Limited (as security agent under the SFA)
+        has been granted certain guarantees and security interests for the benefits of the SFA lenders.
+                                                                                  
+        These securities include, with some carve-outs and exceptions due to local regulations and
+        otherwise pursuant to the agreed security principles set out in the SFA: (i) security over the
+        shares in any subsidiary deemed material pursuant to the SFA; (ii) non-blocking charges over
+        material bank accounts held by Victory Partners VIII Norway AS (the Company) and any
+        subsidiary deemed material pursuant to the SFA; and (iii) security over material intra-group
+                                                                                  
+        loans between the Company and LINK Mobility Group AS and between the Company and its
+        parent company, Victory Partners VIII Norway Holding AS.                  
+                                                                                  
+        Furthermore, all direct or indirect subsidiaries of the Company which is deemed to be a
+        material subsidiary (as defined in the SFA) have, or will if such material threshold is met in the
+        future, accede to the SFA as guarantors. Each guarantor guarantees the performance of the
+        borrowers and the other guarantors’ performance under the SFA on a joint and several basis,
+        however subject to any local law restrictions. Additionally, the SFA includes an annual
+        guarantor coverage test ensuring that if the guarantors’ consolidated EBITDA is less than 80%
+        of the group’s consolidated pro forma EBITDA, additional subsidiaries will have to accede to
+        the SFA as guarantors in order to increase the guarantors’ consolidated EBITDA to be above
+        the 80% threshold. Such additional acceding subsidiaries must provide collateral as if they
+        were deemed a material subsidiary pursuant to the SFA.                    
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+        Copyright 2020 LINK Mobility. All rights reserved.         16
+</excerpt_13>
+
+<excerpt_14>
+ALTERNATIVE        PERFORMANCE            MEASURES                        
+                                                                                  
+        (“APM'S”)                                                                 
+                                                                                  
+                                                                                  
+        The financial information in this report is prepared under International Financial Reporting
+        Standards (IFRS), as adopted by the EU. To enhance the understanding of LINK’s
+        performance, the Group presents several alternative performance measures (“APM’s”). An
+        APM is defined by the European Securities and Markets Authority (ESMA) guidelines as a
+        financial measure of historical or future financial performance, financial position, or cash flows,
+        other than a financial measure defined or specified in the applicable financial reporting
+        framework (IFRS).                                                         
+                                                                                  
+        Below, LINK presents certain APMs, including gross margin, EBITDA, adjusted EBITDA and
+        adjusted EBITDA margin. APMs such as EBIT and EBITDA are commonly reported by
+        companies in the markets in which LINK competes and are widely used by investors when
+        comparing performance on a consistent basis without regard to factors such as depreciation
+        and amortization, which can vary significantly, depending upon accounting methods
+        (particularly when acquisitions have occurred) or based on non-operating factors.
+        LINK uses the following APMs:                                             
+                                                                                  
+        EBIT                                                                      
+        EBIT means earnings before interest and taxes. EBIT is a performance measure applied to
+        express profitability of operating activities; EBIT is presented in note 3 Segment reporting.
+                                                                                  
+        EBITDA                                                                    
+        EBITDA means earnings before interest, taxes, amortization, depreciation, and impairments.
+        LINK has presented EBITDA in the consolidated statement of profit and loss because
+        management believes that the measure provides useful information regarding the Group’s
+        ability to service debt and to fund capital expenditures and provides a helpful measure for
+        comparing its operating performance with that of other companies.         
+                                                                                  
+        Adjusted EBITDA                                                           
+        Adjusted EBITDA means EBITDA adjusted by expenses related to significant one-time, non-
+        recurring events such as acquisitions and restructuring activities, legal advisors, and share-
+        based compensation. LINK has presented adjusted EBITDA in the consolidated statement of
+        profit and loss because management believes the measure provides useful information
+        regarding operating performance.                                          
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+        Copyright 2020 LINK Mobility. All rights reserved.         22
+</excerpt_14>
+
+<excerpt_15>
+Adjusted EBITDA margin                                                    
+        Adjusted EBITDA margin is presented as adjusted EBITDA as a percentage of operating
+        revenues in the respective periods.                                       
+                                                                                  
+        See below for a reconciliation of EBIT to Adjusted EBITDA, and adjusted EBITDA margin.
+                                                                                  
+                               YTD 2020 YTD 2019 Year 2019                        
+         Operating profit (loss), ("EBIT") 52 545 (19 588) (36 955)               
+                                                                                  
+         Depreciation intangible assets (107 503) (102 958) (247 369)             
+         EBITDA                 160 048 83 370 210 414                            
+                                                                                  
+         Restructuring costs    19 296  37 598 72 687                             
+         Expenses related to acquisitions 3 348 13 338 24 840                     
+                                                                                  
+         Share-based compensation   -      -       -                              
+         Adjusted EBITDA        182 692 134 306 307 941                           
+                                                                                  
+         Operating revenues    1 717 629 1 336 114 2 932 707                      
+                                                                                  
+         Adjusted EBITDA        182 692 134 306 307 941                           
+         Adjusted EBITDA margin  10,6%  10,1%   10,5%                             
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+                                                                                  
+        Copyright 2020 LINK Mobility. All rights reserved.         23
+</excerpt_15>
+
+<excerpt_16>
+APPENDIX (cid:18)                            
+             THE COMPANY'S FINANCIAL STATEMENT(cid:94) FOR THE YEAR ENDED 31 DECEMBER 2019
+</excerpt_16>
+
+
+</LINK_prospectus_main>
