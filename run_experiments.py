@@ -4,7 +4,6 @@ import importlib.util
 import json
 import os
 import traceback
-from datetime import datetime
 
 from agent import get_agent_team
 from llm import get_response
@@ -21,7 +20,7 @@ from prompts import (
     MANAGER_AGENT_PROMPT_TEMPLATE,
 )
 from treatments import get_max_k, get_pdf_urls, get_texts, has_agent_treatment
-from utils import log_agent_run
+from utils import get_timestamp, log_agent_run
 
 
 async def judge(question, correct_answer, output) -> bool:
@@ -120,9 +119,7 @@ async def run_experiment_with_model(experiment, model) -> tuple:
 
 def record_output(experiment_name, experiment, model, output, input_tokens, passed):
     print(f"Recording output for {experiment.get('id')} -- {model}")
-
-    timestamp = datetime.now().strftime("%Y%m%dT%H%M%S")
-    dir_path = f"./docs/{timestamp}_{experiment_name}"
+    dir_path = f"./docs/{get_timestamp()}_{experiment_name}"
     os.makedirs(dir_path, exist_ok=True)
 
     filename = f"{dir_path}/{experiment.get('id')}_{model}.json"
