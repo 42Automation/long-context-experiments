@@ -1,9 +1,16 @@
+import json
+from pathlib import Path
+
 from tiktoken import get_encoding
+
+from prompts import DOC_TEMPLATE, EXCERPT_TEMPLATE
 
 tokenizer_encoding = get_encoding(
     "cl100k_base"
 )  # Use base tokenizer encoding as approximation
-from prompts import DOC_TEMPLATE, EXCERPT_TEMPLATE
+
+
+AGENT_LOGS_FOLDER = "agent_logs"
 
 
 def is_anthropic_model(model: str) -> bool:
@@ -67,3 +74,9 @@ def get_pages_text(pages: list[dict], filename: str) -> str:
     for idx, page in enumerate(pages):
         content += EXCERPT_TEMPLATE.format(index=idx, content=page["text"]) + "\n"
     return DOC_TEMPLATE.format(filename=filename, content=content)
+
+
+def log_agent_run(logs: dict, experiment_id: str, model: str):
+    filename = f"{experiment_id}_{model}.out"
+    with open(Path(AGENT_LOGS_FOLDER) / filename, "w") as f:
+        json.dump(logs, f, indent=2, default=str)

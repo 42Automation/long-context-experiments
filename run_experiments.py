@@ -21,6 +21,7 @@ from prompts import (
     MANAGER_AGENT_PROMPT_TEMPLATE,
 )
 from treatments import get_max_k, get_pdf_urls, get_texts, has_agent_treatment
+from utils import log_agent_run
 
 
 async def judge(question, correct_answer, output) -> bool:
@@ -50,7 +51,8 @@ async def run_experiment(experiment, model) -> tuple:
         return await run_experiment_with_model(experiment, model)
 
     pdf_doc_urls = get_pdf_urls(experiment)
-    max_k = get_max_k(experiment)
+    if (max_k := get_max_k(experiment)) is None:
+        raise ValueError("Max K was not defined")
 
     agent = get_agent_team(model_id=model, pdf_doc_urls=pdf_doc_urls, max_k=max_k)
     return await run_experiment_with_agent(experiment, agent)
@@ -74,6 +76,11 @@ async def run_experiment_with_agent(experiment, agent) -> tuple:
     prompt = MANAGER_AGENT_PROMPT_TEMPLATE.format(user_query=query)
 
     output = agent.run(prompt)
+    log_agent_run(
+        logs=agent.write_memory_to_messages(),
+        experiment_id=experiment.get("id"),
+        model=model,
+    )
 
     passed = await evaluate(experiment, model, output)
 

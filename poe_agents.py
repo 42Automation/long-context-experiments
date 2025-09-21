@@ -19,12 +19,17 @@ from smolagents import (
     CodeAgent,
     LogLevel,
     ToolCall,
+    ToolCallingAgent,
     ToolOutput,
     agglomerate_stream_deltas,
     fix_final_answer_code,
     parse_code_blobs,
     truncate_content,
 )
+
+
+class PoeToolCallingAgent(ToolCallingAgent):
+    pass
 
 
 def extract_code_from_text(text: str, code_block_tags: tuple[str, str]) -> str | None:

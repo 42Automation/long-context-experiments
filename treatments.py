@@ -27,7 +27,7 @@ def has_agent_treatment(experiment: dict) -> bool:
 
 
 def get_max_k(experiment: dict) -> int | None:
-    return experiment.get("treatments", {}).get("agent", {}).get("k_max")
+    return experiment.get("treatments", {}).get("agent", {}).get("max_k")
 
 
 def _get_default_texts(experiment: dict, max_context: int) -> list[str]:
@@ -62,9 +62,7 @@ def _get_rag_texts(experiment: dict, dump_texts: bool = True) -> list[str]:
 
     experiment_id = experiment["id"]
     k = experiment.get("treatments", {}).get("rag", {}).get("k", 5)
-    pdf_doc_urls = [
-        d for d in experiment.get("reference_doc_urls", []) if Path(d).suffix == ".pdf"
-    ]
+    pdf_doc_urls = get_pdf_urls(experiment)
 
     retriever = Retriever(pdf_doc_urls=pdf_doc_urls)
     docs = retriever.get_relevant_documents(query, k=k)
@@ -81,13 +79,9 @@ def _get_rag_texts(experiment: dict, dump_texts: bool = True) -> list[str]:
 
 
 def get_pdf_urls(experiment: dict) -> list[str]:
-    if has_default_treatment(experiment):
-        return [
-            d
-            for d in experiment.get("reference_doc_urls", [])
-            if Path(d).suffix == ".pdf"
-        ]
-    return []
+    return [
+        d for d in experiment.get("reference_doc_urls", []) if Path(d).suffix == ".pdf"
+    ]
 
 
 def get_texts(
