@@ -26,6 +26,6 @@ MODEL_IDS = {
     "Qwen3-235B-2507": "Qwen3-235B-2507-FW",
 }
 
-SAMPLE_MODELS = ["Gemini-2.5-Flash"]
+SAMPLE_MODELS = ["GPT-5-mini"]
 
 JUDGE_MODEL = "GPT-5-mini"

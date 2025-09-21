@@ -53,7 +53,7 @@ async def run_experiment(experiment, model) -> tuple:
     max_k = get_max_k(experiment)
 
     agent = get_agent_team(model_id=model, pdf_doc_urls=pdf_doc_urls, max_k=max_k)
-    return run_experiment_with_agent(experiment, agent)
+    return await run_experiment_with_agent(experiment, agent)
 
 
 async def evaluate(experiment, model, answer):
@@ -71,16 +71,17 @@ async def run_experiment_with_agent(experiment, agent) -> tuple:
     model = agent.model.model_id
     print(f"Running experiment for {experiment.get('id')} with agent over {model}")
     query = experiment.get("query")
-    prompt = MANAGER_AGENT_PROMPT_TEMPLATE.format(query=query)
-    result = agent.run(prompt, return_full_results=True)
+    prompt = MANAGER_AGENT_PROMPT_TEMPLATE.format(user_query=query)
 
-    passed = await evaluate(experiment, model, result.output)
+    output = agent.run(prompt)
+
+    passed = await evaluate(experiment, model, output)
 
     return (
         experiment,
         model,
-        result.output,
-        result.token_usage.input_tokens,
+        output,
+        agent.monitor.total_input_token_count,
         passed,
     )
 

@@ -47,7 +47,7 @@ When comparing values, focus on values which can be compared. Do not compare val
 RETRIEVAL_AGENT_DESCRIPTION_TEMPLATE = """A team member that will retrieve information from the reference documents,
 which is relevant to the user query.
 You can retrieve with varying depth, as indicated by the k parameter.
-Your max value for k is {k_max}.
+Your max value for k is {max_k}.
 """
 
 MANAGER_AGENT_PROMPT_TEMPLATE = """You are an expert financial advisor and need to answer a user query.
