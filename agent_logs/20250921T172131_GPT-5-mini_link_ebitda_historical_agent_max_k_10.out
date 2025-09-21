@@ -1,0 +1,376 @@
+Message 0: SYSTEM
+------------------
+You are an expert assistant who can solve any task using tool calls. You will be given a task to solve as best you can.
+To do so, you have been given access to some tools.
+
+The tool call you write is an action: after the tool is executed, you will get the result of the tool call as an "observation".
+This Action/Observation can repeat N times, you should take several steps when needed.
+
+You can use the result of the previous action as input for the next action.
+The observation will always be a string: it can represent a file, like "image_1.jpg".
+Then you can use it as input for the next action. You can do it for instance as follows:
+
+Observation: "image_1.jpg"
+
+Action:
+{
+  "name": "image_transformer",
+  "arguments": {"image": "image_1.jpg"}
+}
+
+To provide the final answer to the task, use an action blob with "name": "final_answer" tool. It is the only way to complete the task, else you will be stuck on a loop. So your final output should look like this:
+Action:
+{
+  "name": "final_answer",
+  "arguments": {"answer": "insert your final answer here"}
+}
+
+
+Here are a few examples using notional tools:
+---
+Task: "Generate an image of the oldest person in this document."
+
+Action:
+{
+  "name": "document_qa",
+  "arguments": {"document": "document.pdf", "question": "Who is the oldest person mentioned?"}
+}
+Observation: "The oldest person in the document is John Doe, a 55 year old lumberjack living in Newfoundland."
+
+Action:
+{
+  "name": "image_generator",
+  "arguments": {"prompt": "A portrait of John Doe, a 55-year-old man living in Canada."}
+}
+Observation: "image.png"
+
+Action:
+{
+  "name": "final_answer",
+  "arguments": "image.png"
+}
+
+---
+Task: "What is the result of the following operation: 5 + 3 + 1294.678?"
+
+Action:
+{
+    "name": "python_interpreter",
+    "arguments": {"code": "5 + 3 + 1294.678"}
+}
+Observation: 1302.678
+
+Action:
+{
+  "name": "final_answer",
+  "arguments": "1302.678"
+}
+
+---
+Task: "Which city has the highest population , Guangzhou or Shanghai?"
+
+Action:
+{
+    "name": "web_search",
+    "arguments": "Population Guangzhou"
+}
+Observation: ['Guangzhou has a population of 15 million inhabitants as of 2021.']
+
+
+Action:
+{
+    "name": "web_search",
+    "arguments": "Population Shanghai"
+}
+Observation: '26 million (2019)'
+
+Action:
+{
+  "name": "final_answer",
+  "arguments": "Shanghai"
+}
+
+Above example were using notional tools that might not exist for you. You only have access to these tools:
+- final_answer: Provides a final answer to the given problem.
+    Takes inputs: {'answer': {'type': 'any', 'description': 'The final answer to the problem'}}
+    Returns an output of type: any
+You can also give tasks to team members.
+Calling a team member works similarly to calling a tool: provide the task description as the 'task' argument. Since this team member is a real human, be as detailed and verbose as necessary in your task description.
+You can also include any relevant variables or context using the 'additional_args' argument.
+Here is a list of the team members that you can call:
+- retriever_agent: A team member that will retrieve information from the reference documents,
+which is relevant to the user query.
+You can retrieve with varying depth, as indicated by the k parameter.
+Your max value for k is 10.
+
+  - Takes inputs: {'task': {'type': 'string', 'description': 'Long detailed description of the task.'}, 'additional_args': {'type': 'object', 'description': 'Dictionary of extra inputs to pass to the managed agent, e.g. images, dataframes, or any other contextual data it may need.'}}
+  - Returns an output of type: string
+
+Here are the rules you should always follow to solve your task:
+1. ALWAYS provide a tool call, else you will fail.
+2. Always use the right arguments for the tools. Never use variable names as the action arguments, use the value instead.
+3. Call a tool only when needed: do not call the search agent if you do not need information, try to solve the task yourself. If no tool call is needed, use final_answer tool to return your answer.
+4. Never re-do a tool call that you previously did with the exact same parameters.
+
+Now Begin!
+==================
+
+Message 1: USER
+------------------
+New task:
+You are an expert financial advisor and need to answer a user query.
+
+In order to answer the query, you need to consider information from one or more reference documents, which have already been provided to you.
+You can ask your retriever agent for such information, as needed.
+
+ATTENTION: The provided document are loaded with complex financial information.
+Use all your expertise to devise a good strategy to answer the query.
+
+HINT: You may need to break down the user query in different retrieval tasks,
+to make sure you collect all needed information before providing your final answer.
+
+Here is the user query:
+<user_query>
+Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?
+</user_query>
+
+Now, work hard to answer the user query fully and accurately. Use multiple steps if needed.
+
+==================
+
+Message 2: ASSISTANT
+------------------
+Here are the facts I know and the plan of action that I will follow to solve the task:
+```
+### 1.1. Facts given in the task
+- The user asks: "Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?"
+  - Reasoning: This is the explicit task. It requires comparing historical adjusted EBITDA (earnings before interest, taxes, depreciation, and amortization, adjusted by company-specific adjustments) figures that appear in two documents: the IPO prospectus and the Annual report.
+- There exist reference documents already provided to the assistant (the prompt says "reference documents, which have already been provided to you").
+  - Reasoning: The retriever_agent can be used to fetch information from those reference documents. The documents likely include the IPO prospectus and at least one Annual report. The task hint suggests the documents contain complex financial information and multiple retrieval steps may be required.
+
+### 1.2. Facts to look up
+- Exact filenames/identifiers and availability of the IPO prospectus and the specific Annual report(s) to compare.
+  - Where to find: use retriever_agent to fetch the provided reference documents and identify the prospectus and the annual report(s). If multiple annual reports exist, clarify which year(s) to compare (likely the annual report covering the same historical periods as the prospectus).
+  - Reasoning: We need to locate the correct documents among the provided references before extracting numbers.
+- Which historical periods the IPO prospectus reports adjusted EBITDA for (e.g., last 3 fiscal years, last 5 years, or specific dates).
+  - Where to find: prospectus text/tables (retriever_agent).
+  - Reasoning: To do a correct comparison we must compare the same historical periods (same fiscal years or interim periods).
+- Which historical periods the Annual report reports adjusted EBITDA for (and whether they match the periods in the prospectus).
+  - Where to find: annual report text/tables (retriever_agent).
+  - Reasoning: Prospectus and annual report may report different sets of years; need to align comparisons.
+- The adjusted EBITDA definition and reconciling items used in each document (what adjustments are made to EBITDA to get "adjusted EBITDA").
+  - Where to find: notes, definitions, non-GAAP reconciliation sections in both prospectus and annual report.
+  - Reasoning: Adjusted EBITDA may be calculated differently between documents; differences in adjustments (e.g., one-time items, stock-based compensation, acquisition costs) can explain mismatches.
+- The reported adjusted EBITDA numeric values for each comparable historical period in both documents (numbers, currency, units, and whether figures are presented as thousands, millions, or rounded).
+  - Where to find: financial highlights, consolidated statements, non-GAAP reconciliation tables in both documents.
+  - Reasoning: Need the exact numbers to compare.
+- Any restatements or notes in the annual report that mention prior period adjustments or reconciliations to figures previously reported in the prospectus.
+  - Where to find: management discussion & analysis (MD&A), notes to financial statements, restatement disclosures in the annual report.
+  - Reasoning: The annual report may restate historical adjusted EBITDA or explain changes made after the prospectus.
+- The currency in which adjusted EBITDA is reported in each document and the reporting unit (e.g., USD, EUR, local currency).
+  - Where to find: document headers, financial statement notes.
+  - Reasoning: Currency differences or exchange rate restatements could cause apparent mismatches.
+- Whether the prospectus or annual report apply any pro forma adjustments (e.g., for acquisitions, disposals, carve-outs) that affect adjusted EBITDA, and the dates/effects of those adjustments.
+  - Where to find: notes and reconciliation tables in prospectus and prospectus pro forma financials; notes in annual report.
+  - Reasoning: Pro forma adjustments lead to different comparables.
+- Whether the prospectus numbers are preliminary, unaudited, or audited, and similarly whether the annual report figures are audited; and whether this status is mentioned as a cause of difference.
+  - Where to find: footnotes in the prospectus and annual report.
+  - Reasoning: Audit status affects reliability and may explain later changes.
+- Any rounding conventions noted in the documents that could produce small numerical differences (e.g., rounding to nearest million).
+  - Where to find: formatting footnotes or table headings.
+  - Reasoning: Small mismatches may just be rounding.
+
+### 1.3. Facts to derive
+- A matched list of comparable historical periods present in both documents (e.g., FY2020, FY2021, FY2022) to be used for direct comparison.
+  - Reasoning: We must align periods (derive overlap) before numeric comparison.
+- For each comparable period, compute the absolute and percentage difference between the adjusted EBITDA reported in the IPO prospectus and the adjusted EBITDA reported in the Annual report.
+  - Reasoning: Quantifies the degree of mismatch.
+- Identify and attribute differences to specific causes based on the documents: differing adjustment items, restatements, currency conversion, pro forma adjustments, audit adjustments, or rounding.
+  - Reasoning: Logical reasoning from the reconciliations, definitions, and notes should explain why numbers differ.
+- A determination (Yes/No) for each comparable period whether the adjusted EBITDA values "match" within an acceptable tolerance (to be defined — e.g., exact match, or match within rounding and immaterial differences). Also derive an overall conclusion whether the series matches.
+  - Reasoning: The user asked "Do they match?" — need a clear criterion and conclusion.
+- If mismatches are present, derive corrective reconciled adjusted EBITDA values where possible (for example, if one document excludes a one-time item and the other includes it, compute adjusted EBITDA by adding/subtracting that item to harmonize).
+  - Reasoning: Provide reconciled numbers to explain and resolve differences where documents give sufficient detail.
+- Assess materiality: derive whether differences are material relative to the size of adjusted EBITDA (e.g., percentage thresholds such as >5% or >10%).
+  - Reasoning: To judge practical significance of any mismatch.
+
+2. Plan
+- Step 1: Retrieve the IPO prospectus from the provided reference documents using retriever_agent. Identify the sections that report historical adjusted EBITDA values, the definition/reconciliation of adjusted EBITDA, the periods covered, currency and units, and any notes about audit status, pro forma adjustments, or rounding.
+- Step 2: Retrieve the Annual report from the provided reference documents using retriever_agent. Identify the sections that report historical adjusted EBITDA values (or non-GAAP reconciliations), definition/reconciliation, periods covered, currency and units, restatements, and notes about audit status or rounding.
+- Step 3: Extract the reported adjusted EBITDA numeric values (with units and currency) for each historical period reported in the prospectus; document the adjustments that comprise each adjusted EBITDA figure (list the excluded/included items).
+- Step 4: Extract the reported adjusted EBITDA numeric values (with units and currency) for each historical period reported in the annual report; document the adjustments that comprise each adjusted EBITDA figure.
+- Step 5: Align the comparable periods between the two documents; produce a matched table of periods where both documents provide adjusted EBITDA. Note any periods present in only one document.
+- Step 6: For each matched period, compute the absolute difference and percentage difference between prospectus and annual report adjusted EBITDA. Note currency/unit conversions if needed and apply them consistently.
+- Step 7: Investigate and attribute the cause of each difference by comparing the adjustment line items, restatements, pro forma adjustments, rounding, or audit status notes found in the documents. Where possible, calculate reconciled adjusted EBITDA values by adding/subtracting the differing adjustments to harmonize definitions.
+- Step 8: Assess materiality of each difference using a reasonable threshold (e.g., percentage of adjusted EBITDA) and note whether differences are immaterial (likely rounding) or material (require explanation).
+- Step 9: Prepare a concise conclusion: for each period whether the adjusted EBITDA matches (within tolerance), overall whether they match, and a short explanation of causes for any mismatches including reconciled numbers where possible.
+- Step 10: Deliver the findings to the user, citing the exact figures, differences, and document references (section/page numbers or table names). Ask clarifying follow-ups if additional periods or tolerance definitions are required.
+<end_plan>
+```
+==================
+
+Message 3: USER
+------------------
+Now proceed and carry out this plan.
+==================
+
+Message 4: ASSISTANT
+------------------
+
+==================
+
+Message 5: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 6: ASSISTANT
+------------------
+
+==================
+
+Message 7: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 8: ASSISTANT
+------------------
+
+==================
+
+Message 9: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 10: ASSISTANT
+------------------
+I still need to solve the task I was given:
+```
+You are an expert financial advisor and need to answer a user query.
+
+In order to answer the query, you need to consider information from one or more reference documents, which have already been provided to you.
+You can ask your retriever agent for such information, as needed.
+
+ATTENTION: The provided document are loaded with complex financial information.
+Use all your expertise to devise a good strategy to answer the query.
+
+HINT: You may need to break down the user query in different retrieval tasks,
+to make sure you collect all needed information before providing your final answer.
+
+Here is the user query:
+<user_query>
+Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?
+</user_query>
+
+Now, work hard to answer the user query fully and accurately. Use multiple steps if needed.
+
+```
+
+Here are the facts I know and my new/updated plan of action to solve the task:
+```
+## 1. Updated facts survey
+
+### 1.1. Facts given in the task
+- User asks: "Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?"
+- Reference documents (IPO prospectus and Annual report) have already been provided to the system and must be used to answer the question.
+- I have access to a retriever agent that can fetch passages from the provided documents at varying depth (k up to 10).
+- The final answer must definitively state whether the historical adjusted EBITDA values match between the two documents and explain any differences found.
+
+### 1.2. Facts that we have learned so far
+- Previous attempts to run tools included errors about missing additional_args; no document retrieval has yet been performed.
+- No specific numbers or passages from either the IPO prospectus or the Annual report have been retrieved yet.
+
+### 1.3. Facts still to look up
+- The reported historical adjusted EBITDA values in the IPO prospectus (likely presented as a table or note for historical periods — e.g., prior two or three years, pro forma adjustments, etc.).
+- The reported historical adjusted EBITDA values in the Annual report for the same historical periods.
+- Any reconciliation, definitions, or adjustments (e.g., one-off items, non-recurring items, IPO-related adjustments, timing differences, restatements) provided in either document that explain differences between "Adjusted EBITDA" and reported EBITDA.
+- Whether the Annual report restates figures that were presented in the IPO prospectus (e.g., due to audit adjustments or changes in accounting policies).
+- The precise periods covered in each document for the historical adjusted EBITDA (calendar years vs. fiscal years; same cutoff dates).
+- Any footnotes or management commentary that explain how "Adjusted EBITDA" was calculated in each document (to check consistent definitions).
+
+### 1.4. Facts still to derive
+- Whether the numerical adjusted EBITDA values for the same periods match exactly across the IPO prospectus and the Annual report.
+- If they do not match, the likely causes: different adjustments included/excluded, different definitions, different periods, restatements, rounding, or transcription errors.
+- A concise conclusion and explanation of discrepancies with references to specific passages/figures in the documents.
+
+## 2. Plan
+
+Goal: Determine if historical adjusted EBITDA values match between IPO prospectus and Annual report, and explain findings.
+
+Step 1: Retrieve from the IPO prospectus the sections/tables where historical adjusted EBITDA values are reported. Also retrieve the definition/explanation of "Adjusted EBITDA" and any reconciliation or notes accompanying the figures. (This ensures I capture the exact numbers and the methodology used in the prospectus.)
+
+Step 2: Retrieve from the Annual report the sections/tables where historical adjusted EBITDA values are reported for the same periods. Also retrieve the definition/explanation of "Adjusted EBITDA" and any reconciliation or notes. (This ensures comparable data and methodology.)
+
+Step 3: Verify that the reporting periods and measurement bases match in both documents (e.g., same fiscal years, same currency, same rounding conventions). If periods differ, note the differences and map comparable periods where possible.
+
+Step 4: Compare the numerical values side-by-side for each comparable period. Note exact matches, partial matches (e.g., off by rounding), and material differences. For any differences, inspect accompanying notes to identify explanations (e.g., IPO pro forma adjustments, audit adjustments, restatements, non-recurring items included in one document but not the other).
+
+Step 5: Summarize the findings: state whether the adjusted EBITDA values match exactly, match after considering stated adjustments/definitions, or do not match. Provide the most likely reasons for any discrepancies with direct citations (document name, section/table, and where the explanation is found). If further clarification is needed from the company (e.g., unresolved discrepancies), state what to ask and what supporting evidence to request.
+
+<end_plan>
+```
+==================
+
+Message 11: USER
+------------------
+Now proceed and carry out this plan.
+==================
+
+Message 12: ASSISTANT
+------------------
+
+==================
+
+Message 13: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 14: ASSISTANT
+------------------
+
+==================
+
+Message 15: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 16: ASSISTANT
+------------------
+
+==================
+
+Message 17: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 18: TOOL-RESPONSE
+------------------
+Error:
+Reached max steps.
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+

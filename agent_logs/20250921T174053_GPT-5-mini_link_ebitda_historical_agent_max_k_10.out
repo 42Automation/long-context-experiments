@@ -1,0 +1,525 @@
+Message 0: SYSTEM
+------------------
+You are an expert assistant who can solve any task using tool calls. You will be given a task to solve as best you can.
+To do so, you have been given access to some tools.
+
+The tool call you write is an action: after the tool is executed, you will get the result of the tool call as an "observation".
+This Action/Observation can repeat N times, you should take several steps when needed.
+
+You can use the result of the previous action as input for the next action.
+The observation will always be a string: it can represent a file, like "image_1.jpg".
+Then you can use it as input for the next action. You can do it for instance as follows:
+
+Observation: "image_1.jpg"
+
+Action:
+{
+  "name": "image_transformer",
+  "arguments": {"image": "image_1.jpg"}
+}
+
+To provide the final answer to the task, use an action blob with "name": "final_answer" tool. It is the only way to complete the task, else you will be stuck on a loop. So your final output should look like this:
+Action:
+{
+  "name": "final_answer",
+  "arguments": {"answer": "insert your final answer here"}
+}
+
+
+Here are a few examples using notional tools:
+---
+Task: "Generate an image of the oldest person in this document."
+
+Action:
+{
+  "name": "document_qa",
+  "arguments": {"document": "document.pdf", "question": "Who is the oldest person mentioned?"}
+}
+Observation: "The oldest person in the document is John Doe, a 55 year old lumberjack living in Newfoundland."
+
+Action:
+{
+  "name": "image_generator",
+  "arguments": {"prompt": "A portrait of John Doe, a 55-year-old man living in Canada."}
+}
+Observation: "image.png"
+
+Action:
+{
+  "name": "final_answer",
+  "arguments": "image.png"
+}
+
+---
+Task: "What is the result of the following operation: 5 + 3 + 1294.678?"
+
+Action:
+{
+    "name": "python_interpreter",
+    "arguments": {"code": "5 + 3 + 1294.678"}
+}
+Observation: 1302.678
+
+Action:
+{
+  "name": "final_answer",
+  "arguments": "1302.678"
+}
+
+---
+Task: "Which city has the highest population , Guangzhou or Shanghai?"
+
+Action:
+{
+    "name": "web_search",
+    "arguments": "Population Guangzhou"
+}
+Observation: ['Guangzhou has a population of 15 million inhabitants as of 2021.']
+
+
+Action:
+{
+    "name": "web_search",
+    "arguments": "Population Shanghai"
+}
+Observation: '26 million (2019)'
+
+Action:
+{
+  "name": "final_answer",
+  "arguments": "Shanghai"
+}
+
+Above example were using notional tools that might not exist for you. You only have access to these tools:
+- final_answer: Provides a final answer to the given problem.
+    Takes inputs: {'answer': {'type': 'any', 'description': 'The final answer to the problem'}}
+    Returns an output of type: any
+You can also give tasks to team members.
+Calling a team member works similarly to calling a tool: provide the task description as the 'task' argument. Since this team member is a real human, be as detailed and verbose as necessary in your task description.
+You can also include any relevant variables or context using the 'additional_args' argument.
+Here is a list of the team members that you can call:
+- retriever_agent: A team member that will retrieve information from the reference documents,
+which is relevant to the user query.
+You can retrieve with varying depth, as indicated by the k parameter.
+Your max value for k is 10.
+
+  - Takes inputs: {'task': {'type': 'string', 'description': 'Long detailed description of the task.'}, 'additional_args': {'type': 'object', 'description': 'Dictionary of extra inputs to pass to the managed agent, e.g. images, dataframes, or any other contextual data it may need.'}}
+  - Returns an output of type: string
+
+Here are the rules you should always follow to solve your task:
+1. ALWAYS provide a tool call, else you will fail.
+2. Always use the right arguments for the tools. Never use variable names as the action arguments, use the value instead.
+3. Call a tool only when needed: do not call the search agent if you do not need information, try to solve the task yourself. If no tool call is needed, use final_answer tool to return your answer.
+4. Never re-do a tool call that you previously did with the exact same parameters.
+
+Now Begin!
+==================
+
+Message 1: USER
+------------------
+New task:
+You are an expert financial advisor and need to answer a user query.
+
+In order to answer the query, you need to consider information from one or more reference documents, which have already been provided to you.
+You can ask your retriever agent for such information, as needed.
+
+ATTENTION: The provided document are loaded with complex financial information.
+Use all your expertise to devise a good strategy to answer the query.
+
+HINT: You may need to break down the user query in different retrieval tasks,
+to make sure you collect all needed information before providing your final answer.
+
+Here is the user query:
+<user_query>
+Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?
+</user_query>
+
+Now, work hard to answer the user query fully and accurately. Use multiple steps if needed.
+
+==================
+
+Message 2: ASSISTANT
+------------------
+Here are the facts I know and the plan of action that I will follow to solve the task:
+```
+### 1. Facts survey
+
+#### 1.1. Facts given in the task
+- User query: "Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?"
+  - This establishes the objective: compare historical adjusted EBITDA values reported in two documents (an IPO prospectus and an Annual report) and determine whether they match.
+- There are reference documents already provided (the prompt states documents have been provided and contain complex financial information). The exact documents are not named in the task prompt, but it is explicit that an IPO prospectus and an Annual report are among them (or at least those are the two to compare).
+- Hint: We may need multiple retrieval steps to collect all required information from the documents.
+
+Reasoning: From the task statement we know the comparison target and that source documents exist. No numeric values or dates are given in the task itself.
+
+#### 1.2. Facts to look up
+We must extract specific facts from the provided reference documents. For each item below, indicate where to find it and why it is needed.
+
+1) The historical adjusted EBITDA values in the IPO prospectus
+   - Where to find: the IPO prospectus document(s) provided by the user (search within the prospectus for "adjusted EBITDA", "EBITDA", "adjustments", "historical financial information", "reconciliations", "non-GAAP", "pro forma", tables labelled "Consolidated income statement", "Reconciliation of net income to adjusted EBITDA").
+   - Why needed: these are one side of the comparison.
+
+2) The historical adjusted EBITDA values in the Annual report
+   - Where to find: the Annual report document(s) provided (search for "adjusted EBITDA", "EBITDA", "non-GAAP measures", "notes to consolidated financial statements", "management discussion and analysis (MD&A)", "financial highlights", reconciliations).
+   - Why needed: these are the other side of the comparison.
+
+3) Definitions and adjustment methodologies used for "adjusted EBITDA" in each document
+   - Where to find: relevant sections in each document titled "Non-GAAP measures", "Use of adjusted EBITDA", "Definitions", or the notes where reconciliations are provided.
+   - Why needed: to determine if differences in values are due to different definitions or adjustments (e.g., excluding IPO costs, share-based compensation, one-off items). If they use different definitions, values may not be directly comparable.
+
+4) The historical periods covered for adjusted EBITDA in each document
+   - Where to find: look at the tables and headings in both documents (e.g., fiscal years, quarters, "for the years ended" dates).
+   - Why needed: ensure the same periods are being compared (e.g., FY2022 in prospectus vs FY2022 in annual report). Mismatched periods would invalidate a direct comparison.
+
+5) Any restatements, corrections, or subsequent adjustments disclosed between the prospectus and the annual report
+   - Where to find: notes titled "subsequent events", "restatement", "changes in accounting policies", or reconciliation footnotes in the Annual report and any errata or supplements to the prospectus.
+   - Why needed: adjusted EBITDA figures may have been restated after the prospectus; this explains differences.
+
+6) Whether the prospectus used preliminary or unaudited financials versus the Annual report using audited financials
+   - Where to find: explanatory text in prospectus (e.g., "unaudited", "preliminary results") and in Annual report (auditor’s report, "audited financial statements").
+   - Why needed: unaudited or preliminary numbers are often revised in audited annual reports.
+
+7) Currency, units and rounding conventions used in both documents
+   - Where to find: captions near tables (e.g., "in thousands", "in millions", "EUR", "USD"), and any rounding notes.
+   - Why needed: mismatches caused by units or rounding must be accounted for.
+
+8) Any reconciliation tables showing how adjusted EBITDA was calculated (line-by-line)
+   - Where to find: non-GAAP reconciliation tables within each document.
+   - Why needed: to trace which items were added/subtracted and to identify specific differences.
+
+9) Page numbers or locations of the relevant tables or statements
+   - Where to find: searching the provided documents (PDF page numbers, headings) to reference later in reporting results.
+   - Why needed: to provide clear provenance for any findings.
+
+10) If multiple versions of the prospectus exist (e.g., preliminary, final), identify which one is supplied
+    - Where to find: prospectus header, version, or filing history in the document metadata.
+    - Why needed: ensure we use the correct prospectus version for comparison.
+
+Reasoning: All these items are concrete facts needed to make a defensible comparison. They must be looked up in the provided documents because they are not specified in the task input.
+
+#### 1.3. Facts to derive
+These are items we will compute or logically infer from the looked-up facts.
+
+1) Exact numeric comparison of adjusted EBITDA for each historical period (e.g., FY2021, FY2022) - compute differences (prospectus value minus annual report value) and percentage differences.
+   - Reasoning: Direct numeric comparison establishes whether values match and quantifies any discrepancy.
+
+2) Identify whether any differences are explained by:
+   - Difference in definition (different adjustments included/excluded).
+   - Restatement or audit adjustments (e.g., prospectus preliminary → audited numbers).
+   - Different period coverage or currency/units mismatch.
+   - Rounding or presentation differences.
+   - Reasoning: To answer "Do they match?" we must know not only whether numbers differ but why.
+
+3) Determine materiality of differences (e.g., absolute amount and percentage relative to the figure) and whether they are likely to affect users' conclusions.
+   - Reasoning: Small rounding differences are immaterial; larger ones may be significant.
+
+4) Prepare a concise conclusion per period: "Match", "Match after accounting for X (e.g., rounding)", or "Do not match — unexplained difference of Y (and possible reason)".
+   - Reasoning: User asked simply whether they match; provide clear verdicts and supporting reasons.
+
+5) If applicable, derive reconciled adjusted EBITDA using consistent definition across both documents (i.e., re-calculate adjusted EBITDA from audited financial statements using prospectus definition, or vice versa), and show resulting numbers to determine if alignment is possible when definitions are normalized.
+   - Reasoning: If definitions differ, this produces an apples-to-apples comparison.
+
+6) Identify and record the provenance (document name, page, table) for each value and explanation used.
+   - Reasoning: Necessary for auditability and user trust.
+
+No assumptions will be made; all numeric values and explanations will be derived strictly from the provided documents.
+
+### 2. Plan
+
+1) Retrieve the IPO prospectus document(s) from the provided sources and search within it for all occurrences of "adjusted EBITDA", "EBITDA", "non-GAAP", "reconciliation", and related tables. Extract the historical adjusted EBITDA values, their periods, the detailed reconciliation (line items), definition/exclusion list, currency, units, and whether the figures are audited/unaudited. Record exact document locations (page/table headings).
+
+2) Retrieve the Annual report document(s) from the provided sources and search for the same terms. Extract the historical adjusted EBITDA values for the identical periods, detailed reconciliations, definition/exclusion list, currency, units, and note if figures are audited. Record exact document locations.
+
+3) Confirm that the same historical periods are present in both documents; if any period is missing in either document, note that and adjust the comparison to only the overlapping periods.
+
+4) Normalize units and currency (if necessary) so both sets of values are comparable (e.g., adjust thousands/millions). Note any rounding conventions.
+
+5) For each overlapping period, compute:
+   - Numeric difference = (prospectus adjusted EBITDA) - (annual report adjusted EBITDA).
+   - Percentage difference relative to the annual report (or prospectus) value.
+   Record these computed values.
+
+6) Compare definitions and reconciliation line items for each period to identify specific adjustments that differ. If definitions differ, attempt to re-compute adjusted EBITDA from one document's base (e.g., from audited net income or EBITDA in Annual report) using the prospectus' adjustment list to produce a like-for-like figure.
+
+7) If re-computation is possible, produce the reconciled adjusted EBITDA values and compute differences again. Note whether reconciliation brings values into alignment or explains the discrepancy.
+
+8) Check for any disclosed restatements, subsequent events, or notes explaining why prospectus numbers might differ (e.g., preliminary numbers, unaudited results, or updated estimates). Correlate any such disclosures with observed differences.
+
+9) Evaluate materiality of each difference (absolute and percentage). Classify differences as: exact match, match within rounding, explained difference (due to definitional/audit/restatement causes), or unexplained significant difference.
+
+10) Prepare a concise summary for the user:
+    - For each historical period, present prospectus value, annual report value, computed difference (absolute and percent), source references (document + page/table), and conclusion (match/explained difference/unexplained difference).
+    - If differences exist, provide the likely cause(s) and whether they are material.
+    - If necessary, provide a recommended next step (e.g., request auditor note, check updated prospectus supplement, or re-run reconciliations with a consistent definition).
+
+11) Deliver the findings clearly and succinctly to the user, including the provenance for each value and the final verdict(s) per period.
+
+<end_plan>
+```
+==================
+
+Message 3: USER
+------------------
+Now proceed and carry out this plan.
+==================
+
+Message 4: ASSISTANT
+------------------
+
+==================
+
+Message 5: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 6: ASSISTANT
+------------------
+
+==================
+
+Message 7: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 8: ASSISTANT
+------------------
+
+==================
+
+Message 9: TOOL-CALL
+------------------
+Calling tools:
+[{'id': 'call_gy3fvXfD54CdDJcDZ5UG3tTC', 'type': 'function', 'function': {'name': 'retriever_agent', 'arguments': {'task': 'Retrieve from the provided reference documents all occurrences and tables mentioning "adjusted EBITDA" (and related non-GAAP EBITDA reconciliations) in the IPO prospectus and in the Annual report. For each document, extract: (1) the historical adjusted EBITDA values by period (with units and currency), (2) the reconciliation line items and amounts that show how adjusted EBITDA was calculated, (3) the definition of adjusted EBITDA and any adjustments/exclusions, (4) whether the figures are audited or unaudited and any notes about preliminary numbers or restatements, and (5) the document location (document name, page or section heading). Return the findings in a structured format suitable for comparison (e.g., list per document and per period). If multiple prospectus versions exist, retrieve from the final prospectus and note other versions if present.', 'additional_args': {}}}}]
+==================
+
+Message 10: TOOL-RESPONSE
+------------------
+Observation:
+Here is the final answer from your managed agent 'retriever_agent':
+### 1. Task outcome (short version):
+
+I searched the provided Prospectus and Annual Report 2020 excerpts and extracted every occurrence and table referencing "Adjusted EBITDA" (and related non‑GAAP EBITDA reconciliations). Key findings: the documents consistently define Adjusted EBITDA as EBITDA adjusted for one‑time/non‑recurring items (acquisition costs, restructuring, legal/advisors, share‑based compensation). Historical adjusted EBITDA figures and reconciliations are provided by period and by segment in both Prospectus (interim/pro forma/30 June 2020 LTM and six‑month tables) and the Annual Report 2020 (full year 2020 and 2019, segment breakdowns). Figures are presented in NOK (amounts often in thousands). Reconciliations show Adjusted EBITDA derived from Operating profit (EBIT) plus depreciation/amortisation to get EBITDA, then adding adjustments (restructuring, M&A costs, share‑based comp, non‑recurring items). The Prospectus states the APMs are not audited; the Annual Report contains audited financial statements and an auditor’s report confirming the consolidated financial statements are audited — but APMs themselves are presented as non‑IFRS measures; where the Annual Report reconciliation appears in audited financial statements’ notes, amounts are reported in the notes and the report includes an auditor’s opinion on the financial statements (not a specific audit opinion on APM calculations). Where flagged, some Prospectus numbers are noted as unaudited or presented as as‑adjusted. No explicit restatements or preliminary qualifiers were identified in the excerpts provided beyond statements that APMs are not audited and that some numbers are "unaudited" or "as adjusted" (e.g., capitalisation section).  
+
+### 2. Task outcome (extremely detailed version):
+
+Document: Link Mobility Group Holding ASA — Prospectus (final prospectus referenced in excerpts)
+Document location references: multiple sections in excerpted pages — specifically Section 4.2.3 "Non‑IFRS financial measures" (pp. ~18), Section 10.7 / 10.7.2 "Non‑IFRS financial measures" and tables (pp. ~55), Section 9 "Capitalisation and indebtedness" (pp. ~42) and Selected financial information sections (various pages shown). Excerpts identify LTM and six‑month tables and segment tables.
+
+(1) Historical adjusted EBITDA values by period (with units and currency):
+- LTM Adjusted EBITDA (LTM ended 30 June 2020): 356.1 (In NOK million) — shown in LTM reconciliation table (Operating profit 35.2; Depreciation & amortisation 251.9; EBITDA 287.1; + M&A costs 14.9; + Restructuring cost and other 54.1 => LTM Adjusted EBITDA 356.1). (Prospectus excerpt_1)
+- Six months ended 30 June 2020 (In NOK million / or in NOK 1,000 in some tables): multiple tables show Adjusted EBITDA total and by segment.
+  - Non‑IFRS by operating segments table (In NOK 1,000) — Adjusted EBITDA total for Six months ended 30 June 2020: 182,645 (NOK 1,000) => NOK 182.645 million. Segment split (NOK 1,000): Nordics 118,942; Central Europe 57,945; Western Europe 55,118; Global Messaging 12,442; Group Costs -61,802. (Prospectus excerpt_1 / excerpt_2)
+- Year ended figures (Prospectus shows Year ended 31 December 2019 in same table): Total Adjusted EBITDA for 2019 (year ended) in NOK 1,000: 307,548 (i.e., NOK 307.548 million) — segment splits also provided. (Prospectus excerpt_1)
+- Another table (Prospectus excerpt_2 and excerpt_5 combined) shows Adjusted EBITDA totals for YTD 2020: 182,692 (units likely NOK; formatting indicates thousands) and Year 2019: 307,941 — slight variations in rounding/aggregation across tables (noted below). See reconciliation table in prospectus and an explanatory note about adjustment items and amounts in NOK thousands.
+
+(2) Reconciliation line items and amounts that show how Adjusted EBITDA was calculated (Prospectus):
+- LTM ended 30 June 2020 reconciliation (In NOK million): Operating profit 35.2; Depreciation & amortisation 251.9; EBITDA 287.1; Share option program cost - (none); M&A activities costs 14.9; Restructuring cost and other 54.1; LTM Adjusted EBITDA 356.1. (Prospectus excerpt_1)
+- Six months / Year reconciliation to group profit (loss) before income tax (In NOK million): Adjusted EBITDA 182.692 / 134.306 / 307.941 (YTD 2020 / YTD 2019 / Year 2019); Non‑recurring items (negative) (22.644 / 50.937 / 97.527); Depreciation & amortisation (107.503 / 102.958 / 247.369); Operating profit 52.545 / (19.587) / (36.955); Finance income (expense) (294.547 / 54.912 / 193.901) etc. (Prospectus excerpt_2 and excerpt_5)
+- Notes clarifying components: restructuring cost and other comprises amounts extracted from total other operating expenses and payroll (specific amounts: e.g., NOK 10,561k, 20,892k, 48,425k for six months 30 June 2020, 2019 and full year 2019; of which portions relate to Restructuring costs: NOK 3,245k, 14,783k, 39,796k respectively; and additional adjustments extracted from payroll severance: NOK 8,689k, 14,272k, 21,542k respectively). (Prospectus excerpt_1)
+
+(3) Definition of Adjusted EBITDA and any adjustments/exclusions (Prospectus):
+- Defined in Section 4.2.3: "EBITDA" = operating profit (loss) adding back depreciation and amortisation.
+- "Adjusted EBITDA" = EBITDA adjusted for mergers and acquisitions costs, restructuring costs and costs related to share option program. (Prospectus excerpt_0)
+- Expanded in Non‑IFRS measures tables and notes: includes adjustments for restructuring costs, M&A costs, share‑based compensation, legal/advisors, one‑off personnel costs, start‑up costs for new businesses, branding/re‑branding costs, replacement/rehiring costs, severance related to acquisitions. (Prospectus excerpt_2, excerpt_5)
+
+(4) Whether figures are audited or unaudited and any notes about preliminary numbers or restatements (Prospectus):
+- Prospectus explicitly states APMs presented are not measurements under IFRS and are not audited; investors should not consider them an alternative to GAAP measures. Several places indicate the Group’s APMs are "not audited". Capitalisation section shows 'unaudited capitalisation and net financial indebtedness as of 30 June 2020' and 'as adjusted' columns — signalling those Adjusted EBITDA and leverage measures are based on unaudited adjustments. (Prospectus excerpt_0 / excerpt_3)
+- The Prospectus also shows "as adjusted" and adjustments for transactions between 30 June 2020 and the date of Prospectus. These are estimated/unaudited adjustments. No explicit restatement language found in provided prospectus excerpts. (Prospectus excerpt_1 / excerpt_3)
+
+(5) Document location (document name, page or section heading):
+- Prospectus: Section 4.2.3 "Non‑IFRS financial measures" (definition) — excerpt_0 (page ~18). Section 10.7/10.7.2 "Non‑IFRS financial measures" (segment tables and reconciliation) — excerpt_1 and excerpt_2 (pages ~55). LTM reconciliation referenced in excerpt_1. Reconciliation of Adjusted EBITDA to profit before tax and segment Adjusted EBITDA table appear across excerpts ~12, 22, 23, 55 etc. Capitalisation and indebtedness (Section 9) references LTM Adjusted EBITDA used in leverage ratio — excerpt_3 (page ~79). Reconciliations and notes on the components present across these sections. Specific page numbers approximate based on excerpt footers.
+
+Notes on minor differences across tables: There are minor inconsistencies in exact totals across different tables (e.g., Adjusted EBITDA shown as 182,645 vs 182,692 or total 307,548 vs 307,941 or 307,549) — these likely reflect rounding, presentation in NOK vs NOK 1,000, or differences between interim condensed statements and annualised tables. I flagged these in the detailed extraction and included both values where both appear.
+
+Document: LINK Mobility Group Holding ASA — Annual Report 2020
+Document location references: Notes to financial statements (note 25 APMs), Segment reporting (note 6), Financial statements and auditor’s report (audit opinion) — excerpts show pages ~53, 54, 81–83, auditor report pages.
+
+(1) Historical adjusted EBITDA values by period (with units and currency):
+- Adjusted EBITDA per segment (Full year 2020 vs 2019) (Amounts appear in NOK; tabular figures appear to be in NOK thousands): Northern Europe 240,485 (2020) vs 194,266 (2019); Central Europe 129,283 vs 101,021; Western Europe 127,826 vs 83,834; Global Messaging 27,150 vs 26,603; Group Costs -133,902 vs -97,783; Total Adjusted EBITDA 390,842 (2020) vs 307,941 (2019). (Annual Report excerpt_4)
+- Reconciliation table: Adjusted EBITDA 390,842 (2020) vs 307,941 (2019). Also another reconciliation summary in note 25 shows Adjusted EBITDA 390,841 (2020) vs 307,549 (2019) — again minor rounding/presentation differences across note versions. Operating revenues: 3,539,231 (2020) vs 2,890,025 (2019) (NOK). Adjusted EBITDA margin 11.0% (2020) vs 10.6% (2019). (Annual Report excerpt_6)
+
+(2) Reconciliation line items and amounts that show how Adjusted EBITDA was calculated (Annual Report):
+- Reconciliation (note 25 and segment notes): Operating profit (EBIT) 22,218 (2020) / -36,955 (2019). Add: Depreciation intangible assets 271,389 (2020) / 247,369 (2019) => EBITDA 293,607 (2020) / 210,414 (2019). Add: Restructuring costs 47,400 (2020) / 69,967 (2019). Add: Share‑based compensation 34,711 (2020) / - (2019). Add: Expenses related to acquisitions 15,123 (2020) / 27,168 (2019). Result: Adjusted EBITDA 390,841 (2020) / 307,549 (2019). (Annual Report excerpt_6)
+- Reconciliation to profit before tax (note / segment): Adjusted EBITDA 390,842; Non‑recurring items -97,235; Depreciation & amortization -271,389; Operating profit 22,218; Finance income (expense) -427,047; Total -404,829 (2020). (Annual Report excerpt_4)
+- The Annual Report contains a footnote clarifying that Non‑recurring items include costs related to M&A, one‑off personnel costs, restructuring expenses, advisors, licenses, sales & marketing — same categories as prospectus. (Annual Report excerpt_4)
+
+(3) Definition of Adjusted EBITDA and any adjustments/exclusions (Annual Report):
+- Adjusted EBITDA means EBITDA adjusted by expenses related to significant one‑time, non‑recurring events such as acquisitions and restructuring activities, legal advisors, and share‑based compensation. Adjusted EBITDA margin defined as adjusted EBITDA / operating revenues. EBITDA defined as earnings before interest, taxes, amortization, depreciation, and impairments. (Annual Report excerpt_6 and excerpt_2)
+
+(4) Whether figures are audited or unaudited and any notes about preliminary numbers or restatements (Annual Report):
+- The consolidated financial statements are audited — the Annual Report contains an Independent Auditor’s report (PricewaterhouseCoopers AS) giving an opinion that the consolidated financial statements give a true and fair view in accordance with IFRS adopted by the EU. The APMs are still non‑IFRS measures and are, by definition, not IFRS measures; however the numbers included in the reconciliations are drawn from audited financial statement lines (e.g., Operating profit, depreciation), while the adjustments (resets for non‑recurring items) reflect management adjustments disclosed in notes.
+- The Annual Report does not show any specific restatement footnote or preliminary number label in the provided excerpts. It does note rounding and basis of preparation, and events after reporting date (acquisitions closed in 2021) — no restatement language visible in provided excerpts. (Annual Report excerpt_5 and excerpt_3)
+
+(5) Document location (document name, page or section heading):
+- Annual Report 2020: Note 6 "Segment reporting" (Adjusted EBITDA per segment, Revenue and Gross Profit per segment) — excerpt_3 (page ~53). Note 25 "Alternate performance measures (APMs)" — detailed definitions, reconciliation tables and margins — excerpt_5 / excerpt_6 (pages ~81–83). Auditor’s report and statement that consolidated financial statements are audited — excerpt_3 (auditor section). Reconciliations appear within the notes and segment reporting sections (pages indicated above in excerpts). 
+
+Additional observations and data quality notes:
+- Units & currency: Presentation currency is NOK (Norwegian kroner). Many tables are explicitly in NOK 1,000 — confirm when reporting values. In my extraction above I preserved the units indicated in excerpts (e.g., "In NOK 1,000" or "In NOK million" where the table labeled so). For final presentation, I can normalize all numbers to NOK million with consistent decimals if you prefer.
+- Audited vs unaudited: Prospectus explicitly indicates APMs are "not audited"; Annual Report is audited but APMs themselves are non‑IFRS measures derived from audited numbers plus management adjustments. The auditor’s report confirms the audited consolidated financial statements; it does not provide a separate audit or assurance on the Adjusted EBITDA APMs. This is consistent with standard practice.
+- Minor inconsistencies: Several tables show slightly different totals (e.g., 182,645 vs 182,692; 307,548 vs 307,941 vs 307,549). These are likely presentation/rounding differences or different bases (NOK vs NOK 1,000) or different cutoffs (interim vs annualised). I included both values and flagged them for review.
+
+### 3. Additional context (if relevant):
+
+- If you need a single normalized dataset (e.g., all Adjusted EBITDA values converted to NOK million with consistent decimals and reconciliations unified), I can produce a structured table per document and per period (CSV/JSON) with: document name, section, period, currency, value, reconciliation lines (with amounts), definition text, source location, audited/unaudited flag and notes on rounding/inconsistencies.
+
+- If you want me to fetch the full final prospectus PDF and the full Annual Report 2020 PDF to verify exact page numbers and capture any other occurrences outside these excerpts (e.g., Management Discussion & Analysis, Selected financials, or any supplements / other versions of the prospectus), I can run an expanded retrieval across the reference documents (please confirm). Also I can cross‑check for multiple prospectus versions and confirm we used the final prospectus; the excerpts provided read like a final prospectus but I can verify if earlier drafts exist.
+
+- I did not find explicit reference to any restatements or "preliminary" labeling for Adjusted EBITDA beyond the standard Prospectus wording that APMs are unaudited and the capitalisation table that is "unaudited" and "as adjusted". If there are restatement notes elsewhere in the full documents, I can search for the words "restat*", "preliminary" or "revision" across the full documents.
+
+Next steps (suggested):
+1) Confirm whether you want the data normalized into a machine‑readable table (CSV or JSON) with each reconciliation line item as separate fields (recommended for comparison). 2) If yes, I will produce that table and include exact source citations (document name, section, and exact excerpt / page). 3) Optionally I can re‑run retrieval for other versions of the prospectus or other annual reports (2019, 2021) if you need comparative history.
+
+If you want the normalized output now, tell me which format you prefer (CSV or JSON) and whether to normalize to NOK million or keep the original units as presented.
+==================
+
+Message 11: ASSISTANT
+------------------
+I still need to solve the task I was given:
+```
+You are an expert financial advisor and need to answer a user query.
+
+In order to answer the query, you need to consider information from one or more reference documents, which have already been provided to you.
+You can ask your retriever agent for such information, as needed.
+
+ATTENTION: The provided document are loaded with complex financial information.
+Use all your expertise to devise a good strategy to answer the query.
+
+HINT: You may need to break down the user query in different retrieval tasks,
+to make sure you collect all needed information before providing your final answer.
+
+Here is the user query:
+<user_query>
+Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?
+</user_query>
+
+Now, work hard to answer the user query fully and accurately. Use multiple steps if needed.
+
+```
+
+Here are the facts I know and my new/updated plan of action to solve the task:
+```
+## 1. Updated facts survey
+
+### 1.1. Facts given in the task
+- The user asks: "Check the historical adjusted EBITDA values between the IPO prospectus and the Annual report. Do they match?"
+- Reference documents (Prospectus and Annual Report 2020) have been provided in excerpts and previously searched by the retriever_agent.
+- Prior retrieval produced a detailed extraction of Adjusted EBITDA values, definitions, reconciliations, and audit status across both documents.
+
+### 1.2. Facts that we have learned (from the retriever_agent output)
+- Both documents define Adjusted EBITDA similarly: EBITDA (operating profit + depreciation & amortisation) adjusted for one‑off/non‑recurring items such as M&A costs, restructuring, share‑based compensation, advisor/legal costs, etc.
+- Prospectus examples:
+  - LTM ended 30 June 2020 Adjusted EBITDA = 356.1 NOK million (reconciliation shown).
+  - Six months ended 30 June 2020 Adjusted EBITDA around NOK 182.6 million (tables show 182,645 or 182,692 in NOK 1,000).
+  - Year ended 31 December 2019 Adjusted EBITDA around NOK 307.5–307.9 million (minor variations across tables: 307,548; 307,549; 307,941).
+  - Prospectus states APMs are not audited and some figures are "unaudited" or "as adjusted".
+  - Reconciliation line items and amounts are included showing how Adjusted EBITDA was calculated (Operating profit, Depreciation & amortisation, M&A costs, Restructuring cost and other).
+- Annual Report 2020 examples:
+  - Total Adjusted EBITDA 2020 = ~390,841–390,842 (NOK 1,000) vs 2019 = ~307,549–307,941 (NOK 1,000). Segment breakdowns provided.
+  - Reconciliation in Annual Report shows Operating profit, Depreciation & amortisation, Restructuring costs, Share-based compensation, Expenses related to acquisitions, resulting in Adjusted EBITDA.
+  - Annual Report is audited; APMs are non‑IFRS measures derived from audited statements plus management adjustments.
+- Minor numeric inconsistencies appear across tables (differences of tens to hundreds of thousands of NOK) likely due to rounding, unit presentation (NOK vs NOK 1,000), interim vs annualised bases, or different table versions.
+- No explicit restatement language was found in provided excerpts beyond the standard caveat that APMs are unaudited in the Prospectus.
+
+### 1.3. Facts still to look up
+- Exact matching comparison: for each historical period (e.g., Year 2019, YTD 30 June 2020, LTM 30 June 2020, Full year 2020 where applicable), confirm the specific numeric values in the Prospectus and in the Annual Report side-by-side, ensuring same units and basis (NOK or NOK 1,000).
+- Confirm whether the Prospectus shows full year 2020 Adjusted EBITDA (or only LTM/6-months/2019) and whether Annual Report shows the same periods for a one-to-one comparison.
+- Identify and document the precise source location (page/section) and unit label for each reported number so differences can be attributed to rounding, unit, or basis differences.
+- Determine whether the minor differences are explained anywhere (e.g., rounding note, interim unaudited vs audited rounding, or different consolidation scope).
+- Confirm whether any Adjusted EBITDA in the Prospectus was presented on an "as adjusted" basis for acquisitions that happened after reporting date, which might cause differences vs Annual Report.
+
+### 1.4. Facts still to derive
+- A clear yes/no answer to the user question for each comparable period: Do the Adjusted EBITDA values match between Prospectus and Annual Report? If not, provide precise differences, expressed in the same units, and explain likely reasons (rounding, units, interim/annual basis, unaudited adjustments, scope).
+- A concise statement of confidence / caveats (e.g., any mismatches small and attributable to rounding; or material mismatches requiring further document retrieval).
+
+## 2. High-level plan
+
+We have several remaining steps to produce a precise comparison. I will use the retriever_agent as needed and then produce the final answer.
+
+Step 1: Identify the exact periods to compare
+- Determine which historical periods are present in both documents and relevant for the user (likely Year ended 31 Dec 2019, Six months ended 30 Jun 2020, LTM ended 30 Jun 2020, Full Year 2020 if in Annual Report). Produce a short list of comparable periods.
+
+Step 2: Retrieve authoritative numeric values from the Prospectus for each comparable period
+- For each period identified, extract the Adjusted EBITDA value and the reconciliation lines, with the exact units (NOK or NOK 1,000) and the document location.
+
+Step 3: Retrieve authoritative numeric values from the Annual Report for each comparable period
+- For each period, extract Adjusted EBITDA and reconciliation lines, with exact units and document location.
+
+Step 4: Normalize numbers to the same unit and ensure consistent basis
+- Convert all values to a common unit (suggest NOK million with one decimal) and ensure they refer to the same basis (e.g., consolidated group figures).
+
+Step 5: Compare values side-by-side and compute differences
+- For each period, compute the absolute and percentage difference between Prospectus and Annual Report Adjusted EBITDA.
+- Note whether differences are within expected rounding margins or potentially material.
+
+Step 6: Investigate and explain discrepancies
+- Check the nearby notes/footnotes in both documents to attribute differences to causes: rounding, unaudited interim adjustments in Prospectus, 'as adjusted' capitalisation, different consolidation dates or other management adjustments.
+- Flag any unexplained or material discrepancy (>1–2%) and recommend next actions (e.g., retrieve full PDFs to track source tables, ask issuer for clarification).
+
+Step 7: Produce concise final answer for the user
+- State whether the historical adjusted EBITDA values match for each period, show the side-by-side numbers, differences, and explanations/caveats.
+- Offer to provide the normalized table in CSV/JSON or fetch full PDFs for verification if the user wants deeper evidence.
+
+<end_plan>
+```
+==================
+
+Message 12: USER
+------------------
+Now proceed and carry out this plan.
+==================
+
+Message 13: ASSISTANT
+------------------
+
+==================
+
+Message 14: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 15: ASSISTANT
+------------------
+
+==================
+
+Message 16: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 17: ASSISTANT
+------------------
+
+==================
+
+Message 18: TOOL-RESPONSE
+------------------
+Error:
+Argument additional_args is required
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
+Message 19: TOOL-RESPONSE
+------------------
+Error:
+Reached max steps.
+Now let's retry: take care not to repeat previous errors! If you have retried several times, try a completely different approach.
+
+==================
+
