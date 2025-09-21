@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from smolagents import MultiStepAgent, OpenAIServerModel, models
 
 from models import MODEL_IDS
-from poe_agents import PoeCodeAgent, PoeToolCallingAgent
+from poe_agents import PoeToolCallingAgent
 from prompts import RETRIEVAL_AGENT_DESCRIPTION_TEMPLATE
 from rag import Retriever
 from tools import RetrieverTool
@@ -53,12 +53,15 @@ def get_agent_team(
     )
 
     # Get manager agent
-    manager_agent = PoeCodeAgent(
+    manager_agent = PoeToolCallingAgent(
         tools=[],
         model=agent_model,
-        additional_authorized_imports=["*"],
+        # additional_authorized_imports=["*"],
         max_steps=6,
         verbosity_level=2,
+        name="manager_agent",
+        description="A manager agent, which specializes in answering tough financial questions, "
+        + "and commands a retriever agent as needed,",
         managed_agents=[retriever_agent],
         planning_interval=3,
     )

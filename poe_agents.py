@@ -1,6 +1,7 @@
 import json
 import re
 from collections.abc import Generator
+from copy import deepcopy
 from typing import Any
 
 from rich.console import Group
@@ -29,7 +30,20 @@ from smolagents import (
 
 
 class PoeToolCallingAgent(ToolCallingAgent):
-    pass
+    def execute_tool_call(self, tool_name: str, arguments: dict[str, str] | str) -> Any:
+        # Provide empty additional args if missing, which seems to be a common way
+        # for the agent to trip on the tool call
+        print(f"AGENT {self.name}: Calling tool {tool_name} with arguments {arguments}")
+        updated_arguments = deepcopy(arguments)
+        if (
+            tool_name.endswith("agent")
+            and isinstance(updated_arguments, dict)
+            and not updated_arguments.get("additional_args")
+        ):
+            updated_arguments["additional_args"] = {}
+        return super().execute_tool_call(
+            tool_name=tool_name, arguments=updated_arguments
+        )
 
 
 def extract_code_from_text(text: str, code_block_tags: tuple[str, str]) -> str | None:
