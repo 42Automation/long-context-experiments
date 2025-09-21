@@ -66,5 +66,11 @@ Here is the user query:
 {user_query}
 </user_query>
 
-Now, work hard to answer the user query fully and accurately. Use multiple steps if needed.
+Remember to follow these directives:
+- Answer the user query fully and accurately.
+- Use multiple steps if needed.
+- Carry out the task to its FULL completion.
+- Leverage your retriever agent as needed.
+
+Now, proceed to answer the user query.
 """
