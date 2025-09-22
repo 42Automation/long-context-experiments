@@ -1,4 +1,3 @@
-import ast
 from datetime import datetime
 from pathlib import Path
 
@@ -12,7 +11,6 @@ tokenizer_encoding = get_encoding(
 
 
 AGENT_LOGS_FOLDER = "agent_logs"
-TOOLS_LOG_PREFIX = "Calling tools:\n"
 
 
 def is_anthropic_model(model: str) -> bool:
@@ -78,35 +76,7 @@ def get_pages_text(pages: list[dict], filename: str) -> str:
     return DOC_TEMPLATE.format(filename=filename, content=content)
 
 
-def _extract_log(content: str) -> str:
-    if content.startswith(TOOLS_LOG_PREFIX):
-        tools = content.split(TOOLS_LOG_PREFIX)[-1]
-        new_content = ""
-        try:
-            for t in ast.literal_eval(tools):
-                function = t.get("function", {}).get("name", "")
-                new_content += f"Function: {function}\nArguments:\n"
-                arguments = t.get("function", {}).get("arguments", {})
-                for k, v in arguments.items():
-                    new_content += f"\t{k}: {v}\n"
-            content = new_content
-        except (ValueError, SyntaxError) as error:
-            print(f"Error extracting tool log.\nContent: {content}\n Error: {error}")
-
-    return content
-
-
-def log_agent_run(logs: list, experiment_id: str, model: str):
-    messages = []
-    for idx, item in enumerate(logs):
-        role = item.role.value.upper()
-        contents = [_extract_log(e["text"]) for e in item.content]
-        str = f"Message {idx}: {role}\n"
-        str += "------------------\n"
-        str += "\n".join(contents)
-        str += "\n==================\n\n"
-        messages.append(str)
-
+def log_agent_run(messages: list[str], experiment_id: str, model: str):
     filename = f"{get_timestamp()}_{model}_{experiment_id}.out"
     with open(Path(AGENT_LOGS_FOLDER) / filename, "w") as f:
         f.writelines(messages)

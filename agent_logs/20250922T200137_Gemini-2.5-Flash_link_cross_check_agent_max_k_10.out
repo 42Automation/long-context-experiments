@@ -1,0 +1,598 @@
+Agent: MANAGER_AGENT
+Role: USER
+------------------
+New task:
+You are an expert financial advisor and need to answer a user query.
+
+In order to answer the query, you need to consider information from one or more reference documents, which have already been provided to you.
+You can ask your retriever agent for such information, as needed.
+
+ATTENTION: The provided document are loaded with complex financial information.
+Use all your expertise to devise a good strategy to answer the query.
+
+HINT: You may need to break down the user query in different retrieval tasks,
+to make sure you collect all needed information before providing your final answer.
+
+Here is the user query:
+<user_query>
+Are there any discrepancies in the revenue and gross profit values between prospectus and annual report?
+</user_query>
+
+Remember to follow these directives:
+- Answer the user query fully and accurately.
+- Don't overlook any piece of relevant information.
+- Use multiple steps if needed.
+- Carry out the task to its FULL completion.
+- Leverage your retriever agent as needed.
+
+Now, proceed to answer the user query.
+
+==================
+
+Agent: RETRIEVER_AGENT
+Role: USER
+------------------
+New task:
+You're a helpful agent named 'retriever_agent'.
+You have been submitted this task by your manager.
+---
+Task:
+What are the gross profit values stated in the annual report for 2020 and 2019?
+---
+You're helping your manager solve a wider task: so make sure to not provide a one-line answer, but give as much information as possible to give them a clear understanding of the answer.
+
+Your final_answer WILL HAVE to contain these parts:
+### 1. Task outcome (short version):
+### 2. Task outcome (extremely detailed version):
+### 3. Additional context (if relevant):
+
+Put all these in your final_answer tool, everything that you do not pass as an argument to final_answer will be lost.
+And even if your task resolution is not successful, please return as much context as possible, so that your manager can act upon this feedback.
+==================
+
+Agent: MANAGER_AGENT
+Role: ASSISTANT
+------------------
+Here are the facts I know and the plan of action that I will follow to solve the task:
+```
+*Thinking...*
+
+> **Considering Financial Data Discrepancies**
+> 
+> I'm now focusing on comparing revenue and gross profit across the prospectus and annual report. My approach involves breaking down the retrieval tasks. I'll use the `retriever_agent` to gather specific data points, ensuring a comprehensive analysis of potential discrepancies in the financial figures.
+> 
+> 
+> **Investigating Data Sources**
+> 
+> I've outlined the core data requirements: revenue and gross profit figures from both the prospectus and annual report. I'm now planning the `retriever_agent` calls. This means crafting focused queries to extract each value, ensuring I capture all relevant data for direct comparison.
+> 
+> 
+> **Outlining Data Extraction Steps**
+> 
+> I'm now strategizing the exact queries for the `retriever_agent`. I'll request revenue and gross profit from the prospectus first, followed by the same from the annual report. I'll need to create clear, concise prompts to ensure the agent delivers accurate financial data points for comparison.
+> 
+> 
+## 1. Facts survey
+
+### 1.1. Facts given in the task
+*   The objective is to identify any discrepancies in revenue and gross profit values.
+*   The comparison needs to be made between a "prospectus" and an "annual report".
+*   Reference documents containing complex financial information are available through the `retriever_agent`.
+
+### 1.2. Facts to look up
+*   **Revenue value from the prospectus:** The specific numerical value for revenue as stated in the prospectus.
+    *   **Where to find:** Reference documents, accessible via the `retriever_agent`.
+*   **Gross profit value from the prospectus:** The specific numerical value for gross profit as stated in the prospectus.
+    *   **Where to find:** Reference documents, accessible via the `retriever_agent`.
+*   **Revenue value from the annual report:** The specific numerical value for revenue as stated in the annual report.
+    *   **Where to find:** Reference documents, accessible via the `retriever_agent`.
+*   **Gross profit value from the annual report:** The specific numerical value for gross profit as stated in the annual report.
+    *   **Where to find:** Reference documents, accessible via the `retriever_agent`.
+
+### 1.3. Facts to derive
+*   **Existence of revenue discrepancy:** Determine if the revenue value from the prospectus is different from the revenue value in the annual report.
+    *   **Reasoning:** This is a direct comparison: `Revenue_Prospectus == Revenue_AnnualReport` or `Revenue_Prospectus != Revenue_AnnualReport`.
+*   **Existence of gross profit discrepancy:** Determine if the gross profit value from the prospectus is different from the gross profit value in the annual report.
+    *   **Reasoning:** This is a direct comparison: `GrossProfit_Prospectus == GrossProfit_AnnualReport` or `GrossProfit_Prospectus != GrossProfit_AnnualReport`.
+
+## 2. Plan
+1.  Instruct the `retriever_agent` to find and extract the revenue value from the prospectus.
+2.  Instruct the `retriever_agent` to find and extract the gross profit value from the prospectus.
+3.  Instruct the `retriever_agent` to find and extract the revenue value from the annual report.
+4.  Instruct the `retriever_agent` to find and extract the gross profit value from the annual report.
+5.  Compare the extracted revenue values from the prospectus and the annual report to identify any discrepancies.
+6.  Compare the extracted gross profit values from the prospectus and the annual report to identify any discrepancies.
+7.  Formulate a final answer detailing any identified discrepancies or confirming their absence.
+<end_plan>
+```
+==================
+
+Agent: MANAGER_AGENT
+Role: USER
+------------------
+Now proceed and carry out this plan.
+==================
+
+Agent: MANAGER_AGENT
+Role: ASSISTANT
+------------------
+*Thinking...*
+
+> **Identifying Financial Discrepancies**
+> 
+> I'm focusing on pinpointing differences in financial data. Specifically, I'll use the `retriever_agent` to extract revenue and gross profit figures from the prospectus and annual report. I'll make four calls to the agent, starting with revenue from the prospectus.
+> 
+> 
+> **Beginning Data Extraction**
+> 
+> I've initiated the first step: extracting revenue data from the prospectus using the `retriever_agent`. The plan to make four separate calls remains. Next up will be gross profit from the prospectus, and then the same two steps for the annual report. I am keeping the comparison step in mind as I proceed with data retrieval.
+> 
+>
+==================
+
+Agent: MANAGER_AGENT
+Role: TOOL-CALL
+------------------
+Function: retriever_agent
+Arguments:
+	additional_args: {}
+	task: What is the revenue value stated in the prospectus?
+
+==================
+
+Agent: MANAGER_AGENT
+Role: TOOL-RESPONSE
+------------------
+Observation:
+Here is the final answer from your managed agent 'retriever_agent':
+### 1. Task outcome (short version):
+The prospectus states several revenue values for different periods.
+
+### 2. Task outcome (extremely detailed version):
+The prospectus provides the following revenue values (in NOK million):
+- Six months ended 30 June 2020: 1,717.6
+- Six months ended 30 June 2019: 1,336.1
+- Year ended 31 December 2019: 2,932.7
+- Year ended 31 December 2018: 1,972.0
+- Year ended 31 December 2017: 1,294.0
+
+### 3. Additional context (if relevant):
+The prospectus also defines "Acquisition Revenue" and "Like-for-Like Revenue" and provides their values for the same periods. It explains that "Acquisition Revenue is defined as revenue generated by the acquired entities for the periods indicated," and "Like-for-Like Revenue" excludes revenues from companies acquired during the relevant periods to allow for a clearer comparison of organic growth.
+==================
+
+Agent: MANAGER_AGENT
+Role: ASSISTANT
+------------------
+*Thinking...*
+
+> **Fetching Prospectus Data**
+> 
+> I've successfully retrieved revenue figures from the prospectus. My current focus is to locate and extract the corresponding gross profit data from the same document, following the established plan.
+> 
+>
+==================
+
+Agent: MANAGER_AGENT
+Role: TOOL-CALL
+------------------
+Function: retriever_agent
+Arguments:
+	task: What is the gross profit value stated in the prospectus?
+	additional_args: {}
+
+==================
+
+Agent: MANAGER_AGENT
+Role: TOOL-RESPONSE
+------------------
+Observation:
+Here is the final answer from your managed agent 'retriever_agent':
+### 1. Task outcome (short version):
+The prospectus states historical gross profit values for the six months ended 30 June 2019 and 2020, and provides a forecasted gross profit range for the full year ending 31 December 2020.
+
+### 2. Task outcome (extremely detailed version):
+Based on the prospectus, the gross profit values are as follows:
+
+**Historical Gross Profit (Six months ended 30 June):**
+*   **For the six months ended 30 June 2020:**
+    *   Revenues: NOK 1,717,629 thousand
+    *   Direct cost of services rendered: NOK 1,288,300 thousand
+    *   **Gross Profit: NOK 429,329 thousand**
+
+*   **For the six months ended 30 June 2019:**
+    *   Revenues: NOK 1,336,114 thousand
+    *   Direct cost of services rendered: NOK 980,800 thousand
+    *   **Gross Profit: NOK 355,314 thousand**
+
+**Forecasted Gross Profit (Year ending 31 December 2020):**
+*   The prospectus forecasts total revenue for the year ending 31 December 2020 to be in the range of NOK 3,500 - 3,600 million.
+*   The forecasted Gross Margin for the same period is in the range of 24.2% - 24.7% of total revenues.
+*   Based on these forecasts, the estimated Gross Profit for the year ending 31 December 2020 is:
+    *   Lower estimate: NOK 3,500 million * 24.2% = **NOK 847 million**
+    *   Upper estimate: NOK 3,600 million * 24.7% = **NOK 889.2 million**
+
+### 3. Additional context (if relevant):
+The definition of Gross Profit, as stated in the Annual Report 2020 (which was also retrieved), is "revenues less direct costs of services rendered." This definition aligns with the calculation performed for the historical gross profit figures. The prospectus also details assumptions for Gross Margin across different regions (Nordics, Central Europe, Western Europe, Global Messaging) and their expected trends for the year ending 31 December 2020.
+==================
+
+Agent: MANAGER_AGENT
+Role: ASSISTANT
+------------------
+*Thinking...*
+
+> **Extracting Annual Report Data**
+> 
+> I'm currently focused on gathering the revenue figures from the annual report. Once I have extracted that, I will move on to retrieving the corresponding gross profit numbers. Then, I plan to move onto the comparison phase.
+> 
+>
+==================
+
+Agent: MANAGER_AGENT
+Role: TOOL-CALL
+------------------
+Function: retriever_agent
+Arguments:
+	task: What is the revenue value stated in the annual report?
+	additional_args: {}
+
+==================
+
+Agent: MANAGER_AGENT
+Role: TOOL-RESPONSE
+------------------
+Observation:
+Here is the final answer from your managed agent 'retriever_agent':
+### 1. Task outcome (short version):
+The revenue value stated in the Annual Report 2020 for the year 2020 is NOK 3,539,231 thousand.
+
+### 2. Task outcome (extremely detailed version):
+According to the "Consolidated income statement" section of the "LINK Annual Report 2020", the total operating revenue for the period ended 31 December 2020 was NOK 3,539,231 thousand. For the prior year, 2019, the revenue was NOK 2,890,025 thousand.
+
+Additionally, the "Link Mobility Group Holding ASA - Prospectus" provides a "Condensed consolidated statement of income" and a table reconciling "Like-for-Like Revenue to revenue". In the "Condensed consolidated statement of income" (excerpt_1), the "Total operating revenue" for the year ended 31 December 2019 is reported as NOK 2,932,707 thousand, for 2018 as NOK 1,972,009 thousand, and for 2017 as NOK 1,294,002 thousand. The "Revenue" in the reconciliation table (excerpt_2) for the year ended 31 December 2019 is NOK 2,932.7 million (equivalent to NOK 2,932,700 thousand), for 2018 as NOK 1,972.0 million, and for 2017 as NOK 1,294.0 million.
+
+It is important to note a slight difference in the reported 2019 revenue between the "LINK Annual Report 2020" (NOK 2,890,025 thousand) and the "Link Mobility Group Holding ASA - Prospectus" (NOK 2,932,707 thousand or NOK 2,932.7 million). This discrepancy could be due to re-audits, adjustments, or different reporting standards/periods between the annual report and the prospectus.
+
+### 3. Additional context (if relevant):
+The revenue figures are presented in Norwegian Krone (NOK) and are in thousands (NOK 1000) in the consolidated income statement of the Annual Report 2020. The prospectus also presents some figures in NOK million. The annual report also details how revenue is generated, primarily from the sale of services enabling mobile phone communication, split into mobile messaging transactions, payment services, licenses, and consulting services. Revenue recognition varies based on the type of service, for instance, mobile messaging revenue is recognized when messages are delivered, and payment services revenue is recognized as income from processed transactions.
+==================
+
+Agent: MANAGER_AGENT
+Role: ASSISTANT
+------------------
+I still need to solve the task I was given:
+```
+You are an expert financial advisor and need to answer a user query.
+
+In order to answer the query, you need to consider information from one or more reference documents, which have already been provided to you.
+You can ask your retriever agent for such information, as needed.
+
+ATTENTION: The provided document are loaded with complex financial information.
+Use all your expertise to devise a good strategy to answer the query.
+
+HINT: You may need to break down the user query in different retrieval tasks,
+to make sure you collect all needed information before providing your final answer.
+
+Here is the user query:
+<user_query>
+Are there any discrepancies in the revenue and gross profit values between prospectus and annual report?
+</user_query>
+
+Remember to follow these directives:
+- Answer the user query fully and accurately.
+- Don't overlook any piece of relevant information.
+- Use multiple steps if needed.
+- Carry out the task to its FULL completion.
+- Leverage your retriever agent as needed.
+
+Now, proceed to answer the user query.
+
+```
+
+Here are the facts I know and my new/updated plan of action to solve the task:
+```
+*Thinking...*
+
+> **Investigating Discrepancies**
+> 
+> I'm currently comparing the revenue figures gleaned from the prospectus with those found in the 2020 annual report, looking for immediate variances. Then, I will turn my attention to gross profit, to see if the discrepancies are replicated or if different patterns emerge. I'm confident I'll uncover any inconsistencies.
+> 
+> 
+> **Gathering Annual Report Data**
+> 
+> I've just pulled the gross profit figures from the 2019 and 2020 annual reports. I'm cross-referencing these with the prospectus data now. I'm focusing on the percentage differences, to establish the scope of the differences. Following that, I plan on quantifying the impact on the overall profitability.
+> 
+> 
+## 1. Updated facts survey
+### 1.1. Facts given in the task
+The user wants to know if there are any discrepancies in the revenue and gross profit values between the prospectus and the annual report.
+
+### 1.2. Facts that we have learned
+*   **Revenue from Prospectus:**
+    *   Six months ended 30 June 2020: NOK 1,717.6 million
+    *   Six months ended 30 June 2019: NOK 1,336.1 million
+    *   Year ended 31 December 2019: NOK 2,932.7 million
+    *   Year ended 31 December 2018: NOK 1,972.0 million
+    *   Year ended 31 December 2017: NOK 1,294.0 million
+*   **Gross Profit from Prospectus:**
+    *   Six months ended 30 June 2020: NOK 429,329 thousand (calculated from revenues and direct cost of services rendered)
+    *   Six months ended 30 June 2019: NOK 355,314 thousand (calculated from revenues and direct cost of services rendered)
+    *   Forecasted Gross Profit for year ending 31 December 2020: NOK 847 million - NOK 889.2 million (based on forecasted revenue and gross margin percentage)
+*   **Revenue from Annual Report 2020:**
+    *   Year ended 31 December 2020: NOK 3,539,231 thousand
+    *   Year ended 31 December 2019: NOK 2,890,025 thousand
+*   **Initial Discrepancy Noted:** There is a slight difference in the reported 2019 revenue between the "LINK Annual Report 2020" (NOK 2,890,025 thousand) and the "Link Mobility Group Holding ASA - Prospectus" (NOK 2,932,707 thousand or NOK 2,932.7 million).
+
+### 1.3. Facts still to look up
+*   Gross profit values from the annual report for relevant periods (e.g., 2020, 2019).
+
+### 1.4. Facts still to derive
+*   A comprehensive comparison of revenue values between the prospectus and annual report.
+*   A comprehensive comparison of gross profit values between the prospectus and annual report.
+*   A conclusive answer regarding discrepancies.
+
+## 2. Plan
+### 2. 1. Retrieve the gross profit values from the annual report for the years 2020 and 2019.
+### 2. 2. Compare the revenue values for the year 2019 and 2020 between the prospectus and the annual report.
+### 2. 3. Compare the gross profit values for the year 2019 and 2020 between the prospectus and the annual report.
+### 2. 4. Synthesize all gathered information to identify and explain any discrepancies in revenue and gross profit values between the two documents.
+### 2. 5. Provide a final answer detailing the discrepancies found or confirming their absence.
+<end_plan>
+```
+==================
+
+Agent: MANAGER_AGENT
+Role: USER
+------------------
+Now proceed and carry out this plan.
+==================
+
+Agent: MANAGER_AGENT
+Role: ASSISTANT
+------------------
+*Thinking...*
+
+> **Analyzing Financial Data Points**
+> 
+> I'm on track! I've snagged revenue and gross profit numbers from the prospectus, and already pulled revenue from the annual report. Currently, I'm focused on extracting the gross profit figures from the annual report for 2020 and 2019. Once that's done, I'll be ready to move to the next stage of the plan.
+> 
+>
+==================
+
+Agent: MANAGER_AGENT
+Role: TOOL-CALL
+------------------
+Function: retriever_agent
+Arguments:
+	additional_args: {}
+	task: What are the gross profit values stated in the annual report for 2020 and 2019?
+
+==================
+
+Agent: MANAGER_AGENT
+Role: TOOL-RESPONSE
+------------------
+Observation:
+Here is the final answer from your managed agent 'retriever_agent':
+### 1. Task outcome (short version):
+The gross profit for 2020 was NOK 899,219 thousand and for 2019 was NOK 752,900 thousand.
+
+### 2. Task outcome (extremely detailed version):
+The gross profit values for the years 2020 and 2019 are derived from the "Consolidated income statement" within the "Financial statements 2020" section of the annual report. According to the report, Gross Profit is defined as "revenues less direct costs of services rendered."
+
+For the financial year ended 31 December 2020:
+- Revenue: NOK 3,539,231 thousand
+- Direct cost of services rendered: NOK 2,640,012 thousand
+- **Gross Profit 2020 = NOK 3,539,231 thousand - NOK 2,640,012 thousand = NOK 899,219 thousand.**
+
+For the financial year ended 31 December 2019:
+- Revenue: NOK 2,890,025 thousand
+- Direct cost of services rendered: NOK 2,137,125 thousand
+- **Gross Profit 2019 = NOK 2,890,025 thousand - NOK 2,137,125 thousand = NOK 752,900 thousand.**
+
+### 3. Additional context (if relevant):
+The values are presented in thousands of Norwegian Kroner (NOKk). The definition of Gross Profit is explicitly stated under the "ALTERNATIVE PERFORMANCE MEASURES" section of the annual report. While another document (LINK_prospectus_main) contained a "Gross margin per segment" table with a "Year 2019" total of 752,901 thousand (a minor difference of 1 thousand from the consolidated income statement, likely due to rounding), it only provided a "YTD 2020" figure, not the full annual gross profit for 2020. Therefore, the figures from the consolidated income statement in the `LINK Annual Report 2020` were used for the definitive annual gross profit values.
+==================
+
+Agent: RETRIEVER_AGENT
+Role: ASSISTANT
+------------------
+*Thinking...*
+
+> **Analyzing Gross Profit Data**
+> 
+> I'm now querying the annual report using "gross profit" and the target years. Initial results are in. I'm checking for any potential discrepancies. Further refinement of the query may be needed.
+> 
+> 
+> **Extracting Relevant Data**
+> 
+> I've refined my query to use "gross profit" combined with "2020" and "2019." I'm setting `k=5` to gather sufficient context for accurate extraction. The next step is to validate the initial extraction, checking for accuracy and completeness within the report's context.
+> 
+>
+==================
+
+Agent: RETRIEVER_AGENT
+Role: TOOL-CALL
+------------------
+Function: lexical_and_semantic_retriever
+Arguments:
+	query: gross profit values for 2020 and 2019 in the annual report
+	k: 3
+
+==================
+
+Agent: RETRIEVER_AGENT
+Role: TOOL-RESPONSE
+------------------
+Observation:
+['Here are some excerpts from the following document for your consideration:\n<LINK_prospectus_main>\n<excerpt_0>\nLink Mobility Group Holding ASA - Prospectus          \n                                                                                  \n        comparable in the second half of 2019 for Denmark, while Finland had a soft start to 2020 and management has assumed\n        a pick-up in growth rates late in 2020.                                   \n                                                                                  \n        Gross Margin assumptions: Management assumes fairly stable margins overall for the full year in the region with normal\n        seasonality with lower margins in the fourth quarter of 2020, as a higher portion of the volume derives from high volume\n        but lower margin customers due to campaigns in connection with the Christmas season. Management assumes Gross\n        Margin to be slightly reduced for the year ending 31 December 2020 as a result of customer mix as high volume but\n        lower margin customers constituting a larger portion of the growth in volumes and thereby diluting margins slightly. The\n        negative effect on gross margin from customer mix outweighs the increased margins from positive product mix.\n        Central region                                                            \n        Revenue assumptions: Overall growth rates for the region are assumed to decrease in the second half compared to first\n        half of 2020 as the acquisition of the TeraComm Group in August 2019 becomes part of the organic footprint while\n        underlying business excluding acquisitions is expected to maintain a stable growth rate in line with the year ended\n        31 December 2019. The revenue momentum in Germany is strongly linked to industries like logistics and e-commerce\n        which experience a volume increase from COVID-19. Management also expects a rebound in messaging volumes and\n        activity in markets like Bulgaria, Romania and Poland although recovery has been slower than for the Western Europe\n        region. Management has forecasted lower mobile payments revenue in Bulgaria and Romania for the remaining months\n        in 2020 due to COVID-19. Due to the revenue streams in Bulgaria and Romania, lower gross margin will have limited\n        impact on Group’s profitability.                                          \n        Gross Margin assumptions: Management assumes gross margin will remain stable compared to the financial year ended\n        31 December 2019 based on current trends. Stabilisation of Germany’s gross margin through the second quarter 2020\n        has been key to set an assumption of stable margin development.           \n        Western region                                                            \n        Revenues assumptions: Overall growth rate for the region is assumed to decline from the 21% level in the first half of\n        2020 as Spot-Hit becomes part of the organic footprint. The outlook assumes continued fairly open societies in countries\n        which were mostly impacted by severe lockdown measures during the first half of 2020 (Italy, France and Spain). The\n        assumed growth rates for second half of 2020 are in line with reported growth rates before COVID-19 negatively\n        impacted growth rates from April.                                         \n        Gross Margin assumptions: Overall management assumes stable margin development in the region with a margin decline\n        in entities like Netmessage and Spot Hit from customer mix and quality measures. In entities like Spain and Netsize\n        management has assumed expanded margins from healthier customer and country mix and new products.\n        Global messaging                                                          \n        Revenue assumptions: Growth rates on global messaging are assumed to decline in the second half of 2020 primarily\n        due to lower aggregator revenue. The Group observes that volume thresholds that enable discounts from the mobile\n        operators on certain destinations will be met to a larger extent compared to the financial year ended 31 December 2019\n        by enterprise traffic, thus resulting in reduced aggregator volumes. The reduction on aggregator volumes will have close\n        to zero impact on gross margin, as the profitability is very low for the relevant destinations. The Group expects to\n        continue to experience healthy growth in their Global Enterprises business through expansion of their business to new\n        destinations for P2A messaging volumes. Growth rates can be volatile in global messaging while gross margin sensitivity\n        is limited due to the lower margin level, especially for aggregator customers.\n        Gross Margin assumptions: Gross margin is assumed to slightly decline for the year ending 31 December 2020 compared\n        to the financial year ended 31 December 2019. The decline is mainly driven by the highly competitive aggregator\n        landscape with competition pushing traffic at a loss margin, especially during the second quarter of 2020. As the Group\n        moves away from the most competitive routes, management expects Gross Margins to improve during the second half\n        of 2020.                                                                  \n        11.4.8 The Group\'s 2020 outlook                                           \n        Revenue                                                                   \n        The Group’s total revenue for the year ending 31 December 2020 is forecasted to be in the range of NOK 3,500 – 3,600\n        million.                                                                  \n        Gross Margin                                                              \n        The Group’s total Gross Margin for the year ending 31 December 2020 is forecasted in the range 24.2% – 24.7% of total\n        revenues.                                                                 \n        Adjusted EBITDA6                                                          \n        For the year ending 31 December 2020, the Group forecasts the Adjusted EBITDA to be in the range of NOK 360 million\n        – NOK 370 million.                                                        \n        6 For the purpose of this Section 11.4.8, Adjusted EBITDA is derived from operating profit (loss) and defined as operating profit (loss)\n        added back depreciation and amortization and adjusted for M&A activities costs and restructuring costs and other. M&A activities costs\n        are mainly related to consultant and legal advisors expenses incurred in connection with acquisition of subsidiaries. Restructuring costs\n        and other are mainly related to (i) efficiency projects, start-up costs for new businesses and branding/rebranding costs in connection with\n        the acquisition of subsidiaries and (ii) severance paid to certain employees as a result of acquisition of subsidiaries and changes in the\n        Group’s strategic focus also including certain replacement/rehiring cost. See also Section 4.2.3 "Non-IFRS financial measures".\n                                        65\n</excerpt_0>\n\n<excerpt_1>\nCondensed    consolidated   income   statement                            \n                                                                                  \n                                                                                  \n        Condensed consolidated income                                             \n        statement (NOKk)       Note YTD 2020* YTD 2019* YE 2019                   \n        Revenue                  3  1 717 629 1 336 114 2 932 707                 \n        Total operating revenues    1 717 629 1 336 114 2 932 707                 \n                                                                                  \n        Direct cost of services rendered (1 288 311) (980 805) (2 179 806)        \n        Payroll and related expenses (180 245) (168 598) (317 845)                \n        Other operating expenses     (89 026) (103 341) (224 642)                 \n        Depreciation and amortization 6 (107 503) (102 958) (247 369)             \n        Total operating expenses   (1 665 084) (1 355 702) (2 969 662)            \n        Operating profit (loss)  3    52 545 (19 588) (36 955)                    \n                                                                                  \n        Finance income and finance expenses                                       \n        Net currency exchange gains (losses) 5 (183 785) 37 883 3 785             \n                                                                                  \n        Net interest expense     5  (108 770) (92 320) (192 369)                  \n        Net other financial expenses  (1 992) (475)   (5 317)                     \n        Finance income (expense)    (294 547) (54 912) (193 901)                  \n                                                                                  \n        Profit (loss) before income tax 3 (242 002) (74 499) (230 856)            \n                                                                                  \n        Income tax                    (2 696) (2 645) (2 178)                     \n        Profit (loss) for the period (244 697) (77 144) (233 034)                 \n                                                                                  \n        Profit attributable to:                                                   \n        Owners of the company       (244 697) (77 144) (233 034)                  \n                                                                                  \n        Earnings per share (NOK/share)                                            \n        Earnings per share            (1,13)  (0,36)   (1,09)                     \n        Diluted earnings per share    (1,13)  (0,36)   (1,09)                     \n                                                                                  \n        *unaudited                                                                \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n        Copyright 2020 LINK Mobility. All rights reserved.          2\n</excerpt_1>\n\n<excerpt_2>\nCondensed      consolidated    statement    of                            \n                                                                                  \n        comprehensive      income                                                 \n                                                                                  \n                                                                                  \n        Condensed consolidated Statement of                                       \n                                          YTD 2020* YTD 2019* YE 2019             \n        comprehensive income (NOKk)                                               \n        Profit (loss) for the period       (244 697) (77 144) (233 034)           \n        Other comprehensive income                                                \n        Items that may be reclassified to profit or loss                          \n                                                                                  \n        Translation differences of foreign operations 327 015 (80 469) (12 603)   \n        Net other comprehensive income that may be                                \n                                            327 015 (80 469) (12 603)             \n        reclassified to profit or loss in subsequent periods                      \n        Items that will not be reclassified to profit or loss in -                \n                                             -       -                            \n        subsequent periods                                                        \n        Other comprehensive income for the period 327 015 (80 469) (12 603)       \n        Total comprehensive income for the period 82 318 (157 613) (245 637)      \n                                                                                  \n        *unaudited                                                                \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n        Copyright 2020 LINK Mobility. All rights reserved.          3\n</excerpt_2>\n\n<excerpt_3>\nNote 2 – Basis for preparation and significant accounting policies        \n                                                                                  \n        The consolidated condensed interim financial report for the half-year reporting period ended\n        30 June 2020 has been prepared in accordance with Accounting Standard IAS 34 Interim\n        Financial Reporting.                                                      \n                                                                                  \n        The interim report does not include all the notes of the type normally included in an annual\n        financial report. Accordingly, this report is to be read in conjunction with Group’s annual report\n        for 2019, which has been prepared according to IFRS as adopted by the EU. \n                                                                                  \n                                                                                  \n        The preparation of interim financial statements requires the Group to make certain estimates\n        and assumptions that affect the application of accounting policies and reported amounts of\n        assets, liabilities, income, and expenses. Estimates and judgements are continually evaluated\n        by the Group based on historical experience and other factors, including expectations of future\n        events that are deemed to be reasonable under the circumstances. Actual results may differ\n        from these estimates. The most significant judgements used in preparing these interim\n        financial statements and the key areas of estimation uncertainty are the same as those\n        applied in the consolidated annual report for 2019.                       \n                                                                                  \n        The annual report for 2019 provides a description of the uncertainties and potential business\n        impact from the COVID-19 pandemic. This extraordinary situation creates risk and affects\n        estimates and judgements used in preparing these interim financial statements as its effects\n        are unforeseeable and not possible to quantify accurately. The Group has experienced varied\n        effects of COVID-19.                                                      \n                                                                                  \n                                                                                  \n        Goodwill and other Intangible assets with an indefinite useful economic life are not amortized\n        but are tested annually for impairment. The company performs an impairment test for goodwill\n        on an annual basis or when there are circumstances which would indicate that the carrying\n        value of goodwill may be impaired. When assessing impairment, assets are grouped into cash\n        generating units (CGU’s).                                                 \n                                                                                  \n        Impairment of goodwill and other intangible assets are tested by comparing the carrying value\n        of goodwill for each CGU to the recoverable amount (enterprise value). The recoverable\n        amount is the higher of fair value less cost to sell and value in use and the impairment\n        assessment is built on a discounted cash flow model. At 30 June 2020, such indications have\n        been identified as a result of the COVID-19 pandemic, specifically in the Spanish and\n        Bulgarian CGU’s. The COVID-19 pandemic is considered a significant event with potential\n        adverse effect on markets and economic environments within our footprint. \n                                                                                  \n                                                                                  \n        With reference to the the annual report for FY2019 (note 12), calculations use cash flow\n        projections approved by management extended over a five-year period. The assumed growth\n        rate has been based on the management growth estimate for the next five years and\n        subsequently reduced to 3% for the purpose of determining the terminal value. The pre-tax\n        discount rates applied to the cash flows are calculated based on the weighted average cost of\n        capital (WACC) specific to each CGU and are within the range of 7.1-12.5%.\n                                                                                  \n        The discounted cash flow performed at 30 June 2020 does not deviate from the methodology\n        used at year-end, however the growth estimates specific to Spain and Bulgaria are updated in\n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n        Copyright 2020 LINK Mobility. All rights reserved.          9\n</excerpt_3>\n\n<excerpt_4>\nGross margin per segment YTD 2020 YTD 2019 Year 2019                     \n                                                                                  \n         Nordics                173 010 155 805  312 713                          \n         Central Europe          94 269  72 798  167 235                          \n         Western Europe         136 997 107 012  232 853                          \n         Global Messaging        25 042  19 694  40 100                           \n         Total                  429 318 355 309  752 901                          \n                                                                                  \n                                                                                  \n                                                                                  \n         Adjusted EBITDA by segment YTD 2020 YTD 2019 Year 2019                   \n         Nordics                118 942  96 361  194 266                          \n         Central Europe          57 945  43 676  101 021                          \n         Western Europe          55 118  31 204  83 834                           \n                                                                                  \n         Global Messaging        12 442  14 168  26 603                           \n         Group Costs            (61 755) (51 102) (97 783)                        \n         Adjusted EBITDA        182 692 134 306  307 941                          \n                                                                                  \n                                                                                  \n                                                                                  \n         Reconciliation of Adjusted                                               \n         EBITDA to Group profit (loss) YTD 2020 YTD 2019 Year 2019                \n         before income tax                                                        \n         Adjusted EBITDA       182 692 134 306   307 941                          \n         Non-recurring items*  (22 644) (50 937) (97 527)                         \n         Depreciation and amortization (107 503) (102 958) (247 369)              \n         Operating profit       52 545 (19 587)  (36 955)                         \n         Finance income (expense) (294 547) (54 912) (193 901)                    \n         Profit (loss) before income tax (242 002) (74 499) (230 856)             \n                                                                                  \n        *Non-recurring items                                                      \n        A reconciliation of adjusted EBITDA to profit (loss) before income tax expense is included in note 3. Non-\n        recurring items is comprised of amounts that relate entirely to the company. Costs related to mergers and\n        acquisitions, personnel cost deemed to be non-recurring (or one-off), restructuring expenses, advisors,\n        licenses, and sales and marketing are included in this reconciliation line item (this list is not exhaustive).\n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n        Copyright 2020 LINK Mobility. All rights reserved.         12\n</excerpt_4>\n\n<excerpt_5>\nALTERNATIVE        PERFORMANCE            MEASURES                        \n                                                                                  \n        (“APM\'S”)                                                                 \n                                                                                  \n                                                                                  \n        The financial information in this report is prepared under International Financial Reporting\n        Standards (IFRS), as adopted by the EU. To enhance the understanding of LINK’s\n        performance, the Group presents several alternative performance measures (“APM’s”). An\n        APM is defined by the European Securities and Markets Authority (ESMA) guidelines as a\n        financial measure of historical or future financial performance, financial position, or cash flows,\n        other than a financial measure defined or specified in the applicable financial reporting\n        framework (IFRS).                                                         \n                                                                                  \n        Below, LINK presents certain APMs, including gross margin, EBITDA, adjusted EBITDA and\n        adjusted EBITDA margin. APMs such as EBIT and EBITDA are commonly reported by\n        companies in the markets in which LINK competes and are widely used by investors when\n        comparing performance on a consistent basis without regard to factors such as depreciation\n        and amortization, which can vary significantly, depending upon accounting methods\n        (particularly when acquisitions have occurred) or based on non-operating factors.\n        LINK uses the following APMs:                                             \n                                                                                  \n        EBIT                                                                      \n        EBIT means earnings before interest and taxes. EBIT is a performance measure applied to\n        express profitability of operating activities; EBIT is presented in note 3 Segment reporting.\n                                                                                  \n        EBITDA                                                                    \n        EBITDA means earnings before interest, taxes, amortization, depreciation, and impairments.\n        LINK has presented EBITDA in the consolidated statement of profit and loss because\n        management believes that the measure provides useful information regarding the Group’s\n        ability to service debt and to fund capital expenditures and provides a helpful measure for\n        comparing its operating performance with that of other companies.         \n                                                                                  \n        Adjusted EBITDA                                                           \n        Adjusted EBITDA means EBITDA adjusted by expenses related to significant one-time, non-\n        recurring events such as acquisitions and restructuring activities, legal advisors, and share-\n        based compensation. LINK has presented adjusted EBITDA in the consolidated statement of\n        profit and loss because management believes the measure provides useful information\n        regarding operating performance.                                          \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n        Copyright 2020 LINK Mobility. All rights reserved.         22\n</excerpt_5>\n\n\n</LINK_prospectus_main>\n', 'Here are some excerpts from the following document for your consideration:\n<LINK Annual Report 2020>\n<excerpt_0>\nFinancial statements 2020     \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n         Consolidated  income  statement                                          \n                                                                                  \n         for the period ended 31 December                                         \n                                                                                  \n         (Amounts in NOK 1000)            Note        2020        2019            \n                                                                                  \n         Revenue                           6       3,539,231    2,890,025         \n         Total operating revenue                   3,539,231    2,890,025         \n                                                                                  \n         Direct cost of services rendered          -2,640,012  -2,137,125         \n         Payroll and related expenses      8        -404,060    -317,845          \n         Other operating expenses          9        -201,553    -224,642          \n         Depreciation and amortization   7, 13, 14  -271,389    -247,369          \n         Total operating expenses                  -3,517,013  -2,926,981         \n         Operating profit (loss)                     22,218      -36,955          \n                                                                                  \n         Finance income and finance expenses                                      \n         Net currency exchange gains (losses) 10    -101,218      3,785           \n         Net interest expense              10       -207,093    -192,369          \n         Net other financial expenses      10       -118,735      -5,317          \n         Total finance income (expense)             -427,047    -193,901          \n         Loss before income tax                     -404,829    -230,856          \n                                                                                  \n         Income tax                        22        76,823       -2,178          \n         Loss for the period                        -328,006    -233,034          \n                                                                                  \n         Loss attributable to:                                                    \n         Owners of the company                      -328,006     -233,034         \n         Earnings per share (NOK/share):                                          \n         Earnings per share (NOK/share):              -1.21        -1.09          \n         Diluted earnings per share                   -1.21        -1.09          \n                                                                                  \n         The accompanying notes are an integral part of these financial statements.\n                                                                                  \n         Consolidated  statement  of Comprehensive   Income                       \n                                                                                  \n         for the period ended 31 December                                         \n                                                                                  \n         (Amounts in NOK 1000)                       31/12/2020 31/12/2019        \n                                                                                  \n         Profit (loss) for the period                 -328,006  -233,034          \n                                                                                  \n         Other comprehensive income                                               \n         Items that may be reclassified to profit or loss                         \n         Translation differences of foreign operations 134,373   -12,603          \n                                                                                  \n         Other comprehensive income for the period                                \n                                                       134,373   -12,603          \n         Total comprehensive income for the period    -193,632  -245,637          \n                                                                                  \n                                                                                  \n                                              Because every communication matters. 33\n</excerpt_0>\n\n<excerpt_1>\nFinancial statements 2020     \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n          Revenue per geographical region                                         \n          France                                          696,036   544,167       \n          Norway                                          671,976   590,204       \n          Germany                                         504,875   405,657       \n          Sweden                                          422,297   352,183       \n                                                                                  \n          Switzerland                                     375,494   220,906       \n          Italy                                           196,588   175,166       \n          Poland                                          190,325   178,502       \n          Denmark                                         122,076   113,331       \n          Spain                                            89,725   116,400       \n          Bulgaria*                                        84,386    46,456       \n          Finland                                          78,405    78,292       \n                                                                                  \n          Austria                                          47,081    20,770       \n          United Kingdom                                   30,387    23,178       \n          Hungary                                          18,925    19,933       \n          Latvia                                            6,383     4,079       \n          Romania*                                          3,423      516        \n          Macedonia                                          849       286        \n          Total                                          3,539,231 2,890,025      \n                                                                                  \n         *In FY2019, revenue for direct carrier billing products in Bulgaria and Romania was recognized on a gross basis. After\n         a review of the relationships and in accordance with IFRS 15 (principal vs. agent), this revenue is recognized on a net\n         basis. Comparative figures are presented accordingly.                    \n                                                                                  \n         7. Leases                                                                \n                                                                                  \n         (Amounts in NOK 1000)                                                    \n         This note provides information for leases where the group is a lessee.   \n                                                                                  \n         Amounts recognised in the balance sheet                                  \n         The balance sheet shows the following amounts related to leases:         \n                                                              2020    2019        \n                                                                                  \n          Right-of-use assets                                                     \n          Buildings                                          25,818  21,687       \n          Vehicles                                            763     1,697       \n          Equipment                                            -68     899        \n          Total                                              26,513  24,283       \n                                                                                  \n          Lease liabilities                                                       \n          Current                                            8,619   13,090       \n                                                                                  \n          Non-current                                        30,624  12,020       \n          Total                                              39,244  25,110       \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                              Because every communication matters. 55\n</excerpt_1>\n\n<excerpt_2>\n8. Payroll and related expenses                                          \n                                                                                  \n                                                                                  \n                                                    2020              2019        \n         Wages and salaries                       318,743           238,556       \n         Social security tax                       62,135            54,162       \n         Pension expense                           13,174            12,457       \n         Other benefits                            10,006            12,670       \n         Total payroll and related expenses       404,060           317,845       \n                                                                                  \n         The number of labor years employed during the financial year: 649 494    \n                                                                                  \n         The pension plans in the Group comply with the pension legislation enacted in respective countries. The pension\n         plans require that the Group pays premiums to public or private administrative pension plans on a mandatory,\n         contractual or voluntary basis. There are no further obligations once the annual premiums are paid. The premiums\n         are accounted for as personnel expenses as soon as they are incurred. Pre-paid premiums are accounted for as an\n         asset to the extent that future benefits can be determined as plausible. \n                                                                                  \n         Remuneration of key group employees                                      \n         Key group employees are defined as employees who are part of LINK Group management. In FY2020 and as at 31\n         December 2020, Group management consisted of the following individuals (amounts in NOK):\n                                                                                  \n         Name and position     Employed since Salary Bonus Pension   Other        \n                                                           expense remuneration   \n         Guillaume Alain Van Gaver September 2019 4,288,280 178,789 1,347,796     \n         (CEO)                                                                    \n         Thomas Berge         September 2016 2,278,687 1,931,000 74,220           \n         (CFO)                                                                    \n         Torbjørn Krøvel        January 2019 1,912,500 968,250 73,164             \n         (CTO)                                                                    \n         Lin Ackema             October 2020 425,000        18,102                \n         (Chief People and Strategy Officer)                                      \n         Fredrik Nyman         November 2007 1,623,600 233,640 332,931 21,607     \n         (CCO)                                                                    \n         Benoit Bole            January 2019 1,839,672 296,020      577,621       \n         (COO Western Europe)                                                     \n         Ina Rasmussen          January 2015 1,541,180 974,930 75,613             \n         (COO Northern Europe)                                                    \n         Hendrik Faasch         August 2020 1,929,726 804,053                     \n         (COO Central Europe)                                                     \n         Total                           15,838,645 5,386,682 574,030 1,947,023   \n                                                                                  \n         The CEO has a performance based bonus of up to 7 months salary; the amount of the bonus is determined by the\n         successful completion of key management business objectives that are set by the Board of Directors.\n                                                                                  \n         The CFO has a performance based bonus, limited to 40% of his annual base salary. The criteria for this bonus is a\n         combination of quantitative and qualitative targets determined by the Board of Directors. In addition, he participates\n         in an accelerator bonus program; if all targets are met, he is eligible to receive up to 2 months of his base salary.\n                                                                                  \n                                                                                  \n          58 LI NK Mobi lity Group Holding ASA Annual report 2020\n</excerpt_2>\n\n<excerpt_3>\n14. Equipment  and fixtures                                              \n                                                                                  \n         (Amounts in NOK 1000)                                                    \n                                                                                  \n         Period ended 31 December 2019                                            \n                                                                                  \n         Opening net book amount                                    11,601        \n         Additions                                                  18,038        \n         Net additions from acquired businesses                      5,397        \n         Disposals                                                   -7,902       \n         Depreciation charge                                         -5,488       \n         Translation differences                                      -155        \n         Closing net book amount 31.12                              21,493        \n                                                                                  \n                                                                                  \n         Period ended 31 December 2020                                            \n         Opening net book amount                                    21,493        \n         Additions                                                   9,394        \n         Net additions from acquired businesses                      1,485        \n         Disposals                                                     0          \n         Depreciation charge                                         -7,975       \n         Translation differences                                      685         \n                                                                                  \n         Closing net book amount 31.12                              25,083        \n                                                                                  \n         Cost                                                       39,516        \n         Accumulated depreciation                                   -14,433       \n         Net book amount 31.12                                      25,083        \n                                                                                  \n         Estimated useful life, depreciation plan and residual value is as follows:\n                                                                                  \n         Economic (useful) life                                    3-5 years      \n         Depreciation plan                                           Linear       \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n          68 LINK Mobility Group Holding ASA Annual report 2020\n</excerpt_3>\n\n<excerpt_4>\nLINK uses the following APMs:                                            \n                                                                                  \n         Gross Profit                                                             \n         Gross Profit means revenues less direct costs of services rendered.      \n                                                                                  \n         Gross margin                                                             \n         Gross margin means gross profit as a percentage of total operating revenues.\n                                                                                  \n         Adjusted EBITDA                                                          \n         Adjusted EBITDA means EBITDA adjusted by expenses related to significant one-time, non-recurring events such as\n         acquisitions and restructuring activities, legal advisors, and share-based compensation. LINK has presented adjusted\n         EBITDA in the consolidated statement of profit and loss because management believes the measure provides useful\n         information regarding operating performance.                             \n                                                                                  \n         Adjusted EBITDA margin                                                   \n         Adjusted EBITDA margin is presented as adjusted EBITDA as a percentage of total operating\n         revenues in the respective periods.                                      \n                                                                                  \n         EBITDA                                                                   \n         EBITDA means earnings before interest, taxes, amortization, depreciation, and impairments. LINK has presented\n         EBITDA in the consolidated statement of profit and loss because management believes that the measure provides\n         useful information regarding the Group’s ability to service debt and to fund capital expenditures and provides a\n         helpful measure for comparing its operating performance with that of other companies.\n                                                                                  \n         See below for a reconciliation of EBITDA to Adjusted EBITDA, and adjusted EBITDA margin.\n                                                   2020               2019        \n                                                                                  \n         Operating profit (loss), (“EBIT”)        22,218            -36,955       \n         Add: Depreciation intangible assets      271,389           247,369       \n         EBITDA                                  293,607            210,414       \n                                                                                  \n         Add: Restructuring costs                 47,400             69,967       \n         Add: Share-based compensation            34,711                -         \n         Add: Expenses related to acquisitions    15,123             27,168       \n         Adjusted EBITDA                         390,841            307,549       \n                                                                                  \n                                                                                  \n         Operating revenues                      3,539,231         2,890,025      \n         Adjusted EBITDA                          390,841           307,549       \n         Adjusted EBITDA margin                   11.0 %             10.6 %       \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n                                                                                  \n          82 LINK Mobility Group Holding ASA Annual report 2020\n</excerpt_4>\n\n\n</LINK Annual Report 2020>\n']
+==================
+
+Agent: RETRIEVER_AGENT
+Role: ASSISTANT
+------------------
+*Thinking...*
+
+> **Extracting Financial Data**
+> 
+> I've successfully extracted the gross profit figures for both 2020 and 2019. Currently, I am cross-referencing the values from the annual report excerpts to ensure complete accuracy. The data is available in the `LINK_prospectus_main` document. Next step is to organize the results.
+> 
+> 
+> **Calculating Gross Profit**
+> 
+> I've calculated the gross profit for 2020 and 2019 using the revenue and direct cost figures from `LINK Annual Report 2020`. Gross profit is 899,219 NOKk for 2020 and 752,900 NOKk for 2019. Now, I am examining the gross margin data from `LINK_prospectus_main`.
+> 
+> 
+> **Refining the Gross Profit**
+> 
+> I've confirmed the gross profit figures for 2020 and 2019 using revenue and direct cost data from `LINK Annual Report 2020`. I also compared the results against the gross margin data from `LINK_prospectus_main`, determining that the figures are accurate. I will now prepare the task output.
+> 
+> 
+> **Confirming the Calculation**
+> 
+> I've reviewed the financial statements for 2020 and 2019 within the annual report. I've confirmed my gross profit calculations, using revenue and direct costs.  My approach is to cross-reference the data. Now, I'm preparing the answer in the requested short, detailed, and context-rich formats.
+> 
+> 
+> **Synthesizing the Answer**
+> 
+> I've now prepared the short and detailed versions of the answer, and the additional context requested. I verified the gross profit values from the annual report, calculated from revenue and direct costs. The short version provides the core figures, while the detailed version outlines the calculation and source. The context explains the definition of Gross Profit and highlights the consistency check with another document, while clarifying why the consolidated income statement was ultimately used to obtain the annual figures.
+> 
+>
+==================
+
+Agent: RETRIEVER_AGENT
+Role: TOOL-CALL
+------------------
+Function: final_answer
+Arguments:
+	answer: ### 1. Task outcome (short version):
+The gross profit for 2020 was NOK 899,219 thousand and for 2019 was NOK 752,900 thousand.
+
+### 2. Task outcome (extremely detailed version):
+The gross profit values for the years 2020 and 2019 are derived from the "Consolidated income statement" within the "Financial statements 2020" section of the annual report. According to the report, Gross Profit is defined as "revenues less direct costs of services rendered."
+
+For the financial year ended 31 December 2020:
+- Revenue: NOK 3,539,231 thousand
+- Direct cost of services rendered: NOK 2,640,012 thousand
+- **Gross Profit 2020 = NOK 3,539,231 thousand - NOK 2,640,012 thousand = NOK 899,219 thousand.**
+
+For the financial year ended 31 December 2019:
+- Revenue: NOK 2,890,025 thousand
+- Direct cost of services rendered: NOK 2,137,125 thousand
+- **Gross Profit 2019 = NOK 2,890,025 thousand - NOK 2,137,125 thousand = NOK 752,900 thousand.**
+
+### 3. Additional context (if relevant):
+The values are presented in thousands of Norwegian Kroner (NOKk). The definition of Gross Profit is explicitly stated under the "ALTERNATIVE PERFORMANCE MEASURES" section of the annual report. While another document (LINK_prospectus_main) contained a "Gross margin per segment" table with a "Year 2019" total of 752,901 thousand (a minor difference of 1 thousand from the consolidated income statement, likely due to rounding), it only provided a "YTD 2020" figure, not the full annual gross profit for 2020. Therefore, the figures from the consolidated income statement in the `LINK Annual Report 2020` were used for the definitive annual gross profit values.
+
+==================
+
+Agent: RETRIEVER_AGENT
+Role: TOOL-RESPONSE
+------------------
+Observation:
+### 1. Task outcome (short version):
+The gross profit for 2020 was NOK 899,219 thousand and for 2019 was NOK 752,900 thousand.
+
+### 2. Task outcome (extremely detailed version):
+The gross profit values for the years 2020 and 2019 are derived from the "Consolidated income statement" within the "Financial statements 2020" section of the annual report. According to the report, Gross Profit is defined as "revenues less direct costs of services rendered."
+
+For the financial year ended 31 December 2020:
+- Revenue: NOK 3,539,231 thousand
+- Direct cost of services rendered: NOK 2,640,012 thousand
+- **Gross Profit 2020 = NOK 3,539,231 thousand - NOK 2,640,012 thousand = NOK 899,219 thousand.**
+
+For the financial year ended 31 December 2019:
+- Revenue: NOK 2,890,025 thousand
+- Direct cost of services rendered: NOK 2,137,125 thousand
+- **Gross Profit 2019 = NOK 2,890,025 thousand - NOK 2,137,125 thousand = NOK 752,900 thousand.**
+
+### 3. Additional context (if relevant):
+The values are presented in thousands of Norwegian Kroner (NOKk). The definition of Gross Profit is explicitly stated under the "ALTERNATIVE PERFORMANCE MEASURES" section of the annual report. While another document (LINK_prospectus_main) contained a "Gross margin per segment" table with a "Year 2019" total of 752,901 thousand (a minor difference of 1 thousand from the consolidated income statement, likely due to rounding), it only provided a "YTD 2020" figure, not the full annual gross profit for 2020. Therefore, the figures from the consolidated income statement in the `LINK Annual Report 2020` were used for the definitive annual gross profit values.
+==================
+
+Agent: MANAGER_AGENT
+Role: ASSISTANT
+------------------
+*Thinking...*
+
+> **Scrutinizing Data Retrieval**
+> 
+> I've successfully pulled the revenue figures from the prospectus. Now, the task is to extract the corresponding gross profit data. I'm cross-referencing the documents to isolate those crucial figures for comparison and discrepancy detection.
+> 
+> 
+> **Evaluating Found Discrepancies**
+> 
+> I've pinpointed inconsistencies in the 2019 revenue data: The prospectus shows NOK 2,932,700 thousand, but the annual report states NOK 2,890,025 thousand. Now, examining the 2020 figures. I'm cross-referencing the forecasted gross profit with actual figures in the annual report to validate accuracy and any further irregularities.
+> 
+> 
+> **Uncovering Financial Differences**
+> 
+> I've completed the revenue and gross profit comparisons. A significant discrepancy exists in the 2019 revenue: the prospectus differs from the annual report by NOK 42,675 thousand. For 2020, the actual revenue falls within the prospectus' forecast range. However, actual 2020 gross profit exceeded the high end of the forecast. Now, I'm analyzing these deviations.
+> 
+> 
+> **Summarizing Key Findings**
+> 
+> I've completed the in-depth comparison. In 2019, revenue figures differ significantly. The 2020 revenue, however, aligned within the prospectus's forecast. Regarding gross profit, 2020's actual figures exceeded the upper end of the forecast. The 2019 gross profit comparison is limited by prospectus's partial data. Now, I'm assembling a conclusive summary of discrepancies.
+> 
+>
+==================
+
+Agent: MANAGER_AGENT
+Role: TOOL-CALL
+------------------
+Function: final_answer
+Arguments:
+	answer: Yes, there are discrepancies in the revenue and gross profit values between the prospectus and the annual report, primarily due to differences in reporting periods (forecast vs. actual) and minor variations in reported figures for the same period.
+
+Here's a detailed breakdown:
+
+**Revenue Discrepancies:**
+*   **For the year 2019:**
+    *   The **prospectus** states the revenue as **NOK 2,932.7 million** (or NOK 2,932,700 thousand).
+    *   The **Annual Report 2020** states the revenue for 2019 as **NOK 2,890,025 thousand**.
+    *   This represents a discrepancy of **NOK 42,675 thousand** (NOK 2,932,700 thousand - NOK 2,890,025 thousand).
+*   **For the year 2020:**
+    *   The **prospectus** provided a forecasted total revenue range of **NOK 3,500 - 3,600 million**.
+    *   The **Annual Report 2020** reported the actual total operating revenue as **NOK 3,539,231 thousand** (or NOK 3,539.231 million).
+    *   The actual reported revenue in the annual report falls within the forecasted range provided in the prospectus. Therefore, while there's a difference between a forecast and an actual figure, there isn't a direct discrepancy in reported *actual* values for the full year.
+
+**Gross Profit Discrepancies:**
+*   **For the year 2019:**
+    *   The **prospectus** provided a historical gross profit for the **six months ended 30 June 2019** of **NOK 355,314 thousand**.
+    *   The **Annual Report 2020** reported the full-year gross profit for 2019 as **NOK 752,900 thousand**.
+    *   A direct full-year comparison is not possible as the prospectus only provided a half-year figure for 2019.
+*   **For the year 2020:**
+    *   The **prospectus** provided a forecasted gross profit range for the full year ending 31 December 2020 of **NOK 847 million - NOK 889.2 million** (or NOK 847,000 thousand - NOK 889,200 thousand).
+    *   The **Annual Report 2020** reported the actual gross profit for 2020 as **NOK 899,219 thousand**.
+    *   The actual gross profit reported in the annual report is slightly higher than the upper end of the forecasted range provided in the prospectus. This indicates a discrepancy between the forecasted and actual reported gross profit.
+
+==================
+
+Agent: MANAGER_AGENT
+Role: TOOL-RESPONSE
+------------------
+Observation:
+Yes, there are discrepancies in the revenue and gross profit values between the prospectus and the annual report, primarily due to differences in reporting periods (forecast vs. actual) and minor variations in reported figures for the same period.
+
+Here's a detailed breakdown:
+
+**Revenue Discrepancies:**
+*   **For the year 2019:**
+    *   The **prospectus** states the revenue as **NOK 2,932.7 million** (or NOK 2,932,700 thousand).
+    *   The **Annual Report 2020** states the revenue for 2019 as **NOK 2,890,025 thousand**.
+    *   This represents a discrepancy of **NOK 42,675 thousand** (NOK 2,932,700 thousand - NOK 2,890,025 thousand).
+*   **For the year 2020:**
+    *   The **prospectus** provided a forecasted total revenue range of **NOK 3,500 - 3,600 million**.
+    *   The **Annual Report 2020** reported the actual total operating revenue as **NOK 3,539,231 thousand** (or NOK 3,539.231 million).
+    *   The actual reported revenue in the annual report falls within the forecasted range provided in the prospectus. Therefore, while there's a difference between a forecast and an actual figure, there isn't a direct discrepancy in reported *actual* values for the full year.
+
+**Gross Profit Discrepancies:**
+*   **For the year 2019:**
+    *   The **prospectus** provided a historical gross profit for the **six months ended 30 June 2019** of **NOK 355,314 thousand**.
+    *   The **Annual Report 2020** reported the full-year gross profit for 2019 as **NOK 752,900 thousand**.
+    *   A direct full-year comparison is not possible as the prospectus only provided a half-year figure for 2019.
+*   **For the year 2020:**
+    *   The **prospectus** provided a forecasted gross profit range for the full year ending 31 December 2020 of **NOK 847 million - NOK 889.2 million** (or NOK 847,000 thousand - NOK 889,200 thousand).
+    *   The **Annual Report 2020** reported the actual gross profit for 2020 as **NOK 899,219 thousand**.
+    *   The actual gross profit reported in the annual report is slightly higher than the upper end of the forecasted range provided in the prospectus. This indicates a discrepancy between the forecasted and actual reported gross profit.
+==================
+

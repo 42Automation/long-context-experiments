@@ -21,6 +21,7 @@ from prompts import (
 )
 from treatments import get_max_k, get_pdf_urls, get_texts, has_agent_treatment
 from utils import get_timestamp, log_agent_run
+from wrapped_agents import get_all_messages
 
 
 async def judge(question, correct_answer, output) -> bool:
@@ -76,7 +77,7 @@ async def run_experiment_with_agent(experiment, agent) -> tuple:
 
     output = agent.run(prompt)
     log_agent_run(
-        logs=agent.write_memory_to_messages(),
+        messages=get_all_messages(agent),
         experiment_id=experiment.get("id"),
         model=model,
     )
@@ -87,7 +88,7 @@ async def run_experiment_with_agent(experiment, agent) -> tuple:
         experiment,
         model,
         output,
-        agent.monitor.total_input_token_count,
+        agent.total_input_tokens,
         passed,
     )
 

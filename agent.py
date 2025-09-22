@@ -1,41 +1,16 @@
-import os
-
-from dotenv import load_dotenv
-from smolagents import MultiStepAgent, OpenAIServerModel, models
-
 from models import MODEL_IDS
-from poe_agents import PoeToolCallingAgent
 from prompts import RETRIEVAL_AGENT_DESCRIPTION_TEMPLATE
 from rag import Retriever
 from tools import RetrieverTool
-
-load_dotenv()
-
-# Monkey patch the function which describes whether model supports stop parameters
-# to always return False.
-# This effectively prevents the Poe API call from failing on some models
-models.supports_stop_parameter = lambda model_id: False
-
-POE_API_KEY = os.environ.get("POE_API_KEY", "")
-if not POE_API_KEY:
-    raise ValueError("Could not find POE_API_KEY variable in the environment")
-POE_BASE_URL = os.environ.get("POE_BASE_URL", "")
-if not POE_BASE_URL:
-    raise ValueError("Could not find POE_BASE_URL variable in the environment")
-
-
-def _get_agent_model(model_id: str) -> OpenAIServerModel:
-    return OpenAIServerModel(
-        model_id=model_id, api_base=POE_BASE_URL, api_key=POE_API_KEY
-    )
+from wrapped_agents import WrappedToolCallingAgent, get_agent_model
 
 
 def get_agent_team(
     model_id: str, pdf_doc_urls: list[str], max_k: int
-) -> MultiStepAgent:
+) -> WrappedToolCallingAgent:
     # Get model
     model_id = MODEL_IDS.get(model_id, model_id)
-    agent_model = _get_agent_model(model_id)
+    agent_model = get_agent_model(model_id)
 
     # Get retriever
     retriever_tool = RetrieverTool()
@@ -43,7 +18,7 @@ def get_agent_team(
     retriever_tool.retriever = retriever
 
     # Get retriever agent
-    retriever_agent = PoeToolCallingAgent(
+    retriever_agent = WrappedToolCallingAgent(
         tools=[retriever_tool],
         model=agent_model,
         max_steps=3,
@@ -53,10 +28,9 @@ def get_agent_team(
     )
 
     # Get manager agent
-    manager_agent = PoeToolCallingAgent(
+    manager_agent = WrappedToolCallingAgent(
         tools=[],
         model=agent_model,
-        # additional_authorized_imports=["*"],
         max_steps=6,
         verbosity_level=2,
         name="manager_agent",
