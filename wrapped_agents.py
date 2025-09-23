@@ -45,9 +45,14 @@ if not POE_BASE_URL:
     raise ValueError("Could not find POE_BASE_URL variable in the environment")
 
 
-def get_agent_model(model_id: str) -> OpenAIServerModel:
+def get_agent_model(
+    model_id: str, flatten_mesages_as_text: bool = False
+) -> OpenAIServerModel:
     return OpenAIServerModel(
-        model_id=model_id, api_base=POE_BASE_URL, api_key=POE_API_KEY
+        model_id=model_id,
+        api_base=POE_BASE_URL,
+        api_key=POE_API_KEY,
+        flatten_messages_as_text=flatten_mesages_as_text,
     )
 
 

@@ -29,3 +29,7 @@ MODEL_IDS = {
 SAMPLE_MODELS = ["GPT-5-mini"]
 
 JUDGE_MODEL = "GPT-5-mini"
+
+
+def should_flatten_messages(model_id: str) -> bool:
+    return "qwen" in model_id.lower()

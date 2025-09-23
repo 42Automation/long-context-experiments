@@ -1,4 +1,4 @@
-from models import MODEL_IDS
+from models import MODEL_IDS, should_flatten_messages
 from prompts import RETRIEVAL_AGENT_DESCRIPTION_TEMPLATE
 from rag import Retriever
 from tools import RetrieverTool
@@ -10,7 +10,9 @@ def get_agent_team(
 ) -> WrappedToolCallingAgent:
     # Get model
     model_id = MODEL_IDS.get(model_id, model_id)
-    agent_model = get_agent_model(model_id)
+    agent_model = get_agent_model(
+        model_id=model_id, flatten_mesages_as_text=should_flatten_messages(model_id)
+    )
 
     # Get retriever
     retriever_tool = RetrieverTool()
